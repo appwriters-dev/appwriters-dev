@@ -1,5 +1,7 @@
-<!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
+	import { siteTitle } from "$lib/config";
+
+
 export let data
 
 const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = data.meta
@@ -8,7 +10,7 @@ const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, cate
 
 <svelte:head>
 	<!-- Be sure to add your image files and un-comment the lines below -->
-	<title>{title}</title>
+	<title>{title} | {siteTitle}</title>
 	<meta data-key="description" name="description" content="{excerpt}">
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
@@ -35,13 +37,18 @@ const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, cate
 
 	<h1>{ title }</h1>
 	
+	{#if date}
 	<div class="meta">
 		<b>Published:</b> {date}
+		
+		{#if updated}
 		<br>
 		<b>Updated:</b> {updated}
+		{/if}
 	</div>
+	{/if}
 
-	{@html data.PostContent}
+	{@html data.postContent}
 
 	{#if categories}
 		<aside class="post-footer">

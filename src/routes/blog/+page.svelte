@@ -1,14 +1,14 @@
 <script>
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
-	import { siteDescription } from '$lib/config'
+	import { siteDescription, siteTitle } from '$lib/config'
 
 	export let data
 </script>
 
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Blog | {siteTitle}</title>
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 

@@ -181,10 +181,6 @@ footer {
 	nav {
 		display: initial;
 
-		@media (min-width: vars.$smMin) {
-			border-right: 1px solid var(--dark);
-		}
-
 		ul {
 			display: initial;
 
