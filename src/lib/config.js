@@ -6,7 +6,7 @@
  **/ 
 
 export const siteTitle = 'Appwriters'
-export const siteDescription = 'Appwriters, your guide to modern software application development.'
+export const siteDescription = 'Appwriters, your guide to modern application development.'
 export const siteURL = 'appwriters.dev'
 export const siteLink = 'https://github.com/appwriters-dev/appwriters-dev'
 export const siteAuthor = 'Damodar Lohani'
