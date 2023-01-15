@@ -5,7 +5,7 @@
 	line-height: 1.1;
 	font-family: var(--accentFont);
 	font-weight: bold;
-	color: var(--darker);
+	color: var(--primary);
 }
 
 h1 {
@@ -60,8 +60,7 @@ h6 {
 
 a {
 	color: var(--darker);
-	text-decoration-thickness: 1px;
-	text-decoration-color: var(--dark);
+	text-decoration: none;
 }
 
 ul {

@@ -1,6 +1,6 @@
 <script>
 	import MainNav from './MainNav.svelte'
-	import { siteAuthor } from '$lib/config'
+	import { siteAuthor, siteAuthorURL } from '$lib/config'
 </script>
 
 <footer>
@@ -17,5 +17,5 @@
 		</ul>
 	</nav>
 
-	<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
+	<p>&copy;{new Date().getFullYear()} <a href="{siteAuthorURL}" target="_blank" rel="noreferrer">{siteAuthor}</a>
 </footer>

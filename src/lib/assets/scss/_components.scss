@@ -1,13 +1,14 @@
 @use 'vars';
 
 .callout {
-	background: var(--lightAccent);
+	background: var(--accent);
 	padding: 2rem 1rem;
   width: calc(100% + 2rem);
 	max-width: unset;
   margin: 2rem 0 2rem -1rem;
 	font-style: italic;
 	border-radius: 0.125rem;
+	color: var(--paper);
   
   @media (min-width: vars.$smMin) {
     width: calc(100% + 4rem);
@@ -33,7 +34,6 @@
 		}
 
 		a {
-			background: var(--lightAccent);
 			text-decoration: none;
 			line-height: 1;
 			display: flex;
@@ -43,17 +43,14 @@
 			height: 2em;
 			font-family: var(--primaryFont);
 			font-weight: bold;
-			transition: background .1s;
 
 			&:hover {
-				background: var(--accent);
 				color: var(--background);
 			}
 
 			&[aria-current="true"] {
 				background: var(--accent);
 				color: var(--background);
-				border: 1px solid currentColor;
 			}
 		}
 
