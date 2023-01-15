@@ -56,3 +56,20 @@
 
 	}
 }
+
+aside.toc {
+	position: fixed;
+	right: 0;
+	width: 350px;
+	top: 6rem;
+	nav {
+		&.toc {
+			a {
+				display: block;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
