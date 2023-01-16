@@ -9,17 +9,13 @@
 		<li>
 			<article>
 				<a href="/blog/{post.slug}">
-					{#if post.coverImage}
 						<img
-							src={post.coverImage}
+							src={post.coverImage ?? defaultCoverImage}
 							alt=""
-							width={post.coverWidth}
-							height={post.coverHeight}
-							style="ratio: {post.coverWidth} / {post.coverHeight}"
+							width={post.coverWidth ?? 16}
+							height={post.coverHeight ?? 9}
+							style="ratio: {post.coverWidth ?? 16} / {post.coverHeight ?? 9}"
 						/>
-					{:else}
-						<img alt="" src={defaultCoverImage} width="16" height="9" style="ratio: 16 / 9" />
-					{/if}
 					<h3>
 						{post.title}
 					</h3>
