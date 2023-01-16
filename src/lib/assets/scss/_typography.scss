@@ -1,5 +1,15 @@
 @use './vars';
 
+body {
+	@media (min-width: vars.$smMin) {
+		font-size: 1.125rem;
+	}
+
+	@media (min-width: vars.$lgMin) {
+		font-size: 1.25rem;
+	}
+}
+
 :is(h1, h2, h3, h4, h5, h6) {
 	margin: 2rem 0 1rem;
 	line-height: 1.1;

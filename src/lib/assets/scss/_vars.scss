@@ -42,13 +42,3 @@ $xxxlMin: 122.5rem;
 	font-size: 1rem;
 	line-height: 1.6;
 }
-
-body {
-	@media (min-width: $smMin) {
-		font-size: 1.125rem;
-	}
-
-	@media (min-width: $lgMin) {
-		font-size: 1.25rem;
-	}
-}
