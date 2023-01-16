@@ -4,9 +4,9 @@ import { json } from '@sveltejs/kit'
 
 export const prerender = true
 
-export const GET = async () => {
+export const GET = async ({url}) => {
   const options = {
-    limit: postsPerPage
+    limit: url.searchParams.get('limit') ?? postsPerPage
   }
 
   const { posts } = await fetchPosts(options)

@@ -1,5 +1,7 @@
 <script>
+	import RecentPostsList from '$lib/components/RecentPostsList.svelte';
 	import { siteDescription, siteTitle } from '$lib/config';
+	export let data;
 </script>
 
 <svelte:head>
@@ -54,6 +56,15 @@
 			</p>
 		</div>
 	</div>
+
+	<div class="container">
+		<div class="posts">
+			<div class="header">
+				<h2>Recent Posts</h2>
+			</div>
+			<RecentPostsList posts={data.posts} />
+		</div>
+	</div>
 </main>
 
 <style lang="scss">
@@ -94,6 +105,27 @@
 			max-width: 42rem;
 			width: 100%;
 			margin: 0 auto;
+		}
+		> .posts {
+			max-width: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			h2 {
+				overflow: hidden;
+	padding-bottom: 1rem;
+				position: relative;
+				&::after {
+					content: '';
+					height: 0.1em;
+					background: var(--accent);
+					width: 100%;
+					margin-left: -100%;
+					position: absolute;
+					bottom: 0;
+				}
+			}
 		}
 	}
 </style>

@@ -11,6 +11,7 @@ export const siteURL = 'appwriters.dev'
 export const siteLink = 'https://github.com/appwriters-dev/appwriters-dev'
 export const siteAuthor = 'Damodar Lohani'
 export const siteAuthorURL = 'https://dlohani.com.np'
+export const defaultCoverImage = 'images/jerry-zhang-ePpaQC2c1xA-unsplash.jpg'
 
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10
