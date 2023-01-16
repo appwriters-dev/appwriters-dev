@@ -6,6 +6,7 @@
 	import { navItems } from '$lib/config';
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import Analytics from '$lib/components/Analytics.svelte';
 	export let data;
 
 	export const prerender = true;
@@ -29,6 +30,8 @@
 		preloadCode(...navRoutes);
 	});
 </script>
+
+<Analytics />
 
 <div class="layout" class:open={$isMenuOpen}>
 	<Header />
