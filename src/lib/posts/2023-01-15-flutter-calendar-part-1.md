@@ -1,7 +1,9 @@
 ---
 title: Building Calendar App with Flutter
 slug: building-calendar-app-with-flutter
-image: /img/blog/calendar/calendar4.png
+coverImage: '/images/calendar/cover.svg'
+coverWidth: 16
+coverHeight: 9
 excerpt: Calendar is integral to various types of applications. From a simple scheduling application to complex management systems, calendar plays important role. In this tutorial we will learn to display and customize a calendar in our Flutter application.
 tags: [Flutter]
 ---
@@ -60,7 +62,7 @@ We will be using [table_calendar](https://pub.dev/packages/table_calendar) an ea
 
 6. Run and you can see the calendar
 
-<!-- ![Display Calendar](/img/blog/calendar/calendar1.png) -->
+![Display Calendar](/images/calendar/calendar1.svg)
 
 ## Interactivity
 
@@ -101,7 +103,7 @@ We will be using [table_calendar](https://pub.dev/packages/table_calendar) an ea
 
 3. Now run and you can select an available date in the calendar.
 
-   <!-- ![Select Date](/img/blog/calendar/calendar2.png) -->
+   ![Select Date](/images/calendar/calendar2.svg)
 
 ## Customizing Calendar
 
@@ -154,7 +156,7 @@ There are tons of customization options, which you can learn more about by going
 
    Now if you run and click the format button displayed in the header, the calendar format will change accordingly.
 
-   <!-- ![Calendar Format](/img/blog/calendar/calendar3.png) -->
+   ![Calendar Format](/images/calendar/calendar3.svg)
 
 2. Calendar style provides basic customization abilities. It has lots of properties which you can find in the [API reference](https://pub.dev/documentation/table_calendar/latest/table_calendar/CalendarStyle-class.html). We will go through some of those here.
 
@@ -207,7 +209,7 @@ There are tons of customization options, which you can learn more about by going
 
    Doing this will display the complete date in string instead of just showing Month and year as it was previously. You can use various other [available properties](https://pub.dev/documentation/table_calendar/latest/table_calendar/CalendarBuilders-class.html) of `CalendarBuilders` to further customize the calendar to your liking.
 
-   <!-- ![Calendar Final](/img/blog/calendar/calendar4.png) -->
+   ![Calendar Final](/images/calendar/calendar4.svg)
 
 ## Conclusion
 
