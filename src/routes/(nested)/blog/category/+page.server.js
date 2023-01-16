@@ -1,28 +1,26 @@
 export const load = async ({ url, fetch }) => {
-	const res = await fetch(`${url.origin}/api/posts.json`)
-	let posts = await res.json()
+	const res = await fetch(`${url.origin}/api/posts.json`);
+	let posts = await res.json();
 
-	let uniqueCategories = {}
+	let uniqueCategories = {};
 
-	posts.forEach(post => {
-		if(!post.categories) return;
-		post.categories.forEach(category => {
+	posts.forEach((post) => {
+		if (!post.categories) return;
+		post.categories.forEach((category) => {
 			if (uniqueCategories.hasOwnProperty(category)) {
-				uniqueCategories[category].count += 1
+				uniqueCategories[category].count += 1;
 			} else {
 				uniqueCategories[category] = {
 					title: category,
 					count: 1
-				}
+				};
 			}
-		})
-	})
+		});
+	});
 
-	const sortedUniqueCategories = 
-		Object.values(uniqueCategories)
-			.sort((a, b) => a.title > b.title)
+	const sortedUniqueCategories = Object.values(uniqueCategories).sort((a, b) => a.title > b.title);
 
-	return { 
+	return {
 		uniqueCategories: sortedUniqueCategories
-	}
-}
+	};
+};

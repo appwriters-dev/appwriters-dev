@@ -114,7 +114,7 @@
 			align-items: center;
 			h2 {
 				overflow: hidden;
-	padding-bottom: 1rem;
+				padding-bottom: 1rem;
 				position: relative;
 				&::after {
 					content: '';

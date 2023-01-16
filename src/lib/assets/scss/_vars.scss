@@ -17,7 +17,7 @@ $xxxlMin: 122.5rem;
 	// Colors
 	--primary: #ff5200;
 	--accent: #1f3ca6;
-	--background: #FAF9F8;
+	--background: #faf9f8;
 	--lighterAccent: #f3f2f0;
 	--dark: #ba3e05;
 	--darker: #313030;
@@ -28,14 +28,13 @@ $xxxlMin: 122.5rem;
 
 	--ink: var(--slate);
 	--paper: var(--background);
-	
 
 	// Fonts
 	/**
 	 * These are broken out into two separate variables from a previous iteration. I left
 	 * it in because it's nice to be able to split out the heading and body fonts.
 	 */
-	--accentFont: 'Libre Franklin', Georgia, Times, serif; 
+	--accentFont: 'Libre Franklin', Georgia, Times, serif;
 	--primaryFont: 'Libre Franklin', sans-serif;
 	--codeFont: 'Fira Code', monospace;
 

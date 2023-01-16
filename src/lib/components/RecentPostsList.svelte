@@ -9,13 +9,13 @@
 		<li>
 			<article>
 				<a href="/blog/{post.slug}">
-						<img
-							src={post.coverImage ?? defaultCoverImage}
-							alt=""
-							width={post.coverWidth ?? 16}
-							height={post.coverHeight ?? 9}
-							style="ratio: {post.coverWidth ?? 16} / {post.coverHeight ?? 9}"
-						/>
+					<img
+						src={post.coverImage ?? defaultCoverImage}
+						alt=""
+						width={post.coverWidth ?? 16}
+						height={post.coverHeight ?? 9}
+						style="ratio: {post.coverWidth ?? 16} / {post.coverHeight ?? 9}"
+					/>
 					<h3>
 						{post.title}
 					</h3>

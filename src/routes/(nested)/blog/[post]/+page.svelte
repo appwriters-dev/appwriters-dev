@@ -1,17 +1,16 @@
 <script>
-	import { siteTitle } from "$lib/config";
+	import { siteTitle } from '$lib/config';
 
+	export let data;
 
-export let data
-
-const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = data.meta
+	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
+		data.meta;
 </script>
-
 
 <svelte:head>
 	<!-- Be sure to add your image files and un-comment the lines below -->
 	<title>{title} | {siteTitle}</title>
-	<meta data-key="description" name="description" content="{excerpt}">
+	<meta data-key="description" name="description" content={excerpt} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={title} />
 	<meta name="twitter:title" content={title} />
@@ -23,45 +22,46 @@ const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, cate
 	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
-
 <article class="post">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<img
 		class="cover-image"
-		src="{coverImage}"
+		src={coverImage}
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
 		height={coverHeight}
 	/>
 
-	<h1>{ title }</h1>
-	
+	<h1>{title}</h1>
+
 	{#if date}
-	<div class="meta">
-		<b>Published:</b> {date}
-		
-		{#if updated}
-		<br>
-		<b>Updated:</b> {updated}
-		{/if}
-	</div>
+		<div class="meta">
+			<b>Published:</b>
+			{date}
+
+			{#if updated}
+				<br />
+				<b>Updated:</b>
+				{updated}
+			{/if}
+		</div>
 	{/if}
 
 	{@html data.postContent}
 
 	{#if categories}
 		<aside class="post-footer">
-			<h2>Posted in: </h2>
+			<h2>Posted in:</h2>
 			<ul>
 				{#each categories as category}
 					<li>
 						<a href="/blog/category/{category}/">
-							{ category }
+							{category}
 						</a>
 					</li>
 				{/each}
 			</ul>
 		</aside>
 	{/if}
-</article> 
+</article>
