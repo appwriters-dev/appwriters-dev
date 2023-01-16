@@ -107,6 +107,7 @@
 			margin: 0 auto;
 		}
 		> .posts {
+			margin-top: 3rem;
 			max-width: 80%;
 			display: flex;
 			flex-direction: column;
@@ -127,5 +128,8 @@
 				}
 			}
 		}
+	}
+	.book {
+		padding-top: 2.5rem;
 	}
 </style>
