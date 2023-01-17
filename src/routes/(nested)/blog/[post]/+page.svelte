@@ -35,6 +35,20 @@
 
 	<h1>{title}</h1>
 
+	{#if categories}
+		<aside class="post-footer">
+			<ul>
+				{#each categories as category}
+					<li>
+						<a href="/blog/category/{category}/">
+							#{category}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</aside>
+	{/if}
+
 	{#if date}
 		<div class="meta">
 			<b>Published:</b>
@@ -49,19 +63,4 @@
 	{/if}
 
 	{@html data.postContent}
-
-	{#if categories}
-		<aside class="post-footer">
-			<h2>Posted in:</h2>
-			<ul>
-				{#each categories as category}
-					<li>
-						<a href="/blog/category/{category}/">
-							{category}
-						</a>
-					</li>
-				{/each}
-			</ul>
-		</aside>
-	{/if}
 </article>

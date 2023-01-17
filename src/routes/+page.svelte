@@ -16,7 +16,7 @@
 
 <main id="main">
 	<div class="container">
-		<div class="master-flutter book">
+		<article class="master-flutter book">
 			<h3>Master Flutter</h3>
 			<p>
 				Learn Effective. Master Dart & Flutter. Become Flutter Developer. A one stop no-nonsense
@@ -32,10 +32,10 @@
 					Get Started
 				</a>
 			</p>
-		</div>
+		</article>
 	</div>
 	<div class="container">
-		<div class="abcs-of-appwrite book">
+		<article class="abcs-of-appwrite book">
 			<h3>ABC's of Appwrite (WIP)</h3>
 			<p>
 				Use this guide to get started with Appwrite, an open source backend server for web, mobile
@@ -54,7 +54,7 @@
 					Get Started
 				</a>
 			</p>
-		</div>
+		</article>
 	</div>
 
 	<div class="container">
@@ -101,12 +101,13 @@
 	}
 
 	.container {
-		> div {
+		> .book {
 			max-width: 42rem;
 			width: 100%;
 			margin: 0 auto;
 		}
 		> .posts {
+			margin: 0 auto;
 			margin-top: 3rem;
 			max-width: 80%;
 			display: flex;

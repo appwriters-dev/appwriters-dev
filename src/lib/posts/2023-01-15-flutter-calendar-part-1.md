@@ -5,7 +5,7 @@ coverImage: '/images/calendar/cover.svg'
 coverWidth: 16
 coverHeight: 9
 excerpt: Calendar is integral to various types of applications. From a simple scheduling application to complex management systems, calendar plays important role. In this tutorial we will learn to display and customize a calendar in our Flutter application.
-tags: [Flutter]
+categories: [Flutter]
 ---
 
 Calendar is integral to various types of applications. From a simple scheduling application to complex management systems, calendar plays important role. In this tutorial we will learn to display and customize a calendar in our Flutter application.

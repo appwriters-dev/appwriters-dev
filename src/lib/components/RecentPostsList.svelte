@@ -20,19 +20,24 @@
 						{post.title}
 					</h3>
 				</a>
+				<p>{post.excerpt}</p>
 			</article>
 
-			<p>{post.excerpt}</p>
 		</li>
 	{/each}
 </ul>
 
 <style lang="scss">
 	ul {
-		display: grid;
+		display: flex;
 		list-style: none;
-		grid-template-columns: auto auto auto;
 		gap: 20px;
+		flex-wrap: wrap;
+		li {
+			flex-basis: 300px;
+			display: flex;
+			flex-grow: 1;
+		}
 	}
 	img {
 		height: 250px;
