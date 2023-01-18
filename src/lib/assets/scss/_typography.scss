@@ -69,8 +69,11 @@ h6 {
 }
 
 a {
-	color: var(--darker);
+	color: var(--primary);
 	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 ul {
