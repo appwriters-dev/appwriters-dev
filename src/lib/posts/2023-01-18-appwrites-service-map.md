@@ -10,7 +10,7 @@ categories: [appwrite]
 
 The map below gives a bird's-eye view of all the services and features of Appwrite. Note that Appwrite is designed as a multi-tenant service, meaning a single Appwrite instance can provide these services to multiple applications that you can manage in your Appwrite projects.
 
-![Appwrite Service map.png](/images/appwrite/appwrite-service-map.png)
+[![Appwrite Service map.png](/images/appwrite/appwrite-service-map.png)](/images/appwrite/appwrite-service-map.png)
 
 ## Authentication & User Management
 
