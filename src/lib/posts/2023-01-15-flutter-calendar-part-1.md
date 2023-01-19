@@ -11,7 +11,7 @@ categories: [Flutter]
 
 Calendar is integral to various types of applications. From a simple scheduling application to complex management systems, calendar plays important role. In this tutorial we will learn to display and customize a calendar in our Flutter application.
 
-<!-- truncate -->
+> Part 2: [Loading & Displaying Events from Firestore in Flutter Calendar App](/blog/2023-01-19-flutter-calendar-part-2)
 
 ## Table Calendar
 
