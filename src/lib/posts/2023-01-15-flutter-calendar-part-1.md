@@ -13,6 +13,8 @@ Calendar is integral to various types of applications. From a simple scheduling 
 
 > Part 2: [Loading & Displaying Events from Firestore in Flutter Calendar App](/blog/2023-01-19-flutter-calendar-part-2)
 
+> Part 3: [Optimizing Query and Event Management](/blog/2023-01-22-flutter-calendar-part-3)
+
 ## Table Calendar
 
 We will be using [table_calendar](https://pub.dev/packages/table_calendar) an easy to use yet highly customizable calendar available in pub.dev. We will learn to install and use this package to display and customize calendar widget in our Flutter application. Let’s get started.
@@ -216,6 +218,6 @@ There are tons of customization options, which you can learn more about by going
 
 You can find the code for this tutorial in the following repository.
 
-[https://github.com/lohanidamodar/flutter_events_2023](https://github.com/lohanidamodar/flutter_events_2023)
+[https://github.com/lohanidamodar/flutter_events_2023/tree/p1-calendar](https://github.com/lohanidamodar/flutter_events_2023/tree/p1-calendar)
 
 In this tutorial, we learned how to display a calendar in our Flutter application using `table_calendar` package. We also learned to make the calendar interactive by allowing user to select any date available in the calendar. Finally we learned to customize the calendar to better fit our application’s design. In the next article we will learn how to load and display events using calendar with event markers.

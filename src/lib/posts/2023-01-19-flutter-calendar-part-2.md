@@ -13,6 +13,8 @@ In [Part 1](/blog/2023-01-15-flutter-calendar-part-1) we learned to use Table Ca
 
 > Part 1: [Building Calendar App with Flutter](/blog/2023-01-15-flutter-calendar-part-1)
 
+> Part 3: [Optimizing Query and Event Management](/blog/2023-01-22-flutter-calendar-part-3)
+
 ## Integrate Firebase in App
 
 1. Install firebase tools `npm install -g firebase-tools`
