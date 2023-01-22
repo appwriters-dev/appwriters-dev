@@ -1,6 +1,6 @@
 ---
 title: I Do These 5 Things Every Morning and You Should Too
-slug: i-do-these-5-things-every-morning-and-you-should-too
+slug: 2023-01-17-my-morning-routine
 date: 2023-01-17
 excerpt: How we spend our morning signifies how we will spend the rest of the day. That is why, lately I’m focused to make my morning as fruitful as possible. And for that I wanted to spent the first hour of morning for personal improvements. In this article I will talk about how my latest morning routine looks like and why I have adopted those specific habits.
 categories: [productivity, meta]

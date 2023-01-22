@@ -1,6 +1,6 @@
 ---
 title: Flutter Calendar App Optimizing Query and Managing Events
-slug: flutter-calendar-app-optimizing-query-and-managing-events
+slug: 2023-01-22-flutter-calendar-part-3
 coverImage: '/images/calendar/calendar3.1.png'
 coverWidth: 4
 coverHeight: 3

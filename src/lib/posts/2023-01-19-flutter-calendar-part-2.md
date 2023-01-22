@@ -1,6 +1,6 @@
 ---
 title: Loading & Displaying Events from Firestore in Flutter Calendar App
-slug: loading-and-displaying-events-from-firestore-in-flutter-calendar-app
+slug: 2023-01-19-flutter-calendar-part-2
 coverImage: '/images/calendar/calendar2.14.png'
 coverWidth: 4
 coverHeight: 3

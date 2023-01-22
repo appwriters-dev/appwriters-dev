@@ -1,6 +1,6 @@
 ---
 title: Building Calendar App with Flutter
-slug: building-calendar-app-with-flutter
+slug: 2023-01-15-flutter-calendar-part-1
 coverImage: '/images/calendar/cover.svg'
 coverWidth: 16
 coverHeight: 9
