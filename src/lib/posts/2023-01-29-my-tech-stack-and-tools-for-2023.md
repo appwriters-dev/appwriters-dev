@@ -57,6 +57,10 @@ I’ve worked with React, Angular and learned a little bit of VueJS as well. How
 
 Appwrite is my choice for back-end for my mobile and web projects. Appwrite being open-source and I myself working, I know the ins and outs of Appwrite as well as it’s strength and weakness. My recent re-write of [reactbits.com](http://reactbits.com) is done using Appwrite as it’s back-end.
 
+### Figma
+
+I use Figma for designing my blog and social assets. It's simple to use and I can access all my assets from anywhere, it's been highly productive.
+
 ## Conclusion
 
 One thing I’ve understood in all these years of programming is that, the power of tools and technologies depend more on the person using it. No matter, what technologies and tools I work with, I’m always eager to learn and practice more.
