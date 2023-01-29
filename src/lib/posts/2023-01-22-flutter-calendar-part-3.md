@@ -1,9 +1,9 @@
 ---
 title: Flutter Calendar App Optimizing Query and Managing Events
 slug: 2023-01-22-flutter-calendar-part-3
-coverImage: '/images/calendar/calendar3.1.png'
-coverWidth: 4
-coverHeight: 3
+coverImage: '/images/calendar/cover2.svg'
+coverWidth: 16
+coverHeight: 9
 date: 2023-01-22
 excerpt: In previous two parts we learned to setup calendar and load and display events from Firestore. In this third and final part in the series, we will optimize the Firestore query so that we will only load the events necessary for the visible days in the calendar. Then we will also setup CRUD to allow to add, update and delete the events.
 categories: [Flutter]
