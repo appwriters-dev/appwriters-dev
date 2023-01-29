@@ -1,9 +1,9 @@
 ---
 title: Loading & Displaying Events from Firestore in Flutter Calendar App
 slug: 2023-01-19-flutter-calendar-part-2
-coverImage: '/images/calendar/calendar2.14.png'
-coverWidth: 4
-coverHeight: 3
+coverImage: '/images/calendar/cover1.svg'
+coverWidth: 16
+coverHeight: 9
 date: 2023-01-19
 excerpt: In this second part of Flutter Calendar App tutorial, learn to integrate Firebase and then load and display event markers in calendar from Firestore database.
 categories: [Flutter]
