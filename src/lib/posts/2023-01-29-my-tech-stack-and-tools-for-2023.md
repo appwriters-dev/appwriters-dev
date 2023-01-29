@@ -1,9 +1,9 @@
 ---
 title: My Favorite Development Tools and Tech Stack for 2023
 slug: my-favorite-development-tools-and-tech-stack-for-2023
-# coverImage: '/images/calendar/calendar3.1.png'
-# coverWidth: 4
-# coverHeight: 3
+coverImage: '/images/tech_stack_cover.svg'
+coverWidth: 16
+coverHeight: 9
 date: 2023-01-29
 excerpt: I am a full-stack developer currently working as a Software Engineer at Appwrite. In addition to office work, I have many different side projects. I build web applications and mobile applications, and I am an enthusiast who tests and tries many different technology stacks. During my 19-year journey in programming, I have worked with many different technologies. In this article, I will discuss my recent tech stack and development tools for both work and personal projects.
 categories: [meta]
