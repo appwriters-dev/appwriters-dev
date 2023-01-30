@@ -8,7 +8,7 @@ export const GET = async () => {
 		Object.entries(import.meta.glob('$lib/posts/*.md')).map(async ([path, page]) => {
 			const { metadata } = await page();
 			const slug = path.split('/').pop().split('.').shift();
-			return { ...metadata, slug };
+			return { slug, ...metadata };
 		})
 	).then((posts) => {
 		return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -32,7 +32,7 @@ const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 <title>${siteTitle}</title>
 <description>${siteDescription}</description>
 <link>${siteLink}</link>
-<atom:link href="https://${siteURL}/rss.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="https://${siteURL}/api/rss.xml" rel="self" type="application/rss+xml"/>
 ${posts
 	.map(
 		(post) => `<item>
