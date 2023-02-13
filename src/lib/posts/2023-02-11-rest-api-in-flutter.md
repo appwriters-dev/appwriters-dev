@@ -6,7 +6,7 @@ excerpt: In this article we will introduce REST API briefly and then learn to in
 coverImage: /images/restapi_cover.svg
 coverWidth: 16
 coverHeight: 9
-tags: [Flutter]
+categories: [Flutter]
 ---
 
 In this article we will introduce REST API briefly and then learn to integrate external service into our Flutter application using REST API.
