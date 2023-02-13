@@ -3,9 +3,9 @@ title: Integrating with REST API in Flutter
 slug: integrating-with-rest-api-in-flutter
 date: 2023-02-11
 excerpt: In this article we will introduce REST API briefly and then learn to integrate external service into our Flutter application using REST API. We will be using the official http package however after learning the fundamentals you will be able to use any other library to make a http request in Flutter.
-coverImage:
-coverWidth:
-coverHeight:
+coverImage: /images/restapi_cover.svg
+coverWidth: 16
+coverHeight: 9
 tags: [Flutter]
 ---
 
