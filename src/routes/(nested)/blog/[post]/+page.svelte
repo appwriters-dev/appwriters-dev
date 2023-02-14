@@ -51,7 +51,7 @@
 	{#if date}
 		<div class="meta">
 			<b>Published:</b>
-			{date}
+			{new Date(date).toDateString()}
 
 			{#if updated}
 				<br />
