@@ -3,9 +3,9 @@ title: Demystifying Dart Extension Methods
 slug: demystifying-dart-extension-methods
 date: 2023-02-19
 excerpt: Dart extension methods provide us with a easy and clean way to extend external libraies to our specific needs without touching their source code. Let's learn what they are and how to use them.
-coverImage:
-coverWidth:
-coverHeight:
+coverImage: /images/dart_extension_methods_cover.svg
+coverWidth: 16
+coverHeight: 9
 categories: [Dart,Flutter]
 ---
 
