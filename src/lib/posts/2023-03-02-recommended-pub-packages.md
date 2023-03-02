@@ -75,6 +75,14 @@ Fonts contribute a lot to the beauty of application. Google fonts package makes 
 
 Hive for me is a easier replacement for shared preferences to save simple key-value paris to complex objects in cache. It's fast and supports all platforms.
 
+## [animated_text_kit](https://pub.dev/packages/animated_text_kit)
+
+Right animation can increase the UI & UX on any application. Animated text kit provides a lots of pre-defined, easy to setup and customizable text animations.
+
+## [feedback](https://pub.dev/packages/feedback)
+
+Getting feedback, bug reports and other usage information from user adds a lot to the success of an application. This package allows you to build a system where users can send feedback right from your application with screenshots and more.
+
 ## Dev Dependencies
 
 Apart from above packages, I always have following packages under dev dependencies in almost all of my Flutter packages.
