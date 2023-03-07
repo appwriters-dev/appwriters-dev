@@ -3,9 +3,9 @@ title: Gears I Use Every Day for Work and Personal Projects
 slug: gears-i-use-every-day-for-work-and-personal-life
 date: 2023-03-02
 excerpt: As a programmer and content creator I use various gears to complete my day to day tasks. Though advance gears are not the most important things, they most certainly help. In this article I will share the gears I use everyday.
-coverImage:
-coverWidth:
-coverHeight:
+coverImage: /images/gears_i_use_cover.svg
+coverWidth: 16
+coverHeight: 9
 categories: [meta]
 ---
 

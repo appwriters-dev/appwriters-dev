@@ -6,7 +6,7 @@ coverWidth: 16
 coverHeight: 9
 date: 2023-01-18
 excerpt: Appwrite is an open-source back-end service that can help you quickly set up back-end APIs for your projects. It provides robust and reliable databases, storage, authentication, and other services that are essential for application development. This article will discuss the different services and features of Appwrite that empower application developers.
-categories: [appwrite]
+categories: [Appwrite]
 ---
 
 [Appwrite](https://appwrite.io) is an open-source back-end service that can help you quickly set up back-end APIs for your projects. It provides robust and reliable databases, storage, authentication, and other services that are essential for application development. This article will discuss the different services and features of Appwrite that empower application developers.
