@@ -45,7 +45,8 @@
 			font-weight: bold;
 
 			&:hover {
-				color: var(--background);
+				color: var(--dark);
+				text-decoration: underline;
 			}
 
 			&[aria-current='true'] {
