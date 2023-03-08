@@ -1,7 +1,7 @@
 ---
 title: Recommended Flutter Plugins and Packages for Every Project
 slug: recommended-flutter-plugins-and-packages-for-every-project
-date: 2023-03-02
+date: 2023-03-06
 excerpt: What makes Flutter great are it's ecosystem of packages and plugins that make it possible to build complex integrations and functionalities in a fraction of seconds. Lets look at some of the plugins and plackages that are recommended for every Flutter project you create.
 coverImage: /images/pub_packages_cover.svg
 coverWidth: 16
