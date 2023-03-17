@@ -12,9 +12,11 @@ categories: [Flutter]
 Launcher app is one of the most important application for android mobile users. In this article we are going to learn to build Android launcher application using Flutter framework.
 
 There is also a video tutorial, it's old but most of the things are still relevant
+
 <div class="player">
     <iframe src="https://www.youtube.com/embed/5QJU3QIBLIw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
 Let's start by creating a Flutter project. As we only need Android project, let's create a project using following command.
 
 ```bash
