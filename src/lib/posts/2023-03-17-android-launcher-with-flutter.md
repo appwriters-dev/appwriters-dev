@@ -3,7 +3,7 @@ title: Let's Build an Android Launcher Application with Flutter
 slug: lets-build-an-android-launcher-application-with-flutter
 date: 2023-03-17
 excerpt: Launcher app is one of the most important application for android mobile users. In this article we are going to learn to build Android launcher application using Flutter framework.
-coverImage: /images/android_launcher_cover.svg
+coverImage: /images/flutter_launcher/cover.svg
 coverWidth: 16
 coverHeight: 9
 categories: [Flutter]
@@ -128,7 +128,7 @@ Scaffold(
 
 By now, we should be able to launch this application and set is as the default home app for our Android phone and also view the system wallpaper as the background.
 
-// screenshot
+![Wallpaper background](/images/flutter_launcher/01.png)
 
 ## Load and List Applications
 
@@ -214,7 +214,7 @@ body: ListView.builder(
 
 Here, we are just listing the list of applications we got back using the package.
 
-// screenshot
+![Wallpaper background](/images/flutter_launcher/02.png)
 
 Finally, when we tap the list tile we want to open the application, let's update the `ListTile` as the following.
 
