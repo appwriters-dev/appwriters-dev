@@ -63,3 +63,20 @@
 
 	{@html data.postContent}
 </article>
+
+<style lang="scss">
+:global(.player) {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: var(--ifm-paragraph-margin-bottom);
+}
+
+:global(.player>iframe) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+</style>
