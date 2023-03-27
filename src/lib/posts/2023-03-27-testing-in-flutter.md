@@ -259,7 +259,7 @@ void main() {
 
 This time, we will use `testWidgets` function instead of `test` function that we used for unit tests.
 
-```
+```dart
 void main() {
   testWidgets('Email and password is required', (WidgetTester tester) async {
     // Build our LoginPage and trigger a frame.
