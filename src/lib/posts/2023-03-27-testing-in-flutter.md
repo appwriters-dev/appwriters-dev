@@ -6,7 +6,7 @@ excerpt: Testing is a crucial part of the software development process. Writing 
 coverImage: /images/flutter_testing_01_cover.svg
 coverWidth: 16
 coverHeight: 9
-tags: [Flutter]
+categories: [Flutter]
 ---
 
 <base target="_blank" />
