@@ -3,23 +3,27 @@
 
 	export let data;
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
+	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories, slug } =
 		data.meta;
 </script>
 
 <svelte:head>
 	<title>{title} | {siteTitle}</title>
+	
 	<meta data-key="description" name="description" content={excerpt} />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content={title} />
-	<meta name="twitter:title" content={title} />
-	<meta property="og:description" content={excerpt} />
-	<meta name="twitter:description" content={excerpt} />
-	<meta name="image" property="og:image" content="{siteLink}{coverImage}" />
-	<meta name="author" content="{siteAuthor}" />
-	<meta name="twitter:image" content="{siteLink}{coverImage}" />
-	<meta property="og:image:width" content={coverWidth} />
-	<meta property="og:image:height" content={coverHeight} />
+	<meta property="og:type" 					content="article" />
+	<meta property="og:title" 					content={title} />
+	<meta name="author" property="og:author"	content="{siteAuthor}" />
+	<meta property="og:description" 			content={excerpt} />
+	<meta name="image" property="og:image" 		content="{siteLink}{coverImage}" />
+	<meta property="og:image:width" 			content={coverWidth} />
+	<meta property="og:image:height" 			content={coverHeight} />
+	<meta property="og:url"                		content="{siteLink}/{slug}" />
+
+	
+	<meta name="twitter:title" 					content={title} />
+	<meta name="twitter:description" 			content={excerpt} />
+	<meta name="twitter:image" 					content="{siteLink}{coverImage}" />
 </svelte:head>
 
 <article class="post">
