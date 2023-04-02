@@ -1,5 +1,5 @@
 <script>
-	import { siteLink, siteTitle} from '$lib/config';
+	import { siteAuthor, siteLink, siteTitle} from '$lib/config';
 
 	export let data;
 
@@ -15,7 +15,8 @@
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={excerpt} />
 	<meta name="twitter:description" content={excerpt} />
-	<meta property="og:image" content="{siteLink}{coverImage}" />
+	<meta name="image" property="og:image" content="{siteLink}{coverImage}" />
+	<meta name="author" content="{siteAuthor}" />
 	<meta name="twitter:image" content="{siteLink}{coverImage}" />
 	<meta property="og:image:width" content={coverWidth} />
 	<meta property="og:image:height" content={coverHeight} />
