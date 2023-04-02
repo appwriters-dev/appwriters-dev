@@ -1,6 +1,5 @@
 <script>
-	import { siteTitle, siteURL} from '$lib/config';
-	import { page } from '$app/stores';
+	import { siteLink, siteTitle} from '$lib/config';
 
 	export let data;
 
@@ -16,8 +15,8 @@
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={excerpt} />
 	<meta name="twitter:description" content={excerpt} />
-	<meta property="og:image" content="https://{siteURL}{coverImage}" />
-	<meta name="twitter:image" content="https://{siteURL}{coverImage}" />
+	<meta property="og:image" content="{siteLink}{coverImage}" />
+	<meta name="twitter:image" content="{siteLink}{coverImage}" />
 	<meta property="og:image:width" content={coverWidth} />
 	<meta property="og:image:height" content={coverHeight} />
 </svelte:head>
