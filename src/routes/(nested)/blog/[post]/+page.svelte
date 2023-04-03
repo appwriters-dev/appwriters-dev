@@ -18,7 +18,7 @@
 	<meta name="image" property="og:image" 		content="{siteLink}{coverImage}" />
 	<meta property="og:image:width" 			content={coverWidth} />
 	<meta property="og:image:height" 			content={coverHeight} />
-	<meta property="og:url"                		content="{siteLink}/{slug}" />
+	<meta property="og:url"                		content="{siteLink}/blog/{slug}" />
 
 	
 	<meta name="twitter:title" 					content={title} />
