@@ -53,6 +53,12 @@ header {
 		margin: 0;
 		font-size: 1.4rem;
 		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.site-logo {
+			height: 32px;
+		}
 
 		@media (min-width: vars.$smMin) {
 			font-size: 1.6rem;

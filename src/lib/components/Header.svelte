@@ -15,7 +15,7 @@
 	</a>
 
 	<a href="/" class="site-title">
-		{siteTitle}
+		<img class="site-logo" src="logo-512.svg" alt="Logo" /> {siteTitle.substring(1)}
 	</a>
 
 	<HamburgerMenuButton />
