@@ -19,8 +19,10 @@
 		<article class="master-flutter book">
 			<h3>Master Flutter</h3>
 			<p>
-				Learn Effective. Master Dart & Flutter. Become Flutter Developer. A one stop no-nonsense
-				guide to learn Dart &amp; Flutter. Project based, self-taught guide.
+				Master Flutter - Your ultimate guide to learning Dart and Flutter through practical projects and comprehensive resources.
+			</p>
+			<p>
+				Start learning Flutter today! Whether you're a beginner or a seasoned developer, our guide has everything you need to become proficient in Dart and Flutter. Start now and gain access to comprehensive projects and resources tailored specifically for self paced learning.
 			</p>
 			<p>
 				<a
