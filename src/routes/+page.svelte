@@ -75,8 +75,8 @@
 			<p>Download the app now on the Google Play Store and start exploring the world of beautiful Flutter UI designs!</p>
 			
 			<a href="https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges" class="button"
-			target="_blank" rel="noreferrer">Download in Play Store</a>
-			<a class="button" href="https://github.com/lohanidamodar/flutter_ui_challenges" target="_blank" rel="noreferrer">Star on GitHub</a>
+			target="_blank" rel="noreferrer"> <i class="icon icon-android"></i> Download</a>
+			<a class="button" href="https://github.com/lohanidamodar/flutter_ui_challenges" target="_blank" rel="noreferrer"> <i class="icon icon-github"></i> Star</a>
 		</article>
 	</div>
 
@@ -95,6 +95,9 @@
 		max-width: 100%;
 		padding: 0;
 		margin: 0;
+	}
+	.icon {
+		font-size: 1.6rem;
 	}
 	.hero {
 		padding: 2rem;

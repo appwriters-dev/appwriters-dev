@@ -29,5 +29,10 @@ export const navItems = [
 	{
 		title: 'Contact',
 		route: '/contact'
+	},
+	{
+		title: 'Youtube',
+		route: 'https://youtube.com/@appwriters',
+		icon: 'youtube'
 	}
 ];

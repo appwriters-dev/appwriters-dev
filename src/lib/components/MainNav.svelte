@@ -10,7 +10,9 @@
 	<ul>
 		{#each navItems as page}
 			<NavItem href={page.route}>
-				{page.title}
+				{#if page.icon}
+					<i class="icon icon-{page.icon}"></i>
+				{/if}{page.title}
 			</NavItem>
 		{/each}
 	</ul>
