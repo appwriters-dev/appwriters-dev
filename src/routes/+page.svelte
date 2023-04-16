@@ -60,6 +60,27 @@
 	</div>
 
 	<div class="container">
+		<div class="images">
+			<img src="https://play-lh.googleusercontent.com/6jA0GV_n8YkL3ZnDIJly4za-nsbzWlzbnzNtby9MH8JNsVFWAP-XZx-RO3FyW9k6cxU=w1052-h592-rw" alt="Flutter UI Challenge">
+			<img src="https://play-lh.googleusercontent.com/d6SOAfNfHth_-MfIL7vNASAwJpFbola3n6UZp5U8p0bkdvf_gAz3-qt0_EHEWMFCEpM=w1052-h592-rw" alt="Flutter UI Challenge">
+			<img src="https://play-lh.googleusercontent.com/W0FksxppXjWgNr-ebJn0gTeltuTRk0t9mRrhE9fhCheV34OrBRJFQLPcJmk1S5su4Aw=w1052-h592-rw" alt="Flutter UI Challenge">
+		</div>
+		<article class="flutter-ui-challenge">
+			<h3>Flutter UI Challenges - a collection of 100+ real-world Flutter UI designs with source code!</h3>
+
+			<p>With a wide range of UI designs for different industries and use cases, this app is perfect for Flutter developers and enthusiasts who are looking for inspiration or want to learn more about building beautiful user interfaces.</p>
+			
+			<p>Each UI design comes with its source code right in the app, making it easy to learn and implement. You can study the code, modify it to suit your needs and use it as a starting point for your own projects.</p>
+			
+			<p>Download the app now on the Google Play Store and start exploring the world of beautiful Flutter UI designs!</p>
+			
+			<a href="https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges" class="button"
+			target="_blank" rel="noreferrer">Download in Play Store</a>
+			<a class="button" href="https://github.com/lohanidamodar/flutter_ui_challenges" target="_blank" rel="noreferrer">Star on GitHub</a>
+		</article>
+	</div>
+
+	<div class="container">
 		<div class="posts">
 			<div class="header">
 				<h2>Recent Posts</h2>
@@ -87,6 +108,16 @@
 		}
 	}
 
+	.images {
+		display: flex;
+		justify-content: center;
+		img {
+			max-width: 333px;
+			width: 33%;
+			margin-top: 2rem;
+		}
+	}
+
 	a {
 		&.button {
 			background: var(--accent);
@@ -103,10 +134,13 @@
 	}
 
 	.container {
-		> .book {
+		> article {
 			max-width: 42rem;
-			width: 100%;
 			margin: 0 auto;
+			width: 100%;
+			@media screen and (max-width: 700px) {
+				padding: 12px;
+			}
 		}
 		> .posts {
 			margin: 0 auto;
