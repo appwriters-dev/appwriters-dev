@@ -76,6 +76,8 @@
 			
 			<a href="https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges" class="button"
 			target="_blank" rel="noreferrer"> <i class="icon icon-android"></i> Download</a>
+			<a href="https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882" class="button"
+			target="_blank" rel="noreferrer"> <i class="icon icon-apple"></i> Download</a>
 			<a class="button" href="https://github.com/lohanidamodar/flutter_ui_challenges" target="_blank" rel="noreferrer"> <i class="icon icon-github"></i> Star</a>
 		</article>
 	</div>
