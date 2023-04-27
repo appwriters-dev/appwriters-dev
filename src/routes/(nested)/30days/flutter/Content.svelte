@@ -1,6 +1,6 @@
 <script>
-	import { resources } from './resources';
 	export let publishedDate;
+	export let resources;
 </script>
 
 <svelte:head>
@@ -16,18 +16,16 @@
 
 	<div class="grid">
 		{#each resources as resource, index}
-			{#if publishedDate.getTime() + index * 24 * 60 * 60 * 1000 <= new Date().getTime()}
-				<div class="grid-item">
-					<img src={resource.imageUrl} alt="Day {index + 1}" />
-					<h4>Day {index + 1}: {resource.title}</h4>
-					<ul>
-						{#each resource.objectives as objective}
-							<li>{objective}</li>
-						{/each}
-					</ul>
-					<a href={resource.link}>Learn More</a>
-				</div>
-			{/if}
+			<div class="grid-item">
+				<img src={resource.imageUrl} alt="Day {index + 1}" />
+				<h4>Day {index + 1}: {resource.title}</h4>
+				<ul>
+					{#each resource.objectives as objective}
+						<li>{objective}</li>
+					{/each}
+				</ul>
+				<a href={resource.link}>Learn More</a>
+			</div>
 		{/each}
 	</div>
 </div>

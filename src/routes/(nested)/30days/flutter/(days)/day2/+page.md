@@ -1,12 +1,6 @@
-<script>
-    import DayContent from '../../dayContent.svelte';
-</script>
-
 <svelte:head>
 <title>Day 2: First Dart app</title>
 </svelte:head>
-
-<DayContent day={2}>
 
 # First Dart app
 
@@ -45,4 +39,3 @@ This will print the message "Hello, World!" to your console.
 - DartPad: https://dartpad.dev/
 
 By the end of this day, you should have a basic understanding of the Dart syntax and how to write a simple console application using it.
-</DayContent>

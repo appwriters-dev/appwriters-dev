@@ -1,11 +1,6 @@
-<script>
-    import DayContent from '../../dayContent.svelte';
-</script>
 <svelte:head>
 <title>Day 1: Setting up the Environment</title>
 </svelte:head>
-
-<DayContent day={1}>
 
 # Setting up the Environment
 
@@ -36,5 +31,3 @@ This will launch the app in a simulator or on a connected device. You're now rea
 - IntelliJ IDEA Installation: https://www.jetbrains.com/idea/download/
 - Flutter and Dart plugins for IntelliJ IDEA: https://plugins.jetbrains.com/plugin/9212-dart and https://plugins.jetbrains.com/plugin/9211-flutter
 - Flutter and Dart plugins for Visual Studio Code: https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter and https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code
-
-</DayContent>

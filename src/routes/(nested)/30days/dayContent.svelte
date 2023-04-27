@@ -1,5 +1,6 @@
 <script>
 	export let day = 0;
+	export let nextReleased = true;
 </script>
 
 <div class="header">
@@ -15,7 +16,9 @@
 		{:else}
 			<div />
 		{/if}
-		<a href="/30days/flutter/day{day + 1}">next</a>
+		{#if nextReleased && day < 30}
+			<a href="/30days/flutter/day{day + 1}">next</a>
+		{/if}
 	</nav>
 </div>
 
@@ -26,8 +29,8 @@
 		margin: 1rem auto;
 		padding: 0 1rem;
 	}
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
+	nav {
+		display: flex;
+		justify-content: space-between;
+	}
 </style>
