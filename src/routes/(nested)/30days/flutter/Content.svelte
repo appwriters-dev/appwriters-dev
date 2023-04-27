@@ -2,6 +2,7 @@
 	import { resources } from './resources';
 	export let publishedDate;
 </script>
+
 <svelte:head>
 	<title>30 Days of Master Flutter | Appwriters</title>
 </svelte:head>
@@ -32,12 +33,6 @@
 </div>
 
 <style>
-	.container {
-		max-width: 1400px;
-		margin: 0 auto;
-		padding: 20px;
-	}
-
 	.intro {
 		text-align: center;
 		margin-bottom: 40px;
@@ -45,7 +40,7 @@
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		gap: 20px;
 	}
 

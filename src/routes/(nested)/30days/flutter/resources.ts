@@ -1,6 +1,6 @@
 export const resources = [
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Setting up the Environment",
         "objectives": [
             "Install Flutter and Dart",
@@ -10,7 +10,7 @@ export const resources = [
         "link": "/30days/flutter/day1"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "First Dart App",
         "objectives": [
             "Learn the basic syntax of Dart",
@@ -20,7 +20,7 @@ export const resources = [
         "link": "/30days/flutter/day2"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Variables and Data Types",
         "objectives": [
             "Learn about the different data types in Dart",
@@ -30,7 +30,7 @@ export const resources = [
         "link": "/30days/flutter/day3"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Operators and Expressions",
         "objectives": [
             "Learn about the different operators in Dart",
@@ -40,7 +40,7 @@ export const resources = [
         "link": "/30days/flutter/day4"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Dart Functions",
         "objectives": [
             "Learn about functions in Dart",
@@ -50,7 +50,7 @@ export const resources = [
         "link": "/30days/flutter/day5"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Dart Classes",
         "objectives": [
             "Learn about object-oriented programming in Dart",
@@ -60,7 +60,7 @@ export const resources = [
         "link": "/30days/flutter/day6"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Dart Packages",
         "objectives": [
             "Learn about packages in Dart",
@@ -70,7 +70,7 @@ export const resources = [
         "link": "/30days/flutter/day7"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Flutter Basics - Part 1",
         "objectives": [
             "Understand the basic structure of a Flutter app",
@@ -80,7 +80,7 @@ export const resources = [
         "link": "/30days/flutter/day8"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Flutter Basics - Part 2",
         "objectives": [
             "Understand layout in Flutter",
@@ -90,7 +90,7 @@ export const resources = [
         "link": "/30days/flutter/day9"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "User Interface Design - Part 1",
         "objectives": [
             "Learn about the basics of UI design",
@@ -100,7 +100,7 @@ export const resources = [
         "link": "/30days/flutter/day10"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "User Interface Design - Part 2",
         "objectives": [
             "Learn about advanced UI design concepts",
@@ -110,7 +110,7 @@ export const resources = [
         "link": "/30days/flutter/day11"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Introduction to Navigation",
         "objectives": [
             "Understand how to navigate between screens in Flutter",
@@ -120,7 +120,7 @@ export const resources = [
         "link": "/30days/flutter/day12"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Advanced Navigation",
         "objectives": [
             "Learn about advanced navigation patterns in Flutter",
@@ -130,7 +130,7 @@ export const resources = [
         "link": "/30days/flutter/day13"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Understanding State Management",
         "objectives": [
             "Learn about the different types of state in Flutter",
@@ -140,7 +140,7 @@ export const resources = [
         "link": "/30days/flutter/day14"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Implementing State Management",
         "objectives": [
             "Learn how to implement state management in Flutter",
@@ -150,7 +150,7 @@ export const resources = [
         "link": "/30days/flutter/day15"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Networking Part 1",
         "objectives": [
             "Learn about networking in Flutter",
@@ -160,7 +160,7 @@ export const resources = [
         "link": "/30days/flutter/day16"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Networking Part 2",
         "objectives": [
             "Learn about advanced networking concepts in Flutter",
@@ -170,7 +170,7 @@ export const resources = [
         "link": "/30days/flutter/day17"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Introduction to Persistence",
         "objectives": [
             "Learn about data persistence in Flutter",
@@ -180,7 +180,7 @@ export const resources = [
         "link": "/30days/flutter/day18"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Advanced Persistence",
         "objectives": [
             "Learn about advanced persistence concepts in Flutter",
@@ -190,7 +190,7 @@ export const resources = [
         "link": "/30days/flutter/day19"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Introduction to Animations",
         "objectives": [
             "Learn about animations in Flutter",
@@ -200,7 +200,7 @@ export const resources = [
         "link": "/30days/flutter/day20"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Advance Animations",
         "objectives": [
             "Learn about advanced animation concepts in Flutter",
@@ -210,7 +210,7 @@ export const resources = [
         "link": "/30days/flutter/day21"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Flutter Plugins",
         "objectives": [
             "Learn how to use plugins in Flutter",
@@ -220,7 +220,7 @@ export const resources = [
         "link": "/30days/flutter/day22"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Flutter Libraries",
         "objectives": [
             "Learn how to use libraries in Flutter",
@@ -230,7 +230,7 @@ export const resources = [
         "link": "/30days/flutter/day23"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Testing in Flutter",
         "objectives": [
             "Learn about testing in Flutter",
@@ -240,7 +240,7 @@ export const resources = [
         "link": "/30days/flutter/day24"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Debugging in Flutter",
         "objectives": [
             "Learn about debugging in Flutter",
@@ -250,7 +250,7 @@ export const resources = [
         "link": "/30days/flutter/day25"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Accessibility",
         "objectives": [
             "Learn about accessibility in Flutter",
@@ -260,7 +260,7 @@ export const resources = [
         "link": "/30days/flutter/day26"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Internationalization",
         "objectives": [
             "Learn about internationalization in Flutter",
@@ -270,7 +270,7 @@ export const resources = [
         "link": "/30days/flutter/day27"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Monetization",
         "objectives": [
             "Learn about monetization strategies in Flutter",
@@ -280,7 +280,7 @@ export const resources = [
         "link": "/30days/flutter/day28"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "CI/CD",
         "objectives": [
             "Learn about continuous integration and delivery in Flutter",
@@ -290,7 +290,7 @@ export const resources = [
         "link": "/30days/flutter/day29"
     },
     {
-        "imageUrl": "https://via.placeholder.com/200",
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Publishing",
         "objectives": [
             "Learn about publishing your Flutter app",
