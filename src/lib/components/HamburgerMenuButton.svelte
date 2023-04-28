@@ -23,3 +23,9 @@
 		<HamburgerSVG />
 	{/if}
 </button>
+
+<style>
+	button {
+		color: var(--primary);
+	}
+</style>

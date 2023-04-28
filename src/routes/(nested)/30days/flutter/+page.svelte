@@ -15,27 +15,34 @@
 		<p>FREE | Easy to Follow | Project Based</p>
 	</div>
 	<div class="intro">
-		<p>
-			Learn the basics of Flutter and Dart in 30 days! We provide a roadmap, resources, and project
-			ideas to help you along your journey.
-		</p>
-		<p>
-			In just 30 days, this Flutter learning challenge will help you learn the basics of Dart and
-			Flutter through daily project building and easy-to-follow learning materials. By the end of
-			the challenge, you'll have a better understanding of Dart and Flutter and a collection of
-			projects to showcase your skills.
-		</p>
+		<div class="container">
+			<div class="content">
+				<p>
+					Learn the basics of Flutter and Dart in 30 days! We provide a roadmap, resources, and
+					project ideas to help you along your journey.
+				</p>
+				<p>
+					In just 30 days, this Flutter learning challenge will help you learn the basics of Dart
+					and Flutter through daily project building and easy-to-follow learning materials. By the
+					end of the challenge, you'll have a better understanding of Dart and Flutter and a
+					collection of projects to showcase your skills.
+				</p>
+			</div>
+			<div class="image">
+				<img alt="Master Flutter" src="/images/30days/flutter_header_bg.svg" />
+			</div>
+		</div>
 	</div>
 	<div class="content">
 		<Grid resources={data.resources} publishedDate={config.masterFlutter30Published} />
 	</div>
 
 	{#if data.resources.length >= 30}
-	<div class="resources">
-		<div class="content">
-			<h2>📚 Additional Resources</h2>
+		<div class="resources">
+			<div class="content">
+				<h2>📚 Additional Resources</h2>
+			</div>
 		</div>
-	</div>
 	{/if}
 </section>
 
@@ -47,29 +54,34 @@
 			content: none;
 		}
 	}
+
 	.hero {
-		background: linear-gradient(to bottom, #ff5200, #5c001e);
 		text-align: center;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 2rem;
+		background: url('/images/30days/flutter_header_bg_sm.jpeg') no-repeat center center;
+		background-size: cover;
 		position: relative;
-		&::after {
+		margin-top: -70px;
+		padding-top: 70px;
+		&::before {
 			content: '';
-			background: url('/images/30days/flutter_header_bg.svg') no-repeat center center;
 			position: absolute;
-			bottom: 0;
+			top: 0;
+			left: 0;
 			right: 0;
-			width: 50%;
-			height: 250px; /* adjust this value to fit your design */
-			background-size: contain;
+			bottom: 0;
+			background-color: #111111aa;
+			z-index: 0;
 		}
+
+		color: var(--primary);
 		h1 {
-			color: var(--paper);
+			z-index: 100;
 		}
 		p {
-			color: var(--paper);
+			z-index: 200;
 			text-transform: uppercase;
 			max-width: 60rem;
 		}
@@ -79,7 +91,24 @@
 		padding: 2rem;
 		background-color: var(--accent);
 		color: var(--paper);
-		p {
+
+		.container {
+			display: flex;
+			align-items: flex-start;
+			@media screen and (max-width: 768px) {
+				flex-direction: column-reverse;
+				align-items: center;
+			}
+			.content {
+				flex: 1;
+			}
+			.image {
+				flex: 1;
+			}
+			img {
+				max-width: 350px;
+				align-self: flex-start;
+			}
 			margin: 0 auto;
 			max-width: 62rem;
 		}

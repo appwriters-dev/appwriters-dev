@@ -9,6 +9,9 @@
 	<nav>
 		<ul>
 			<li>
+				<a href="/30days/flutter">#30DaysMasterFlutter</a>
+			</li>
+			<li>
 				<a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
 			</li>
 			<li>
