@@ -8,7 +8,7 @@
 	<div class="hero">
 		<h1>#30DaysMasterFlutter</h1>
 		<p><b>30</b> Days <b>Dart</b> and <b>Flutter</b> Challenge</p>
-		<p>FREE | Easy to Follow |  Project Based</p>
+		<p>FREE | Easy to Follow | Project Based</p>
 	</div>
 	<div class="intro">
 		<p>
@@ -42,8 +42,18 @@
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 2rem;
+		position: relative;
+		&::after {
+			content: '';
+			background: url('/images/30days/flutter_header_bg.svg') no-repeat center center;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 50%;
+			height: 250px; /* adjust this value to fit your design */
+			background-size: contain;
+		}
 		h1 {
-
 			color: var(--paper);
 		}
 		p {
