@@ -3,7 +3,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
-	import { navItems, siteTitle, siteDescription, siteAuthor } from '$lib/config';
+	import { navItems  } from '$lib/config';
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import Analytics from '$lib/components/Analytics.svelte';
@@ -30,21 +30,6 @@
 		preloadCode(...navRoutes);
 	});
 </script>
-
-<svelte:head>
-	<title>{siteTitle}</title>
-	<meta name="description" content={siteDescription} />
-	<meta
-		name="keywords"
-		content="Flutter, Dart, svelte, svelte kit, appwrite, github, open-source, 30-day challenge, project-based learning, app development, learn to code, mobile development"
-	/>
-	<meta name="author" content={siteAuthor} />
-	<meta name="robots" content="index, follow" />
-	<meta property="og:title" content={siteTitle} />
-	<meta property="og:description" content={siteDescription} />
-	<meta name="twitter:title" content={siteTitle} />
-	<meta name="twitter:description" content={siteDescription} />
-</svelte:head>
 
 <Analytics />
 
