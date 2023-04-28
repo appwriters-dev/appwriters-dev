@@ -1,4 +1,4 @@
-# Day 19: Advanced Persistence
+# Advanced Persistence
 
 Review the basics of Flutter app development from Day 8-18.
 

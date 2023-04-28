@@ -1,4 +1,4 @@
-# Day 29: CI/CD
+# CI/CD
 
 Continuous Integration and Continuous Deployment (CI/CD) are important concepts in software development that can help streamline the app development process and improve app quality. CI/CD involves automating the build, testing, and deployment of an app, which can reduce errors and save time.
 

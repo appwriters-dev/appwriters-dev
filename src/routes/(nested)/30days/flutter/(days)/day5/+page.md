@@ -1,4 +1,4 @@
-# Day 5: Dart Functions
+# Dart Functions
 
 1. Review the basics of functions in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#functions).
 

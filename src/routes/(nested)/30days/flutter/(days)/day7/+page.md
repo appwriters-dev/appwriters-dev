@@ -1,4 +1,4 @@
-# Day 7: Dart Packages
+# Dart Packages
 
 1. Review the basics of packages in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/packages).
 

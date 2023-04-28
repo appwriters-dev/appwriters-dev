@@ -1,4 +1,4 @@
-# Day 16: Networking - Part 1
+# Networking - Part 1
 
 - Review the basics of Dart programming from Day 1-5.
 - Learn how to make network requests in Flutter using the http package. This package allows you to easily make HTTP requests to an API and receive data in JSON format.

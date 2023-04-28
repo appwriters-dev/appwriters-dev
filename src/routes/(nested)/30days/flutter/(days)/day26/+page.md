@@ -1,4 +1,4 @@
-# Day 26: Accessibility
+# Accessibility
 
 Learn about the importance of accessibility in mobile app development and how to make your Flutter app accessible to everyone, including users with disabilities.
 

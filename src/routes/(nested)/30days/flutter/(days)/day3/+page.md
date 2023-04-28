@@ -1,4 +1,4 @@
-# Day 3: Variables and Data Types
+# Variables and Data Types
 
 1. Review the basics of variables and data types in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#variables).
 

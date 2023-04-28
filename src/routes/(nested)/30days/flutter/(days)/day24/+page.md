@@ -1,4 +1,4 @@
-# Day 24: Testing in Flutter
+# Testing in Flutter
 
 - Learn about the importance of testing and how it can help you catch errors and bugs early in the development process.
 - Understand the different types of testing in Flutter, including unit, widget, and integration testing.

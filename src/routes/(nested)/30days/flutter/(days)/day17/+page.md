@@ -1,4 +1,4 @@
-# Day 17: Networking - Part 2
+# Networking - Part 2
 
 - Review the basics of Flutter app development from Day 8-16.
 - Build on your knowledge of networking from Day 16 to create a more advanced app that fetches data from an API and displays it in a list.

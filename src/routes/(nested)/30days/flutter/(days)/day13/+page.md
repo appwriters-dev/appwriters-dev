@@ -1,4 +1,4 @@
-# Day 13: Advanced Navigation
+# Advanced Navigation
 
 1. Review the basics of Flutter app development from Day 8-12.
 

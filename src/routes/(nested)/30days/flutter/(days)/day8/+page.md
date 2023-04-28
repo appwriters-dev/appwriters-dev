@@ -1,4 +1,4 @@
-# Day 8: Flutter Basics - Part 1
+# Flutter Basics - Part 1
 
 1. Install Flutter and set up your development environment. You can follow the instructions on the Flutter website to do this (https://flutter.dev/docs/get-started/install).
 

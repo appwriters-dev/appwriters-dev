@@ -1,4 +1,4 @@
-# Day 15: Implementing State Management
+# Implementing State Management
 
 Review the basics of Flutter app development from Day 8-13.
 

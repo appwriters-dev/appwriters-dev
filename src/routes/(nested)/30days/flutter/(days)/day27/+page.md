@@ -1,4 +1,4 @@
-# Day 27: Internationalization
+# Internationalization
 
 Internationalization is the process of making your app available in multiple languages for users around the world. Localization is the process of adapting the app to a specific language or region. In Flutter, internationalization is achieved using the Intl package.
 

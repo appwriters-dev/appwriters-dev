@@ -1,4 +1,4 @@
-# Day 28: Monetization
+# Monetization
 
 - Learn about different monetization strategies for mobile apps, such as in-app purchases, advertisements, and subscriptions.
 - Explore how to integrate ads into your Flutter app using plugins like Google Mobile Ads.

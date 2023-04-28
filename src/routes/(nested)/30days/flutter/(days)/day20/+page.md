@@ -1,4 +1,4 @@
-# Day 20: Introduction to Animations
+# Introduction to Animations
 
 In this day, you will learn the basics of creating animations in Flutter. Animations can add a touch of interactivity and delight to your app, and Flutter provides a powerful framework for creating them.
 

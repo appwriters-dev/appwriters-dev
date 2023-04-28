@@ -1,4 +1,4 @@
-# Day 21: Advanced Animations
+# Advanced Animations
 
 In this day, you will learn about more advanced animation techniques in Flutter. These include complex animations, such as those involving multiple elements or custom shapes.
 

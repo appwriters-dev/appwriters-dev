@@ -1,4 +1,4 @@
-# Day 14: Understanding State Management
+# Understanding State Management
 
 In Flutter, state refers to the data that can change within a widget. State management is the process of managing this data and updating the user interface accordingly.
 

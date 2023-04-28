@@ -1,4 +1,4 @@
-# Day 12: Introduction to Navigation
+# Introduction to Navigation
 
 1. Review the basics of Flutter app development from Day 8-11.
 

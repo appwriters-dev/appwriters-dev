@@ -1,4 +1,4 @@
-# Day 9: Flutter Basics - Part 2
+# Flutter Basics - Part 2
 
 1. Review the basics of Flutter app development from Day 8.
 

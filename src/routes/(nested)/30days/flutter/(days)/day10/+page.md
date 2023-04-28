@@ -1,4 +1,4 @@
-# Day 10: User Interface Design - Part 1
+# User Interface Design - Part 1
 
 1. Review the basics of Flutter app development from Day 8-9.
 

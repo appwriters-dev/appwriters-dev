@@ -1,4 +1,4 @@
-# Day 30: Publishing
+# Publishing
 
 Learn how to publish a Flutter app to the App Store and/or Google Play Store. Understand the guidelines and requirements of the app stores, how to generate signing keys, and how to use the Flutter tools to generate release builds. 
 

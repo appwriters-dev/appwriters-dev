@@ -1,4 +1,4 @@
-# Day 25: Debugging in Flutter
+# Debugging in Flutter
 
 - Learn about the different types of errors and issues that can occur in a Flutter app and how to debug them effectively.
 - Use Flutter's built-in debugging tools, such as the Dart Observatory and the Flutter Inspector, to identify and fix errors in your code.

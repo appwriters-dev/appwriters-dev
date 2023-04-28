@@ -1,4 +1,4 @@
-# Day 6: Dart Classes
+# Dart Classes
 
 1. Review the basics of classes and objects in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#classes).
 

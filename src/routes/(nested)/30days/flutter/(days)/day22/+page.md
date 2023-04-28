@@ -1,4 +1,4 @@
-# Day 22: Flutter Plugins
+# Flutter Plugins
 
 - Learn about Flutter plugins and how they enable you to access native functionalities on Android and iOS devices.
 - Explore different plugins available in the Flutter ecosystem, such as camera, geolocation, and sensor plugins.

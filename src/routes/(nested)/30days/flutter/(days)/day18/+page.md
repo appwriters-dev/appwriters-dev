@@ -1,4 +1,4 @@
-# Day 18: Introduction to Persistence
+# Introduction to Persistence
 
 Review the basics of Flutter app development from Day 8-17.
 
