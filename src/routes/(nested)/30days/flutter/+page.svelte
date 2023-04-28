@@ -1,5 +1,5 @@
 <script>
-	import Content from './grid.svelte';
+	import Grid from './grid.svelte';
 	import { config } from '../config';
 	export let data;
 </script>
@@ -27,8 +27,16 @@
 		</p>
 	</div>
 	<div class="content">
-		<Content resources={data.resources} publishedDate={config.masterFlutter30Published} />
+		<Grid resources={data.resources} publishedDate={config.masterFlutter30Published} />
 	</div>
+
+	{#if data.resources.length >= 30}
+	<div class="resources">
+		<div class="content">
+			<h2>📚 Additional Resources</h2>
+		</div>
+	</div>
+	{/if}
 </section>
 
 <style lang="scss">
@@ -75,6 +83,10 @@
 			margin: 0 auto;
 			max-width: 62rem;
 		}
+	}
+	.resources {
+		background-color: var(--white);
+		padding: 2rem;
 	}
 	.content {
 		max-width: 80rem;

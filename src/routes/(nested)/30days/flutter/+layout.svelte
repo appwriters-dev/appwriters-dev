@@ -1,3 +1,7 @@
+<script>
+	import JoinDiscussion from "./joinDiscussion.svelte";
+
+</script>
 <svelte:head>
 	<meta
 		name="description"
@@ -21,3 +25,5 @@
 	/>
 </svelte:head>
 <slot />
+
+<JoinDiscussion />
