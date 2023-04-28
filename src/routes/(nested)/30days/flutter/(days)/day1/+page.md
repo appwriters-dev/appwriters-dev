@@ -21,7 +21,7 @@ This will create a new Flutter project with the default project structure. You c
 
 This will launch the app in a simulator or on a connected device. You're now ready to start building your first Flutter app!
 
-### Resources
+### 📚 Resources
 
 - Official Flutter Installation Guide: https://flutter.dev/docs/get-started/install
 - Flutter Installation Troubleshooting Guide: https://flutter.dev/docs/get-started/install/macos#troubleshooting
