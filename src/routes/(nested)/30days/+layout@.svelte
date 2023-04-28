@@ -2,10 +2,12 @@
 	<slot />
 </main>
 
-<style>
+<style lang="scss">
 	main {
-		max-width: 1400px;
-		margin: 0 auto;
-		padding: 20px;
+		max-width: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
 	}
 </style>

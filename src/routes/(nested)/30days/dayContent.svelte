@@ -3,10 +3,10 @@
 	export let nextReleased = true;
 </script>
 
-<div class="header">
-	<a href="/30days/flutter">Index</a>
+<header>
+	<h3>#30DaysMasterFlutter</h3>
 	<p>Day {day}</p>
-</div>
+</header>
 
 <div class="container">
 	<slot />
@@ -23,6 +23,24 @@
 </div>
 
 <style lang="scss">
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: var(--accent);
+		color: var(--paper);
+		margin-bottom: 2rem;
+		padding: 2rem;
+		h3 {
+			color: var(--paper);
+		}
+		p {
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+	}
 	.container {
 		width: 100%;
 		max-width: 42rem;
