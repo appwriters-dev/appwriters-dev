@@ -1,7 +1,3 @@
-<svelte:head>
-<title>Day 1: Setting up the Environment</title>
-</svelte:head>
-
 # Setting up the Environment
 
 -   Install the latest stable version of Dart and Flutter SDK.

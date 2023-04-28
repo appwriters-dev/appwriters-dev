@@ -1,7 +1,3 @@
-<svelte:head>
-<title>Day 2: First Dart app</title>
-</svelte:head>
-
 # First Dart app
 
 1. Open your preferred code editor or IDE.
