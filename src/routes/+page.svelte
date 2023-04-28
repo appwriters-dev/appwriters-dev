@@ -4,10 +4,6 @@
 	export let data;
 </script>
 
-<svelte:head>
-	<title>{siteTitle}</title>
-</svelte:head>
-
 <div class="hero">
 	<div class="content">
 		<p>
