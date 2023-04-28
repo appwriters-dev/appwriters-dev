@@ -1,5 +1,5 @@
 <script>
-	import Content from './content.svelte';
+	import Content from './Content.svelte';
 	import { config } from '../config';
 	export let data;
 </script>
