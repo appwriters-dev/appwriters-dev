@@ -2,27 +2,27 @@
 	export let resources;
 </script>
 
-<svelte:head>
-	<title>30 Days of Master Flutter | Appwriters</title>
-</svelte:head>
 <div class="container">
 	<div class="grid">
 		{#each resources as resource, index}
-			<div class="grid-item">
-				<!-- <img src={resource.imageUrl} alt="Day {index + 1}" /> -->
-				<h4>Day {index + 1}: {resource.title}</h4>
-				<ul>
-					{#each resource.objectives as objective}
-						<li>{objective}</li>
-					{/each}
-				</ul>
-				<a href={resource.link}>Learn More</a>
-			</div>
+		<a class="grid-item" href="{resource.link}">
+			<!-- <div class="grid-item"> -->
+					<!-- <img src={resource.imageUrl} alt="Day {index + 1}" /> -->
+					<span class="tag primary">Day {index + 1}</span>
+					<h4>{resource.title}</h4>
+					<ul>
+						{#each resource.objectives as objective}
+							<li>{objective}</li>
+						{/each}
+					</ul>
+					<!-- <a class="button" href={resource.link}>Learn More</a> -->
+				<!-- </div>  -->
+			</a>
 		{/each}
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.container {
 		padding: 2rem;
 		box-sizing: border-box;
@@ -41,6 +41,18 @@
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		padding: 20px;
 		border-radius: 5px;
+		position: relative;
+		.tag {
+			position: absolute;
+			top: 0;
+			left: 0;
+			&.primary {
+				background-color: var(--primary);
+				color: var(--paper);
+				padding: 2px 8px;
+				border-end-end-radius: 2px;
+			}
+		}
 	}
 
 	.grid-item img {
@@ -50,7 +62,7 @@
 	}
 
 	.grid-item h4 {
-		margin-top: 10px;
+		margin-top: 30px;
 		margin-bottom: 5px;
 	}
 
@@ -59,11 +71,13 @@
 		margin-bottom: 10px;
 	}
 
-	.grid-item a {
+	 a {
 		display: inline-block;
 		text-decoration: none;
-		color: #2196f3;
-		font-weight: bold;
-		margin-top: 5px;
+		color: inherit;
+
+		&:hover {
+			background-color: var(--backgroundDark);
+		}
 	}
 </style>

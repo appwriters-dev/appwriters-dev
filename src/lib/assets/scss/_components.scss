@@ -16,7 +16,18 @@
 		padding: 2rem;
 	}
 }
+.button, a.button {
+	background: var(--accent);
+	color: var(--paper);
+	padding: 1rem;
+	border-radius: 8px;
+	font-weight: 500;
+	font-size: 0.8em;
 
+	&:hover {
+		background-blend-mode: color-dodge;
+	}
+}
 .pagination {
 	margin: 0 0 1rem;
 

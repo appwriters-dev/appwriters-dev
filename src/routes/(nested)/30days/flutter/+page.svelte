@@ -1,8 +1,12 @@
 <script>
-	import Content from './Content.svelte';
+	import Content from './content.svelte';
 	import { config } from '../config';
 	export let data;
 </script>
+
+<svelte:head>
+	<title>30 Days to Master Flutter | Appwriters</title>
+</svelte:head>
 
 <section>
 	<div class="hero">
