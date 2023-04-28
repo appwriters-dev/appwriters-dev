@@ -75,15 +75,17 @@
 			background-color: #111111aa;
 			z-index: 0;
 		}
-
-		color: var(--primary);
 		h1 {
 			z-index: 100;
 		}
 		p {
+			color: var(--paper);
 			z-index: 200;
 			text-transform: uppercase;
 			max-width: 60rem;
+			b {
+				color: var(--primary);
+			}
 		}
 	}
 	.intro {
