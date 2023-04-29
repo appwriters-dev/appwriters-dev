@@ -33,6 +33,20 @@
 			</div>
 		</div>
 	</div>
+	{#if data.daysReleased <= 30}
+		<section class="active-day">
+			<article>
+				<h3>Today - {data.resources[data.daysReleased - 1].title}</h3>
+				<ul>
+					{#each data.resources[data.daysReleased - 1].objectives as objective}
+						<li>{objective}</li>
+					{/each}
+				</ul>
+				<a class="button" href={data.resources[data.daysReleased - 1].link}>begin </a>
+			</article>
+		</section>
+	{/if}
+
 	<div class="content">
 		<Grid resources={data.resources} />
 	</div>
@@ -86,6 +100,15 @@
 			b {
 				color: var(--primary);
 			}
+		}
+	}
+	.active-day {
+		// box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		background-color: var(--white);
+		article {
+			max-width: 42rem;
+			margin: 0 auto;
+			padding: 2rem;
 		}
 	}
 	.intro {
