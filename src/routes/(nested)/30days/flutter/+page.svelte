@@ -103,8 +103,12 @@
 		}
 	}
 	.active-day {
-		// box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		background-color: var(--white);
+		text-align: center;
+		ul {
+			
+			list-style: none;
+		}
 		article {
 			max-width: 42rem;
 			margin: 0 auto;
