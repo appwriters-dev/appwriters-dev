@@ -12,3 +12,11 @@
 	<slot />
 </DayContent>
 <Footer />
+
+<style lang="scss">
+	:global(blockquote) {
+		background-color: var(--accent);
+		padding: 1rem 2rem;
+		color: var(--paper);
+	}
+</style>
