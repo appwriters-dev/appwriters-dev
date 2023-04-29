@@ -21,23 +21,14 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Variables and Data Types",
+        "title": "Variables, Data Types, Operators and Expressions",
         "objectives": [
             "Learn about the different data types in Dart",
             "Understand how to declare and initialize variables",
-            "Use variables and data types in your Flutter app"
+            "Learn about the different operators in Dart",
+            "Understand how to use expressions and statements"
         ],
         "link": "/30days/flutter/day3"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Operators and Expressions",
-        "objectives": [
-            "Learn about the different operators in Dart",
-            "Understand how to use expressions and statements",
-            "Use operators and expressions in your Flutter app"
-        ],
-        "link": "/30days/flutter/day4"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -46,6 +37,16 @@ export const resources = [
             "Learn about functions in Dart",
             "Understand function parameters and return types",
             "Use functions in your Flutter app"
+        ],
+        "link": "/30days/flutter/day4"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Asynchronous Programming",
+        "objectives": [
+            "Understand the basics of asynchronous programming in Dart",
+            "Learn about the async, await, and Future keywords",
+            "Handle errors and timeouts when working with Future objects"
         ],
         "link": "/30days/flutter/day5"
     },
