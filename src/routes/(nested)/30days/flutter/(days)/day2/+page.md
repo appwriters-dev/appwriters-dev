@@ -6,7 +6,7 @@ By the end of this day, you should have a basic understanding of the Dart syntax
 > 
 > Create a Dart console application that asks the user for their name and prints a greeting message to the console.
 > 
-> `hello <name>`
+> `Hello <name>!`
 
 To Get user input in Dart, you can use the `stdin.readLineSync()` function. For example:
 
@@ -14,9 +14,9 @@ To Get user input in Dart, you can use the `stdin.readLineSync()` function. For 
 import 'dart:io';
 
 void main() {
-  print('What is your name?');
-  String name = stdin.readLineSync();
-  print('Hello $name!');
+  print("Enter anything:");
+  String? input  = stdin.readLineSync();
+  print("You entered: ${input}");
 }
 ```
 
