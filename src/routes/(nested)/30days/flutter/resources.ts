@@ -66,33 +66,32 @@ export const resources = [
         "objectives": [
             "Learn about packages in Dart",
             "Understand how to use existing packages",
-            "Create your own package and publish it to pub.dev"
         ],
         "link": "/30days/flutter/day7"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Flutter Basics - Part 1",
+        "title": "Networking in Dart",
         "objectives": [
-            "Understand the basic structure of a Flutter app",
-            "Learn about widgets and how to use them",
-            "Create a simple Flutter app"
+            "Study the basics of networking in Dart",
+            "Learn how to make HTTP requests",
+            "Learn how to parse JSON data"
         ],
         "link": "/30days/flutter/day8"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Flutter Basics - Part 2",
+        "title": "Hello Flutter",
         "objectives": [
-            "Understand layout in Flutter",
-            "Learn about Material Design and Cupertino",
-            "Create a more complex Flutter app"
+            "Understand the basic structure of a Flutter app",
+            "Learn about widgets and how to use them",
+            "Create a simple Flutter app"
         ],
         "link": "/30days/flutter/day9"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "User Interface Design - Part 1",
+        "title": "User Interface Design",
         "objectives": [
             "Learn about the basics of UI design",
             "Understand typography, color, and layout",
@@ -102,13 +101,23 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "User Interface Design - Part 2",
+        "title": "Assets: Images and Fonts",
         "objectives": [
-            "Learn about advanced UI design concepts",
-            "Understand how to use animations and gestures",
-            "Apply advanced UI design principles to your Flutter app"
+            "Learn how to add images and fonts to your Flutter app",
+            "Understand how to use the pubspec.yaml file",
+            "Add images and fonts to your Flutter app"
         ],
         "link": "/30days/flutter/day11"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Stateful Widgets",
+        "objectives": [
+            "Learn about state and StatefulWidget",
+            "Understand how to use setState()",
+            "Implement stateful widgets in your Flutter app"
+        ],
+        "link": "/30days/flutter/day12"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -116,17 +125,7 @@ export const resources = [
         "objectives": [
             "Understand how to navigate between screens in Flutter",
             "Learn about the Navigator widget and routes",
-            "Implement basic navigation in your Flutter app"
-        ],
-        "link": "/30days/flutter/day12"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Advanced Navigation",
-        "objectives": [
-            "Learn about advanced navigation patterns in Flutter",
-            "Understand how to use named routes and arguments",
-            "Implement advanced navigation in your Flutter app"
+            "Implement navigation in your Flutter app"
         ],
         "link": "/30days/flutter/day13"
     },

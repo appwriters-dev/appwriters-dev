@@ -1,3 +1,20 @@
+# Image and Font Assets
+
+1. Learn about adding image assets in a Flutter app and how to display them.
+2. Understand the different types of image assets that can be added, such as PNG, JPEG, and GIF.
+3. Experiment with different ways of displaying images, such as using the Image widget, NetworkImage widget, and AssetImage widget.
+4. Learn about adding custom fonts to a Flutter app and how to use them in the app.
+5. Explore the different types of font files that can be added, such as TrueType fonts and OpenType fonts.
+6. Use the FontFamily and FontWeight properties to customize the display of text in the app.
+
+**Resources:**
+
+1. Flutter documentation on adding assets: https://flutter.dev/docs/development/ui/assets-and-images
+2. Flutter and Dart tutorial on using images in Flutter: https://medium.com/flutter-community/flutter-image-widget-decoded-e319d21a044d
+3. Flutter and Dart tutorial on using custom fonts in Flutter: https://medium.com/flutter-community/working-with-custom-fonts-in-flutter-275ccc2ea8f6
+4. Google Fonts library for downloading and using fonts in a Flutter app: https://pub.dev/packages/google_fonts
+5. Flutter and Dart tutorial on creating beautiful text in Flutter using custom fonts: https://medium.com/flutter-community/creating-beautiful-text-in-flutter-3bd5f8531efe
+
 # User Interface Design - Part 2
 
 1. Review the basics of Flutter app development from Day 8-10.
@@ -49,49 +66,5 @@ GridView.count(
 )
 ```
 
-3. Custom User Interface:
 
-```dart
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('My App'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Image.network('https://picsum.photos/250?image=9'),
-            SizedBox(height: 20),
-            Text(
-              'Welcome to my app!',
-              style: TextStyle(fontSize: 24),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text('Get Started'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-```
-
-### Resources
-
-
-1. Official Flutter documentation on Layouts: https://flutter.dev/docs/development/ui/layout
-2. Flutter Widget Catalog: https://flutter.dev/docs/development/ui/widgets
-3. Flutter Layout Cheat Sheet: https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
-4. Flutter by Example - Layouts: https://flutterbyexample.com/layouts
-5. Flutter Cookbook - Layouts: https://flutter.dev/docs/cookbook/layout
-6. Flutter for Designers - Layouts: https://flutterfordesigners.com/
-7. Figma to Flutter: https://www.figma.com/flutter/
-8. Material Design Guidelines: https://material.io/design
-
-By the end of this day, you should have a better understanding of how to use advanced widgets to create custom user interfaces in your app.
+By the end of this day, you should have a better understanding of how to use image and font assets in your Flutter application.

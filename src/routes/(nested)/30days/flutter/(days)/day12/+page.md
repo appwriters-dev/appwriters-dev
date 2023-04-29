@@ -1,80 +1,16 @@
-# Introduction to Navigation
+# Stateful Widgets
 
-1. Review the basics of Flutter app development from Day 8-11.
+1. Learn about Stateful Widgets in Flutter, which can hold and manage mutable state.
+2. Understand the difference between StatelessWidget and StatefulWidget and when to use each.
+3. Learn how to create a basic Stateful Widget and how to handle state changes within it.
+4. Explore how to use setState() to update state in a Stateful Widget.
+5. Experiment with different lifecycle methods of Stateful Widgets such as initState(), didUpdateWidget(), and dispose().
 
-2. Learn about navigation in a Flutter app. Navigation refers to the ability to move between screens or pages in an app.
+**Resources:**
 
-3. Learn about the Navigator widget, which is used to manage the stack of screens in a Flutter app.
+1. Flutter documentation on Stateful Widgets: https://flutter.dev/docs/development/ui/widgets/stateful-widget
+2. Flutter and Dart tutorial on Stateless and Stateful Widgets: https://medium.com/flutter-community/flutter-stateful-vs-stateless-db325309deae
+3. Flutter and Dart tutorial on using setState() with Stateful Widgets: https://medium.com/flutter-community/flutter-stateful-widgets-what-to-know-before-declaring-them-756e6626a510
+4. Flutter and Dart tutorial on Lifecycle Methods in Stateful Widgets: https://flutter.dev/docs/cookbook/development/ui/working-with-widget-lifecycles
+5. Flutter and Dart tutorial on Advanced State Management Techniques: https://medium.com/flutter-community/flutter-advanced-state-management-8995d5fcd938
 
-4. Create a simple app with two screens, one for the home screen and one for a detail screen. Use the Navigator widget to navigate between the two screens.
-
-```dart
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Navigation Example',
-      home: HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Screen'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          child: Text('Go to Detail Screen'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => DetailScreen()),
-            );
-          },
-        ),
-      ),
-    );
-  }
-}
-
-class DetailScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Detail Screen'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          child: Text('Go back to Home Screen'),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
-    );
-  }
-}
-```
-
-In this example, we have two screens: `HomeScreen` and `DetailScreen`. The `HomeScreen` contains an `ElevatedButton` that, when pressed, navigates to the `DetailScreen`. The `DetailScreen` contains another `ElevatedButton` that, when pressed, navigates back to the `HomeScreen` using the `Navigator.pop` method.
-
-### Resources
-
-1. Flutter's official documentation on Navigation: https://flutter.dev/docs/development/ui/navigation
-2. Flutter Navigation Basics Tutorial: https://pusher.com/tutorials/flutter-navigation-basics
-3. Flutter Navigation and Routing: https://www.raywenderlich.com/7560981-flutter-navigation-and-routing-getting-started
-4. Flutter Navigation Drawer Tutorial: https://www.simplifiedcoding.net/flutter-navigation-drawer-tutorial/
-5. Flutter Page Navigation Tutorial: https://www.simplifiedcoding.net/flutter-page-navigation-tutorial/
-
-By the end of this day, you should have a basic understanding of how to implement navigation in a Flutter app using the Navigator widget.
