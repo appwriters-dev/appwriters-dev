@@ -5,6 +5,7 @@ By the end of this day, you should be able to create and run a new dart console 
 > **Project**
 > 
 > Create an run default **Dart** console application
+> 
 
 -   Install the latest stable version of Dart and Flutter SDK.
     -   For macOS or Linux, you can download the Flutter SDK from the official website ([https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)). Extract the compressed files and add the flutter tool to your path.
@@ -22,6 +23,7 @@ This will should display the status of your Flutter installation and list any re
 ### 📚 Resources
 
 - [Official Flutter Installation Guide](https://flutter.dev/docs/get-started/install)
+- [Dart Tutorial Install Dart on Windows](https://dart-tutorial.com/introduction-and-basics/dart-install/)
 - [Flutter Doctor](https://flutter.dev/docs/reference/flutter-cli#flutter-doctor)
 - [Visual Studio Code Installation](https://code.visualstudio.com/docs/setup/setup-overview)
 - [Flutter and Dart plugins for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
