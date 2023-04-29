@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="content">
-		<Grid resources={data.resources} publishedDate={config.masterFlutter30Published} />
+		<Grid resources={data.resources} />
 	</div>
 
 	{#if data.resources.length >= 30}
