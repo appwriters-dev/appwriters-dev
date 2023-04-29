@@ -1,4 +1,4 @@
-# Image and Font Assets
+# Assets: Images and Fonts
 
 1. Learn about adding image assets in a Flutter app and how to display them.
 2. Understand the different types of image assets that can be added, such as PNG, JPEG, and GIF.

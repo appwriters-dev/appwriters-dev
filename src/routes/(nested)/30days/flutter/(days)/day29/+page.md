@@ -1,14 +1,16 @@
-# CI/CD
+# Build Flutter App
 
-Continuous Integration and Continuous Deployment (CI/CD) are important concepts in software development that can help streamline the app development process and improve app quality. CI/CD involves automating the build, testing, and deployment of an app, which can reduce errors and save time.
+1. Learn about the process of building a Flutter app for production.
+2. Understand the different build modes available in Flutter, such as debug, profile and release modes.
+3. Explore the steps involved in creating a release build of a Flutter app.
+4. Learn about the different app signing options available for Android and iOS apps.
 
-There are a number of CI/CD tools available for Flutter, including Codemagic, GitHub Actions, and Travis. Each of these tools has its own strengths and weaknesses, and you may need to experiment with different tools to find the best fit for your needs.
+**Resources:**
 
-To get started with CI/CD for Flutter, you can refer to the following resources:
+1. Flutter documentation on building and releasing a Flutter app: https://flutter.dev/docs/deployment
+2. Flutter and Dart tutorial on creating a release build of a Flutter app: https://medium.com/flutter-community/how-to-build-a-release-apk-in-flutter-85d6d1f5931
+3. Android documentation on signing your app: https://developer.android.com/studio/publish/app-signing
+4. Apple documentation on app distribution and code signing: https://developer.apple.com/documentation/security/code_signing
+5. Fastlane documentation for automating the app release process: https://docs.fastlane.tools/
+6. Codemagic documentation for continuous integration and delivery for Flutter: https://docs.codemagic.io/
 
-### Resources
-
-- [Flutter CI/CD overview](https://flutter.dev/docs/deployment/cd)
-- [Codemagic documentation](https://docs.codemagic.io/)
-- [GitHub Actions for Flutter](https://github.com/marketplace/actions/flutter-action)
-- [Travis CI for Flutter](https://docs.travis-ci.com/user/languages/flutter/)

@@ -1,19 +1,17 @@
-# Understanding State Management
+# Alerts, Dialogs, and Snackbar
 
-In Flutter, state refers to the data that can change within a widget. State management is the process of managing this data and updating the user interface accordingly.
+1. Learn about alerts, dialogs, and snackbar in Flutter and their importance in providing context and feedback to users.
+2. Understand how to use Flutter's built-in alert and dialog widgets, such as AlertDialog and SimpleDialog, as well as the SnackBar widget.
+3. Explore third-party packages that provide additional functionality for alerts, dialogs, and snackbar, such as the rflutter_alert package and the flushbar package.
+4. Implement a simple app with alerts, dialogs, and snackbar, such as a confirmation dialog before deleting an item or a snackbar for showing a success message.
 
-Learn about the different types of state management in Flutter, including setState, BLoC (Business Logic Component), and Provider.
+## Resources
 
-Understand how stateful widgets and stateless widgets work and when to use them.
+1. Flutter documentation on alerts and dialogs: https://flutter.dev/docs/cookbook/design/dialogs
+2. Flutter documentation on snackbar: https://flutter.dev/docs/cookbook/design/snackbars
+3. Flutter and Dart tutorial on creating dialogs in Flutter: https://www.youtube.com/watch?v=VC-h9YcmiSU
+4. Flutter and Dart tutorial on using the rflutter_alert package: https://www.youtube.com/watch?v=BZOkxlIdfVY
+5. Dart package for the rflutter_alert library: https://pub.dev/packages/rflutter_alert
+6. Flutter and Dart tutorial on using the flushbar package: https://www.youtube.com/watch?v=tx1NkD_xKHQ
+7. Dart package for the flushbar library: https://pub.dev/packages/flushbar
 
-### Resources
-
-- Flutter documentation on state management: https://flutter.dev/docs/development/data-and-backend/state-mgmt/intro
-- Official Flutter documentation on stateful and stateless widgets: https://flutter.dev/docs/development/ui/widgets-intro
-- A comprehensive guide on Flutter state management techniques: https://blog.codemagic.io/flutter-state-management-guide/
-- Comparison of popular Flutter state management libraries: https://medium.com/flutter-community/flutter-state-management-setstate-provider-bloc-and-redux-comparison-5c7c5f76625f
-- Flutter's official GetX library for state management: https://pub.dev/packages/get
-- Flutter's official Provider package for state management: https://pub.dev/packages/provider
-- Flutter's official BLoC package for state management: https://bloclibrary.dev/
-
-By the end of this day, you should have a basic understanding of state management in Flutter and the different approaches to it.

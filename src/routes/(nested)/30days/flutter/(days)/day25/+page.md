@@ -1,14 +1,15 @@
-# Debugging in Flutter
+# Introduction to Animations
 
-- Learn about the different types of errors and issues that can occur in a Flutter app and how to debug them effectively.
-- Use Flutter's built-in debugging tools, such as the Dart Observatory and the Flutter Inspector, to identify and fix errors in your code.
-- Learn how to use logging and print statements to debug your app and troubleshoot issues.
-- Practice debugging your app by identifying and fixing errors and issues.
+In this day, you will learn the basics of creating animations in Flutter. Animations can add a touch of interactivity and delight to your app, and Flutter provides a powerful framework for creating them.
+
+Here are the steps to follow:
+
+1. Review the basics of Flutter app development from Day 8-19.
+2. Learn about animations in Flutter and how they work.
+3. Experiment with different types of animations, such as opacity and position animations, using the Animation and Tween classes.
+4. Create a simple app with animations, such as a button that changes color when pressed.
 
 ### Resources
 
-- Flutter Debugging Guide: https://flutter.dev/docs/testing/debugging
-- Debugging Flutter Apps on VS Code: https://flutter.dev/docs/development/tools/vs-code/debugging
-- Debugging Flutter Apps on Android Studio: https://flutter.dev/docs/development/tools/android-studio/debugging
-
-By the end of this day, you should have a better understanding of how to debug errors and issues in a Flutter app and troubleshoot issues effectively.
+- Flutter Animation Overview: https://flutter.dev/docs/development/ui/animations/overview
+- Flutter Animations Tutorial: https://flutter.dev/docs/development/ui/animations/tutorial

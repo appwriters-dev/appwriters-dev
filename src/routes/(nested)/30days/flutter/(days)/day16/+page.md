@@ -1,17 +1,16 @@
-# Networking - Part 1
+# Navigator 2.0 and the Go Router
 
-- Review the basics of Dart programming from Day 1-5.
-- Learn how to make network requests in Flutter using the http package. This package allows you to easily make HTTP requests to an API and receive data in JSON format.
-- Experiment with different types of requests, such as GET and POST requests, and learn how to handle errors and exceptions.
+1. Learn about Navigator 2.0, a new version of the Navigator widget in Flutter that simplifies app navigation and supports deep linking.
+2. Understand the principles of declarative routing and how it differs from imperative routing.
+3. Explore the new features and APIs provided by Navigator 2.0, such as the Router and RouteInformationParser classes.
+4. Learn about the Go Router, a third-party package that provides a declarative approach to routing in Flutter.
+5. Compare and contrast the Navigator 2.0 and Go Router approaches to app navigation.
+6. Implement a simple app using Navigator 2.0 and/or the Go Router.
 
-### Resources
+## Resources
 
-- Flutter http package documentation: https://pub.dev/packages/http
-- Flutter network requests tutorial: https://flutter.dev/docs/cookbook/networking
-- Flutter documentation on HTTP requests: https://flutter.dev/docs/cookbook/networking/fetch-data
-- Http package documentation: https://pub.dev/packages/http
-- Flutter tutorial on HTTP requests and parsing JSON data: https://medium.com/flutterdevs/parsing-complex-json-in-flutter-747c46655f51
-- Tutorial on integrating APIs in Flutter apps: https://medium.com/flutter-community/integrate-an-api-in-your-flutter-app-dc1a9a825dcf
-- Video tutorial on HTTP requests in Flutter: https://www.youtube.com/watch?v=yCTHGK1lOT0
-
-By the end of this day, you should have a basic understanding of how to make network requests in Flutter and how to work with the `http` package.
+1. Flutter documentation on Navigator 2.0: https://flutter.dev/docs/development/ui/navigation/navigation-rail
+2. Flutter and Dart tutorial on declarative routing in Flutter: https://www.filledstacks.com/post/declarative-routing-in-flutter-using-auto-route/
+3. Dart package for the Go Router: https://pub.dev/packages/go_router
+4. Flutter and Dart tutorial on using the Go Router for app navigation: https://medium.com/flutter-community/declarative-routing-in-flutter-with-go-router-f6b377f7ad53
+5. Flutter and Dart tutorial on implementing Navigator 2.0 in a Flutter app: https://medium.com/flutter/learning-flutters-new-navigation-and-routing-system-7c9068155ade

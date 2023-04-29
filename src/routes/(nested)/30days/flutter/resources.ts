@@ -121,103 +121,43 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
+        "title": "Forms and User Input",
+        "objectives": [
+            "Learn about forms and user input and their importance",
+            "Understand how to use text fields and text editing controllers",
+            "Implement forms and accept user input in your Flutter app"
+        ],
+        "link": "/30days/flutter/day13"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Alerts, Dialogs and Snackbar",
+        "objectives": [
+            "Learn when to alerts, dialogs, and snackbar show meaningful messages to users",
+            "Understand how to use the showDialog() method",
+            "Implement alerts, dialogs, and snackbar in your Flutter app"
+        ],
+        "link": "/30days/flutter/day14"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Introduction to Navigation",
         "objectives": [
             "Understand how to navigate between screens in Flutter",
             "Learn about the Navigator widget and routes",
             "Implement navigation in your Flutter app"
         ],
-        "link": "/30days/flutter/day13"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Understanding State Management",
-        "objectives": [
-            "Learn about the different types of state in Flutter",
-            "Understand the importance of managing state",
-            "Choose the right state management solution for your Flutter app"
-        ],
-        "link": "/30days/flutter/day14"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Implementing State Management",
-        "objectives": [
-            "Learn how to implement state management in Flutter",
-            "Understand how to use setState() and streams",
-            "Implement a state management solution in your Flutter app"
-        ],
         "link": "/30days/flutter/day15"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Networking Part 1",
+        "title": "Navigator 2.0 and the Go Router",
         "objectives": [
-            "Learn about networking in Flutter",
-            "Understand how to make HTTP requests",
-            "Implement basic networking in your Flutter app"
+            "Understand declarative navigation in Flutter",
+            "Learn about the Go Router",
+            "Implement navigation in your Flutter app using Go Router"
         ],
         "link": "/30days/flutter/day16"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Networking Part 2",
-        "objectives": [
-            "Learn about advanced networking concepts in Flutter",
-            "Understand how to handle errors and exceptions",
-            "Implement advanced networking in your Flutter app"
-        ],
-        "link": "/30days/flutter/day17"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Introduction to Persistence",
-        "objectives": [
-            "Learn about data persistence in Flutter",
-            "Understand different persistence options",
-            "Implement basic data persistence in your Flutter app"
-        ],
-        "link": "/30days/flutter/day18"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Advanced Persistence",
-        "objectives": [
-            "Learn about advanced persistence concepts in Flutter",
-            "Understand how to use databases and key-value stores",
-            "Implement advanced data persistence in your Flutter app"
-        ],
-        "link": "/30days/flutter/day19"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Introduction to Animations",
-        "objectives": [
-            "Learn about animations in Flutter",
-            "Understand different types of animations",
-            "Implement basic animations in your applications"
-        ],
-        "link": "/30days/flutter/day20"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Advance Animations",
-        "objectives": [
-            "Learn about advanced animation concepts in Flutter",
-            "Understand how to use AnimationController and AnimationBuilder",
-            "Implement advanced animations in your Flutter app"
-        ],
-        "link": "/30days/flutter/day21"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Flutter Plugins",
-        "objectives": [
-            "Learn how to use plugins in Flutter",
-            "Understand how to create and use plugins",
-            "Implement plugins in your Flutter app"
-        ],
-        "link": "/30days/flutter/day22"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -227,7 +167,107 @@ export const resources = [
             "Understand how to create and use libraries",
             "Implement libraries in your Flutter app"
         ],
+        "link": "/30days/flutter/day17"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Exceptions and Error Handling",
+        "objectives": [
+            "Learn about the importance of exception handling and error management",
+            "Understand how to use try, catch, and finally",
+            "Implement exception handling in your Flutter app"
+        ],
+        "link": "/30days/flutter/day18"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Networking Part 1",
+        "objectives": [
+            "Learn about networking in Flutter",
+            "Understand how to make HTTP requests",
+            "Implement basic networking in your Flutter app"
+        ],
+        "link": "/30days/flutter/day19"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Networking Part 2",
+        "objectives": [
+            "Learn about advanced networking concepts in Flutter",
+            "Understand how to handle errors and exceptions",
+            "Implement advanced networking in your Flutter app"
+        ],
+        "link": "/30days/flutter/day20"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Understanding State Management",
+        "objectives": [
+            "Learn about the different types of state in Flutter",
+            "Understand the importance of managing state",
+            "Choose the right state management solution for your Flutter app"
+        ],
+        "link": "/30days/flutter/day21"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Implementing State Management",
+        "objectives": [
+            "Learn how to implement state management in Flutter",
+            "Understand how to use setState() and streams",
+            "Implement a state management solution in your Flutter app"
+        ],
+        "link": "/30days/flutter/day22"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Introduction to Persistence",
+        "objectives": [
+            "Learn about data persistence in Flutter",
+            "Understand different persistence options",
+            "Implement basic data persistence in your Flutter app"
+        ],
         "link": "/30days/flutter/day23"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Advanced Persistence",
+        "objectives": [
+            "Learn about advanced persistence concepts in Flutter",
+            "Understand how to use databases and key-value stores",
+            "Implement advanced data persistence in your Flutter app"
+        ],
+        "link": "/30days/flutter/day24"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Introduction to Animations",
+        "objectives": [
+            "Learn about animations in Flutter",
+            "Understand different types of animations",
+            "Implement basic animations in your applications"
+        ],
+        "link": "/30days/flutter/day25"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Flutter Plugins",
+        "objectives": [
+            "Learn how to use plugins in Flutter",
+            "Understand how to create and use plugins",
+            "Implement plugins in your Flutter app"
+        ],
+        "link": "/30days/flutter/day26"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Debugging and Dev Tools in Flutter",
+        "objectives": [
+            "Learn about debugging in Flutter",
+            "Understand how to use the debugger and DevTools",
+            "Implement debugging techniques in your Flutter app"
+        ],
+        "link": "/30days/flutter/day27"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -237,55 +277,15 @@ export const resources = [
             "Understand how to write and run tests",
             "Implement tests in your Flutter app"
         ],
-        "link": "/30days/flutter/day24"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Debugging in Flutter",
-        "objectives": [
-            "Learn about debugging in Flutter",
-            "Understand how to use the debugger and DevTools",
-            "Implement debugging techniques in your Flutter app"
-        ],
-        "link": "/30days/flutter/day25"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Accessibility",
-        "objectives": [
-            "Learn about accessibility in Flutter",
-            "Understand how to make your app accessible",
-            "Implement accessibility features in your Flutter app"
-        ],
-        "link": "/30days/flutter/day26"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Internationalization",
-        "objectives": [
-            "Learn about internationalization in Flutter",
-            "Understand how to support different languages and locales",
-            "Implement internationalization in your Flutter app"
-        ],
-        "link": "/30days/flutter/day27"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Monetization",
-        "objectives": [
-            "Learn about monetization strategies in Flutter",
-            "Understand how to integrate ads and in-app purchases",
-            "Implement monetization in your Flutter app"
-        ],
         "link": "/30days/flutter/day28"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "CI/CD",
+        "title": "Build Flutter App",
         "objectives": [
-            "Learn about continuous integration and delivery in Flutter",
-            "Understand how to set up a CI/CD pipeline",
-            "Implement CI/CD in your Flutter app"
+            "Learn the process of building a Flutter app for production",
+            "Understand how to prepare your app for release",
+            "Build your Flutter app for production"
         ],
         "link": "/30days/flutter/day29"
     },

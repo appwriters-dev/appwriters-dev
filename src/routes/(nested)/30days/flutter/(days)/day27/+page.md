@@ -1,19 +1,14 @@
-# Internationalization
+# Debugging and Dev Tools in Flutter
 
-Internationalization is the process of making your app available in multiple languages for users around the world. Localization is the process of adapting the app to a specific language or region. In Flutter, internationalization is achieved using the Intl package.
-
-Learn about internationalization and localization in Flutter. You can start by reading the official documentation:
-
-- [Internationalizing Flutter apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
-- [Localizing Flutter apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization#localizing-for-multiple-languages)
-
-Explore how to make your app available in multiple languages. You can use the Intl package to format dates, times, and numbers in a user's local format. You can also translate text strings into different languages using the Flutter intl_translation tool.
-
-Implement support for multiple languages in your Flutter app. You can create separate JSON files for each language, and load the appropriate file based on the user's preferred language. You can also use the flutter_localizations package to provide translations for built-in widgets and strings.
+- Learn about the different types of errors and issues that can occur in a Flutter app and how to debug them effectively.
+- Use Flutter's built-in debugging tools, such as the Dart Observatory and the Flutter Inspector, to identify and fix errors in your code.
+- Learn how to use logging and print statements to debug your app and troubleshoot issues.
+- Practice debugging your app by identifying and fixing errors and issues.
 
 ### Resources
 
-- [Intl package documentation](https://pub.dev/packages/intl)
-- [Flutter internationalization video tutorial](https://www.youtube.com/watch?v=yZysgRMX0aE)
-- [Flutter internationalization code lab](https://codelabs.developers.google.com/codelabs/flutter-i18n/index.html)
-- [Flutter internationalization example app](https://github.com/alexvolov/flutter_internationalization_example)
+- Flutter Debugging Guide: https://flutter.dev/docs/testing/debugging
+- Debugging Flutter Apps on VS Code: https://flutter.dev/docs/development/tools/vs-code/debugging
+- Debugging Flutter Apps on Android Studio: https://flutter.dev/docs/development/tools/android-studio/debugging
+
+By the end of this day, you should have a better understanding of how to debug errors and issues in a Flutter app and troubleshoot issues effectively.
