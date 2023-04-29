@@ -19,4 +19,8 @@
 		padding: 1rem 2rem;
 		color: var(--paper);
 	}
+	:global(blockquote a) {
+		color: var(--paper);
+		text-decoration: underline;
+	}
 </style>

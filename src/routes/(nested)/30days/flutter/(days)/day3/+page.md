@@ -78,8 +78,13 @@ This will print the message `You are an adult.` to the console, since the age va
 
 9. Experiment with different operators and expressions, and write more complex conditional statements using logical operators `(&&, ||, !)`.
 
+> For more project ideas:
+> 
+> - [MsterFlutter: Operators](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls05-operators)
+> - [MsterFlutter: Dart IO](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls03-standard-io)
+> - [MsterFlutter: Control Flow](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls06-control-flow)
 
-### Resources
+## Resources
 
 1. [Dart Tutorial Basics](https://dart-tutorial.com/introduction-and-basics/)
 2. [Dart language tour](https://dart.dev/guides/language/language-tour)
