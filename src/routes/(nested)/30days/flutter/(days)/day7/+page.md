@@ -1,93 +1,34 @@
-# Dart Packages
+# Dependency Management
+
+Dependency management is an essential aspect of any software development project. It involves managing the external libraries or packages that your project relies on to function correctly. In Dart, you can use a tool called `pub` and a configuration file called `pubspec.yaml` to manage dependencies for your project.
+
+> **Project** - Console Dictionary
+> 
+> Create a dart console dictionary, that accepts a word and prints the definition and other information about the word to the console.
+>
+> Packages: https://pub.dev/packages/owlbot_dart (SDK for free dictionary API)
+
+By the end of this day, you should have a good understanding of how to use pub and pubspec to manage dart project dependencies. And learn the basics of how to import and use packages in Dart
 
 ## Tips
 
-- Review the basics of packages in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/packages).
+- `pub` is a package manager that comes bundled with the Dart SDK, and it allows you to search for and download external packages from the Dart package repository. You can also use it to install, upgrade, and remove packages as needed for your project.
 
-- Import and use the "http" package to make HTTP requests and fetch data from an API. For example:
+- The `pubspec.yaml` file is where you define your project's dependencies and other metadata about your project, such as its name, version, and description. This file is used by `pub` to manage your project's dependencies and ensure that your project has the correct versions of packages installed.
 
-```dart
-import 'package:http/http.dart' as http;
-
-void main() async {
-  var response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/todos/1'));
-  print(response.body);
-}
-```
-
-  This imports the "http" package and uses it to make a GET request to an API that returns a JSON object. The response body is then printed to the console.
-
-- Parse the JSON data using the "dart:convert" package. For example:
+- To import and use packages in your Dart project, you can use the `import` statement to bring in the package's functionality into your project. For example, to use the `http` package, you would add the following line to your Dart file:
 
 ```dart
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-
-class Todo {
-  int id;
-  String title;
-  bool completed;
-
-  Todo.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    title = json['title'];
-    completed = json['completed'];
-  }
-
-  String toString() {
-    return 'Todo #$id: $title (completed: $completed)';
-  }
-}
-
-void main() async {
-  var response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/todos/1'));
-  var json = jsonDecode(response.body);
-  var todo = Todo.fromJson(json);
-  print(todo);
-}
+import 'package:http/http.dart';
 ```
 
-This creates a Todo class with three properties (id, title, and completed) and a constructor that initializes these properties from a JSON object. The toString method is also defined to print a formatted message to the console.
+  This would allow you to use the `http` package's functions and classes in your code.
 
-- Display the data in the console. For example:
 
-```dart
-import 'dart:convert';
-import 'package:http/http.dart' as http;
+## Resources
 
-class Todo {
-  int id;
-  String title;
-  bool completed;
-
-  Todo.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    title = json['title'];
-    completed = json['completed'];
-  }
-
-  String toString() {
-    return 'Todo #$id: $title (completed: $completed)';
-  }
-}
-
-void main() async {
-  var response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/todos/1'));
-  var json = jsonDecode(response.body);
-  var todo = Todo.fromJson(json);
-  print(todo);
-}
-```
-
-  This fetches a single todo item from a JSON API and prints a formatted message to the console with the todo item's ID, title, and completion status.
-
-### Resources
-
-1. Official Dart documentation on Packages: https://dart.dev/guides/packages
-2. Flutter Packages: https://pub.dev/flutter
-3. Dart Packages: https://pub.dev/packages
-4. Flutter Packages YouTube channel: https://www.youtube.com/c/FlutterPackages
-5. How to create and publish a package in Dart: https://medium.com/dartlang/dart-creating-and-publishing-a-package-6bb2e524233d
-6. Using external packages in your Flutter app: https://flutter.dev/docs/development/packages-and-plugins/using-packages
-
-By the end of this day, you should have a good understanding of how to import and use packages in Dart, as well as how to make HTTP requests and parse JSON data.
+- [Pub tool][https://dart.dev/tools/pub]
+- [Pubspec format](https://dart.dev/tools/pub/pubspec)
+- [Dart package repository](https://pub.dev/) - a repository of Dart packages
+- [Master Flutter: Dependency Management](https://masterflutter.appwriters.dev/ch03-dependency-management)
+- [Official Dart documentation on Packages](https://dart.dev/guides/packages)
