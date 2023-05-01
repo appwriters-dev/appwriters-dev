@@ -1,7 +1,7 @@
 import { redirect } from '@sveltejs/kit';
 import { config } from '../../config';
 
-export const prerender = 'auto';
+export const prerender = false;
 
 /** @type {import('./$types').LayoutLoad} */
 export async function load({ url, params, fetch, session, context }) {

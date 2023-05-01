@@ -1,7 +1,7 @@
 import { config } from '../config';
 import { resources } from './resources';
 
-export const prerender = 'auto';
+export const prerender = false;
 
 /** @type {import('./$types').PageLoad} */
 export async function load() {
