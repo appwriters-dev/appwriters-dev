@@ -5,10 +5,15 @@ OOP in Dart lets you create objects that have data and functions. You make a blu
 > **Project** - Article Data Source
 > 
 > Create an abstract class called `ArticleDataSource` with method `getArticle(String id)`, and `deleteArticle(String id)`.
+> 
 > Create a class called `ArticleLocalDataSource` that implements the `ArticleDataSource`
+> 
 > Implement each method and print operation, source, and the provided id. For example, calling `getArticle('dart-today-and-tomorrow')` should print **Get Local dart-today-and-tomorrow**
+> 
 > Add a factory constructor to `ArticleLocalDataSource` and return the object of `ArticleLocalDataSource`.
+> 
 > Instantiate `ArticleLocalDataSource` using the factory constructor and call each methods on the object.
+> 
 > Create and implement `ArticleAPIDataSource` exactly like `ArticleLocalDataSource` but print **Get API dart-today-and-tomorrow** instead of **Get Local dart-today-and-tomorrow**.
 >
 
@@ -78,3 +83,4 @@ This creates an Animal class with a private _name property and a speak method, a
 ### Resources
 
 - [The official Dart documentation on classes](https://dart.dev/guides/language/language-tour#classes)
+- [Dart Tutorial: OOP in Dart](https://dart-tutorial.com/object-oriented-programming/)

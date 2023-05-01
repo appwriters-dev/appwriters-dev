@@ -27,7 +27,7 @@ import 'package:http/http.dart';
 
 ## Resources
 
-- [Pub tool][https://dart.dev/tools/pub]
+- [Pub tool](https://dart.dev/tools/pub)
 - [Pubspec format](https://dart.dev/tools/pub/pubspec)
 - [Dart package repository](https://pub.dev/) - a repository of Dart packages
 - [Master Flutter: Dependency Management](https://masterflutter.appwriters.dev/ch03-dependency-management)
