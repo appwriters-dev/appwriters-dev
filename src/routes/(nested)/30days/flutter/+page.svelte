@@ -1,6 +1,5 @@
 <script>
 	import Grid from './grid.svelte';
-	import { config } from '../config';
 	export let data;
 </script>
 
@@ -33,7 +32,8 @@
 			</div>
 		</div>
 	</div>
-	{#if data.daysReleased <= 30}
+	<!-- active day -->
+	{#if data.daysReleased <= 30 && data.daysReleased > 0}
 		<section class="active-day">
 			<article>
 				<h3>Today - {data.resources[data.daysReleased - 1].title}</h3>
@@ -47,9 +47,15 @@
 		</section>
 	{/if}
 
-	<div class="content">
-		<Grid resources={data.resources} />
-	</div>
+	{#if data.resources.length > 0}
+		<div class="content">
+			<Grid resources={data.resources} />
+		</div>
+	{:else}
+		<div class="coming-soon">
+			<img src="/images/30days/coming_soon.gif" alt="something is coming" />
+		</div>
+	{/if}
 
 	{#if data.resources.length >= 30}
 		<div class="resources">
@@ -149,5 +155,14 @@
 	.content {
 		max-width: 80rem;
 		margin: 0 auto;
+	}
+	.coming-soon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: black;
+		img {
+			max-width: 700px;
+		}
 	}
 </style>

@@ -8,7 +8,7 @@ export async function load() {
     let index = (new Date().getTime() - config.masterFlutter30Published) / (24 * 60 * 60 * 1000);
     index = Math.floor(index);
     return {
-        resources: resources.slice(0, index),
+        resources: index < 0 ? [] : resources.slice(0, index),
         daysReleased: index
     }
 }
