@@ -1,6 +1,6 @@
 # First Dart app
 
-By the end of this day, you should have a basic understanding of the Dart syntax and how to write a simple console application using it.
+Create and run your first Dart console application. This will allow you to get familiar with the Dart syntax and how to write a simple console application using it.
 
 > **Project** - Greet User
 > 
@@ -8,7 +8,11 @@ By the end of this day, you should have a basic understanding of the Dart syntax
 > 
 > `Hello <name>!`
 
-To Get user input in Dart, you can use the `stdin.readLineSync()` function. For example:
+By the end of this day, you should have a basic understanding of the Dart syntax and how to write a simple console application using it.
+
+## Tips
+
+- To Get user input in Dart, you can use the `stdin.readLineSync()` function. For example:
 
 ```dart
 import 'dart:io';

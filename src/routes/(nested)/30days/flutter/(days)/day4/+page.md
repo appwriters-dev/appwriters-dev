@@ -2,8 +2,6 @@
 
 In Dart, a function is a block of code that performs a specific task and can be called from other parts of the program. They can take parameters and return values, helping to organize and simplify code.
 
-By the end of this day, you should have a good understanding of how to write and call functions in Dart.
-
 > **Project** - Palindrome Checker
 > 
 > Write a function to check if a given string is a palindrome.
@@ -11,9 +9,11 @@ By the end of this day, you should have a good understanding of how to write and
 > - Use the function to check if a given string is a palindrome. Print the answer to the console.
 >
 
-## Examples
+By the end of this day, you should have a good understanding of how to write and call functions in Dart.
 
-1. Write a function that takes parameters and returns a value. For example:
+## Tips
+
+- A function that takes parameters and returns a value.
 
 ```dart
 int add(int a, int b) {
@@ -23,7 +23,7 @@ int add(int a, int b) {
 
 This function takes two integer parameters, adds them together, and returns the result.
 
-2. Call the function from the main method. For example:
+- Calling the function
 
 ```dart
 void main() {
@@ -34,7 +34,7 @@ void main() {
 
 This calls the add function with the arguments 3 and 4, stores the result in the "result" variable, and prints the result to the console.
 
-3. Experiment with different types of functions, such as functions that don't return a value (void), or functions that take no parameters.
+- Experiment with different types of functions, such as functions that don't return a value (void), or functions that take no parameters.
 
 ```dart
 void greet() {

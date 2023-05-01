@@ -1,10 +1,23 @@
 # Dart Classes
 
-1. Review the basics of classes and objects in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#classes).
+OOP in Dart lets you create objects that have data and functions. You make a blueprint called a class, then create instances of that class with their own data and functions. This makes your code more organized and reusable.
 
-2. Create a new Dart console application, or continue working with the project you created in previous days.
+> **Project** - Article Data Source
+> 
+> Create an abstract class called `ArticleDataSource` with method `getArticle(String id)`, and `deleteArticle(String id)`.
+> Create a class called `ArticleLocalDataSource` that implements the `ArticleDataSource`
+> Implement each method and print operation, source, and the provided id. For example, calling `getArticle('dart-today-and-tomorrow')` should print **Get Local dart-today-and-tomorrow**
+> Add a factory constructor to `ArticleLocalDataSource` and return the object of `ArticleLocalDataSource`.
+> Instantiate `ArticleLocalDataSource` using the factory constructor and call each methods on the object.
+> Create and implement `ArticleAPIDataSource` exactly like `ArticleLocalDataSource` but print **Get API dart-today-and-tomorrow** instead of **Get Local dart-today-and-tomorrow**.
+>
 
-3. Create a class with properties and methods. For example:
+By the end of this day, you should have a good understanding of how to create classes and objects in Dart, and how to call their methods.
+
+## Tips
+
+- Review the basics of classes and objects in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#classes).
+- Create a class with properties and methods. For example:
 
 ```dart
 class Person {
@@ -19,9 +32,9 @@ class Person {
 }
 ```
 
-This creates a Person class with two properties (name and age), a constructor that initializes these properties, and a sayHello method that prints a message to the console.
+  This creates a Person class with two properties (name and age), a constructor that initializes these properties, and a sayHello method that prints a message to the console.
 
-4. Instantiate the class and call its methods. For example:
+- Instantiate the class and call its methods. For example:
 
 ```dart
 void main() {
@@ -32,7 +45,7 @@ void main() {
 
 This creates a new Person object with the name "Alice" and age 25, and calls its sayHello method.
 
-5. Experiment with different types of classes, such as classes with private properties and methods, or classes that inherit from other classes.
+- Experiment with different types of classes, such as classes with private properties and methods, or classes that inherit from other classes.
 
 ```dart
 class Animal {
@@ -64,11 +77,4 @@ This creates an Animal class with a private _name property and a speak method, a
 
 ### Resources
 
-- The official Dart documentation on classes: https://dart.dev/guides/language/language-tour#classes
-- Dart Programming Tutorial for Beginners: https://www.tutorialspoint.com/dart_programming/dart_programming_classes.htm
-- Object-Oriented Programming with Dart: https://medium.com/flutter-community/object-oriented-programming-with-dart-b7d7371abc25
-- Dart classes explained in detail: https://pusher.com/tutorials/dart-classes-explained
-
-You can also find plenty of examples and tutorials on YouTube, Udemy, and other online learning platforms.
-
-By the end of this day, you should have a good understanding of how to create classes and objects in Dart, and how to call their methods.
+- [The official Dart documentation on classes](https://dart.dev/guides/language/language-tour#classes)

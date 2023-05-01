@@ -1,6 +1,6 @@
 # Variables, Data Types, Operators and Expressions
 
-By the end of this day, you should have a good understanding of how to declare and initialize variables of different data types, and how to use string interpolation to print messages, how to use operators and write conditional expressions.
+Variables, data types, operators and expressions are the building blocks of any programming language. In this day, you will learn how to declare and initialize variables of different data types, and how to use operators and write conditional expressions.
 
 > **Project** - BMI Calculator
 > 
@@ -8,9 +8,13 @@ By the end of this day, you should have a good understanding of how to declare a
 > 
 > `BMI = weight / (height * height)`
 
-1. Review the basics of variables and data types in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#variables).
+By the end of this day, you should have a good understanding of how to declare and initialize variables of different data types, and how to use string interpolation to print messages, how to use operators and write conditional expressions.
 
-2. You can declare and initialize variables of different data types, such as int, double, String, and boolean. For example:
+## Tips
+
+- Review the basics of variables and data types in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#variables).
+
+- You can declare and initialize variables of different data types, such as int, double, String, and boolean. For example:
 
 ```dart
 void main() {
@@ -21,7 +25,7 @@ void main() {
 }
 ```
 
-3. You can use the "print" function to print the values of these variables to the console. For example:
+- You can use the "print" function to print the values of these variables to the console. For example:
 
 ```dart
 void main() {
@@ -36,9 +40,9 @@ void main() {
 }
 ```
 
-4. Experiment with declaring and initializing variables of different data types, and using string interpolation to print messages using these variables.
+- Experiment with declaring and initializing variables of different data types, and using string interpolation to print messages using these variables.
 
-5. Experiment with arithmetic operators `(+, -, *, /, %)` and comparison operators `(>, <, >=, <=, ==, !=)`. For example:
+- Experiment with arithmetic operators `(+, -, *, /, %)` and comparison operators `(>, <, >=, <=, ==, !=)`. For example:
 
 ```dart
 void main() {
@@ -60,7 +64,7 @@ void main() {
 }
 ```
 
-6. Write conditional statements using if/else. Conditional statements allow you to execute different code blocks depending on a condition. For example:
+- Write conditional statements using if/else. Conditional statements allow you to execute different code blocks depending on a condition. For example:
 
 ```dart
 void main() {
@@ -76,7 +80,7 @@ void main() {
 
 This will print the message `You are an adult.` to the console, since the age variable is greater than or equal to 18.
 
-9. Experiment with different operators and expressions, and write more complex conditional statements using logical operators `(&&, ||, !)`.
+1. Experiment with different operators and expressions, and write more complex conditional statements using logical operators `(&&, ||, !)`.
 
 > For more project ideas:
 > 

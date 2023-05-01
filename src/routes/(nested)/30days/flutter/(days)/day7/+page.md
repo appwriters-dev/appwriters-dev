@@ -1,10 +1,10 @@
 # Dart Packages
 
-1. Review the basics of packages in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/packages).
+## Tips
 
-2. Create a new Dart console application, or continue working with the project you created in previous days.
+- Review the basics of packages in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/packages).
 
-3. Import and use the "http" package to make HTTP requests and fetch data from an API. For example:
+- Import and use the "http" package to make HTTP requests and fetch data from an API. For example:
 
 ```dart
 import 'package:http/http.dart' as http;
@@ -15,9 +15,9 @@ void main() async {
 }
 ```
 
-This imports the "http" package and uses it to make a GET request to an API that returns a JSON object. The response body is then printed to the console.
+  This imports the "http" package and uses it to make a GET request to an API that returns a JSON object. The response body is then printed to the console.
 
-4. Parse the JSON data using the "dart:convert" package. For example:
+- Parse the JSON data using the "dart:convert" package. For example:
 
 ```dart
 import 'dart:convert';
@@ -49,7 +49,7 @@ void main() async {
 
 This creates a Todo class with three properties (id, title, and completed) and a constructor that initializes these properties from a JSON object. The toString method is also defined to print a formatted message to the console.
 
-5. Display the data in the console. For example:
+- Display the data in the console. For example:
 
 ```dart
 import 'dart:convert';
@@ -79,7 +79,7 @@ void main() async {
 }
 ```
 
-This fetches a single todo item from a JSON API and prints a formatted message to the console with the todo item's ID, title, and completion status.
+  This fetches a single todo item from a JSON API and prints a formatted message to the console with the todo item's ID, title, and completion status.
 
 ### Resources
 

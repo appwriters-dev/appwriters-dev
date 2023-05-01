@@ -1,11 +1,15 @@
 # Setting up the Environment
 
-By the end of this day, you should be able to create and run a new dart console project.
+Set up your development environment to work with Flutter and Dart. This will allow you to create and run Dart and Flutter projects on your computer.
 
 > **Project**
 > 
 > Create an run default **Dart** console application
 > 
+
+By the end of this day, you should be able to create and run a new dart console project.
+
+## Tips
 
 -   Install the latest stable version of Dart and Flutter SDK.
     -   For macOS or Linux, you can download the Flutter SDK from the official website ([https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)). Extract the compressed files and add the flutter tool to your path.
