@@ -1,23 +1,28 @@
 # Hello Flutter
 
-1. Install Flutter and set up your development environment. You can follow the instructions on the Flutter website to do this (https://flutter.dev/docs/get-started/install).
+Flutter is a software development kit (SDK) developed by Google that allows developers to build apps for mobile, web, and desktop platforms using a single codebase. It uses the Dart programming language and provides a set of pre-built UI components called widgets that can be used to build custom user interfaces for your app. Flutter is an open-source project and is free to use.
 
-2. Create a new Flutter project using the "flutter create" command in your terminal.
+> **Project** - Famous Counter App
+>
+> When you create a new Flutter project, it generates a counter app, that just counts the number of times you tap the button in the screent
+>
+> Create new Fluter project and different files and folders that will be generated. Specially look into `lib/main.dart` as that's where we will spend most of our time
+>
+> Run the app on an mobile, web or desktop and see it in action
+> 
 
-3. Open the project in your preferred IDE or editor (e.g. Android Studio, VS Code).
+By the end of this day, you should have a basic understanding of the structure of a Flutter app and how to customize the app bar and content area with basic widgets.
 
-4. Learn about the basic structure of a Flutter app. A typical Flutter app includes a MaterialApp widget as the top-level widget, which provides common design elements such as a navigation drawer and bottom navigation bar. The Scaffold widget is also commonly used to provide a basic layout with an app bar and content area.
+## Tips
 
-5. Customize the app bar and content area with widgets such as Text and Icon.
-
-6. Run the app on an emulator or physical device to see the changes.
+ - If you have not yet installed Install Flutter,you can follow the [instructions on the Flutter website to do this](https://flutter.dev/docs/get-started/install).
+- Create a new Flutter project using the `flutter create` command in your terminal or use the IDE or editor of your choice to create a new Flutter project.
+- Open the project in your preferred IDE or editor (e.g. Android Studio, VS Code) if not already.
+- Customize the app bar and content area with widgets such as Text and Icon.
+- Run the app on an emulator or physical device to see the changes.
 
 ### Resources
 
-- Official Flutter Documentation: [Flutter for React Native developers](https://flutter.dev/docs/get-started/flutter-for/react-native-devs)
-- Flutter documentation for building layouts: [Building layouts in Flutter](https://flutter.dev/docs/development/ui/layout)
-- Flutter widgets catalog: [Flutter Widget Catalog](https://flutter.dev/docs/development/ui/widgets)
-- Flutter Layout Cheat Sheet: [Flutter Layout Cheat Sheet](https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e)
-- DartPad, an online editor for Dart and Flutter: [DartPad](https://dartpad.dev/)
-
-By the end of this day, you should have a basic understanding of the structure of a Flutter app and how to customize the app bar and content area with basic widgets.
+- [Flutter Test Drive](https://docs.flutter.dev/get-started/test-drive)
+- [First Flutter App codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0)
+- [DartPad](https://dartpad.dev/) - If you have not yet installed Flutter, you can use DartPad to write and run Dart and Flutter code in your browser.
