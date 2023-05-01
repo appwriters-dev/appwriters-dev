@@ -10,7 +10,6 @@ By the end of this day, you should have a good understanding of how to write and
 > - A **palindrome** is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
 > - Use the function to check if a given string is a palindrome. Print the answer to the console.
 >
-> [More practice projects](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls09-functions)
 
 ## Examples
 
@@ -46,6 +45,10 @@ void main() {
   greet(); // prints "Hello, world!" to the console
 }
 ```
+
+> Practice More
+> 
+> [practice projects](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls09-functions)
 
 ## Resources
 
