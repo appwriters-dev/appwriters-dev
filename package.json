@@ -1,5 +1,5 @@
 {
-	"name": "sveltekit-blog-starter",
+	"name": "appwriters",
 	"version": "1.6.1",
 	"scripts": {
 		"dev": "vite dev",
