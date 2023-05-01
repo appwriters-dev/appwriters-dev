@@ -36,13 +36,13 @@
 	{#if data.daysReleased <= 30 && data.daysReleased > 0}
 		<section class="active-day">
 			<article>
-				<h3>Today - {data.resources[data.daysReleased - 1].title}</h3>
+				<h3><i class="icon-calendar" /> - {data.resources[data.daysReleased - 1].title}</h3>
 				<ul>
 					{#each data.resources[data.daysReleased - 1].objectives as objective}
 						<li>{objective}</li>
 					{/each}
 				</ul>
-				<a class="button" href={data.resources[data.daysReleased - 1].link}>begin </a>
+				<a class="button" href={data.resources[data.daysReleased - 1].link}>begin <i class="icon-arrow-right" /> </a>
 			</article>
 		</section>
 	{/if}
@@ -74,7 +74,9 @@
 			content: none;
 		}
 	}
-
+	.icon-calendar {
+		font-size: 2rem;
+	}
 	.hero {
 		text-align: center;
 		display: flex;

@@ -7,7 +7,7 @@
 		</p>
 		<p>
 			<a class="button" href="https://discord.gg/gFYRMGjqYa" target="_blank" rel="noreferrer"
-				>Join now</a
+				><i class="icon-discord" /> join now</a
 			>
 		</p>
 	</article>

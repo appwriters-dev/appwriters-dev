@@ -53,7 +53,7 @@
 					Flutter and a collection of projects to showcase your skills.
 				</p>
 				<br />
-				<a href="/30days/flutter" class="button">Start now</a>
+				<a href="/30days/flutter" class="button"><i class="icon-flutter" /> start now</a>
 			</article>
 		</div>
 	</div>

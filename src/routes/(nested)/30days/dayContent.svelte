@@ -12,12 +12,12 @@
 	<slot />
 	<nav class="end-nav">
 		{#if day > 1}
-			<a href="/30days/flutter/day{day - 1}">previous</a>
+			<a href="/30days/flutter/day{day - 1}"><i class="icon-arrow-left" /> day {day -1}</a>
 		{:else}
 			<div />
 		{/if}
 		{#if nextReleased && day < 30}
-			<a href="/30days/flutter/day{day + 1}">next</a>
+			<a href="/30days/flutter/day{day + 1}">day {day+1} <i class="icon-arrow-right" /> </a>
 		{/if}
 	</nav>
 </div>
@@ -68,5 +68,15 @@
 	nav {
 		display: flex;
 		justify-content: space-between;
+		a {
+			background: var(--primary);
+			color: var(--paper);
+			padding: 0.5rem 1rem;
+			border-radius: 4px;
+			&:hover {
+				text-decoration: none;
+				background-color: var(--dark);
+			}
+		}
 	}
 </style>
