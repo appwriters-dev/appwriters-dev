@@ -53,7 +53,7 @@
 		</div>
 	{:else}
 		<div class="coming-soon">
-			<img src="/images/30days/coming_soon.gif" alt="something is coming" />
+			<img src="/images/flutter_coming_soon.gif" alt="something is coming" />
 		</div>
 	{/if}
 
