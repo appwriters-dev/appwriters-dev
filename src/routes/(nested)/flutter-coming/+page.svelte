@@ -1,3 +1,9 @@
+<svelte:head>
+    <title>Something special is cooking | Appwriters</title>
+    <meta name="description" content="Cooking up something special for those of you eager to dive into Dart and Flutter, but unsure
+    about where to start! 🚀" />
+</svelte:head>
+
 <div class="content">
 	<p>
 		Cooking up something special for those of you eager to dive into Dart and Flutter, but unsure
