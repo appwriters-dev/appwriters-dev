@@ -95,7 +95,7 @@ void main() {
     In this example, we have a Dart class `Post` that represents a post object with three properties: `id`, `title`, and `body`. We also have a factory constructor `fromJson` that takes a JSON object and returns a Post object.
 
 > 
-> [more practice projects](https://masterflutter.appwriters.dev/ch04-asynchronous-programming-rest-api-and-json/ls05-review)
+> [more projects](https://masterflutter.appwriters.dev/ch04-asynchronous-programming-rest-api-and-json/ls05-review)
 > 
 
 **Resources:**

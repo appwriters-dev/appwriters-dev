@@ -46,9 +46,7 @@ void main() {
 }
 ```
 
-> Practice More
-> 
-> [practice projects](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls09-functions)
+> [more projects](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls09-functions)
 
 ## Resources
 

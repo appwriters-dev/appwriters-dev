@@ -39,10 +39,8 @@ void main() async {
   print('End');
 }
 ```
-
-> Practice More
-> 
-> [practice projects](https://masterflutter.appwriters.dev/ch04-asynchronous-programming-rest-api-and-json/ls01-introduction-to-asynchronous-programming)
+ 
+> [more projects](https://masterflutter.appwriters.dev/ch04-asynchronous-programming-rest-api-and-json/ls01-introduction-to-asynchronous-programming)
 
 
 ## Resources
