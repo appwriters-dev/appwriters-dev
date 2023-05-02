@@ -1,16 +1,51 @@
 # Navigator 2.0 and the Go Router
 
-1. Learn about Navigator 2.0, a new version of the Navigator widget in Flutter that simplifies app navigation and supports deep linking.
-2. Understand the principles of declarative routing and how it differs from imperative routing.
-3. Explore the new features and APIs provided by Navigator 2.0, such as the Router and RouteInformationParser classes.
-4. Learn about the Go Router, a third-party package that provides a declarative approach to routing in Flutter.
-5. Compare and contrast the Navigator 2.0 and Go Router approaches to app navigation.
-6. Implement a simple app using Navigator 2.0 and/or the Go Router.
+Learn about Navigator 2.0, the newest version of the Navigator widget in Flutter that simplifies app navigation and supports deep linking. Also learn about the [Go Router](https://pub.dev/packages/go_router), an officially supported Dart package that provides a declarative approach to routing in Flutter apps.
+
+> **Project** - Quotes App 2.0
+>
+> Copy and update the quotes app from [**day 15**](/30days/flutter/day15) to use Go Router.
+
+By the end of this day you will know how to use Navigator 2.0 and the Go Router effectively in your Flutter app and provide a seamless and intuitive user experience.
+
+
+## Tips
+
+- Make sure to review the basics of Navigation from [day 15](/30days/flutter/day15) before diving into Navigator 2.0 and the Go Router.
+
+- Learn about declarative routing: Navigator 2.0 and the Go Router are both based on the declarative routing approach, which simplifies the process of navigating between screens in your app.
+
+- Understand the differences between Navigator 2.0 and the Go Router: Both approaches have their own benefits and limitations, so it's important to understand the differences and choose the one that best fits your needs.
+
+- Example implementing basic navigation with the Go Router
+
+```dart
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'MyApp',
+      home: GoRouter(
+        routes: [
+          GoRoute(
+            path: '/',
+            pageBuilder: (context, state) => HomePage(),
+          ),
+          GoRoute(
+            path: '/second',
+            pageBuilder: (context, state) => SecondPage(),
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
 
 ## Resources
 
-1. Flutter documentation on Navigator 2.0: https://flutter.dev/docs/development/ui/navigation/navigation-rail
-2. Flutter and Dart tutorial on declarative routing in Flutter: https://www.filledstacks.com/post/declarative-routing-in-flutter-using-auto-route/
-3. Dart package for the Go Router: https://pub.dev/packages/go_router
-4. Flutter and Dart tutorial on using the Go Router for app navigation: https://medium.com/flutter-community/declarative-routing-in-flutter-with-go-router-f6b377f7ad53
-5. Flutter and Dart tutorial on implementing Navigator 2.0 in a Flutter app: https://medium.com/flutter/learning-flutters-new-navigation-and-routing-system-7c9068155ade
+- [Using router](https://docs.flutter.dev/ui/navigation#using-the-router)
+- [Go Router](https://pub.dev/packages/go_router)
+- [Tutorial on Go Router](https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/)
+- [Understanding navigator 2.0](https://blog.codemagic.io/flutter-navigator2/)
+- [Beginners guide to go_router](https://blog.codemagic.io/flutter-go-router-guide/)

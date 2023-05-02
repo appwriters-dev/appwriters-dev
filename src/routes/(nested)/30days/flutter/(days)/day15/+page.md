@@ -88,6 +88,7 @@ class DetailScreen extends StatelessWidget {
 ## Resources
 
 - [Flutter documentation on Navigation](https://flutter.dev/docs/development/ui/navigation)
+- [Named routes](https://flutter.dev/docs/cookbook/navigation/named-routes)
 - [Video on the **Navigator** widget](https://www.youtube.com/watch?v=xpCdSqrX-14)
 - [**Navigator** widget reference](https://api.flutter.dev/flutter/widgets/Navigator-class.html)
 - [Passing data to named routes](https://docs.flutter.dev/cookbook/navigation/navigate-with-arguments)
