@@ -87,6 +87,18 @@
 		position: relative;
 		margin-top: -70px;
 		padding-top: 70px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+
+		@media screen and (max-width: vars.$smMax){
+			h1 {
+				font-size: 1.8rem;
+			}
+			p {
+				font-size: 0.9rem;
+			}
+		}
+
 		&::before {
 			content: '';
 			position: absolute;
