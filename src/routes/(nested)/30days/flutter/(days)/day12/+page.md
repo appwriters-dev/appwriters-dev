@@ -12,10 +12,6 @@ A **StatefulWidget** in Flutter is a widget that can change over time based on c
 
 ## Tips
 
-Sure, here are some tips and code examples for a lesson on stateful widgets in Flutter:
-
-## Tips for working with stateful widgets
-
 - It's a good practice to keep stateful widgets **small and focused** on a single responsibility. This makes the widget easier to understand, test, and maintain.
 - When you need to update the internal state of a stateful widget, use the `setState()` method. This method triggers a rebuild of the widget, updating its display based on the new state.
 
