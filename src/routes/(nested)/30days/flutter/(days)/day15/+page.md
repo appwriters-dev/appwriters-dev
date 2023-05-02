@@ -1,17 +1,24 @@
 # Introduction to Navigation
 
-8. Review the basics of Flutter app development from Day 8-11.
+Mobile applications typically consist of multiple pages that users navigate between. Understanding how to navigate between screens in your app is crucial for creating a seamless and intuitive user experience. By mastering navigation in Flutter, you can build engaging and user-friendly mobile apps that enable users to easily find the information they need and complete tasks efficiently.
 
-9.  Learn about navigation in a Flutter app. Navigation refers to the ability to move between screens or pages in an app.
+> **Project** - Quotes App
+>
+> Time to bring your project together, combine the quote details UI you created on **[day 11](/30days/flutter/day11)** and the registration form you created on **[day 13](/30days/flutter/day13)** to create a simple quotes app.
+>
+> - Add a quotes page to your app that displays a list of quotes. You can hardcode the quotes for now.
+> - On the registration form, if all valid information is provided, navigate to the quotes page.
+> - Show snackbar with error information if form is not valid
+> - Tapping a quote should navigate to a detail page that displays the quote details page.
 
-10. Learn about the Navigator widget, which is used to manage the stack of screens in a Flutter app.
+By the end of this day, you should have a basic understanding of how to implement navigation in a your Flutter application.
 
-11. Learn about navigation techniques in a Flutter app, such as named routes, passing data between screens.
+## Tips
 
-12. Implement named routes in your app to make it easier to navigate between screens.
+- Flutter provides different types of navigation, such as push and pop navigation. Learn about the different types of navigation and when to use each one.
+- Flutter provides built-in widgets for navigation, such as the `Navigator` widget and the `MaterialApp` widget. Use these widgets to save time and ensure consistency in your app's design.
 
-13. Experiment with passing data between screens using constructor arguments or the ModalRoute.
-
+- Simple navigation implementation
 
 ```dart
 import 'package:flutter/material.dart';
@@ -72,27 +79,16 @@ class DetailScreen extends StatelessWidget {
 }
 ```
 
-In this example, we have two screens: `HomeScreen` and `DetailScreen`. The `HomeScreen` contains an `ElevatedButton` that, when pressed, navigates to the `DetailScreen`. The `DetailScreen` contains another `ElevatedButton` that, when pressed, navigates back to the `HomeScreen` using the `Navigator.pop` method.
+  In this example, we have two screens: `HomeScreen` and `DetailScreen`. The `HomeScreen` contains an `ElevatedButton` that, when pressed, navigates to the `DetailScreen`. The `DetailScreen` contains another `ElevatedButton` that, when pressed, navigates back to the `HomeScreen` using the `Navigator.pop` method.
 
-### Resources
+<br />
 
-1. Flutter's official documentation on Navigation: https://flutter.dev/docs/development/ui/navigation
-2. Flutter Navigation Basics Tutorial: https://pusher.com/tutorials/flutter-navigation-basics
-3. Flutter Navigation and Routing: https://www.raywenderlich.com/7560981-flutter-navigation-and-routing-getting-started
-4. Flutter Navigation Drawer Tutorial: https://www.simplifiedcoding.net/flutter-navigation-drawer-tutorial/
-5. Flutter Page Navigation Tutorial: https://www.simplifiedcoding.net/flutter-page-navigation-tutorial/
-6. Flutter Navigation and Routing: https://flutter.dev/docs/development/ui/navigation
-This is the official documentation on navigation and routing in Flutter. It covers everything from simple navigation to advanced routing techniques.
-1. Flutter Navigator 2.0: https://medium.com/flutter/learning-flutters-new-navigation-and-routing-system-7c9068155ade
-This article from the Flutter team introduces Navigator 2.0, the new navigation and routing system in Flutter. It provides an in-depth look at the features and benefits of this new system.
+> [more projects](https://masterflutter.appwriters.dev/ch09-multipage-applications/ls01-navigation)
 
-1. Flutter Advanced Navigation: https://www.youtube.com/watch?v=VHlcR_cEz1A
-This video tutorial from the Flutter team covers advanced navigation techniques, including named routes, nested navigation, and passing data between screens.
+## Resources
 
-1. Flutter Navigation Example: https://www.developerlibs.com/2019/05/flutter-navigation-example.html
-This tutorial provides an example of implementing navigation in Flutter, including creating a bottom navigation bar and using named routes.
-
-1. Flutter Deep Dive: Navigation: https://www.youtube.com/watch?v=ZzCsG8xsZCU
-This video tutorial provides a deep dive into navigation in Flutter, covering advanced topics such as tabbed navigation, drawer navigation, and deep linking.
-
-By the end of this day, you should have a basic understanding of how to implement navigation in a Flutter application to setup an application with Multiple Screens.
+- [Flutter documentation on Navigation](https://flutter.dev/docs/development/ui/navigation)
+- [Video on the **Navigator** widget](https://www.youtube.com/watch?v=xpCdSqrX-14)
+- [**Navigator** widget reference](https://api.flutter.dev/flutter/widgets/Navigator-class.html)
+- [Passing data to named routes](https://docs.flutter.dev/cookbook/navigation/navigate-with-arguments)
+- [Passing data between pages](https://docs.flutter.dev/cookbook/navigation/passing-data)
