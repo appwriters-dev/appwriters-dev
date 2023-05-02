@@ -23,4 +23,7 @@
 		color: var(--paper);
 		text-decoration: underline;
 	}
+	:global(blockquote ul ::marker) {
+		color: white;
+	}
 </style>

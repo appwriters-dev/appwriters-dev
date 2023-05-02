@@ -9,7 +9,7 @@ In Flutter, UI design involves creating visual and interactive elements for your
 >
 > ![Product Details](https://github.com/lohanidamodar/flutter_ui_challenges/raw/master/screenshots/ecommerce_details3.png)
 >
-> - **Tips**
+> **Tips**
 > 
 > - Use `Image.network` to display your image.
 > 

@@ -7,7 +7,8 @@ Image and font assets play a crucial role in the design and functionality of Flu
 > Build the following UI, use two custom fonts (choose any from [Google Fonts](https://fonts.google.com) or use your own), use seperate font for the quote and the author name.
 > 
 > <img src="https://github.com/lohanidamodar/flutter_ui_challenges/raw/master/screenshots/quotes1.png" alt="quotes ui" />
-> **Tip**: Try once without using any packages, and again using the [google_fonts](https://pub.dev/packages/google_fonts) package.
+> 
+> **Tips**: Try once without using any packages, and again using the [google_fonts](https://pub.dev/packages/google_fonts) package.
 
 By the end of the day, you should have a better understanding of the importance of image and font assets in Flutter apps. You will have learned how to add and display different types of image assets, and how to add and use custom fonts to your apps.
 

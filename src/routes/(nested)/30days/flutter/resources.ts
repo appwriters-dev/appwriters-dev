@@ -111,7 +111,7 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Stateful Widgets",
+        "title": "Interactive UI",
         "objectives": [
             "Learn about state and StatefulWidget",
             "Understand how to use setState()",

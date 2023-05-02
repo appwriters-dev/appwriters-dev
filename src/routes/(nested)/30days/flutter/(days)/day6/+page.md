@@ -4,17 +4,12 @@ OOP in Dart lets you create objects that have data and functions. You make a blu
 
 > **Project** - Article Data Source
 > 
-> Create an abstract class called `ArticleDataSource` with method `getArticle(String id)`, and `deleteArticle(String id)`.
-> 
-> Create a class called `ArticleLocalDataSource` that implements the `ArticleDataSource`
-> 
-> Implement each method and print operation, source, and the provided id. For example, calling `getArticle('dart-today-and-tomorrow')` should print **Get Local dart-today-and-tomorrow**
-> 
-> Add a factory constructor to `ArticleLocalDataSource` and return the object of `ArticleLocalDataSource`.
-> 
-> Instantiate `ArticleLocalDataSource` using the factory constructor and call each methods on the object.
-> 
-> Create and implement `ArticleAPIDataSource` exactly like `ArticleLocalDataSource` but print **Get API dart-today-and-tomorrow** instead of **Get Local dart-today-and-tomorrow**.
+> - Create an abstract class called `ArticleDataSource` with method `getArticle(String id)`, and `deleteArticle(String id)`.
+> - Create a class called `ArticleLocalDataSource` that implements the `ArticleDataSource`
+> - Implement each method and print operation, source, and the provided id. For example, calling `getArticle('dart-today-and-tomorrow')` should print **Get Local dart-today-and-tomorrow**
+> - Add a factory constructor to `ArticleLocalDataSource` and return the object of `ArticleLocalDataSource`.
+> - Instantiate `ArticleLocalDataSource` using the factory constructor and call each methods on the object.
+> - Create and implement `ArticleAPIDataSource` exactly like `ArticleLocalDataSource` but print **Get API dart-today-and-tomorrow** instead of **Get Local dart-today-and-tomorrow**.
 >
 
 By the end of this day, you should have a good understanding of how to create classes and objects in Dart, and how to call their methods.

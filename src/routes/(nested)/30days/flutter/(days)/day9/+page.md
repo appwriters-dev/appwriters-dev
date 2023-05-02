@@ -4,11 +4,9 @@ Flutter is a software development kit (SDK) developed by Google that allows deve
 
 > **Project** - Famous Counter App
 >
-> When you create a new Flutter project, it generates a counter app, that just counts the number of times you tap the button in the screent
->
-> Create new Fluter project and different files and folders that will be generated. Specially look into `lib/main.dart` as that's where we will spend most of our time
->
-> Run the app on an mobile, web or desktop and see it in action
+> - When you create a new Flutter project, it generates a counter app, that just counts the number of times you tap the button in the screent
+> - Create new Fluter project and different files and folders that will be generated. Specially look into `lib/main.dart` as that's where we will spend most of our time
+> - Run the app on an mobile, web, and/or desktop and see it in action
 > 
 
 By the end of this day, you should have a basic understanding of the structure of a Flutter app and how to customize the app bar and content area with basic widgets.
