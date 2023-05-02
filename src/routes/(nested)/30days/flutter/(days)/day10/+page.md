@@ -85,7 +85,6 @@ This creates a simple app with an app bar, a container with an image, text, and 
 
 ### Resources
 
-- [Flutter documentation on widgets](https://flutter.dev/docs/development/ui/widgets)
-- [Flutter cookbook on building layouts](https://flutter.dev/docs/cookbook/design)
+- [Flutter documentation on widgets](https://docs.flutter.dev/ui/widgets-intro)
 - [Flutter widget catalog](https://flutter.dev/docs/development/ui/widgets/catalog)
 - [Flutter UI challenges GitHub repository](https://github.com/lohanidamodar/flutter_ui_challenges)
