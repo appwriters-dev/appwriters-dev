@@ -1,34 +1,81 @@
-# Dependency Management
+# Dart Classes
 
-Dependency management is an essential aspect of any software development project. It involves managing the external libraries or packages that your project relies on to function correctly. In Dart, you can use a tool called `pub` and a configuration file called `pubspec.yaml` to manage dependencies for your project.
+OOP in Dart lets you create objects that have data and functions. You make a blueprint called a class, then create instances of that class with their own data and functions. This makes your code more organized and reusable.
 
-> **Project** - Console Dictionary
+> **Project** - Article Data Source
 > 
-> Create a dart console dictionary, that accepts a word and prints the definition and other information about the word to the console.
+> - Create an abstract class called `ArticleDataSource` with method `getArticle(String id)`, and `deleteArticle(String id)`.
+> - Create a class called `ArticleLocalDataSource` that implements the `ArticleDataSource`
+> - Implement each method and print operation, source, and the provided id. For example, calling `getArticle('dart-today-and-tomorrow')` should print **Get Local dart-today-and-tomorrow**
+> - Add a factory constructor to `ArticleLocalDataSource` and return the object of `ArticleLocalDataSource`.
+> - Instantiate `ArticleLocalDataSource` using the factory constructor and call each methods on the object.
+> - Create and implement `ArticleAPIDataSource` exactly like `ArticleLocalDataSource` but print **Get API dart-today-and-tomorrow** instead of **Get Local dart-today-and-tomorrow**.
 >
-> Packages: https://pub.dev/packages/owlbot_dart (SDK for free dictionary API)
 
-By the end of this day, you should have a good understanding of how to use pub and pubspec to manage dart project dependencies. And learn the basics of how to import and use packages in Dart
+By the end of this day, you should have a good understanding of how to create classes and objects in Dart, and how to call their methods.
 
 ## Tips
 
-- `pub` is a package manager that comes bundled with the Dart SDK, and it allows you to search for and download external packages from the Dart package repository. You can also use it to install, upgrade, and remove packages as needed for your project.
-
-- The `pubspec.yaml` file is where you define your project's dependencies and other metadata about your project, such as its name, version, and description. This file is used by `pub` to manage your project's dependencies and ensure that your project has the correct versions of packages installed.
-
-- To import and use packages in your Dart project, you can use the `import` statement to bring in the package's functionality into your project. For example, to use the `http` package, you would add the following line to your Dart file:
+- Review the basics of classes and objects in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#classes).
+- Create a class with properties and methods. For example:
 
 ```dart
-import 'package:http/http.dart';
+class Person {
+  String name;
+  int age;
+  
+  Person(this.name, this.age);
+  
+  void sayHello() {
+    print('Hello, my name is $name and I am $age years old.');
+  }
+}
 ```
 
-  This would allow you to use the `http` package's functions and classes in your code.
+  This creates a Person class with two properties (name and age), a constructor that initializes these properties, and a sayHello method that prints a message to the console.
 
+- Instantiate the class and call its methods. For example:
 
-## Resources
+```dart
+void main() {
+  Person person = Person('Alice', 25);
+  person.sayHello(); // prints "Hello, my name is Alice and I am 25 years old." to the console
+}
+```
 
-- [Pub tool](https://dart.dev/tools/pub)
-- [Pubspec format](https://dart.dev/tools/pub/pubspec)
-- [Dart package repository](https://pub.dev/) - a repository of Dart packages
-- [Master Flutter: Dependency Management](https://masterflutter.appwriters.dev/ch03-dependency-management)
-- [Official Dart documentation on Packages](https://dart.dev/guides/packages)
+This creates a new Person object with the name "Alice" and age 25, and calls its sayHello method.
+
+- Experiment with different types of classes, such as classes with private properties and methods, or classes that inherit from other classes.
+
+```dart
+class Animal {
+  String _name;
+  
+  Animal(this._name);
+  
+  void speak() {
+    print('My name is $_name.');
+  }
+}
+
+class Cat extends Animal {
+  Cat(String name) : super(name);
+  
+  void meow() {
+    print('Meow!');
+  }
+}
+
+void main() {
+  Cat cat = Cat('Whiskers');
+  cat.speak(); // prints "My name is Whiskers." to the console
+  cat.meow(); // prints "Meow!" to the console
+}
+```
+
+This creates an Animal class with a private _name property and a speak method, and a Cat class that extends Animal and adds a meow method.
+
+### Resources
+
+- [The official Dart documentation on classes](https://dart.dev/guides/language/language-tour#classes)
+- [Dart Tutorial: OOP in Dart](https://dart-tutorial.com/object-oriented-programming/)

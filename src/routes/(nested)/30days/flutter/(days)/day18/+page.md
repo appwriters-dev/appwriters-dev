@@ -1,52 +1,26 @@
-# Exceptions and Error Handling
+# Flutter Packages to Rescue
 
-Error and exception handling is crucial for any developer. By effectively handling errors, developers can improve user experience, simplify debugging, ensure application maintainability, and prevent security vulnerabilities. Therefore, it is an essential skill that every developer must possess.
+Flutter packages are pre-built code libraries that can be added to a Flutter app to enhance its functionality. They are created by developers and made available for others to use, so that they don't have to reinvent the wheel and can save time and effort in their development work.
 
-> **Project** - Handle Errors and Exceptions
+Packages can be used to add new features and capabilities to a Flutter app, such as displaying maps, making HTTP requests, handling state management, and more. They can also help developers avoid common mistakes and ensure that their app is using best practices.
+
+> **Project** - Expense Chart
 >
-> Improve the code of my [open trivia's](https://github.com/lohanidamodar/flutter_opentrivia/blob/master/lib/resources/api_provider.dart) `getQuestions` function by handling error and exceptions.
+> Given expense data from a user, display a bar chart representing expenses in each category. Use the [font_awesome_flutter](https://pub.dev/packages/font_awesome_flutter) package to display icons for each category. Use [fl_chart](https://pub.dev/packages/fl_chart) package to display the bar chart.
+> 
 
-By the end of today, you will have a clear understanding of what errors and exceptions are, how they can occur in an application, and how to handle them correctly.
+by the end of this day, you will know how to use packages in Flutter to enhance your app's functionality and in the process save time and resource.
 
 ## Tips
 
-- To handle exceptions in Dart and Flutter, you can use try-catch blocks. A try-catch block allows you to catch and handle exceptions that occur within the try block.
+- Use the [pub.dev](https://pub.dev/) website to search for Flutter packages.
+- Use the `flutter pub add <package-name>` command to install packages or you can manually add the package name to the `pubspec.yaml` file and run `flutter pub get` to install it.
+- Always check the package's documentation for instructions on how to use it.
+- Use packages that are well maintained and have a large number of users already using it.
 
-```dart
-try {
-  // code that may throw an exception
-} catch (e) {
-  // code to handle the exception
-}
-```
+### Resources
 
-- In some cases, you may want to catch an exception and then rethrow it so that it can be handled by another part of the program. To rethrow an exception, you can use the `rethrow` keyword:
-
-```dart
-try {
-  // code that may throw an exception
-} catch (e) {
-  // code to handle the exception
-  rethrow;
-}
-```
-
-- In addition to `try` and `catch`, Dart and Flutter also have a `finally` block. The code in a `finally` block will always be executed, regardless of whether an exception was thrown or not.
-
-```dart
-try {
-  // code that may throw an exception
-} catch (e) {
-  // code to handle the exception
-} finally {
-  // code that will always be executed
-}
-```
-
-
-## Resources
-
-- [Exceptions - Dart Language Tour](https://dart.dev/guides/language/language-tour#exceptions)
-- [Error handling in Flutter](https://docs.flutter.dev/testing/errors)
-- [Dart Error and Exception Handling Techniques](https://www.tutorialspoint.com/dart_programming/dart_programming_exceptions.htm)
-- [Code review](https://github.com/lohanidamodar/appwrite_auth_kit/blob/master/lib/src/accounts_provider.dart) - review the code and see how `try-catch-finally` is used. Also see how only specific exceptions are caught and handled.
+- [Packages website](https://pub.dev/)
+- [Using packages](https://docs.flutter.dev/packages-and-plugins/using-packages)
+- [font_awesome_flutter](https://pub.dev/packages/font_awesome_flutter)
+- [fl_chart](https://pub.dev/packages/fl_chart)

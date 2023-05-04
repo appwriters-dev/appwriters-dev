@@ -52,22 +52,33 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
+        "title": "Exceptions and Error Handling",
+        "objectives": [
+            "Learn about the importance of exception handling and error management",
+            "Understand how to use try, catch, and finally",
+            "Implement exception handling in your Flutter app"
+        ],
+        "link": "/30days/flutter/day6"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Dart Classes",
         "objectives": [
             "Learn about object-oriented programming in Dart",
             "Understand classes, objects, and inheritance",
             "Use classes and objects in your Flutter app"
         ],
-        "link": "/30days/flutter/day6"
+        "link": "/30days/flutter/day7"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Dart Packages",
+        "title": "Dependency Management",
         "objectives": [
             "Learn about packages in Dart",
+            "Understand how to use the pubspec.yaml file",
             "Understand how to use existing packages",
         ],
-        "link": "/30days/flutter/day7"
+        "link": "/30days/flutter/day8"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -77,7 +88,7 @@ export const resources = [
             "Learn how to make HTTP requests",
             "Learn how to parse JSON data"
         ],
-        "link": "/30days/flutter/day8"
+        "link": "/30days/flutter/day9"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -87,7 +98,7 @@ export const resources = [
             "Learn about widgets and how to use them",
             "Create a simple Flutter app"
         ],
-        "link": "/30days/flutter/day9"
+        "link": "/30days/flutter/day10"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -97,7 +108,7 @@ export const resources = [
             "Understand typography, color, and layout",
             "Apply UI design principles to your Flutter app"
         ],
-        "link": "/30days/flutter/day10"
+        "link": "/30days/flutter/day11"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -107,7 +118,7 @@ export const resources = [
             "Understand how to use the pubspec.yaml file",
             "Add images and fonts to your Flutter app"
         ],
-        "link": "/30days/flutter/day11"
+        "link": "/30days/flutter/day12"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -117,7 +128,7 @@ export const resources = [
             "Understand how to use setState()",
             "Implement stateful widgets in your Flutter app"
         ],
-        "link": "/30days/flutter/day12"
+        "link": "/30days/flutter/day13"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -127,7 +138,7 @@ export const resources = [
             "Understand how to use text fields and text editing controllers",
             "Implement forms and accept user input in your Flutter app"
         ],
-        "link": "/30days/flutter/day13"
+        "link": "/30days/flutter/day14"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -137,7 +148,7 @@ export const resources = [
             "Understand how to use the showDialog() method",
             "Implement alerts, dialogs, and snackbar in your Flutter app"
         ],
-        "link": "/30days/flutter/day14"
+        "link": "/30days/flutter/day15"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -147,7 +158,7 @@ export const resources = [
             "Learn about the Navigator widget and routes",
             "Implement navigation in your Flutter app"
         ],
-        "link": "/30days/flutter/day15"
+        "link": "/30days/flutter/day16"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -157,35 +168,25 @@ export const resources = [
             "Learn about the Go Router",
             "Implement navigation in your Flutter app using Go Router"
         ],
-        "link": "/30days/flutter/day16"
+        "link": "/30days/flutter/day17"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Flutter Libraries",
+        "title": "Flutter Packages to Rescue",
         "objectives": [
             "Learn how to use libraries in Flutter",
             "Understand how to create and use libraries",
             "Implement libraries in your Flutter app"
         ],
-        "link": "/30days/flutter/day17"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Exceptions and Error Handling",
-        "objectives": [
-            "Learn about the importance of exception handling and error management",
-            "Understand how to use try, catch, and finally",
-            "Implement exception handling in your Flutter app"
-        ],
         "link": "/30days/flutter/day18"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Networking Part 1",
+        "title": "JSON Parsing and Networking",
         "objectives": [
-            "Learn about networking in Flutter",
-            "Understand how to make HTTP requests",
-            "Implement basic networking in your Flutter app"
+            "Learn about JSON Parsing in Flutter",
+            "Understand how to use the dart:convert package",
+            "Implement JSON Parsing in your Flutter app"
         ],
         "link": "/30days/flutter/day19"
     },

@@ -1,77 +1,90 @@
-# Assets: Images and Fonts
+# User Interface Design
 
-Image and font assets play a crucial role in the design and functionality of Flutter applications. They contribute to a visually appealing UI, improve overall design, and can establish the tone and branding of the app. By optimizing images and selecting appropriate fonts, app developers can enhance the user experience and differentiate their app from others in the market.
+In Flutter, UI design involves creating visual and interactive elements for your app using widgets. Widgets are pre-built components that can be arranged in a hierarchy to create complex layouts. Tools and libraries such as Material Design and Cupertino can help you design and build beautiful looking UIs.
 
-> **Project** - Quotes UI
+> 
+> **Project** - Product Details
+> 
+> Build a product details screen as shown in the following picture
 >
-> Build the following UI, use two custom fonts (choose any from [Google Fonts](https://fonts.google.com) or use your own), use seperate font for the quote and the author name.
+> ![Product Details](https://github.com/lohanidamodar/flutter_ui_challenges/raw/master/screenshots/ecommerce_details3.png)
+>
+> **Tips**
 > 
-> <img src="https://github.com/lohanidamodar/flutter_ui_challenges/raw/master/screenshots/quotes1.png" alt="quotes ui" />
+> - Use `Image.network` to display your image.
 > 
-> **Tips**: Try once without using any packages, and again using the [google_fonts](https://pub.dev/packages/google_fonts) package.
+> - Widgets `Text`, `ElevatedButton`, `IconButton`, `Container`, `Stack`, `Row` and `Column`
+> 
+> - Don’t forget to post screenshot after you are done to your social networks with hashtag #30DaysMasterFlutter
+> 
 
-By the end of the day, you should have a better understanding of the importance of image and font assets in Flutter apps. You will have learned how to add and display different types of image assets, and how to add and use custom fonts to your apps.
+By the end of this day, you should have a basic understanding of how to use widgets to create custom layouts and designs.
 
 ## Tips
 
-- Adding Image Assets
-
-  - Create a directory in your project's root directory to store your image assets.
-  - Add your image files (e.g. PNG, JPEG, or GIF files) to this directory.
-  - In your app's `pubspec.yaml` file, specify the location of the image assets directory and the images you want to use, like so:
-
-```yaml
-flutter:
-  assets:
-    - assets/images/
-```
-
-     - To display an image in your app, use the `Image` widget and specify the location of the image file, like so:
+- To understand Flutter's building blocks, which are widgets, it's important to review the basics of Dart, particularly its OOP (Object-Oriented Programming) concepts. Widgets are essentially classes, so having a good grasp of OOP in Dart is crucial. You can improve your understanding by practicing and building more projects.
+- Experiment with different widgets, such as the **Text**, **Container**, **Row**, and **Column** widgets, to create layouts and designs.
+- Containers are used to wrap other widgets and provide a way to add padding, margins, and other styling. Rows and columns are used to arrange other widgets in a horizontal or vertical direction.
+- A simple app with a custom layout using basic widgets
 
 ```dart
-Image.asset('assets/images/my_image.png')
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'My App',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('My App'),
+        ),
+        body: Container(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            children: <Widget>[
+              Image.network(FlutterLogo()),
+              SizedBox(height: 16.0),
+              Text(
+                'Welcome to my app!',
+                style: TextStyle(fontSize: 24.0),
+              ),
+              SizedBox(height: 16.0),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  RaisedButton(
+                    child: Text('Button 1'),
+                    onPressed: () {},
+                  ),
+                  RaisedButton(
+                    child: Text('Button 2'),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 ```
 
-    Alternatively, you can use the `NetworkImage` widget to display an image from a URL or the `AssetImage` widget to display an image from an asset bundle.
-
-- Adding Custom Fonts
-    - Create a directory in your project's root directory to store your font files.
-    - Add your font files (e.g. TrueType or OpenType font files) to this directory.
-    - In your app's `pubspec.yaml` file, specify the location of the font files directory and the fonts you want to use, like so:
-
-```yaml
-flutter:
-  fonts:
-    - family: MyCustomFont
-      fonts:
-        - asset: assets/fonts/my_custom_font.ttf
-          weight: 400
-```
-
-    - To use a custom font in your app, specify the font family and weight when creating a `TextStyle`, like so:
-
-```dart
-Text(
-  'Hello, World!',
-  style: TextStyle(
-    fontFamily: 'MyCustomFont',
-    fontWeight: FontWeight.w400,
-  ),
-)
-```
+This creates a simple app with an app bar, a container with an image, text, and two buttons in a row.
 
 > **More projects**
 >
-> - [Using image assets](https://masterflutter.appwriters.dev/ch08-assets/ls01-images)
-> - [Using custom fonts](https://masterflutter.appwriters.dev/ch08-assets/ls02-fonts)
-> 
+> - [Basic Layout](https://masterflutter.appwriters.dev/ch05-flutter-basics/ls03-basic-layout)
+> - [Scrolling Layouts](https://masterflutter.appwriters.dev/ch05-flutter-basics/ls04-scrolling-layout)
 
-## Resources
+### Resources
 
-- [Flutter documentation on adding assets](https://flutter.dev/docs/development/ui/assets-and-images)
-- [Image Widget](https://api.flutter.dev/flutter/widgets/Image-class.html)
-- [Image.asset](https://api.flutter.dev/flutter/widgets/Image/Image.asset.html)
-- [Flutter documentation on using custom font](https://docs.flutter.dev/cookbook/design/fonts)
-- [Google Fonts](https://fonts.google.com/) - free custom fonts
-- [Fonts in Pubspec](https://docs.flutter.dev/cookbook/design/fonts#2-declare-the-font-in-the-pubspec)
-- [Google Fonts package](https://pub.dev/packages/google_fonts)
+- [Flutter documentation on widgets](https://docs.flutter.dev/ui/widgets-intro)
+- [Flutter widget catalog](https://flutter.dev/docs/development/ui/widgets/catalog)
+- [Flutter UI challenges GitHub repository](https://github.com/lohanidamodar/flutter_ui_challenges)

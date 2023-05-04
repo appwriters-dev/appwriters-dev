@@ -1,5 +1,10 @@
 # What's Next?
 
+## Integrations
+
+- Firebase
+- Appwrite
+- Supabase
 
 # Advanced Animations
 

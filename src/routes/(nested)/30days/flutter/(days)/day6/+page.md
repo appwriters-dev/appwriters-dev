@@ -1,81 +1,52 @@
-# Dart Classes
+# Exceptions and Error Handling
 
-OOP in Dart lets you create objects that have data and functions. You make a blueprint called a class, then create instances of that class with their own data and functions. This makes your code more organized and reusable.
+Error and exception handling is crucial for any developer. By effectively handling errors, developers can improve user experience, simplify debugging, ensure application maintainability, and prevent security vulnerabilities. Therefore, it is an essential skill that every developer must possess.
 
-> **Project** - Article Data Source
-> 
-> - Create an abstract class called `ArticleDataSource` with method `getArticle(String id)`, and `deleteArticle(String id)`.
-> - Create a class called `ArticleLocalDataSource` that implements the `ArticleDataSource`
-> - Implement each method and print operation, source, and the provided id. For example, calling `getArticle('dart-today-and-tomorrow')` should print **Get Local dart-today-and-tomorrow**
-> - Add a factory constructor to `ArticleLocalDataSource` and return the object of `ArticleLocalDataSource`.
-> - Instantiate `ArticleLocalDataSource` using the factory constructor and call each methods on the object.
-> - Create and implement `ArticleAPIDataSource` exactly like `ArticleLocalDataSource` but print **Get API dart-today-and-tomorrow** instead of **Get Local dart-today-and-tomorrow**.
+> **Project** - Handle Errors and Exceptions
 >
+> Improve the code of my [open trivia's](https://github.com/lohanidamodar/flutter_opentrivia/blob/master/lib/resources/api_provider.dart) `getQuestions` function by handling error and exceptions.
 
-By the end of this day, you should have a good understanding of how to create classes and objects in Dart, and how to call their methods.
+By the end of today, you will have a clear understanding of what errors and exceptions are, how they can occur in an application, and how to handle them correctly.
 
 ## Tips
 
-- Review the basics of classes and objects in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#classes).
-- Create a class with properties and methods. For example:
+- To handle exceptions in Dart and Flutter, you can use try-catch blocks. A try-catch block allows you to catch and handle exceptions that occur within the try block.
 
 ```dart
-class Person {
-  String name;
-  int age;
-  
-  Person(this.name, this.age);
-  
-  void sayHello() {
-    print('Hello, my name is $name and I am $age years old.');
-  }
+try {
+  // code that may throw an exception
+} catch (e) {
+  // code to handle the exception
 }
 ```
 
-  This creates a Person class with two properties (name and age), a constructor that initializes these properties, and a sayHello method that prints a message to the console.
-
-- Instantiate the class and call its methods. For example:
+- In some cases, you may want to catch an exception and then rethrow it so that it can be handled by another part of the program. To rethrow an exception, you can use the `rethrow` keyword:
 
 ```dart
-void main() {
-  Person person = Person('Alice', 25);
-  person.sayHello(); // prints "Hello, my name is Alice and I am 25 years old." to the console
+try {
+  // code that may throw an exception
+} catch (e) {
+  // code to handle the exception
+  rethrow;
 }
 ```
 
-This creates a new Person object with the name "Alice" and age 25, and calls its sayHello method.
-
-- Experiment with different types of classes, such as classes with private properties and methods, or classes that inherit from other classes.
+- In addition to `try` and `catch`, Dart and Flutter also have a `finally` block. The code in a `finally` block will always be executed, regardless of whether an exception was thrown or not.
 
 ```dart
-class Animal {
-  String _name;
-  
-  Animal(this._name);
-  
-  void speak() {
-    print('My name is $_name.');
-  }
-}
-
-class Cat extends Animal {
-  Cat(String name) : super(name);
-  
-  void meow() {
-    print('Meow!');
-  }
-}
-
-void main() {
-  Cat cat = Cat('Whiskers');
-  cat.speak(); // prints "My name is Whiskers." to the console
-  cat.meow(); // prints "Meow!" to the console
+try {
+  // code that may throw an exception
+} catch (e) {
+  // code to handle the exception
+} finally {
+  // code that will always be executed
 }
 ```
 
-This creates an Animal class with a private _name property and a speak method, and a Cat class that extends Animal and adds a meow method.
 
-### Resources
+## Resources
 
-- [The official Dart documentation on classes](https://dart.dev/guides/language/language-tour#classes)
-- [Dart Tutorial: OOP in Dart](https://dart-tutorial.com/object-oriented-programming/)
+- [Exceptions - Dart Language Tour](https://dart.dev/guides/language/language-tour#exceptions)
+- [Error handling in Flutter](https://docs.flutter.dev/testing/errors)
+- [Dart Error and Exception Handling Techniques](https://www.tutorialspoint.com/dart_programming/dart_programming_exceptions.htm)
+- [Code review](https://github.com/lohanidamodar/appwrite_auth_kit/blob/master/lib/src/accounts_provider.dart) - review the code and see how `try-catch-finally` is used. Also see how only specific exceptions are caught and handled.

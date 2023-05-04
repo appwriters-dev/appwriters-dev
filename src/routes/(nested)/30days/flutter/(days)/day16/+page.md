@@ -1,51 +1,95 @@
-# Navigator 2.0 and the Go Router
+# Introduction to Navigation
 
-Learn about Navigator 2.0, the newest version of the Navigator widget in Flutter that simplifies app navigation and supports deep linking. Also learn about the [Go Router](https://pub.dev/packages/go_router), an officially supported Dart package that provides a declarative approach to routing in Flutter apps.
+Mobile applications typically consist of multiple pages that users navigate between. Understanding how to navigate between screens in your app is crucial for creating a seamless and intuitive user experience. By mastering navigation in Flutter, you can build engaging and user-friendly mobile apps that enable users to easily find the information they need and complete tasks efficiently.
 
-> **Project** - Quotes App 2.0
+> **Project** - Quotes App
 >
-> Copy and update the quotes app from [**day 15**](/30days/flutter/day15) to use Go Router.
+> Time to bring your project together, combine the quote details UI you created on **[day 11](/30days/flutter/day11)** and the registration form you created on **[day 13](/30days/flutter/day13)** to create a simple quotes app.
+>
+> - Add a quotes page to your app that displays a list of quotes. You can hardcode the quotes for now.
+> - On the registration form, if all valid information is provided, navigate to the quotes page.
+> - Show snackbar with error information if form is not valid
+> - Tapping a quote should navigate to a detail page that displays the quote details page.
 
-By the end of this day you will know how to use Navigator 2.0 and the Go Router effectively in your Flutter app and provide a seamless and intuitive user experience.
-
+By the end of this day, you should have a basic understanding of how to implement navigation in a your Flutter application.
 
 ## Tips
 
-- Make sure to review the basics of Navigation from [day 15](/30days/flutter/day15) before diving into Navigator 2.0 and the Go Router.
+- Flutter provides different types of navigation, such as push and pop navigation. Learn about the different types of navigation and when to use each one.
+- Flutter provides built-in widgets for navigation, such as the `Navigator` widget and the `MaterialApp` widget. Use these widgets to save time and ensure consistency in your app's design.
 
-- Learn about declarative routing: Navigator 2.0 and the Go Router are both based on the declarative routing approach, which simplifies the process of navigating between screens in your app.
-
-- Understand the differences between Navigator 2.0 and the Go Router: Both approaches have their own benefits and limitations, so it's important to understand the differences and choose the one that best fits your needs.
-
-- Example implementing basic navigation with the Go Router
+- Simple navigation implementation
 
 ```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MyApp',
-      home: GoRouter(
-        routes: [
-          GoRoute(
-            path: '/',
-            pageBuilder: (context, state) => HomePage(),
-          ),
-          GoRoute(
-            path: '/second',
-            pageBuilder: (context, state) => SecondPage(),
-          ),
-        ],
+      title: 'Navigation Example',
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home Screen'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Go to Detail Screen'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DetailScreen()),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class DetailScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Detail Screen'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Go back to Home Screen'),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
     );
   }
 }
 ```
 
+  In this example, we have two screens: `HomeScreen` and `DetailScreen`. The `HomeScreen` contains an `ElevatedButton` that, when pressed, navigates to the `DetailScreen`. The `DetailScreen` contains another `ElevatedButton` that, when pressed, navigates back to the `HomeScreen` using the `Navigator.pop` method.
+
+<br />
+
+> [more projects](https://masterflutter.appwriters.dev/ch09-multipage-applications/ls01-navigation)
+
 ## Resources
 
-- [Using router](https://docs.flutter.dev/ui/navigation#using-the-router)
-- [Go Router](https://pub.dev/packages/go_router)
-- [Tutorial on Go Router](https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/)
-- [Understanding navigator 2.0](https://blog.codemagic.io/flutter-navigator2/)
-- [Beginners guide to go_router](https://blog.codemagic.io/flutter-go-router-guide/)
+- [Flutter documentation on Navigation](https://flutter.dev/docs/development/ui/navigation)
+- [Named routes](https://flutter.dev/docs/cookbook/navigation/named-routes)
+- [Video on the **Navigator** widget](https://www.youtube.com/watch?v=xpCdSqrX-14)
+- [**Navigator** widget reference](https://api.flutter.dev/flutter/widgets/Navigator-class.html)
+- [Passing data to named routes](https://docs.flutter.dev/cookbook/navigation/navigate-with-arguments)
+- [Passing data between pages](https://docs.flutter.dev/cookbook/navigation/passing-data)

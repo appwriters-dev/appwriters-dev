@@ -1,69 +1,42 @@
-# Forms and User Input
+# Interactive UI
 
-Forms are crucial for users to manage their data on mobile devices. They provide a structured way for users to input and manage data, while user input allows for real-time interaction and feedback. By designing effective forms and user input mechanisms, mobile app developers can ensure that users can easily manage their data and interact with the app in an intuitive and user-friendly way.
+A **StatefulWidget** in Flutter is a widget that can change over time based on changes to its internal state. This enables developers to create interactive user interfaces where the display updates in response to user interactions or changes in the app's data.
 
-> **Project** - Registration Form
+> **Project** - Dice Roller
 >
-> Create a user registration form with fields for **name**, **email**, **password**, **gender** (radio buttons for Male and Female), and a '**Terms and Conditions**' checkbox.
-> 
-> - The form should validate the inputs and print the user's details when submitted.
-> - If everything is valid, print the entered values in the console.
-
-By the end of this day, you will be able to create effective mechanisms for gathering and manipulating user data. This will enable you to build engaging and user-friendly mobile apps that allow users to manage their data with ease.
+> Build a Flutter app to roll a dice.
+>
+> - initially it should display a **Roll Dice** button
+> - every time user taps on the button, it should update a **dice** variable with a random number between 1 and 6
+> - use the value of **dice** variable to display the corresponding dice image
 
 ## Tips
 
-- Flutter provides built-in widgets for many common form elements, such as text fields and buttons. Use these widgets to save time and ensure consistency in your app's design.
-- Keep your forms and user input mechanisms consistent with your app's overall design and branding.
-- Use form validators to ensure that users enter valid data. This will help prevent errors and improve the accuracy of your data.
-- Test your forms and user input mechanisms thoroughly to ensure that they are easy to use and provide a good user experience.
+- It's a good practice to keep stateful widgets **small and focused** on a single responsibility. This makes the widget easier to understand, test, and maintain.
+- When you need to update the internal state of a stateful widget, use the `setState()` method. This method triggers a rebuild of the widget, updating its display based on the new state.
 
-- Creating a simple form with text fields and buttons:
+- Here's a simple example of a stateful widget that increments a counter every time the user taps on it:
 
 ```dart
-class MyForm extends StatefulWidget {
+class CounterWidget extends StatefulWidget {
   @override
-  _MyFormState createState() => _MyFormState();
+  _CounterWidgetState createState() => _CounterWidgetState();
 }
 
-class _MyFormState extends State<MyForm> {
-  final _formKey = GlobalKey<FormState>();
+class _CounterWidgetState extends State<CounterWidget> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Form(
-      key: _formKey,
-      child: Column(
-        children: [
-          TextFormField(
-            decoration: InputDecoration(labelText: 'Name'),
-            validator: (value) {
-              if (value.isEmpty) {
-                return 'Please enter your name';
-              }
-              return null;
-            },
-          ),
-          TextFormField(
-            decoration: InputDecoration(labelText: 'Email'),
-            validator: (value) {
-              if (value.isEmpty) {
-                return 'Please enter your email';
-              }
-              return null;
-            },
-          ),
-          ElevatedButton(
-            child: Text('Submit'),
-            onPressed: () {
-              if (_formKey.currentState.validate()) {
-                Scaffold.of(context).showSnackBar(
-                    SnackBar(content: Text('Processing Data')));
-              }
-            },
-          ),
-        ],
-      ),
+    return GestureDetector(
+      onTap: _incrementCounter,
+      child: Text('Counter: $_counter'),
     );
   }
 }
@@ -72,7 +45,8 @@ class _MyFormState extends State<MyForm> {
 
 ## Resources
 
-- [Flutter Documentation on Forms and Validation](https://docs.flutter.dev/cookbook/forms/validation)
-- [Styling text fields](https://docs.flutter.dev/cookbook/forms/text-input)
-- [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)
-- [TextField Widget](https://api.flutter.dev/flutter/material/TextField-class.html)
+- [Flutter documentation on Stateful Widgets](https://flutter.dev/docs/development/ui/widgets/stateful-widget)
+- [Stateful vs Stateless Widget](https://medium.com/flutter-community/flutter-stateful-vs-stateless-widgets-7f8a5e3d7b5b)
+- [setState() documentation](https://api.flutter.dev/flutter/widgets/State/setState.html)
+- [initState() documentation](https://api.flutter.dev/flutter/widgets/State/initState.html)
+- [ElevatedButton documentation](https://api.flutter.dev/flutter/material/ElevatedButton-class.html)

@@ -1,90 +1,26 @@
-# User Interface Design
+# Hello Flutter
 
-In Flutter, UI design involves creating visual and interactive elements for your app using widgets. Widgets are pre-built components that can be arranged in a hierarchy to create complex layouts. Tools and libraries such as Material Design and Cupertino can help you design and build beautiful looking UIs.
+Flutter is a software development kit (SDK) developed by Google that allows developers to build apps for mobile, web, and desktop platforms using a single codebase. It uses the Dart programming language and provides a set of pre-built UI components called widgets that can be used to build custom user interfaces for your app. Flutter is an open-source project and is free to use.
 
-> 
-> **Project** - Product Details
-> 
-> Build a product details screen as shown in the following picture
+> **Project** - Famous Counter App
 >
-> ![Product Details](https://github.com/lohanidamodar/flutter_ui_challenges/raw/master/screenshots/ecommerce_details3.png)
->
-> **Tips**
-> 
-> - Use `Image.network` to display your image.
-> 
-> - Widgets `Text`, `ElevatedButton`, `IconButton`, `Container`, `Stack`, `Row` and `Column`
-> 
-> - Don’t forget to post screenshot after you are done to your social networks with hashtag #30DaysMasterFlutter
+> - When you create a new Flutter project, it generates a counter app, that just counts the number of times you tap the button in the screent
+> - Create new Fluter project and different files and folders that will be generated. Specially look into `lib/main.dart` as that's where we will spend most of our time
+> - Run the app on an mobile, web, and/or desktop and see it in action
 > 
 
-By the end of this day, you should have a basic understanding of how to use widgets to create custom layouts and designs.
+By the end of this day, you should have a basic understanding of the structure of a Flutter app and how to customize the app bar and content area with basic widgets.
 
 ## Tips
 
-- To understand Flutter's building blocks, which are widgets, it's important to review the basics of Dart, particularly its OOP (Object-Oriented Programming) concepts. Widgets are essentially classes, so having a good grasp of OOP in Dart is crucial. You can improve your understanding by practicing and building more projects.
-- Experiment with different widgets, such as the **Text**, **Container**, **Row**, and **Column** widgets, to create layouts and designs.
-- Containers are used to wrap other widgets and provide a way to add padding, margins, and other styling. Rows and columns are used to arrange other widgets in a horizontal or vertical direction.
-- A simple app with a custom layout using basic widgets
-
-```dart
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'My App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('My App'),
-        ),
-        body: Container(
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            children: <Widget>[
-              Image.network(FlutterLogo()),
-              SizedBox(height: 16.0),
-              Text(
-                'Welcome to my app!',
-                style: TextStyle(fontSize: 24.0),
-              ),
-              SizedBox(height: 16.0),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  RaisedButton(
-                    child: Text('Button 1'),
-                    onPressed: () {},
-                  ),
-                  RaisedButton(
-                    child: Text('Button 2'),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-```
-
-This creates a simple app with an app bar, a container with an image, text, and two buttons in a row.
-
-> **More projects**
->
-> - [Basic Layout](https://masterflutter.appwriters.dev/ch05-flutter-basics/ls03-basic-layout)
-> - [Scrolling Layouts](https://masterflutter.appwriters.dev/ch05-flutter-basics/ls04-scrolling-layout)
+ - If you have not yet installed Install Flutter,you can follow the [instructions on the Flutter website to do this](https://flutter.dev/docs/get-started/install).
+- Create a new Flutter project using the `flutter create` command in your terminal or use the IDE or editor of your choice to create a new Flutter project.
+- Open the project in your preferred IDE or editor (e.g. Android Studio, VS Code) if not already.
+- Customize the app bar and content area with widgets such as Text and Icon.
+- Run the app on an emulator or physical device to see the changes.
 
 ### Resources
 
-- [Flutter documentation on widgets](https://docs.flutter.dev/ui/widgets-intro)
-- [Flutter widget catalog](https://flutter.dev/docs/development/ui/widgets/catalog)
-- [Flutter UI challenges GitHub repository](https://github.com/lohanidamodar/flutter_ui_challenges)
+- [Flutter Test Drive](https://docs.flutter.dev/get-started/test-drive)
+- [First Flutter App codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0)
+- [DartPad](https://dartpad.dev/) - If you have not yet installed Flutter, you can use DartPad to write and run Dart and Flutter code in your browser.

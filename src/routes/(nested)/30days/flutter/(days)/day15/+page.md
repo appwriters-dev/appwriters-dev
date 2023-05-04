@@ -1,95 +1,54 @@
-# Introduction to Navigation
+# Alerts, Dialogs, and Snackbar
 
-Mobile applications typically consist of multiple pages that users navigate between. Understanding how to navigate between screens in your app is crucial for creating a seamless and intuitive user experience. By mastering navigation in Flutter, you can build engaging and user-friendly mobile apps that enable users to easily find the information they need and complete tasks efficiently.
+Alerts and dialogs are important components of mobile apps that provide users with feedback and help them make informed decisions. They can be used to display important messages, confirm user actions, and collect user input. By incorporating well-designed alerts and dialogs into your mobile app, you can improve the user experience and make your app more engaging and intuitive to use.
 
-> **Project** - Quotes App
+> **Project** - Informative App
 >
-> Time to bring your project together, combine the quote details UI you created on **[day 11](/30days/flutter/day11)** and the registration form you created on **[day 13](/30days/flutter/day13)** to create a simple quotes app.
+> Update your registration form project from previous day
 >
-> - Add a quotes page to your app that displays a list of quotes. You can hardcode the quotes for now.
-> - On the registration form, if all valid information is provided, navigate to the quotes page.
-> - Show snackbar with error information if form is not valid
-> - Tapping a quote should navigate to a detail page that displays the quote details page.
+> - When submit button is pressed, if all input is validated, show an alert dialog that has two actions **Cancel** and **Continue** and message **Are you sure you want to submit?**
+> - If user input is not valid, show a snackbar with message **Please fill all the fields correctly**
 
-By the end of this day, you should have a basic understanding of how to implement navigation in a your Flutter application.
+By the end of this day, you will understand the importance of feedback and interaction in mobile apps, learn about different types of alerts, dialogs, and snackbar in Flutter, and explore how to use them effectively in your app.
 
 ## Tips
 
-- Flutter provides different types of navigation, such as push and pop navigation. Learn about the different types of navigation and when to use each one.
-- Flutter provides built-in widgets for navigation, such as the `Navigator` widget and the `MaterialApp` widget. Use these widgets to save time and ensure consistency in your app's design.
+- Alerts, dialogs, and snackbar should be simple and easy to understand for users. Avoid overloading them with too much information or too many options.
 
-- Simple navigation implementation
+- Keep the design of your alerts, dialogs, and snackbar consistent with the rest of your app. Use consistent colors, fonts, and branding to maintain a cohesive and professional look.
+
+- Use clear and concise messages in your alerts, dialogs, and snackbar to help users understand what action they need to take or what is happening in the app.
+
+
+- Creating a simple dialog
 
 ```dart
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Navigation Example',
-      home: HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Screen'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          child: Text('Go to Detail Screen'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => DetailScreen()),
-            );
-          },
-        ),
-      ),
-    );
-  }
-}
-
-class DetailScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Detail Screen'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          child: Text('Go back to Home Screen'),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
-    );
-  }
+void _showAlertDialog() {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('Alert'),
+        content: Text('This is an alert.'),
+        actions: <Widget>[
+          FlatButton(
+            child: Text('OK'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
+    },
+  );
 }
 ```
 
-  In this example, we have two screens: `HomeScreen` and `DetailScreen`. The `HomeScreen` contains an `ElevatedButton` that, when pressed, navigates to the `DetailScreen`. The `DetailScreen` contains another `ElevatedButton` that, when pressed, navigates back to the `HomeScreen` using the `Navigator.pop` method.
-
-<br />
-
-> [more projects](https://masterflutter.appwriters.dev/ch09-multipage-applications/ls01-navigation)
+> [more projects](https://masterflutter.appwriters.dev/ch07-interactivity/ls03-alerts-and-dialogs)
 
 ## Resources
 
-- [Flutter documentation on Navigation](https://flutter.dev/docs/development/ui/navigation)
-- [Named routes](https://flutter.dev/docs/cookbook/navigation/named-routes)
-- [Video on the **Navigator** widget](https://www.youtube.com/watch?v=xpCdSqrX-14)
-- [**Navigator** widget reference](https://api.flutter.dev/flutter/widgets/Navigator-class.html)
-- [Passing data to named routes](https://docs.flutter.dev/cookbook/navigation/navigate-with-arguments)
-- [Passing data between pages](https://docs.flutter.dev/cookbook/navigation/passing-data)
+- [Displaying Snackbar](https://docs.flutter.dev/cookbook/design/snackbars)
+- [Alert Dialog](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
+- [Simple Dialog](https://api.flutter.dev/flutter/material/SimpleDialog-class.html)
+
