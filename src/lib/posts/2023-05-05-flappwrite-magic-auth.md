@@ -61,7 +61,10 @@ Open, iOS project's `Info.plist` file and add the following keys
 
 If you have not already head over to [cloud.appwrite.io](https://cloud.appwrite.io) and sign up. Then create a new project. Next we need to Add platforms.
 
-// Add Platform
+<video width="320" height="240" controls>
+  <source src="https://cloud.appwrite.io/v1/storage/buckets/blog-assets/files/magic-auth-add-platform/view?project=appwriters&mode=admin" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 Following the above steps, add web platform to register a domain, you don't need a web application, you can use any of your domain. It's important to use your own domain in production to prevent others from hijacking it and using it for their own purpose.
 
