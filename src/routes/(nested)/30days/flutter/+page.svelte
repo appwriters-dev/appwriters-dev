@@ -42,7 +42,9 @@
 						<li>{objective}</li>
 					{/each}
 				</ul>
-				<a class="button" href={data.resources[data.daysReleased - 1].link}>begin <i class="icon-arrow-right" /> </a>
+				<a class="button" href={data.resources[data.daysReleased - 1].link}
+					>begin <i class="icon-arrow-right" />
+				</a>
 			</article>
 		</section>
 	{/if}
@@ -61,6 +63,18 @@
 		<div class="resources">
 			<div class="content">
 				<h2>📚 Additional Resources</h2>
+				<p>🎉 Yay! Congratulations on completing #30DaysMasterFlutter! 🎉</p>
+
+				<p>You must be feeling amazing right now! But wait, there's more! 😃</p>
+
+				<p>
+					Flutter is an exciting technology, and there's so much more to learn! Here are some things
+					you can explore next:
+				</p>
+
+				// Resources
+
+				<p>The possibilities are endless, so keep exploring and having fun! 🚀</p>
 			</div>
 		</div>
 	{/if}
@@ -90,7 +104,7 @@
 		padding-left: 1rem;
 		padding-right: 1rem;
 
-		@media screen and (max-width: vars.$smMax){
+		@media screen and (max-width: vars.$smMax) {
 			h1 {
 				font-size: 1.8rem;
 			}
@@ -126,7 +140,6 @@
 		background-color: var(--white);
 		text-align: center;
 		ul {
-			
 			list-style: none;
 		}
 		article {
