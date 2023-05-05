@@ -65,7 +65,7 @@ import Grid from './grid.svelte';
 			<Grid resources={data.resources} />
 		</div>
 	{:else}
-		<Countdown targetDate={config.masterFlutter30Published} />
+		<Countdown targetDate={config.masterFlutter30Published + 24 * 60 * 60 * 1000} />
 		<div class="coming-soon">
 			<img src="/images/flutter_coming_soon.gif" alt="something is coming" />
 		</div>
