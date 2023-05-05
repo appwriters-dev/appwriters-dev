@@ -53,4 +53,3 @@ prefs.setBool('isDarkModeEnabled', true); // Set the boolean value to true and s
 ### Resources
 - [Flutter official documentation on shared_preferences](https://flutter.dev/docs/cookbook/persistence/key-value)
 - [Shared preferences package](https://pub.dev/packages/shared_preferences)
-- 
