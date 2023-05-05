@@ -1,5 +1,6 @@
 <script>
-	import Grid from './grid.svelte';
+	import AdditionalResources from './additionalResources.svelte';
+import Grid from './grid.svelte';
 	export let data;
 </script>
 
@@ -68,23 +69,7 @@
 	{/if}
 
 	{#if data.resources.length >= 30}
-		<div class="resources">
-			<div class="content">
-				<h2>📚 Additional Resources</h2>
-				<p>🎉 Yay! Congratulations on completing #30DaysMasterFlutter! 🎉</p>
-
-				<p>You must be feeling amazing right now! But wait, there's more! 😃</p>
-
-				<p>
-					Flutter is an exciting technology, and there's so much more to learn! Here are some things
-					you can explore next:
-				</p>
-
-				// Resources
-
-				<p>The possibilities are endless, so keep exploring and having fun! 🚀</p>
-			</div>
-		</div>
+			<AdditionalResources />
 	{/if}
 </section>
 
@@ -183,10 +168,7 @@
 			max-width: 62rem;
 		}
 	}
-	.resources {
-		background-color: var(--white);
-		padding: 2rem;
-	}
+	
 	.content {
 		max-width: 80rem;
 		margin: 0 auto;
