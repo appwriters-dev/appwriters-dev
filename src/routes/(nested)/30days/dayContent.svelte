@@ -19,6 +19,9 @@
 		{#if nextReleased && day < 30}
 			<a href="/30days/flutter/day{day + 1}">day {day+1} <i class="icon-arrow-right" /> </a>
 		{/if}
+		{#if day == 30}
+			<a href="/30days/flutter/whats-next">What's Next? <i class="icon-arrow-right" /> </a>
+		{/if}
 	</nav>
 </div>
 
