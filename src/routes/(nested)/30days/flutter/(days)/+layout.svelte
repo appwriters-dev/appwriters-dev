@@ -16,7 +16,7 @@
 	<meta name="twitter:description" content={data.metaDescription} />
 </svelte:head>
 
-<DayContent day={data.day} description={data.metaDescription}  nextReleased={data.nextReleased}>
+<DayContent day={data.day}  nextReleased={data.nextReleased}>
 	<slot />
 </DayContent>
 <Footer />
