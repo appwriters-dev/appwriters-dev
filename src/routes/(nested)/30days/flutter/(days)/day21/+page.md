@@ -1,17 +1,27 @@
 # HTTP Requests in Flutter
 
-- Review the basics of Dart programming from Day 1-5.
-- Learn how to make network requests in Flutter using the http package. This package allows you to easily make HTTP requests to an API and receive data in JSON format.
-- Experiment with different types of requests, such as GET and POST requests, and learn how to handle errors and exceptions.
+Dynamic mobile applications save and load user data and other information from remote servers. It is important to understand how to make network requests in Flutter to fetch data from an API and display it in your app.
 
-### Resources
-
-- Flutter http package documentation: https://pub.dev/packages/http
-- Flutter network requests tutorial: https://flutter.dev/docs/cookbook/networking
-- Flutter documentation on HTTP requests: https://flutter.dev/docs/cookbook/networking/fetch-data
-- Http package documentation: https://pub.dev/packages/http
-- Flutter tutorial on HTTP requests and parsing JSON data: https://medium.com/flutterdevs/parsing-complex-json-in-flutter-747c46655f51
-- Tutorial on integrating APIs in Flutter apps: https://medium.com/flutter-community/integrate-an-api-in-your-flutter-app-dc1a9a825dcf
-- Video tutorial on HTTP requests in Flutter: https://www.youtube.com/watch?v=yCTHGK1lOT0
+> **Project** - Quotes API
+>
+> Update the quotes list UI you built on [day 12](/30days/flutter/day12) to fetch quotes from an API instead of using a static list of quotes.
+>
+> - [Get quotes from this endpoint](https://dummyjson.com/quotes)
 
 By the end of this day, you should have a basic understanding of how to make network requests in Flutter and how to work with the `http` package.
+
+## Tips
+
+- Review the basics of Dart programming from Day 1-9.
+- Learn how to make network requests in Flutter using the [http](https://pub.dev/packages/http) package. This package allows you to easily make HTTP requests to an API and receive data in JSON format.
+- Experiment with different types of requests, such as GET and POST requests, and learn how to handle errors and exceptions.
+- You can use [JSON Placeholder API](https://jsonplaceholder.typicode.com/) to practice making different requests
+- You should practice by building more projects
+- You can use [Free Public APIs](https://github.com/public-apis/public-apis) for building many interesting applications
+
+## Resources
+
+- [Flutter http package documentation](https://pub.dev/packages/http)
+- [Fetch Data fron Internet](https://docs.flutter.dev/cookbook/networking/fetch-data)
+- [Working with Rest API in Flutter](https://www.appwriters.dev/blog/integrating-with-rest-api-in-flutter)
+
