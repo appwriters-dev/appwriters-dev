@@ -1,5 +1,7 @@
 <script>
-	import AdditionalResources from './additionalResources.svelte';
+	import Countdown from '$lib/components/Countdown.svelte';
+	import { config } from '../config';
+import AdditionalResources from './additionalResources.svelte';
 import Grid from './grid.svelte';
 	export let data;
 </script>
@@ -63,6 +65,7 @@ import Grid from './grid.svelte';
 			<Grid resources={data.resources} />
 		</div>
 	{:else}
+		<Countdown targetDate={config.masterFlutter30Published} />
 		<div class="coming-soon">
 			<img src="/images/flutter_coming_soon.gif" alt="something is coming" />
 		</div>
