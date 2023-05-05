@@ -16,6 +16,10 @@
 		minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 		seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+        if(days <= 0 && hours <= 0 && minutes <= 0 && seconds <= -1 && location) {
+            location.reload();
+        }
+
 		timeLeft = `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
 	};
 
@@ -64,12 +68,6 @@
 		text-align: center;
 	}
 
-	h2 {
-		font-weight: normal;
-		letter-spacing: 0.125rem;
-		text-transform: uppercase;
-	}
-
 	li {
 		display: inline-block;
 		font-size: 1.5em;
@@ -84,10 +82,7 @@
 	}
 
 	@media all and (max-width: 768px) {
-		h1 {
-			font-size: calc(1.5rem * var(--smaller));
-		}
-
+	
 		li {
 			font-size: calc(1.125rem * var(--smaller));
 		}
