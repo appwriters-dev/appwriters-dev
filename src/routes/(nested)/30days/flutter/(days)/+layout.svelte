@@ -3,11 +3,19 @@
 	import Footer from '../footer.svelte';
 	export let data;
 </script>
+
 <svelte:head>
-	<title>Day {data.day}: {data.resources[data.day-1].title} | #30DaysMasterFlutter</title>
-	<meta property="og:title" content="Day {data.day}: {data.resources[data.day-1].title} | #30DaysMasterFlutter" />
-	<meta name="twitter:title" content="Day {data.day}: {data.resources[data.day-1].title} | #30DaysMasterFlutter" />
+	<title>{data.title}</title>
+	<meta name="description" content={data.metaDescription} />
+	<meta name="keywords" content={data.metaKeywords} />
+	<meta name="author" content="Damodar Lohani" />
+	<meta name="robots" content="index, follow" />
+	<meta property="og:title" content={data.title} />
+	<meta property="og:description" content={data.metaDescription} />
+	<meta name="twitter:title" content={data.title} />
+	<meta name="twitter:description" content={data.metaDescription} />
 </svelte:head>
+
 <DayContent day={data.day} nextReleased={data.nextReleased}>
 	<slot />
 </DayContent>

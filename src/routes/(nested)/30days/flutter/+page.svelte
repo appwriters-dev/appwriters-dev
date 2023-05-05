@@ -4,7 +4,15 @@
 </script>
 
 <svelte:head>
-	<title>30 Days to Master Flutter | Appwriters</title>
+	<title>{data.title}</title>
+	<meta name="description" content={data.metaDescription} />
+	<meta name="keywords" content={data.metaKeywords} />
+	<meta name="author" content="Damodar Lohani" />
+	<meta name="robots" content="index, follow" />
+	<meta property="og:title" content={data.title} />
+	<meta property="og:description" content={data.metaDescription} />
+	<meta name="twitter:title" content={data.title} />
+	<meta name="twitter:description" content={data.metaDescription} />
 </svelte:head>
 
 <section>
