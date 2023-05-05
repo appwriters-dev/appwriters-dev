@@ -35,13 +35,13 @@
             {#if days > 0}
 			<li><span id="days">{days}</span> days</li>
             {/if}
-            {#if hours > 0}
+            {#if hours > 0 || days > 0}
 			<li><span id="hours">{hours}</span> Hours</li>
             {/if}
-            {#if minutes > 0}
+            {#if minutes > 0 || hours > 0 || days > 0}
 			<li><span id="minutes">{minutes}</span> Minutes</li>
             {/if}
-            {#if seconds > 0}
+            {#if seconds > 0 || minutes > 0 || hours > 0 || days > 0}
 			<li><span id="seconds">{seconds}</span> Seconds</li>
             {/if}
 		</ul>
