@@ -28,7 +28,7 @@
 
 <style>
     [class^="icon-"] {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     button {
         cursor: pointer;
