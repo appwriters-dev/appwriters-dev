@@ -14,7 +14,10 @@ By the end of this day, you should have a better understanding of how to parse J
 ## Tips
 
 - Review the basics of Dart programming from Day 1-9.
-- 
+- It's always best practice to parse JSON into a Dart object. This will make it easier to work with the data in your app.
+- You should practice with wide range of JSON data to get a better understanding of how to parse JSON data in Flutter.
+- You can use tools like [JSON to Dart](https://javiercbk.github.io/json_to_dart/) to automatically generate Dart classes from JSON data.
+- [Dart Data Class Generator](https://marketplace.visualstudio.com/items?itemName=hzgood.dart-data-class-generator) is a VS Code extension that you can use to generate Dart classes from JSON data.
 
 ### Resources
 
