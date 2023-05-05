@@ -1,4 +1,4 @@
-# User Interface Design
+# User Interface Design - Part 1
 
 In Flutter, UI design involves creating visual and interactive elements for your app using widgets. Widgets are pre-built components that can be arranged in a hierarchy to create complex layouts. Tools and libraries such as Material Design and Cupertino can help you design and build beautiful looking UIs.
 
@@ -7,14 +7,12 @@ In Flutter, UI design involves creating visual and interactive elements for your
 > 
 > Build a product details screen as shown in the following picture
 >
-> ![Product Details](https://github.com/lohanidamodar/flutter_ui_challenges/raw/master/screenshots/ecommerce_details3.png)
+> ![Product Details](https://github.com/lohanidamodar/flutter_ui_challenges/raw/master/screenshots/ecommerce_detail2.png)
 >
 > **Tips**
 > 
 > - Use `Image.network` to display your image.
-> 
-> - Widgets `Text`, `ElevatedButton`, `IconButton`, `Container`, `Stack`, `Row` and `Column`
-> 
+> - Widgets `Container`, `Text`, `ElevatedButton`, `IconButton`, `Container`, `Stack`, `Row` and `Column`
 > - Don’t forget to post screenshot after you are done to your social networks with hashtag #30DaysMasterFlutter
 > 
 
@@ -76,15 +74,13 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-This creates a simple app with an app bar, a container with an image, text, and two buttons in a row.
+- Practice building more UIs with Flutter. You can find inspiration from existing apps in the Play Store or App Store. You can also check out the [Flutter UI challenges GitHub repository](https://github.com/lohanidamodar/flutter_ui_challenges) for more ideas.
 
-> **More projects**
->
-> - [Basic Layout](https://masterflutter.appwriters.dev/ch05-flutter-basics/ls03-basic-layout)
-> - [Scrolling Layouts](https://masterflutter.appwriters.dev/ch05-flutter-basics/ls04-scrolling-layout)
+> [more projects](https://masterflutter.appwriters.dev/ch05-flutter-basics/ls03-basic-layout)
 
 ### Resources
 
 - [Flutter documentation on widgets](https://docs.flutter.dev/ui/widgets-intro)
+- [Official UI Layout Tutorial](https://docs.flutter.dev/ui/layout/tutorial) - recommended to follow and build
 - [Flutter widget catalog](https://flutter.dev/docs/development/ui/widgets/catalog)
 - [Flutter UI challenges GitHub repository](https://github.com/lohanidamodar/flutter_ui_challenges)

@@ -102,13 +102,23 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "User Interface Design",
+        "title": "User Interface Design - Part 1",
         "objectives": [
-            "Learn about the basics of UI design",
-            "Understand typography, color, and layout",
-            "Apply UI design principles to your Flutter app"
+            "Learn about the basics of UI design in Flutter",
+            "Learn about simple widgets like Text, Container, Row, and Column",
+            "Create a simple UI in your Flutter app"
         ],
         "link": "/30days/flutter/day11"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "User Interface Design - Part 2",
+        "objectives": [
+            "Build scrollable layout",
+            "Learn about scrolling widgets like SingleChildScrollView, ListView, GridView and more",
+            "Practice creating more UIs"
+        ],
+        "link": "/30days/flutter/day12"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -118,7 +128,7 @@ export const resources = [
             "Understand how to use the pubspec.yaml file",
             "Add images and fonts to your Flutter app"
         ],
-        "link": "/30days/flutter/day12"
+        "link": "/30days/flutter/day13"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -128,7 +138,7 @@ export const resources = [
             "Understand how to use setState()",
             "Implement stateful widgets in your Flutter app"
         ],
-        "link": "/30days/flutter/day13"
+        "link": "/30days/flutter/day14"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -138,7 +148,17 @@ export const resources = [
             "Understand how to use text fields and text editing controllers",
             "Implement forms and accept user input in your Flutter app"
         ],
-        "link": "/30days/flutter/day14"
+        "link": "/30days/flutter/day15"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Styling and Validating Forms",
+        "objectives": [
+            "Learn how you can style your forms to match your app's theme",
+            "Understand how to validate forms",
+            "Style and validate forms in your Flutter app"
+        ],
+        "link": "/30days/flutter/day16"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -148,7 +168,7 @@ export const resources = [
             "Understand how to use the showDialog() method",
             "Implement alerts, dialogs, and snackbar in your Flutter app"
         ],
-        "link": "/30days/flutter/day15"
+        "link": "/30days/flutter/day17"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -158,7 +178,7 @@ export const resources = [
             "Learn about the Navigator widget and routes",
             "Implement navigation in your Flutter app"
         ],
-        "link": "/30days/flutter/day16"
+        "link": "/30days/flutter/day18"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -168,7 +188,7 @@ export const resources = [
             "Learn about the Go Router",
             "Implement navigation in your Flutter app using Go Router"
         ],
-        "link": "/30days/flutter/day17"
+        "link": "/30days/flutter/day19"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -178,27 +198,27 @@ export const resources = [
             "Understand how to create and use libraries",
             "Implement libraries in your Flutter app"
         ],
-        "link": "/30days/flutter/day18"
+        "link": "/30days/flutter/day20"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "JSON Parsing and Networking",
+        "title": "HTTP request in Flutter",
         "objectives": [
-            "Learn about JSON Parsing in Flutter",
+            "How to make HTTP requests to get data from remote servers",
+            "Understand how to use the http package",
+            "Implement HTTP requests in your Flutter app"
+        ],
+        "link": "/30days/flutter/day21"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "JSON Parsing",
+        "objectives": [
+            "Learn how to parse JSON data in Flutter",
             "Understand how to use the dart:convert package",
             "Implement JSON Parsing in your Flutter app"
         ],
-        "link": "/30days/flutter/day19"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Networking Part 2",
-        "objectives": [
-            "Learn about advanced networking concepts in Flutter",
-            "Understand how to handle errors and exceptions",
-            "Implement advanced networking in your Flutter app"
-        ],
-        "link": "/30days/flutter/day20"
+        "link": "/30days/flutter/day22"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -208,7 +228,7 @@ export const resources = [
             "Understand the importance of managing state",
             "Choose the right state management solution for your Flutter app"
         ],
-        "link": "/30days/flutter/day21"
+        "link": "/30days/flutter/day23"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -218,7 +238,7 @@ export const resources = [
             "Understand how to use setState() and streams",
             "Implement a state management solution in your Flutter app"
         ],
-        "link": "/30days/flutter/day22"
+        "link": "/30days/flutter/day24"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -228,7 +248,7 @@ export const resources = [
             "Understand different persistence options",
             "Implement basic data persistence in your Flutter app"
         ],
-        "link": "/30days/flutter/day23"
+        "link": "/30days/flutter/day25"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -238,17 +258,7 @@ export const resources = [
             "Understand how to use databases and key-value stores",
             "Implement advanced data persistence in your Flutter app"
         ],
-        "link": "/30days/flutter/day24"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Introduction to Animations",
-        "objectives": [
-            "Learn about animations in Flutter",
-            "Understand different types of animations",
-            "Implement basic animations in your applications"
-        ],
-        "link": "/30days/flutter/day25"
+        "link": "/30days/flutter/day26"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -257,16 +267,6 @@ export const resources = [
             "Learn how to use plugins in Flutter",
             "Understand how to create and use plugins",
             "Implement plugins in your Flutter app"
-        ],
-        "link": "/30days/flutter/day26"
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Debugging and Dev Tools in Flutter",
-        "objectives": [
-            "Learn about debugging in Flutter",
-            "Understand how to use the debugger and DevTools",
-            "Implement debugging techniques in your Flutter app"
         ],
         "link": "/30days/flutter/day27"
     },

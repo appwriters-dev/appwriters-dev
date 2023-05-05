@@ -1,51 +1,54 @@
-# Navigator 2.0 and the Go Router
+# Alerts, Dialogs, and Snackbar
 
-Learn about Navigator 2.0, the newest version of the Navigator widget in Flutter that simplifies app navigation and supports deep linking. Also learn about the [Go Router](https://pub.dev/packages/go_router), an officially supported Dart package that provides a declarative approach to routing in Flutter apps.
+Alerts and dialogs are important components of mobile apps that provide users with feedback and help them make informed decisions. They can be used to display important messages, confirm user actions, and collect user input. By incorporating well-designed alerts and dialogs into your mobile app, you can improve the user experience and make your app more engaging and intuitive to use.
 
-> **Project** - Quotes App 2.0
+> **Project** - Informative App
 >
-> Copy and update the quotes app from [**day 15**](/30days/flutter/day15) to use Go Router.
+> Update your registration form project from previous day
+>
+> - When submit button is pressed, if all input is validated, show an alert dialog that has two actions **Cancel** and **Continue** and message **Are you sure you want to submit?**
+> - If user input is not valid, show a snackbar with message **Please fill all the fields correctly**
 
-By the end of this day you will know how to use Navigator 2.0 and the Go Router effectively in your Flutter app and provide a seamless and intuitive user experience.
-
+By the end of this day, you will understand the importance of feedback and interaction in mobile apps, learn about different types of alerts, dialogs, and snackbar in Flutter, and explore how to use them effectively in your app.
 
 ## Tips
 
-- Make sure to review the basics of Navigation from [day 15](/30days/flutter/day15) before diving into Navigator 2.0 and the Go Router.
+- Alerts, dialogs, and snackbar should be simple and easy to understand for users. Avoid overloading them with too much information or too many options.
 
-- Learn about declarative routing: Navigator 2.0 and the Go Router are both based on the declarative routing approach, which simplifies the process of navigating between screens in your app.
+- Keep the design of your alerts, dialogs, and snackbar consistent with the rest of your app. Use consistent colors, fonts, and branding to maintain a cohesive and professional look.
 
-- Understand the differences between Navigator 2.0 and the Go Router: Both approaches have their own benefits and limitations, so it's important to understand the differences and choose the one that best fits your needs.
+- Use clear and concise messages in your alerts, dialogs, and snackbar to help users understand what action they need to take or what is happening in the app.
 
-- Example implementing basic navigation with the Go Router
+
+- Creating a simple dialog
 
 ```dart
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'MyApp',
-      home: GoRouter(
-        routes: [
-          GoRoute(
-            path: '/',
-            pageBuilder: (context, state) => HomePage(),
-          ),
-          GoRoute(
-            path: '/second',
-            pageBuilder: (context, state) => SecondPage(),
+void _showAlertDialog() {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('Alert'),
+        content: Text('This is an alert.'),
+        actions: <Widget>[
+          FlatButton(
+            child: Text('OK'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
           ),
         ],
-      ),
-    );
-  }
+      );
+    },
+  );
 }
 ```
 
+> [more projects](https://masterflutter.appwriters.dev/ch07-interactivity/ls03-alerts-and-dialogs)
+
 ## Resources
 
-- [Using router](https://docs.flutter.dev/ui/navigation#using-the-router)
-- [Go Router](https://pub.dev/packages/go_router)
-- [Tutorial on Go Router](https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/)
-- [Understanding navigator 2.0](https://blog.codemagic.io/flutter-navigator2/)
-- [Beginners guide to go_router](https://blog.codemagic.io/flutter-go-router-guide/)
+- [Displaying Snackbar](https://docs.flutter.dev/cookbook/design/snackbars)
+- [Alert Dialog](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
+- [Simple Dialog](https://api.flutter.dev/flutter/material/SimpleDialog-class.html)
+

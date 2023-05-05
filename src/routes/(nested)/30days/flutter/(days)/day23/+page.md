@@ -1,15 +1,19 @@
-# Introduction to Persistence
+# Understanding State Management
 
-Review the basics of Flutter app development from Day 8-17.
+In Flutter, state refers to the data that can change within a widget. State management is the process of managing this data and updating the user interface accordingly.
 
-Learn about persistence in Flutter and why it is important. Persistence refers to the ability to store data locally on a device so that it can be accessed later, even when the app is closed or the device is restarted.
+Learn about the different types of state management in Flutter, including setState, BLoC (Business Logic Component), and Provider.
 
-Learn about the shared_preferences package, which provides a simple way to store key-value pairs of data locally in a Flutter app.
-
-Create a simple app that stores user preferences, such as a theme preference, using shared_preferences.
-
-By the end of this day, you should have a basic understanding of how to use shared_preferences to store and retrieve data locally in a Flutter app.
+Understand how stateful widgets and stateless widgets work and when to use them.
 
 ### Resources
-- Flutter official documentation on shared_preferences: https://flutter.dev/docs/cookbook/persistence/key-value
-- Flutter and SharedPreferences Tutorial: https://medium.com/@vatsalrustagi/how-to-use-shared-preferences-in-flutter-25aea56afcf7
+
+- Flutter documentation on state management: https://flutter.dev/docs/development/data-and-backend/state-mgmt/intro
+- Official Flutter documentation on stateful and stateless widgets: https://flutter.dev/docs/development/ui/widgets-intro
+- A comprehensive guide on Flutter state management techniques: https://blog.codemagic.io/flutter-state-management-guide/
+- Comparison of popular Flutter state management libraries: https://medium.com/flutter-community/flutter-state-management-setstate-provider-bloc-and-redux-comparison-5c7c5f76625f
+- Flutter's official GetX library for state management: https://pub.dev/packages/get
+- Flutter's official Provider package for state management: https://pub.dev/packages/provider
+- Flutter's official BLoC package for state management: https://bloclibrary.dev/
+
+By the end of this day, you should have a basic understanding of state management in Flutter and the different approaches to it.

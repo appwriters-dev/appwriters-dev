@@ -1,26 +1,16 @@
-# Flutter Plugins
+# Advanced Persistence
 
-Flutter plugins allow developers to access native platform functionalities such as camera, sensors, maps, and more, through a nice Dart interface. This enables developers to create powerful cross-platform apps that can leverage the full capabilities of the underlying operating system and devices.
+Review the basics of Flutter app development from Day 8-18.
 
-Plugins are essentially packages that contain platform-specific code and a Dart API that developers can use to interact with that code. Plugins enable developers to build cross-platform apps by providing a way to write platform-specific code that can be easily reused across multiple platforms. This can make development more efficient and less error-prone by abstracting away platform-specific details and providing a consistent API for developers to work with.
+Learn about more advanced persistence techniques in Flutter, such as using a local database to store larger amounts of data.
 
-> **Project** - Share Quotes
->
-> Remember the quotes app we built, now use [share_plus](https://pub.dev/packages/share_plus) plugin to allow users to share quotes to social media
->
+Implement a local database in your app using the sqflite package.
 
-By the end of this day, you should have an understanding of what Flutter plugins are and Why they are important. You should also be able to use Flutter plugins to access native functionalities of the platform.
+Create a simple app that allows users to add, edit, and delete items in the database.
 
-## Tips
-
-- Learn about Flutter plugins and how they enable you to access native functionalities.
-- Explore different plugins available in the Flutter ecosystem, such as camera, geolocation, and sensor plugins.
-- Always read the documentation of the plugin you are using to understand how to use it.
-
-> [more projects](https://masterflutter.appwriters.dev/ch10-plugins)
+By the end of this day, you should have a basic understanding of how to use a local database in Flutter to store and retrieve larger amounts of data locally.
 
 ### Resources
 
-- [Flutter Cookbook on Camera](https://docs.flutter.dev/cookbook/plugins/picture-using-camera)
-- [Share Plus](https://pub.dev/packages/share_plus)
-- [Image picker](https://pub.dev/packages/image_picker)
+- Flutter official documentation on sqflite: https://pub.dev/packages/sqflite
+- Flutter Database Persistence with SQLite: https://resocoder.com/2019/02/16/flutter-database-persistence-sqlite-tutorial-guide/

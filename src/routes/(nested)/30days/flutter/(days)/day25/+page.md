@@ -1,15 +1,15 @@
-# Introduction to Animations
+# Introduction to Persistence
 
-In this day, you will learn the basics of creating animations in Flutter. Animations can add a touch of interactivity and delight to your app, and Flutter provides a powerful framework for creating them.
+Review the basics of Flutter app development from Day 8-17.
 
-Here are the steps to follow:
+Learn about persistence in Flutter and why it is important. Persistence refers to the ability to store data locally on a device so that it can be accessed later, even when the app is closed or the device is restarted.
 
-1. Review the basics of Flutter app development from Day 8-19.
-2. Learn about animations in Flutter and how they work.
-3. Experiment with different types of animations, such as opacity and position animations, using the Animation and Tween classes.
-4. Create a simple app with animations, such as a button that changes color when pressed.
+Learn about the shared_preferences package, which provides a simple way to store key-value pairs of data locally in a Flutter app.
+
+Create a simple app that stores user preferences, such as a theme preference, using shared_preferences.
+
+By the end of this day, you should have a basic understanding of how to use shared_preferences to store and retrieve data locally in a Flutter app.
 
 ### Resources
-
-- Flutter Animation Overview: https://flutter.dev/docs/development/ui/animations/overview
-- Flutter Animations Tutorial: https://flutter.dev/docs/development/ui/animations/tutorial
+- Flutter official documentation on shared_preferences: https://flutter.dev/docs/cookbook/persistence/key-value
+- Flutter and SharedPreferences Tutorial: https://medium.com/@vatsalrustagi/how-to-use-shared-preferences-in-flutter-25aea56afcf7

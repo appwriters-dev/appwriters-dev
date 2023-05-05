@@ -1,19 +1,17 @@
-# Understanding State Management
+# HTTP Requests in Flutter
 
-In Flutter, state refers to the data that can change within a widget. State management is the process of managing this data and updating the user interface accordingly.
-
-Learn about the different types of state management in Flutter, including setState, BLoC (Business Logic Component), and Provider.
-
-Understand how stateful widgets and stateless widgets work and when to use them.
+- Review the basics of Dart programming from Day 1-5.
+- Learn how to make network requests in Flutter using the http package. This package allows you to easily make HTTP requests to an API and receive data in JSON format.
+- Experiment with different types of requests, such as GET and POST requests, and learn how to handle errors and exceptions.
 
 ### Resources
 
-- Flutter documentation on state management: https://flutter.dev/docs/development/data-and-backend/state-mgmt/intro
-- Official Flutter documentation on stateful and stateless widgets: https://flutter.dev/docs/development/ui/widgets-intro
-- A comprehensive guide on Flutter state management techniques: https://blog.codemagic.io/flutter-state-management-guide/
-- Comparison of popular Flutter state management libraries: https://medium.com/flutter-community/flutter-state-management-setstate-provider-bloc-and-redux-comparison-5c7c5f76625f
-- Flutter's official GetX library for state management: https://pub.dev/packages/get
-- Flutter's official Provider package for state management: https://pub.dev/packages/provider
-- Flutter's official BLoC package for state management: https://bloclibrary.dev/
+- Flutter http package documentation: https://pub.dev/packages/http
+- Flutter network requests tutorial: https://flutter.dev/docs/cookbook/networking
+- Flutter documentation on HTTP requests: https://flutter.dev/docs/cookbook/networking/fetch-data
+- Http package documentation: https://pub.dev/packages/http
+- Flutter tutorial on HTTP requests and parsing JSON data: https://medium.com/flutterdevs/parsing-complex-json-in-flutter-747c46655f51
+- Tutorial on integrating APIs in Flutter apps: https://medium.com/flutter-community/integrate-an-api-in-your-flutter-app-dc1a9a825dcf
+- Video tutorial on HTTP requests in Flutter: https://www.youtube.com/watch?v=yCTHGK1lOT0
 
-By the end of this day, you should have a basic understanding of state management in Flutter and the different approaches to it.
+By the end of this day, you should have a basic understanding of how to make network requests in Flutter and how to work with the `http` package.

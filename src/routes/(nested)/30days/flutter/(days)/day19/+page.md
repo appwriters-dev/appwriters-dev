@@ -1,17 +1,51 @@
-# Networking - Part 1
+# Navigator 2.0 and the Go Router
 
-- Review the basics of Dart programming from Day 1-5.
-- Learn how to make network requests in Flutter using the http package. This package allows you to easily make HTTP requests to an API and receive data in JSON format.
-- Experiment with different types of requests, such as GET and POST requests, and learn how to handle errors and exceptions.
+Learn about Navigator 2.0, the newest version of the Navigator widget in Flutter that simplifies app navigation and supports deep linking. Also learn about the [Go Router](https://pub.dev/packages/go_router), an officially supported Dart package that provides a declarative approach to routing in Flutter apps.
 
-### Resources
+> **Project** - Quotes App 2.0
+>
+> Copy and update the quotes app from [**day 15**](/30days/flutter/day15) to use Go Router.
 
-- Flutter http package documentation: https://pub.dev/packages/http
-- Flutter network requests tutorial: https://flutter.dev/docs/cookbook/networking
-- Flutter documentation on HTTP requests: https://flutter.dev/docs/cookbook/networking/fetch-data
-- Http package documentation: https://pub.dev/packages/http
-- Flutter tutorial on HTTP requests and parsing JSON data: https://medium.com/flutterdevs/parsing-complex-json-in-flutter-747c46655f51
-- Tutorial on integrating APIs in Flutter apps: https://medium.com/flutter-community/integrate-an-api-in-your-flutter-app-dc1a9a825dcf
-- Video tutorial on HTTP requests in Flutter: https://www.youtube.com/watch?v=yCTHGK1lOT0
+By the end of this day you will know how to use Navigator 2.0 and the Go Router effectively in your Flutter app and provide a seamless and intuitive user experience.
 
-By the end of this day, you should have a basic understanding of how to make network requests in Flutter and how to work with the `http` package.
+
+## Tips
+
+- Make sure to review the basics of Navigation from [day 15](/30days/flutter/day15) before diving into Navigator 2.0 and the Go Router.
+
+- Learn about declarative routing: Navigator 2.0 and the Go Router are both based on the declarative routing approach, which simplifies the process of navigating between screens in your app.
+
+- Understand the differences between Navigator 2.0 and the Go Router: Both approaches have their own benefits and limitations, so it's important to understand the differences and choose the one that best fits your needs.
+
+- Example implementing basic navigation with the Go Router
+
+```dart
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'MyApp',
+      home: GoRouter(
+        routes: [
+          GoRoute(
+            path: '/',
+            pageBuilder: (context, state) => HomePage(),
+          ),
+          GoRoute(
+            path: '/second',
+            pageBuilder: (context, state) => SecondPage(),
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
+
+## Resources
+
+- [Using router](https://docs.flutter.dev/ui/navigation#using-the-router)
+- [Go Router](https://pub.dev/packages/go_router)
+- [Tutorial on Go Router](https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/)
+- [Understanding navigator 2.0](https://blog.codemagic.io/flutter-navigator2/)
+- [Beginners guide to go_router](https://blog.codemagic.io/flutter-go-router-guide/)
