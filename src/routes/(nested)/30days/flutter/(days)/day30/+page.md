@@ -1,13 +1,28 @@
-# Publishing
+# Building and Publishing
 
-Learn how to publish a Flutter app to the App Store and/or Google Play Store. Understand the guidelines and requirements of the app stores, how to generate signing keys, and how to use the Flutter tools to generate release builds. 
+Learn about App signing and building a release build of your app. Learn how to publish your app to the App Store and Google Play Store. 
 
-- Publish your app 
-- Promote your app and gather feedback from users.
--   Continue to develop and improve your app, using the skills and knowledge you have gained throughout the 30-day plan.
+> **Project** - Build  Quotes App
+>
+> Create a signed app bundle of the quotes app
+>
+> - If you have access to iOS developer account, create a signed app for iOS as well
+> - If you wish, you can further optimize the quotes app, use your own API and publish it to the play store and app store
+
+By the end of this day, you will learn how to prepare a production android and iOS build of your application and publish a Flutter app to the App Store and/or Google Play Store.
+
+## Tips
+
+- You can use the `flutter build` command to build a release build of your app
+- You need to have play store developer account to publish app to play store. It costs one time $25 to setup developer account in Google play store.
+- You need to have Apple Developer subscription to publish to app store. It costs $99/year for personal and $399/per year for organization developer account
+- You need to follow individual process for each platform to create a release build and publish in respective app store
+- You can also explore services like [Codemagic](https://codemagic.io/) to automate the build and release process
 
 ### Resources
 
-- [Publishing Flutter apps](https://flutter.dev/docs/deployment)
-- [Preparing an Android App for Release](https://developer.android.com/studio/publish/preparing)
-- [Preparing an iOS App for Release](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/PreparingYourApp/PreparingYourApp.html)
+- [Build and release Android app](https://docs.flutter.dev/deployment/android)
+- [Build and release iOS app](https://docs.flutter.dev/deployment/ios)
+- [Build and release MacOS app](https://docs.flutter.dev/deployment/macos)
+- [More platforms deployment](https://docs.flutter.dev/deployment)
+

@@ -1,16 +1,29 @@
-# Build Flutter App
+# Debugging and Dev Tools
 
-1. Learn about the process of building a Flutter app for production.
-2. Understand the different build modes available in Flutter, such as debug, profile and release modes.
-3. Explore the steps involved in creating a release build of a Flutter app.
-4. Learn about the different app signing options available for Android and iOS apps.
+Dev tools are built to help developers debug and optimize their apps. Flutter provides a wide range of tools that you can use to debug your app. It's crucial as a developer to understand how to use these tools to test, debug and fix issues in your app.
 
-**Resources:**
+> **Project** - Debug Quotes App
+>
+> Run the quotes app in debug mode and use explore various options provided in the dev tools
+>
+> - You can add breakpoints in your code and run the app in debug mode
+> - You can use the dev tools to inspect the widget tree and view the properties of each widget
+> - You can use the dev tools to view the logs and errors in your app
 
-1. Flutter documentation on building and releasing a Flutter app: https://flutter.dev/docs/deployment
-2. Flutter and Dart tutorial on creating a release build of a Flutter app: https://medium.com/flutter-community/how-to-build-a-release-apk-in-flutter-85d6d1f5931
-3. Android documentation on signing your app: https://developer.android.com/studio/publish/app-signing
-4. Apple documentation on app distribution and code signing: https://developer.apple.com/documentation/security/code_signing
-5. Fastlane documentation for automating the app release process: https://docs.fastlane.tools/
-6. Codemagic documentation for continuous integration and delivery for Flutter: https://docs.codemagic.io/
+By the end of this day, you will learn how to use dev tools to debug your app and fix issues.
+
+## Tips
+
+- Use dev tools to debug your app and fix issues
+- Use breakpoints to pause the execution of your app at a specific line of code
+- Use the widget inspector to view the widget tree and properties of each widget
+- Use the logging view to view the logs and errors in your app
+- Use the performance view to view the performance of your app
+
+## Resources
+
+- [Flutter Debugging Guide](https://docs.flutter.dev/testing/debugging)
+- [Debugging Flutter Apps on VS Code](https://flutter.dev/docs/development/tools/vs-code/debugging)
+- [Devtools guide](https://docs.flutter.dev/tools/devtools/overview)
+- [Setup devtools on VS Code](https://docs.flutter.dev/tools/devtools/**vscode**)
 
