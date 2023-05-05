@@ -345,40 +345,37 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Build Flutter App",
+        "title": "Debugging and Dev Tools",
         "objectives": [
-            "Learn the process of building a Flutter app for production",
-            "Understand how to prepare your app for release",
-            "Build your Flutter app for production"
+            "Learn the process of debugging in Flutter",
+            "Understand how to use the DevTools",
+            "Understand the need to use DevTools and debugging"
         ],
         "link": "/30days/flutter/day29",
         "keywords": [
-            "build",
+            "debug",
             "flutter",
-            "production",
-            "prepare",
-            "release",
-            "app"
+            "dev tools",
         ],
-        "description": "This tutorial will guide you through the process of building a Flutter app for production, including how to prepare your app for release, and how to build it for production."
+        "description": "Learn to debug and fix issues in your application. Learn to use the DevTools to debug your Flutter app. Understand the need to use DevTools and debugging."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Publishing",
+        "title": "Building and Publishing",
         "objectives": [
-            "Learn about publishing your Flutter app",
+            "Understand how to prepare your app for release",
+            "Build your Flutter app for production",
             "Understand how to prepare and publish your app",
-            "Publish your Flutter app to the app stores"
         ],
         "link": "/30days/flutter/day30",
         "keywords": [
+            "building",
             "publishing",
             "flutter",
-            "prepare",
-            "publish",
-            "app stores"
+            "app stores",
+            "flutter build"
         ],
-        "description": "This tutorial will teach you about publishing your Flutter app, including how to prepare and publish your app, and how to publish it to the app stores."
+        "description": "Learn how to build and publish your Flutter app to the various platform app stores. Understand how to prepare your app for release, build your Flutter app for production, and prepare and publish your app."
     }
 ];
 
