@@ -15,7 +15,7 @@
 <div class="container">
 	<slot />
 	<p>
-		<b>Enjoying? Tell your friends. </b><Share message="🎉 I'm having a blast on day {day} of my #30DaysMasterFlutter journey! Learning 🚀 You should definitely start your own journey too! 💪" url="{siteLink}/30days/flutter/day{day}" />
+		<b>Enjoying? Tell your friends. </b><Share message="🎉 I'm having a blast on day {day} of my #30DaysMasterFlutter journey! 🚀 You should definitely start your own journey too! 💪" url="{siteLink}/30days/flutter/day{day}" />
 	</p>
 	<nav class="end-nav">
 		{#if day > 1}
