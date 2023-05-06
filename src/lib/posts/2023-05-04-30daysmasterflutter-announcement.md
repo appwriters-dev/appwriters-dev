@@ -2,7 +2,7 @@
 title: "The #30DaysMasterFlutter Journey Has Begun! 🚀"
 slug: 30daysmasterflutter-journey-has-begun
 date: 2023-05-04
-excerpt: "We're thrilled to announce that the journey to mastering Flutter & Dart begins today with our #30DaysMasterFlutter course! This free, project-based course 📚 is your ticket to learning one of the most exciting technologies in the world of app development."
+excerpt: "We're thrilled to announce that the journey to mastering Flutter and Dart begins today with our #30DaysMasterFlutter course! This free, project-based course 📚 is your ticket to learning one of the most exciting technologies in the world of app development."
 coverImage: /images/flutter_coming_soon.gif
 coverWidth: 4
 coverHeight: 3
