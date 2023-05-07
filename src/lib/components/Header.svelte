@@ -9,7 +9,7 @@
 	};
 </script>
 
-<header>
+<header class="main-header">
 	<a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
 		Skip to main content
 	</a>
@@ -17,7 +17,14 @@
 	<a href="/" class="site-title">
 		<img class="site-logo" src="/logo-512.svg" alt="Logo" /> {siteTitle.substring(1)}
 	</a>
-
-	<HamburgerMenuButton />
-	<MainNav />
+	<div class="index">
+		<HamburgerMenuButton />
+		<MainNav />
+	</div>
 </header>
+
+<style>
+	.site-title, .index {
+		z-index: 1000;
+	}
+</style>

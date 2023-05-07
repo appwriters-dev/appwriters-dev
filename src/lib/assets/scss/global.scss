@@ -8,6 +8,8 @@
 @use './code';
 @use './prism';
 
+@import "@appwrite.io/pink-icons";
+
 main:focus {
 	outline: none;
 }
