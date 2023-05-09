@@ -1,8 +1,9 @@
 <script>
 	import Countdown from '$lib/components/Countdown.svelte';
 	import { config } from '../config';
-import AdditionalResources from './additionalResources.svelte';
-import Grid from './grid.svelte';
+	import AdditionalResources from './additionalResources.svelte';
+	import Grid from './grid.svelte';
+	import WeeklyReviews from './weeklyReviews.svelte';
 	export let data;
 </script>
 
@@ -59,7 +60,6 @@ import Grid from './grid.svelte';
 			</article>
 		</section>
 	{/if}
-
 	{#if data.resources.length > 0}
 		<div class="content">
 			<Grid resources={data.resources} />
@@ -71,8 +71,13 @@ import Grid from './grid.svelte';
 		</div>
 	{/if}
 
+	{#if data.daysReleased >= 7}
+	<div class="content weekly">
+		<WeeklyReviews weeks={Math.floor(data.daysReleased / 7)} />
+	</div>
+	{/if}
 	{#if data.resources.length >= 30}
-			<AdditionalResources />
+		<AdditionalResources />
 	{/if}
 </section>
 
@@ -171,7 +176,7 @@ import Grid from './grid.svelte';
 			max-width: 62rem;
 		}
 	}
-	
+
 	.content {
 		max-width: 80rem;
 		margin: 0 auto;
