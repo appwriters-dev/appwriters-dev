@@ -6,7 +6,7 @@
  **/
 
 export const siteTitle = 'Appwriters';
-export const siteDescription = 'Appwriters, your guide to modern application development.';
+export const siteDescription = 'Your go-to destination for learning modern application development for Mobile, Web and desktops using technologies such as Flutter, Dart, Appwrite, Javascript, and more!';
 export const siteURL = 'appwriters.dev';
 export const siteLink = 'https://appwriters.dev';
 export const siteAuthor = 'Damodar Lohani';

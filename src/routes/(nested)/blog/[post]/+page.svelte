@@ -1,5 +1,7 @@
 <script>
-	import { siteAuthor, siteLink, siteTitle} from '$lib/config';
+	import { page } from '$app/stores';
+	import Share from '$lib/components/Share.svelte';
+import { siteAuthor, siteLink, siteTitle} from '$lib/config';
 
 	export let data;
 
@@ -67,6 +69,8 @@
 	{/if}
 
 	{@html data.postContent}
+	
+	<p> <b>Enjoyed? Tell your friends.</b> <Share url="{siteLink}/blog/{$page.params.post}" message={excerpt} /> </p>
 </article>
 
 <style lang="scss">

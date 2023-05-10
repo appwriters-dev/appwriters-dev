@@ -1,5 +1,5 @@
 {
-	"name": "sveltekit-blog-starter",
+	"name": "appwriters",
 	"version": "1.6.1",
 	"scripts": {
 		"dev": "vite dev",
@@ -9,7 +9,7 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "^1.0.1",
+		"@sveltejs/adapter-auto": "^1.0.1",
 		"@sveltejs/kit": "^1.0.1",
 		"eslint": "^8.31.0",
 		"eslint-config-prettier": "^8.6.0",
@@ -26,5 +26,8 @@
 		"unist-util-visit": "^4.1.1",
 		"vite": "^4.0.4"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@appwrite.io/pink-icons": "^0.0.6-rc.11"
+	}
 }

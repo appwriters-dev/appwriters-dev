@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-	font-size: 2.8rem;
+	font-size: 2.3rem;
 	margin: 0 0 3rem;
 	position: relative;
 	overflow: hidden;
@@ -36,7 +36,7 @@ h1 {
 	}
 
 	@media (min-width: vars.$smMin) {
-		font-size: 3rem;
+		font-size: 2.8rem;
 	}
 
 	@media (min-width: vars.$lgMin) {
