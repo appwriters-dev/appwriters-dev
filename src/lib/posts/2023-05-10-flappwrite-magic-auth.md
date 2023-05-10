@@ -1,7 +1,7 @@
 ---
-title: Flutter ❤️ Appwrite Password Less Authentication
-slug: flutter-appwrite-password-less-magic-url-authentication-setup
-date: 2023-04-14
+title: Flutter Password Less Authentication with Appwrite Magic URL
+slug: flutter-password-less-authentication-with-appwrite-magic-url
+date: 2023-05-10
 excerpt: Let's learn a proper and easy way to setup magic URL authentication in Flutter using Appwrite. You don't need to host a website, you can handle the whole flow in the application itself.
 coverImage:
 coverWidth:
@@ -11,9 +11,11 @@ tags: [Flutter]
 
 Appwrite, is a backend service that provides developers with easy-to-use APIs to store, manage, and authenticate user data in their applications. In this blog post, we'll explore how to set up Magic URL based authentication in your Flutter app using Appwrite.
 
+You can start by creating a new Flutter project or use an existing one.
+
 ## Android Configuration
 
-Open, `AndroidManifest.xml` for the project and add the following configuration inside the `<activity android:name=".MainActivity" ...`. Replace `[PROJECT_ID]` with your own project ID.
+Open, `AndroidManifest.xml` for the project and add the following configuration inside the `<activity android:name=".MainActivity"`. Replace `[PROJECT_ID]` with your own project ID. This one is different than the config you setup for OAuth2 authentication.
 
 ```xml
 <!-- add this metadata -->
@@ -55,9 +57,9 @@ Open, iOS project's `Info.plist` file and add the following keys. Replace `[PROJ
 
 ## Appwrite Project
 
-If you have not already head over to [cloud.appwrite.io](https://cloud.appwrite.io) and sign up. Then create a new project. Next we need to Add platforms.
+If you have not already head over to [cloud.appwrite.io](https://cloud.appwrite.io) and sign up. Then create a new project. Or you can use your own self-hosted Appwrite setup as well. Next we need to Add platforms.
 
-<video width="320" height="240" controls>
+<video width="100%" controls>
   <source src="https://cloud.appwrite.io/v1/storage/buckets/blog-assets/files/magic-auth-add-platform/view?project=appwriters&mode=admin" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -83,7 +85,7 @@ dependencies:
 	appwrite: ^8.3.0
 ```
 
-Next, open `main.dart` and initialize the SDK.
+Don't forget to initialize the client, you can do it in your `main.dart` file or separate file. I prefer to create a separate file for Appwrite client initialization.
 
 ```dart
 final client = Client();
@@ -140,9 +142,13 @@ Update the Login button's onPressed code as the following to create a Magic URL 
 onPressed: () async {
   final account = Account(client);
   try {
-    await account.createMagicURLSession(email: _emailController.text, url: 'appwrite-auth-callback-auth-labs://appwriters.dev/magic_url_session');
+    await account.createMagicURLSession(
+      email: _emailController.text,
+      url: 'appwrite-auth-callback-auth-labs://appwriters.dev/magic_url_session', // replace `appwriters.dev` with your own domain
+    );
   } on AppwriteException catch(e) {
     print(e.message);
+    // display error to the user
   }
 }
 ```
@@ -159,10 +165,10 @@ final router = GoRouter(
   routes: [
     // ...
     GoRoute(
-      name: '/magic_url_session/:userId/:secret',
+      name: '/magic_url_session',
       pageBuilder: (context, state) {
-        final userId = state.params['userId']!;
-        final secret = state.params['secret']!;
+        final userId = state.queryParams['userId']!;
+        final secret = state.queryParams['secret']!;
         return MagicUrlSessionPage(userId: userId, secret: secret);
       },
     ),
@@ -170,7 +176,7 @@ final router = GoRouter(
 );
 ```
 
-This code sets up a route for `/magic_url_session/:userId/:secret` that extracts the `userId` and `secret` parameters from the URL and passes them to the `MagicUrlSessionPage` widget.
+This code sets up a route for `/magic_url_session` that extracts the `userId` and `secret` parameters from the URL query params and passes them to the `MagicUrlSessionPage` widget.
 
 > **Note**: If you don't want to use GoRouter, you can still use onGenerateRoute in MaterialApp to handle the route. However I recommend using GoRouter as it's much easier to use and has a lot of features.
 
@@ -224,6 +230,8 @@ class MagicUrlSessionPage extends StatelessWidget {
 ```
 
 That's it, this completes the setup required for magic URL authentication. You can test it now.
+
+> Tip: Find the complete FlAppwrite auth playground at my [GitHub repository](https://github.com/lohanidamodar/appwrite_auth_playground.git)
 
 ## Conclusion
 
