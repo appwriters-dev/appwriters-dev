@@ -9,24 +9,20 @@ coverHeight:
 tags: [Flutter]
 ---
 
-Appwrite, is a backend service that provides developers with easy-to-use APIs to store, manage, and authenticate user data in their applications. In this blog post, we'll explore how to set up Magic URL based authentication in Flutter using Appwrite.
-
-First, clone this starter project which has all the required UIs setup so that we can focus on implementing the logic.
-
-```
-git clone https://github.com/appwriters-dev/tutorials
-```
+Appwrite, is a backend service that provides developers with easy-to-use APIs to store, manage, and authenticate user data in their applications. In this blog post, we'll explore how to set up Magic URL based authentication in your Flutter app using Appwrite.
 
 ## Android Configuration
 
-Open, `AndroidManifest.xml` for the project and add the following configuration inside the `<activity android:name=".MainActivity" ...`
+Open, `AndroidManifest.xml` for the project and add the following configuration inside the `<activity android:name=".MainActivity" ...`. Replace `[PROJECT_ID]` with your own project ID.
 
 ```xml
 <!-- add this metadata -->
 <meta-data android:name="flutter_deeplinking_enabled" android:value="true" />
+
 <intent-filter>
 	<action android:name="android.intent.action.MAIN"/>
 	<category android:name="android.intent.category.LAUNCHER"/>
+
 	<!-- add these Filters -->
 	 <action android:name="android.intent.action.VIEW" />
 	<category android:name="android.intent.category.DEFAULT" />
@@ -37,7 +33,7 @@ Open, `AndroidManifest.xml` for the project and add the following configuration 
 
 ## iOS Configuration
 
-Open, iOS project's `Info.plist` file and add the following keys
+Open, iOS project's `Info.plist` file and add the following keys. Replace `[PROJECT_ID]` with your own project ID.
 
 ```
 <key>CFBundleURLTypes</key>
@@ -69,15 +65,16 @@ If you have not already head over to [cloud.appwrite.io](https://cloud.appwrite.
 Following the above steps, add web platform to register a domain, you don't need a web application, you can use any of your domain. It's important to use your own domain in production to prevent others from hijacking it and using it for their own purpose.
 
 Make sure, magic-url authentication is enabled, it should be enabled by default.
-[//image]
 
 ## Integrating Appwrite
 
-To add appwrite SDK, you can run the following command in the root of your Flutter project directory from terminal
+To add appwrite SDK, you can run the following command in the root of your Flutter project directory from terminal.
 
 ```bash
 flutter pub add appwrite: ^8.3.0
 ```
+
+If you are using self-hosted Appwrite, use appropriate Appwrite SDK version for your Appwrite server version you are using.
 
 This will add Appwrite's Flutter SDK to your project. You can also do this by manually adding it to `pubspec.yaml` file under dependencies
 
@@ -93,6 +90,7 @@ final client = Client();
 
 void main() async {
 	WidgetsFlutterBinding.ensureInitialized();
+  // If you are on self hosted Appwrite, use your own endpoint
 	client
 		.setEndpoint('https://cloud.appwrite.io/v1')
 		.setProject('auth-labs'); // use your own project ID
@@ -101,7 +99,42 @@ void main() async {
 
 ## Implementing Magic URL Authentication in Flutter
 
-Open `login_screen.dart`, here we have email field and a `Login` button. Update the Login button's onPressed code as the following to create a Magic URL session using Appwrite.
+Create a simple login form widget with email field and a login button.
+
+```dart
+class LoginScreen extends StatelessWidget {
+  final _emailController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Login'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            TextField(
+              controller: _emailController,
+              decoration: InputDecoration(
+                labelText: 'Email',
+              ),
+            ),
+            SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('Login'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+Update the Login button's onPressed code as the following to create a Magic URL session using Appwrite.
 
 ```dart
 onPressed: () async {
@@ -138,6 +171,8 @@ final router = GoRouter(
 ```
 
 This code sets up a route for `/magic_url_session/:userId/:secret` that extracts the `userId` and `secret` parameters from the URL and passes them to the `MagicUrlSessionPage` widget.
+
+> **Note**: If you don't want to use GoRouter, you can still use onGenerateRoute in MaterialApp to handle the route. However I recommend using GoRouter as it's much easier to use and has a lot of features.
 
 We now need to implement the `MagicUrlSessionPage` widget to handle the `updateMagicURLSession` function. as the following:
 
@@ -189,7 +224,6 @@ class MagicUrlSessionPage extends StatelessWidget {
 ```
 
 That's it, this completes the setup required for magic URL authentication. You can test it now.
-
 
 ## Conclusion
 
