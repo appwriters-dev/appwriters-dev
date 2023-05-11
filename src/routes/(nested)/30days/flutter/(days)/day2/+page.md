@@ -12,6 +12,13 @@ By the end of this day, you should have a basic understanding of the Dart syntax
 
 ## Tips
 
+- To create new dart console application, you can use the `dart create` command. The default is always a console application.
+
+```bash
+dart create greet_user
+```
+
+
 - To Get user input in Dart, you can use the `stdin.readLineSync()` function. For example:
 
 ```dart
