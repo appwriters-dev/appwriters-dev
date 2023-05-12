@@ -60,6 +60,11 @@
 			</article>
 		</section>
 	{/if}
+	<section class="tip">
+		<blockquote>
+			<i class="icon-share"></i> We want to see how you are doing. Share your progress with <b>#30DaysMasterFlutter</b> in our Discord and social medias.
+		</blockquote>
+	</section>
 	{#if data.resources.length > 0}
 		<div class="content">
 			<Grid resources={data.resources} />
@@ -72,7 +77,7 @@
 	{/if}
 
 	{#if data.daysReleased >= 7}
-	<div class="content weekly">
+	<div class="weekly">
 		<WeeklyReviews weeks={Math.floor(data.daysReleased / 7)} />
 	</div>
 	{/if}
@@ -177,6 +182,15 @@
 		}
 	}
 
+	.tip {
+		blockquote {
+			max-width: 42rem;
+			margin: 0 auto;
+			text-align: center;
+			padding: 2rem;
+			box-sizing: border-box;
+		}
+	}
 	.content {
 		max-width: 80rem;
 		margin: 0 auto;
