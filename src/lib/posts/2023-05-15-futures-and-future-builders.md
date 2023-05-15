@@ -4,9 +4,9 @@ slug: diving-deeper-int-asynchronous-programming-with-futures-in-flutter
 date: 2023-05-15
 excerpt: Boost your Flutter skills with this comprehensive guide on asynchronous programming. Learn about Dart Futures, chaining, FutureBuilder, and error handling with real-world examples.
 keywords: Asynchronous Programming, Flutter, Dart, Futures, FutureBuilder, Mobile App Development, UI, Error Handling, Multitasking, http package
-coverImage:
-coverWidth:
-coverHeight:
+coverImage: /images/futures_2_cover.svg
+coverWidth: 16
+coverHeight: 9
 categories: [Flutter]
 ---
 

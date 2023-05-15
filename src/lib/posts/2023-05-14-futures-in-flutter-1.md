@@ -4,9 +4,9 @@ slug: making-friends-with-asynchronous-programming-and-futures-in-flutter
 date: 2023-05-14
 excerpt: Unleash the power of Asynchronous Programming in your Flutter apps. Learn how to implement Futures and handle errors for a seamless user experience.
 keywords: Asynchronous Programming, Flutter, Dart, Futures, Mobile App Development, UI, Error Handling, Multitasking, http package
-coverImage:
-coverWidth:
-coverHeight:
+coverImage: /images/futures_1_cover.svg
+coverWidth: 16
+coverHeight: 9
 categories: [Flutter]
 ---
 
