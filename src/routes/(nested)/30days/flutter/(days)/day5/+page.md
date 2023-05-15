@@ -45,5 +45,7 @@ void main() async {
 
 ## Resources
 
+- [Making Friends with Asynchronous Programming](/blog/making-friends-with-asynchronous-programming-and-futures-in-flutter)
+- [Deep Dive into Asynchronous Programming](/blog/diving-deeper-int-asynchronous-programming-with-futures-in-flutter)
 - [Asynchronous Programming Codelab](https://dart.dev/codelabs/async-await)
 - [Dart Tutorial: Asynchronous Programming](https://dart-tutorial.com/asynchronous-programming/)
