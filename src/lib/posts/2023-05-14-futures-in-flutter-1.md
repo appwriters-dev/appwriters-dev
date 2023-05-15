@@ -1,12 +1,12 @@
 ---
 title: Making Friends with Asynchronous Programming and Futures in Flutter
 slug: making-friends-with-asynchronous-programming-and-futures-in-flutter
-date: 2023-05-10
+date: 2023-05-14
 excerpt: Unleash the power of Asynchronous Programming in your Flutter apps. Learn how to implement Futures and handle errors for a seamless user experience.
+keywords: Asynchronous Programming, Flutter, Dart, Futures, Mobile App Development, UI, Error Handling, Multitasking, http package
 coverImage:
 coverWidth:
 coverHeight:
-keywords: Asynchronous Programming, Flutter, Dart, Futures, Mobile App Development, UI, Error Handling, Multitasking, http package
 categories: [Flutter]
 ---
 
@@ -67,6 +67,4 @@ Here, `.then()` handles the successful completion of fetching the to-do (i.e., t
 
 ## Wrapping Up
 
-Asynchronous programming is a crucial skill for Flutter developers, and Futures are the secret sauce in this recipe. By mastering Futures, you can create apps that can multitask efficiently, providing a smooth and responsive experience for users. And remember—always be ready for unexpected errors during your async operations to keep your app running smoothly. Just like a great party, a great app is all about managing different elements harmoniously, ensuring everything flows seamlessly for an enjoyable user experience. 
-
-So, let's celebrate the power of asynchronous programming and get that Flutter party started!
+Asynchronous programming is a crucial skill for Flutter developers, and Futures are the secret sauce in this recipe. By mastering Futures, you can create apps that can multitask efficiently, providing a smooth and responsive experience for users. And remember—always be ready for unexpected errors during your async operations to keep your app running smoothly. Just like a great party, a great app is all about managing different elements harmoniously, ensuring everything flows seamlessly for an enjoyable user experience. Happy coding!

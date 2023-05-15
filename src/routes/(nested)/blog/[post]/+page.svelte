@@ -40,6 +40,7 @@
 </svelte:head>
 
 <article class="post">
+	{#if coverImage}
 	<img
 		class="cover-image"
 		src={coverImage}
@@ -48,6 +49,7 @@
 		width={coverWidth}
 		height={coverHeight}
 	/>
+	{/if}
 
 	<h1>{title}</h1>
 
