@@ -3,9 +3,10 @@ title: Flutter Password Less Authentication with Appwrite Magic URL
 slug: flutter-password-less-authentication-with-appwrite-magic-url
 date: 2023-05-10
 excerpt: Let's learn a proper and easy way to setup magic URL authentication in Flutter using Appwrite. You don't need to host a website, you can handle the whole flow in the application itself.
-coverImage:
-coverWidth:
-coverHeight:
+keywords: Flutter, Appwrite, Magic URL, Authentication
+coverImage: /images/flappwrite_magic_auth_cover.svg
+coverWidth: 16
+coverHeight: 9
 tags: [Flutter]
 ---
 
