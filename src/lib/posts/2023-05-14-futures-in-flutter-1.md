@@ -6,7 +6,7 @@ excerpt: Unleash the power of Asynchronous Programming in your Flutter apps. Lea
 coverImage:
 coverWidth:
 coverHeight:
-keywords: Flutter, Dart, Asynchronous Programming, Futures, FutureBuilder, Error Handling
+keywords: Asynchronous Programming, Flutter, Dart, Futures, Mobile App Development, UI, Error Handling, Multitasking, http package
 categories: [Flutter]
 ---
 
