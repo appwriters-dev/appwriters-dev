@@ -3,6 +3,7 @@
 	import PostsList from '$lib/components/PostsList.svelte';
 	import Pagination from '$lib/components/Pagination.svelte';
 	import { postsPerPage, siteDescription } from '$lib/config';
+	import SiteMetas from '$lib/components/SiteMetas.svelte';
 
 	export let data;
 	const { page, totalPosts, posts } = data;
@@ -13,10 +14,9 @@
 
 <svelte:head>
 	<title>Blog - page {page}</title>
-	<meta data-key="description" name="description" content={siteDescription} />
+	<SiteMetas />
 </svelte:head>
 
-<!-- TODO: this is duplicated across multiple `+page.svelte` files -->
 {#if posts.length}
 	<h1>Posts {lowerBound}–{upperBound} of {totalPosts}</h1>
 	<Pagination currentPage={page} {totalPosts} />
