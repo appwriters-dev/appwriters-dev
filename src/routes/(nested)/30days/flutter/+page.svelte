@@ -3,6 +3,7 @@
 	import { config } from '../config';
 	import AdditionalResources from './additionalResources.svelte';
 	import Grid from './grid.svelte';
+	import Testimonials from './testimonials.svelte';
 	import WeeklyReviews from './weeklyReviews.svelte';
 	export let data;
 </script>
@@ -62,7 +63,8 @@
 	{/if}
 	<section class="tip">
 		<blockquote>
-			<i class="icon-share"></i> We want to see how you are doing. Share your progress with <b>#30DaysMasterFlutter</b> in our Discord and social medias.
+			<i class="icon-share" /> We want to see how you are doing. Share your progress with
+			<b>#30DaysMasterFlutter</b> in our Discord and social medias.
 		</blockquote>
 	</section>
 	{#if data.resources.length > 0}
@@ -76,10 +78,11 @@
 		</div>
 	{/if}
 
+	<Testimonials />
 	{#if data.daysReleased >= 7}
-	<div class="weekly">
-		<WeeklyReviews weeks={Math.floor(data.daysReleased / 7)} />
-	</div>
+		<div class="weekly">
+			<WeeklyReviews weeks={Math.floor(data.daysReleased / 7)} />
+		</div>
 	{/if}
 	{#if data.resources.length >= 30}
 		<AdditionalResources />
