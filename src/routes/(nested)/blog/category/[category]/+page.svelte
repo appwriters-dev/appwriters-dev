@@ -3,6 +3,7 @@
 	import PostsList from '$lib/components/PostsList.svelte';
 	import Pagination from '$lib/components/Pagination.svelte';
 	import { postsPerPage } from '$lib/config';
+	import SiteMetas from '$lib/components/SiteMetas.svelte';
 
 	export let data;
 
@@ -14,6 +15,7 @@
 
 <svelte:head>
 	<title>Category: {category}</title>
+	<SiteMetas />
 </svelte:head>
 
 <h1>Blog category: {category}</h1>

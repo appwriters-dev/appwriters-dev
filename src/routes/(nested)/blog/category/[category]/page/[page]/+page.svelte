@@ -3,6 +3,7 @@
 	import PostsList from '$lib/components/PostsList.svelte';
 	import Pagination from '$lib/components/Pagination.svelte';
 	import { siteDescription, postsPerPage } from '$lib/config';
+	import SiteMetas from '$lib/components/SiteMetas.svelte';
 
 	export let data;
 	const { page, category, totalPosts, posts } = data;
@@ -13,7 +14,7 @@
 
 <svelte:head>
 	<title>Blog category {category} - page {page}</title>
-	<meta data-key="description" name={siteDescription} />
+	<SiteMetas />
 </svelte:head>
 
 <!-- TODO: this is duplicated across multiple `+page.svelte` files -->

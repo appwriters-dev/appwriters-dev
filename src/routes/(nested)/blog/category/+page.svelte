@@ -1,10 +1,13 @@
 <script>
+	import SiteMetas from "$lib/components/SiteMetas.svelte";
+
 	export let data;
 	const { uniqueCategories } = data;
 </script>
 
 <svelte:head>
 	<title>Blog | Categories</title>
+	<SiteMetas />
 </svelte:head>
 
 <div class="compressed-content">

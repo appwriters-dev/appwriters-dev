@@ -1,9 +1,11 @@
 <script>
 	import Callout from '$lib/components/Callout.svelte';
+	import SiteMetas from '$lib/components/SiteMetas.svelte';
 </script>
 
 <svelte:head>
-	<title>Contact</title>
+	<title>Contact | Appwriters</title>
+	<SiteMetas />
 </svelte:head>
 
 <h1>Contact</h1>
