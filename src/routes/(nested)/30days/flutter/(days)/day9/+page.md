@@ -100,8 +100,10 @@ void main() {
 
 **Resources:**
 
-1. [Dart HTTP Client package](https://pub.dev/packages/http)
-2. [Parsing json in Dart](https://codewithandrea.com/articles/parse-json-dart/)
-3. [JSON to Dart converter](https://javiercbk.github.io/json_to_dart/)
-4. [Detailed explanation of REST API](https://nerdleveltech.com/a-full-guide-understand-everything-about-apis-with-examples/) - **recommended** if you are new to REST API
-5. [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) - Free placeholder API that you can use to practice
+- [Beginners Guide to http package](/blog/a-beginners-guide-to-the-http-package-in-flutter)
+- [Integrating with REST API in Flutter](/blog/integrating-with-rest-api-in-flutter)
+- [Dart HTTP Client package](https://pub.dev/packages/http)
+- [Parsing json in Dart](https://codewithandrea.com/articles/parse-json-dart/)
+- [JSON to Dart converter](https://javiercbk.github.io/json_to_dart/)
+- [Detailed explanation of REST API](https://nerdleveltech.com/a-full-guide-understand-everything-about-apis-with-examples/) - **recommended** if you are new to REST API
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) - Free placeholder API that you can use to practice
