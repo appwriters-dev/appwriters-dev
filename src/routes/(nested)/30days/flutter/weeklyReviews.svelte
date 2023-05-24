@@ -10,6 +10,11 @@
                 <a href="/30days/flutter/week1"> Fluttering Through Week 1: Mastering the Basics</a>
             </li>
             {/if}
+            {#if weeks > 1}
+            <li>
+                <a href="/30days/flutter/week2">Week 2 Wrap Up: Fluttering Through Dependencies, Networking, and Interactive UIs</a>
+            </li>
+            {/if}
         </ul>
     </div>
 </div>

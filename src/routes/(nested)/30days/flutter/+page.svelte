@@ -45,6 +45,13 @@
 			</div>
 		</div>
 	</div>
+	<div class="what-is">
+		<div class="container">
+			<div class="content">
+				<p><i class="icon-info"></i> Just wanted to let you know that the <b>#30DaysMasterFlutter</b> program doesn't have live sessions. Instead, it's a guide with lots of helpful resources and projects for you to work on at your own pace. I think that teaching yourself, and practicing building projects is the best way to get better at coding. Plus, if you ever have questions or need help, you can ask the community!</p>
+			</div>
+		</div>
+	</div>
 	<!-- active day -->
 	{#if data.daysReleased <= 30 && data.daysReleased > 0}
 		<section class="active-day">
@@ -197,6 +204,9 @@
 	.content {
 		max-width: 80rem;
 		margin: 0 auto;
+	}
+	.what-is .content {
+		max-width: 62rem;
 	}
 	.coming-soon {
 		display: flex;
