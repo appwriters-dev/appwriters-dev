@@ -22,6 +22,7 @@ By the end of this day, you should have a basic understanding of how to make net
 ## Resources
 
 - [Flutter http package documentation](https://pub.dev/packages/http)
+- [Beginners guide to http package](https://www.appwriters.dev/blog/a-beginners-guide-to-the-http-package-in-flutter)
 - [Fetch Data fron Internet](https://docs.flutter.dev/cookbook/networking/fetch-data)
 - [Working with Rest API in Flutter](https://www.appwriters.dev/blog/integrating-with-rest-api-in-flutter)
 
