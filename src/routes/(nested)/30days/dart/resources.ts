@@ -15,31 +15,50 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "Password Generator",
-        "link": "/30days/dart/day2",
-        "keywords": ["Dart", "Syntax", "Programming"],
-        "description": "Get started with Dart programming by learning the basic syntax, writing and running programs, and solving simple problems."
+        "title": "TODO List App",
+        "link": "/30days/dart/day3",
+        "keywords": [
+            "Dart programming",
+            "Dart dart:io library",
+            "Dart To-do list application",
+            "File handling in Dart",
+            "List management in Dart",
+            "Dart task list",
+            "Dart application development",
+            "Learn Dart",
+            "Dart step-by-step guide",
+            "Dart tutorial",
+        ],
+        "description": "Learn how to build a to-do list application in Dart. This step-by-step guide teaches you how to interact with the file system in Dart using dart:io, and manage a task list by adding, deleting, and viewing tasks.",
     },
     {
         "imageUrl": "https://placehold.co/600x400",
-        "title": "TODO List App",
-        "link": "/30days/dart/day3",
-        "keywords": ["Dart", "Variables", "Data Types", "Operators", "Expressions"],
-        "description": "Explore the fundamental concepts of Dart, including variables, data types, operators, and expressions, and learn how to use them in statements.",
+        "title": "Number guessing game",
+        "link": "/30days/dart/day4",
+        "keywords": ["Dart Programming, Coding Challenge, Number Guessing Game, User Input, Random Numbers, Conditional Statements, 30 projects in 30 days, Code Breakdown, Learning Dart"],
+        "description": "Uncover the magic of Dart as we build a simple yet fun Number Guessing Game in our '30 projects in 30 days' challenge. We break down the code, explaining each section in plain English and using engaging analogies. Step into the world of user input, random number generation, and conditional statements!"
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Text Analyzer",
+        "link": "/30days/dart/day5",
+        "keywords": ["Dart, Dart Programming, Text Analyzer, File Handling, Regular Expressions, Code Explanation, Learning Dart, Dart Project, Text Manipulation, Coding in Dart, Dart for Beginners, Dart Tutorial, Programming Blog, Word Count, Sentence Count, Paragraph Count"],
+        "description": "Join us on Day 5 of our \"Building 30 Projects in Dart\" series. In this post, we walk you through creating a Text Analyzer in Dart that counts the number of words, sentences, and paragraphs in a given text file, using simple English and illustrative analogies."
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Password Generator",
+        "link": "/30days/dart/day6",
+        "keywords": ["Dart", "Syntax", "Programming"],
+        "description": "Get started with Dart programming by learning the basic syntax, writing and running programs, and solving simple problems."
+    },
+    
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Tic-Tac-Toe Game",
         "link": "/30days/dart/day4",
         "keywords": ["Dart", "Functions", "Parameters", "Return Types"],
         "description": "Dive into Dart functions, including their syntax, parameters, return types, and how to use them in your Flutter app."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Text Analyzerg",
-        "link": "/30days/dart/day5",
-        "keywords": ["Dart", "Asynchronous Programming", "Async", "Await", "Future"],
-        "description": "Explore the basics of asynchronous programming in Dart, including async, await, Future, and how to handle errors and timeouts when working with Future objects."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -54,13 +73,6 @@ export const resources = [
         "link": "/30days/dart/day7",
         "keywords": ["Dart", "Classes", "Object-oriented Programming", "Inheritance"],
         "description": "Get introduced to object-oriented programming in Dart, including classes, objects, and inheritance, and learn how to use them in your Flutter app."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Number guessing game",
-        "link": "/30days/dart/day8",
-        "keywords": ["Dependency Management", "Packages", "Dart", "pubspec.yaml"],
-        "description": "Explore how to manage dependencies in your Flutter app using packages in Dart, including how to use the pubspec.yaml file and existing packages."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
