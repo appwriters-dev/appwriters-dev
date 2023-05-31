@@ -8,8 +8,8 @@
 		<a class="grid-item" href="{resource.link}">
 			<!-- <div class="grid-item"> -->
 					<!-- <img src={resource.imageUrl} alt="Day {index + 1}" /> -->
-					<span class="tag primary">Day {index + 1}</span>
-					<h4>{resource.title}</h4>
+					<span class="tag primary">{index + 1}</span>
+					<h5>{resource.title}</h5>
                     <p>{resource.description}</p>
 			</a>
 		{/each}
@@ -55,8 +55,8 @@
 		object-fit: cover;
 	}
 
-	.grid-item h4 {
-		margin-top: 30px;
+	.grid-item h5 {
+		margin-top: 20px;
 		margin-bottom: 5px;
 	}
 

@@ -1,6 +1,6 @@
 # Building a Temperature Converter in Dart
 
-Hello and welcome to the first of our #Dart30 series, where we'll be creating 30 projects in 30 days using Dart programming language. Today, we'll be building a simple yet practical project - a temperature converter that can convert temperatures from Celsius to Fahrenheit and vice versa.
+Hello and welcome to the first of our **#Dart30** series, where we'll be creating **30** projects in **30** days using **Dart** programming language. Today, we'll be building a simple yet practical project - a temperature converter that can convert temperatures from Celsius to Fahrenheit and vice versa.
 
 ## Introduction to the Project
 
