@@ -1,6 +1,5 @@
 <script>
 	import DayContent from '../../dayContent.svelte';
-	import Footer from '../footer.svelte';
 	export let data;
 </script>
 
@@ -16,16 +15,13 @@
 	<meta name="twitter:description" content={data.metaDescription} />
 </svelte:head>
 
-<DayContent
-	title="#30DaysMasterFlutter"
-	basePath="flutter"
-	project="#30DaysMasterFlutter"
-	day={data.day}
-	nextReleased={data.nextReleased}
->
+<DayContent 
+	title="#Dart30"
+	basePath="dart"
+	project="#Dart30"
+	day={data.day}  nextReleased={data.nextReleased}>
 	<slot />
 </DayContent>
-<Footer />
 
 <style lang="scss">
 	:global(blockquote) {
