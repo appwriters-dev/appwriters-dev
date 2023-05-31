@@ -8,6 +8,13 @@ export const resources = [
     },
     {
         "imageUrl": "https://placehold.co/600x400",
+        "title": "Calculator",
+        "link": "/30days/dart/day2",
+        "keywords": ["Dart programming, beginner coding project, arithmetic calculator, input/output in Dart, control structures, basic data types, Dart for beginners, simple Dart project, learn Dart, Dart tutorial"],
+        "description": "Discover how to build a simple arithmetic calculator with Dart. This step-by-step guide breaks down code into simple English, explaining user input, basic data types, and control structures in Dart. Suitable for beginners!"
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
         "title": "Password Generator",
         "link": "/30days/dart/day2",
         "keywords": ["Dart", "Syntax", "Programming"],
