@@ -49,17 +49,17 @@ export const resources = [
         "imageUrl": "https://placehold.co/600x400",
         "title": "Password Generator",
         "link": "/30days/dart/day6",
-        "keywords": ["Dart", "Syntax", "Programming"],
-        "description": "Get started with Dart programming by learning the basic syntax, writing and running programs, and solving simple problems."
+        "keywords": ["Dart Programming, Password Generator, Dart for Beginners, Random Number Generation, User Input in Dart, Dart String Manipulation, Dart Project Tutorial, Dart Learning Guide, ASCII Characters in Dart, Dart List Generation"],
+        "description": "Learn to build a simple yet powerful password generator in Dart. This step-by-step guide teaches you how to work with user input, generate random numbers, and manipulate strings in Dart."
     },
-    
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Tic-Tac-Toe Game",
-        "link": "/30days/dart/day4",
-        "keywords": ["Dart", "Functions", "Parameters", "Return Types"],
-        "description": "Dive into Dart functions, including their syntax, parameters, return types, and how to use them in your Flutter app."
+        "link": "/30days/dart/day7",
+        "keywords": ["Dart, Tic-Tac-Toe, Game Development, Dart Projects, Console-based Game, Dart Programming, Coding Tutorial, Dart Tutorial, Dart Game, Coding in Dart, Learn Dart, Dart Loops, Dart Lists, Dart Conditionals, User Input in Dart"],
+        "description": "Join us in Day 7 of our Dart Projects series as we build a console-based Tic-Tac-Toe game using Dart. Learn about multi-dimensional lists, loops, conditionals, and user input through a fun, classic game."
     },
+
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Hangman Game",
