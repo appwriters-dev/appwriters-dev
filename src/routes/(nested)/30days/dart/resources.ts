@@ -59,6 +59,13 @@ export const resources = [
         "keywords": ["Dart, Tic-Tac-Toe, Game Development, Dart Projects, Console-based Game, Dart Programming, Coding Tutorial, Dart Tutorial, Dart Game, Coding in Dart, Learn Dart, Dart Loops, Dart Lists, Dart Conditionals, User Input in Dart"],
         "description": "Join us in Day 7 of our Dart Projects series as we build a console-based Tic-Tac-Toe game using Dart. Learn about multi-dimensional lists, loops, conditionals, and user input through a fun, classic game."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Countdown Timer",
+        "link": "/30days/dart/day8",
+        "keywords": ["Dart programming, Dart tutorial, Countdown Timer, Dart Timer class, Dart async, Dart IO, Building Dart projects, Dart for beginners, Learning Dart, Coding tutorial, 30 days of Dart, Step-by-step Dart tutorial"],
+        "description": "Dive into our guide on creating a countdown timer in Dart. This step-by-step tutorial simplifies the process and uses analogies to explain the code. Ideal for beginners and those looking to build practical Dart projects."
+    },
 
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -80,13 +87,6 @@ export const resources = [
         "link": "/30days/dart/day9",
         "keywords": ["Networking", "Dart", "HTTP Requests", "JSON Parsing"],
         "description": "Learn the basics of networking in Dart, including how to make HTTP requests and parse JSON data in your Flutter app."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Countdown Timer",
-        "link": "/30days/dart/day10",
-        "keywords": ["Flutter", "Widgets", "App Structure"],
-        "description": "Get started with Flutter by understanding the basic structure of a Flutter app, learning about widgets, and creating a simple Flutter app."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
