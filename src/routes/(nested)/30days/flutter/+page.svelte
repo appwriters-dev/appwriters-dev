@@ -3,7 +3,6 @@
 	import { config } from '../config';
 	import AdditionalResources from './additionalResources.svelte';
 	import Grid from './grid.svelte';
-	import WeeklyReviews from './weeklyReviews.svelte';
 	export let data;
 </script>
 
@@ -83,11 +82,6 @@
 		</div>
 	{/if}
 
-	{#if data.daysReleased >= 7}
-	<div class="weekly">
-		<WeeklyReviews weeks={Math.floor(data.daysReleased / 7)} />
-	</div>
-	{/if}
 	{#if data.resources.length >= 30}
 		<AdditionalResources />
 	{/if}
