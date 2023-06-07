@@ -86,9 +86,7 @@
 
 	<Testimonials />
 
-	{#if data.resources.length >= 30}
-		<AdditionalResources />
-	{/if}
+	<AdditionalResources />
 </section>
 
 <style lang="scss">
