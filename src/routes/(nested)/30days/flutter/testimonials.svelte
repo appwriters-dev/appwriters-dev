@@ -29,7 +29,7 @@
 		background-color: var(--white);
 	}
 	.testimonials {
-		max-width: 62rem;
+		max-width: 42rem;
 		margin: 0 auto;
 		margin-top: 2rem;
 		display: grid;
