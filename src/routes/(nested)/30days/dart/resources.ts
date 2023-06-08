@@ -66,14 +66,14 @@ export const resources = [
         "keywords": ["Dart programming, Dart tutorial, Countdown Timer, Dart Timer class, Dart async, Dart IO, Building Dart projects, Dart for beginners, Learning Dart, Coding tutorial, 30 days of Dart, Step-by-step Dart tutorial"],
         "description": "Dive into our guide on creating a countdown timer in Dart. This step-by-step tutorial simplifies the process and uses analogies to explain the code. Ideal for beginners and those looking to build practical Dart projects."
     },
-
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Hangman Game",
-        "link": "/30days/dart/day6",
-        "keywords": ["Exceptions", "Error Handling", "Try", "catch", "Finally"],
-        "description": "Understand the importance of exception handling and error management in Dart, and learn how to use try, catch, and finally blocks to handle exceptions in your Flutter app."
+        "link": "/30days/dart/day9",
+        "keywords": ["Dart Programming, Dart Game Development, Console-based Hangman Game, Dart for Beginners, Dart Tutorials, Learning Dart, Dart Challenge, Dart Hangman Game"],
+        "description": "Learn to code a console-based Hangman game in Dart in our 9th day of the 30-day Dart programming challenge. This post breaks down the game development process into simple steps, perfect for beginners and intermediate learners alike."
     },
+
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Morse Code Translator",
