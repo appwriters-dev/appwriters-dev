@@ -2,7 +2,7 @@ import { redirect } from '@sveltejs/kit';
 import { config } from '../../config';
 import { resources } from '../resources';
 
-export const prerender = false;
+export const prerender = true;
 
 /** @type {import('./$types').LayoutLoad} */
 export async function load({ url, params, fetch, session, context }) {
