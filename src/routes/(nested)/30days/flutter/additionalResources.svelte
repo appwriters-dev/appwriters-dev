@@ -37,7 +37,6 @@
 
 <style>
     .resources {
-		background-color: var(--white);
 		padding: 2rem;
 	}
     .content {
