@@ -6,13 +6,11 @@ Hello and welcome to the first of our **#Dart30** series, where we'll be creatin
 
 Our temperature converter is a command-line application. The user will input a temperature value, and then select whether they want to convert it to Fahrenheit or Celsius. The program will then perform the appropriate conversion and output the result.
 
-## The Code Breakdown
+## The Code
 
 Before we dive in, here's the complete code for the project:
 
 ```dart
-/// Temperature converter - converts Celsius to Fahrenheit and vice versa
-/// Part of #Dart30 Project, 30 Days, 30 Projects to learn Dart
 import 'dart:io';
 
 void main() {
@@ -48,7 +46,7 @@ void main() {
 
 Now let's break this down.
 
-### Starting Point - main() Function
+## The main() Function
 
 In Dart, the `main` function is the starting point of any application. It's like the conductor in an orchestra, signaling when and how the different parts should start.
 
@@ -58,7 +56,7 @@ void main() {
 }
 ```
 
-### User Input
+## User Input
 
 The next section deals with taking input from the user. We use `stdout.write` to prompt the user for their input, and `stdin.readLineSync()` to capture it. The `stdout` and `stdin` comes from the `dart:io` library so make sure to import it at the top of your file.
 
@@ -76,7 +74,7 @@ var choice = stdin.readLineSync()?.toLowerCase();
 
 Here, `stdout.write` is like a television announcer asking a question, and `stdin.readLineSync()` is like our program tuning in to the microphone to hear the user's answer.
 
-### Parsing the Input
+## Parsing the Input
 
 After collecting the input, we need to make sure it's in the format we can work with. We use `double.tryParse` to convert the input string to a `double` (a decimal number).
 
@@ -90,9 +88,9 @@ if (temperature == null) {
 
 This is like a translator, taking a phrase in a foreign language (the string input) and converting it into our native language (a double).
 
-### Performing the Conversion
+## Performing the Conversion
 
-Now comes the meat of our project: converting the temperature based on the user's choice.
+Now comes the soul of our project: converting the temperature based on the user's choice.
 
 ```dart
 double result;
@@ -106,15 +104,13 @@ if (choice == 'f') {
   unit = 'C';
 } else {
   print('Invalid choice');
- 
-
  return;
 }
 ```
 
 Think of this part like a traffic cop at a junction. Depending on the direction (choice) the driver (user) wants to go, the cop guides them onto the correct road (conversion formula).
 
-### Displaying the Result
+## Displaying the Result
 
 Finally, we display the result of the conversion to the user.
 

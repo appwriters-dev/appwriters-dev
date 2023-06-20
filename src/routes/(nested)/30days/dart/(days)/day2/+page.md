@@ -1,13 +1,10 @@
 # Building A Simple Arithmetic Calculator
 
-Welcome back! Today, we're going to turn lines of code into a simple arithmetic calculator. The aim of this project is to let you engage with Dart's input/output mechanisms, understand basic data types and control structures. I'll be right by your side, translating these lines of code into simple English and relatable analogies. 
+Welcome back! Today, we're going to turn lines of code into a simple arithmetic calculator. The aim of this project is to let you engage with Dart's input/output mechanisms, understand basic data types and control structures. 
 
 ## The Code
 
 ```dart
-///
-/// Simple arithmetic calculator
-///
 import 'dart:io';
 
 void main() {
