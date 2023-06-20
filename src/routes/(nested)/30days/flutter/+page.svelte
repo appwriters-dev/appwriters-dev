@@ -38,51 +38,29 @@
 					end of the challenge, you'll have a better understanding of Dart and Flutter and a
 					collection of projects to showcase your skills.
 				</p>
+
+				<p>
+					<a href="/30days/flutter/before-you-begin" class="button inverse">Before you begin <i class="icon-arrow-right"></i></a>
+				</p>
 			</div>
 			<div class="image">
 				<img alt="Master Flutter" src="/images/30days/flutter_header_bg.svg" />
 			</div>
 		</div>
 	</div>
-	<div class="what-is">
+
+	<section class="tip">
 		<div class="container">
 			<div class="content">
-				<p><i class="icon-info"></i> Just wanted to let you know that the <b>#30DaysMasterFlutter</b> program doesn't have live sessions. Instead, it's a guide with lots of helpful resources and projects for you to work on at your own pace. I think that teaching yourself, and practicing building projects is the best way to get better at coding. Plus, if you ever have questions or need help, you can ask the community!</p>
+				<i class="icon-share" /> We want to see how you are doing. Share your progress with
+				<b>#30DaysMasterFlutter</b> in our Discord and your social medias.
 			</div>
 		</div>
-	</div>
-	<!-- active day -->
-	{#if data.daysReleased <= 30 && data.daysReleased > 0}
-		<section class="active-day">
-			<article>
-				<h3><i class="icon-calendar" /> - {data.resources[data.daysReleased - 1].title}</h3>
-				<ul>
-					{#each data.resources[data.daysReleased - 1].objectives as objective}
-						<li>{objective}</li>
-					{/each}
-				</ul>
-				<a class="button" href={data.resources[data.daysReleased - 1].link}
-					>begin <i class="icon-arrow-right" />
-				</a>
-			</article>
-		</section>
-	{/if}
-	<section class="tip">
-		<blockquote>
-			<i class="icon-share" /> We want to see how you are doing. Share your progress with
-			<b>#30DaysMasterFlutter</b> in our Discord and social medias.
-		</blockquote>
 	</section>
-	{#if data.resources.length > 0}
-		<div class="content">
-			<Grid resources={data.resources} />
-		</div>
-	{:else}
-		<Countdown targetDate={config.masterFlutter30Published + 24 * 60 * 60 * 1000} />
-		<div class="coming-soon">
-			<img src="/images/flutter_coming_soon.gif" alt="something is coming" />
-		</div>
-	{/if}
+
+	<div class="content">
+		<Grid resources={data.resources} />
+	</div>
 
 	<Testimonials />
 
@@ -186,7 +164,7 @@
 	}
 
 	.tip {
-		blockquote {
+		.content {
 			max-width: 42rem;
 			margin: 0 auto;
 			text-align: center;
@@ -200,6 +178,8 @@
 	}
 	.what-is .content {
 		max-width: 62rem;
+		padding: 2rem;
+		box-sizing: border-box;
 	}
 	.coming-soon {
 		display: flex;

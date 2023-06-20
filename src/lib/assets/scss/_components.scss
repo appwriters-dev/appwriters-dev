@@ -24,6 +24,12 @@
 	font-weight: 500;
 	font-size: 0.8em;
 
+	&.inverse {
+		background: var(--paper);
+		color: var(--accent);
+		font-weight: bold;
+	}
+
 	&:hover {
 		background-blend-mode: color-dodge;
 	}
