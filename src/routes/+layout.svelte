@@ -9,8 +9,6 @@
 	import Analytics from '$lib/components/Analytics.svelte';
 	export let data;
 
-	export const prerender = true;
-
 	/**
 	 * Updates the global store with the current path. (Used for highlighting
 	 * the current page in the nav, but could be useful for other purposes.)
