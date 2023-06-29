@@ -4,13 +4,11 @@ slug: achiving-effective-separation-of-ui-and-business-logic-in-flutter
 date: 2023-06-28
 excerpt: Learn the most valuable tip in Flutter to maintain a clear separation between UI and business logic. Enhance codebase, improve development process, and enjoy benefits like modularity, collaboration, and better code organization.
 keywords: Flutter, UI, business logic, separation of concerns, separation of UI and logic, Flutter development, Flutter tutorial, Flutter guide, Advanced Flutter
-coverImage:
+coverImage: /images/ui_logic_separate_cover.svg
 coverWidth: 16
 coverHeight: 9
-tags: [Flutter]
+categories: [Flutter]
 ---
-
-# Achieving Effective Separation of UI and Business Logic in Flutter
 
 Flutter, being a powerful declarative UI framework, empowers us to build exceptional user interfaces using code. However, to ensure code maintainability, separation of concerns, readability, and upgradability, it is crucial to establish a clear separation between the UI and business logic.
 
