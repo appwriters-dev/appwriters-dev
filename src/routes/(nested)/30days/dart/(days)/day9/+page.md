@@ -2,8 +2,6 @@
 
 Welcome to day 9 of our 30-day Dart coding adventure! If you've been with us, you would have already seen how to build a variety of projects like a temperature converter, a simple arithmetic calculator, and even a Tic Tac Toe game. Today, we will take on the challenge of building a classic word-guessing game, Hangman, using Dart. 
 
-Let's start!
-
 ## Project Overview
 
 Hangman is a game where a player has to guess a word, letter by letter. Each incorrect guess leads to the drawing of a part of the hangman. The game ends when the word is completely guessed or the hangman is completely drawn. 
