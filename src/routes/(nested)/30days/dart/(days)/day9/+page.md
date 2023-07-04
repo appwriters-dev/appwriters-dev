@@ -1,4 +1,4 @@
-# Day 9: Building a Hangman Game in Dart
+# Building a Hangman Game in Dart
 
 Welcome to day 9 of our 30-day Dart coding adventure! If you've been with us, you would have already seen how to build a variety of projects like a temperature converter, a simple arithmetic calculator, and even a Tic Tac Toe game. Today, we will take on the challenge of building a classic word-guessing game, Hangman, using Dart. 
 
