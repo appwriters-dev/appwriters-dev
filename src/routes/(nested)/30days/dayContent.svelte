@@ -46,7 +46,7 @@
 			border-radius: 4px;
 			&:hover {
 				text-decoration: none;
-				background-color: var(--dark);
+				background-color: var(--primaryDark);
 			}
 		}
 	}
