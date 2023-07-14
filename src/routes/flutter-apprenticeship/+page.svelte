@@ -138,10 +138,12 @@
 	</ul>
 
 	{#if form?.success}
-		<p>
+		<p class="success">
 			Successfully submitted. Thank you for your application. We will get back to you within 4
 			business days.
 		</p>
+	{:else if form?.error}
+		<p class="error">Something went wrong. Please try again later.</p>
 	{:else}
 		<form
 			method="POST"
@@ -212,6 +214,16 @@
 
 	h3 {
 		margin: 0;
+	}
+
+	p {
+		&.error {
+			color: red;
+		}
+
+		&.success {
+			color: green;
+		}
 	}
 
 	.grid {

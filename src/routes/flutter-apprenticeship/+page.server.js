@@ -63,7 +63,8 @@ export const actions = {
         } else {
             return {
                 status: 500,
-                success: false
+                success: false,
+                error: true,
             };
         }
     }
