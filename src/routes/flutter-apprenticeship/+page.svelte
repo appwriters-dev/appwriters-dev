@@ -4,7 +4,23 @@
 	export let form;
 
 	let submitting = false;
+	let metaDescription = 'Join our mentorship program to become a skilled Flutter developer. Gain hands-on experience through real-world projects, receive guidance from an experienced mentor, and learn industry standards. Prerequisites include basic programming concepts, OOP, Git, and command line skills.';
+	let keywords = ' Flutter mentorship program, Flutter course, Flutter learning, hands-on experience, real-world projects, experienced mentor, industry standards';
 </script>
+
+<svelte:head>
+	<title>Flutter apprenticeship | Appwriters</title>
+	<meta name="description" content={metaDescription} />
+	<meta name="keywords" content={keywords} />
+	<meta property="og:title" content="Flutter apprenticeship | Appwriters" />
+	<meta property="og:description" content={metaDescription} />
+	<meta property="og:url" content="https://appwriters.dev/flutter-apprenticeship" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://appwriters.dev/images/flutter-apprenticeship.png" />
+	<meta property="og:image:alt" content="Flutter apprenticeship" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+</svelte:head>
 
 <div class="hero">
 	<h1>Flutter apprenticeship</h1>
