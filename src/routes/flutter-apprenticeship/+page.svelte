@@ -29,7 +29,7 @@
 	<ul>
 		<li><strong>Mode</strong>: Sync (over google meet) + Async (Over chat)</li>
 		<li><strong>Duration</strong>: 3 Months</li>
-		<li><strong>Price</strong>: NPR. 30000</li>
+		<li><strong>Price</strong>: NPR. 30000 (Nepal only)</li>
 	</ul>
 </div>
 

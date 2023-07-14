@@ -9,6 +9,9 @@
 	<nav>
 		<ul>
 			<li>
+				<a href="/flutter-apprenticeship">Flutter apprenticeship</a>
+			</li>
+			<li>
 				<a href="/30days/flutter">#30DaysMasterFlutter</a>
 			</li>
 			<li>
