@@ -9,7 +9,6 @@ export const actions = {
         const name = data.get('name');
         const phone = data.get('phone');
         const email = data.get('email');
-        const interestedLevel = data.get('interestedLevel');
         const remarks = data.get('remarks');
 
         const res = await fetch(`https://api.notion.com/v1/pages`, {
@@ -36,11 +35,6 @@ export const actions = {
                     },
                     Phone: {
                         phone_number: phone
-                    },
-                    'Interested Level': {
-                        select: {
-                            name:  interestedLevel
-                        }
                     },
                     'Remarks': {
                         rich_text: [
