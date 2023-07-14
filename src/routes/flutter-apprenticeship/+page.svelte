@@ -4,8 +4,10 @@
 	export let form;
 
 	let submitting = false;
-	let metaDescription = 'Join our mentorship program to become a skilled Flutter developer. Gain hands-on experience through real-world projects, receive guidance from an experienced mentor, and learn industry standards. Prerequisites include basic programming concepts, OOP, Git, and command line skills.';
-	let keywords = ' Flutter mentorship program, Flutter course, Flutter learning, hands-on experience, real-world projects, experienced mentor, industry standards';
+	let metaDescription =
+		'Join our mentorship program to become a skilled Flutter developer. Gain hands-on experience through real-world projects, receive guidance from an experienced mentor, and learn industry standards. Prerequisites include basic programming concepts, OOP, Git, and command line skills.';
+	let keywords =
+		' Flutter mentorship program, Flutter course, Flutter learning, hands-on experience, real-world projects, experienced mentor, industry standards';
 </script>
 
 <svelte:head>
@@ -46,6 +48,59 @@
 		of these topics, there are various resources available online to help you gain proficiency.
 	</p>
 
+	<p><strong>Who is this program for?</strong></p>
+
+	<p>
+		This mentorship program is ideal for individuals who are interested in becoming proficient
+		Flutter developers and are willing to learn through practical project-based experience. The
+		program is suitable for:
+	</p>
+
+	<ol>
+		<li>
+			<strong>Beginners in Programming</strong>: If you have a basic understanding of programming concepts and are eager
+			to dive into Flutter development, this program provides a structured learning path and
+			mentorship to help you succeed.
+		</li>
+
+		<li>
+			<strong>Self-learners</strong>: If you prefer hands-on learning and enjoy working on real-world projects, this
+			program offers an opportunity to enhance your skills while receiving guidance and feedback
+			from an experienced mentor.
+		</li>
+
+		<li>
+			<strong>Aspiring mobile app developers</strong>: If you have a passion for mobile app development and
+			specifically want to specialize in Flutter, this program provides a focused learning
+			experience tailored to Flutter development.
+		</li>
+
+		<li>
+			<strong>Those seeking practical experience</strong>: If you believe in learning by doing and want to gain
+			practical experience in developing Flutter applications, this program offers real-world
+			projects to sharpen your skills.
+		</li>
+
+		<li>
+			<strong>Individuals who value mentorship</strong>: If you appreciate having a mentor to guide you, provide
+			support, and offer insights into industry standards and best practices, this program ensures
+			you receive personalized guidance throughout your learning journey.
+		</li>
+
+		<li>
+			<strong>Collaborative learners</strong>: If you enjoy collaborating with peers and benefit from reviewing and
+			sharing solutions, this program encourages a collaborative learning environment where you can
+			learn from others and contribute your expertise.
+		</li>
+	</ol>
+
+	<p>
+		It's important to note that while this program assumes basic knowledge of programming concepts
+		and related technologies, it welcomes individuals with varying levels of experience. The
+		mentorship aspect ensures that learners receive support tailored to their specific needs,
+		enabling them to progress and succeed as Flutter developers.
+	</p>
+
 	<strong>How it works</strong>
 	<ul>
 		<li>It's a mentorship program designed to help you become a skilled Flutter developer.</li>
@@ -83,7 +138,10 @@
 	</ul>
 
 	{#if form?.success}
-		<p>Successfully submitted. Thank you for your application. We will get back to you within 4 business days.</p>
+		<p>
+			Successfully submitted. Thank you for your application. We will get back to you within 4
+			business days.
+		</p>
 	{:else}
 		<form
 			method="POST"
