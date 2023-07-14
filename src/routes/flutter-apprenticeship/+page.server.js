@@ -55,12 +55,16 @@ export const actions = {
             })
         });
 
+        
         if(res.status === 200) {
             return {
                 status: 200,
                 success: true
             };
         } else {
+            console.log(res.status, res.statusText);
+            const json = await res.json();
+            console.log(json);
             return {
                 status: 500,
                 success: false,
