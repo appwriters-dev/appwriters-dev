@@ -56,9 +56,9 @@ export const actions = {
                 success: true
             };
         } else {
-            console.log(res.status, res.statusText);
+            console.error(res.status, res.statusText);
             const json = await res.json();
-            console.log(json);
+            console.error(json);
             return {
                 status: 500,
                 success: false,
