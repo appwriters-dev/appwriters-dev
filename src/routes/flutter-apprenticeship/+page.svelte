@@ -154,7 +154,7 @@
 				};
 			}}
 		>
-			<h3>Apply now</h3>
+			<h3>Apply now for next session</h3>
 			<label for="name">Name</label>
 			<input id="name" name="name" type="text" required placeholder="name (required)" />
 
@@ -211,7 +211,6 @@
 	}
 
 	h3 {
-		font-size: 1.2rem;
 		margin: 0;
 	}
 
