@@ -10,7 +10,6 @@
 	<SiteMetas />
 </svelte:head>
 
-
 <div class="hero">
 	<div class="content">
 		<p>
@@ -49,6 +48,29 @@
 			</article>
 		</div>
 	</div>
+<!-- 	
+	<div class="master-flutter-challenge">
+		<div class="container">
+			<article>
+				<h2>Flutter apprenticeship</h2>
+				<p>
+					Our program offers hands-on learning, personalized guidance, and real-world projects to
+					help you become a skilled Flutter developer. Join us today and gain industry-relevant
+					skills in a supportive, collaborative environment.
+				</p>
+
+				<p>
+					Who can benefit from this program? Beginners, self-learners, aspiring mobile app
+					developers, and anyone seeking practical experience and mentorship to excel in Flutter
+					development.
+				</p>
+
+				<br />
+				<a href="/flutter-apprenticeship" class="button"><i class="icon-flutter" /> Apply now</a>
+			</article>
+		</div>
+	</div> -->
+	
 	<div class="container">
 		<article class="master-flutter book">
 			<h3>Master Flutter</h3>
