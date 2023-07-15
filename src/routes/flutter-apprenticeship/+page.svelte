@@ -103,39 +103,28 @@
 
 	<strong>How it works</strong>
 	<ul>
-		<li>It's a mentorship program designed to help you become a skilled Flutter developer.</li>
-		<li>Unlike traditional courses or tutorials, this program offers a practical approach.</li>
 		<li>
-			Projects will be assigned to you, providing hands-on experience and application of Flutter
-			development concepts.
+		  It's a mentorship program designed to help you become a skilled Flutter developer, following a practical approach.
 		</li>
 		<li>
-			You'll be provided with the necessary tools and resources to successfully complete each
-			project.
+		  You will learn by working on real-world projects, receiving guidance and feedback from an experienced mentor.
 		</li>
 		<li>
-			You'll actively learn and work on the assigned projects, gaining valuable practical knowledge.
+		  If you encounter difficulties or get stuck, you'll be supported by an experienced mentor.
 		</li>
 		<li>
-			If you encounter difficulties or get stuck, I'll be available to provide guidance and support.
+		  You'll have the opportunity to review solutions from your peers, fostering a collaborative learning environment.
 		</li>
 		<li>
-			You'll have the opportunity to review solutions from your peers, fostering a collaborative
-			learning environment.
+		  Your solutions will be reviewed by an experienced mentor offering suggestions and recommendations for improvement.
 		</li>
 		<li>
-			Your solutions will be reviewed by me, and I'll offer suggestions and recommendations for
-			improvement.
+		  In addition to project-specific feedback, you'll be provided with valuable tips, tricks, and industry standards.
 		</li>
 		<li>
-			In addition to project-specific feedback, I'll provide you with valuable tips, tricks, and
-			industry standards.
+		  On-the-job training by building a complete app from scratch, as well as working on multiple applications with a team.
 		</li>
-		<li>
-			The program emphasizes working on real-world projects, enabling you to develop practical
-			skills that align with industry requirements.
-		</li>
-	</ul>
+	  </ul>	  
 
 	{#if form?.success}
 		<p class="success">
