@@ -18,7 +18,7 @@
 	<meta property="og:description" content={metaDescription} />
 	<meta property="og:url" content="https://appwriters.dev/flutter-apprenticeship" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://appwriters.dev/images/flutter-apprenticeship.png" />
+	<meta property="og:image" content="https://appwriters.dev/images/flutter_apprenticeship.png" />
 	<meta property="og:image:alt" content="Flutter apprenticeship" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
