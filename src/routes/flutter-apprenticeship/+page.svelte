@@ -44,7 +44,7 @@
 	</ul>
 	<p>
 		<strong>Note:</strong> It's essential to have a good foundation in these areas before enrolling in
-		the mentorship program to take the most benefit our of the program. If you need to brush up on any
+		the mentorship program to take the most benefit out of the program. If you need to brush up on any
 		of these topics, there are various resources available online to help you gain proficiency.
 	</p>
 
