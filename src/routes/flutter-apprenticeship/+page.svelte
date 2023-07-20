@@ -58,39 +58,39 @@
 
 	<ol>
 		<li>
-			<strong>Beginners in Programming</strong>: If you have a basic understanding of programming concepts and are eager
-			to dive into Flutter development, this program provides a structured learning path and
-			mentorship to help you succeed.
+			<strong>Beginners in Programming</strong>: If you have a basic understanding of programming
+			concepts and are eager to dive into Flutter development, this program provides a structured
+			learning path and mentorship to help you succeed.
 		</li>
 
 		<li>
-			<strong>Self-learners</strong>: If you prefer hands-on learning and enjoy working on real-world projects, this
-			program offers an opportunity to enhance your skills while receiving guidance and feedback
-			from an experienced mentor.
+			<strong>Self-learners</strong>: If you prefer hands-on learning and enjoy working on
+			real-world projects, this program offers an opportunity to enhance your skills while receiving
+			guidance and feedback from an experienced mentor.
 		</li>
 
 		<li>
-			<strong>Aspiring mobile app developers</strong>: If you have a passion for mobile app development and
-			specifically want to specialize in Flutter, this program provides a focused learning
-			experience tailored to Flutter development.
+			<strong>Aspiring mobile app developers</strong>: If you have a passion for mobile app
+			development and specifically want to specialize in Flutter, this program provides a focused
+			learning experience tailored to Flutter development.
 		</li>
 
 		<li>
-			<strong>Those seeking practical experience</strong>: If you believe in learning by doing and want to gain
-			practical experience in developing Flutter applications, this program offers real-world
-			projects to sharpen your skills.
+			<strong>Those seeking practical experience</strong>: If you believe in learning by doing and
+			want to gain practical experience in developing Flutter applications, this program offers
+			real-world projects to sharpen your skills.
 		</li>
 
 		<li>
-			<strong>Individuals who value mentorship</strong>: If you appreciate having a mentor to guide you, provide
-			support, and offer insights into industry standards and best practices, this program ensures
-			you receive personalized guidance throughout your learning journey.
+			<strong>Individuals who value mentorship</strong>: If you appreciate having a mentor to guide
+			you, provide support, and offer insights into industry standards and best practices, this
+			program ensures you receive personalized guidance throughout your learning journey.
 		</li>
 
 		<li>
-			<strong>Collaborative learners</strong>: If you enjoy collaborating with peers and benefit from reviewing and
-			sharing solutions, this program encourages a collaborative learning environment where you can
-			learn from others and contribute your expertise.
+			<strong>Collaborative learners</strong>: If you enjoy collaborating with peers and benefit
+			from reviewing and sharing solutions, this program encourages a collaborative learning
+			environment where you can learn from others and contribute your expertise.
 		</li>
 	</ol>
 
@@ -104,28 +104,33 @@
 	<strong>How it works</strong>
 	<ul>
 		<li>
-		  It's a mentorship program designed to help you become a skilled Flutter developer, following a practical approach.
+			It's a mentorship program designed to help you become a skilled Flutter developer, following a
+			practical approach.
 		</li>
 		<li>
-		  You will learn by working on real-world projects, receiving guidance and feedback from an experienced mentor.
+			You will learn by working on real-world projects, receiving guidance and feedback from an
+			experienced mentor.
 		</li>
 		<li>
-		  If you encounter difficulties or get stuck, you'll be supported by an experienced mentor.
+			If you encounter difficulties or get stuck, you'll be supported by an experienced mentor.
 		</li>
 		<li>
-		  You'll have the opportunity to review solutions from your peers, fostering a collaborative learning environment.
+			You'll have the opportunity to review solutions from your peers, fostering a collaborative
+			learning environment.
 		</li>
 		<li>
-		  Your solutions will be reviewed by an experienced mentor offering suggestions and recommendations for improvement.
+			Your solutions will be reviewed by an experienced mentor offering suggestions and
+			recommendations for improvement.
 		</li>
 		<li>
-		  In addition to project-specific feedback, you'll be provided with valuable tips, tricks, and industry standards.
+			In addition to project-specific feedback, you'll be provided with valuable tips, tricks, and
+			industry standards.
 		</li>
 		<li>
-		  On-the-job training by building a complete app from scratch, as well as working on multiple applications with a team.
+			On-the-job training by building a complete app from scratch, as well as working on multiple
+			applications with a team.
 		</li>
-	  </ul>	  
-
+	</ul>
 	{#if form?.success}
 		<p class="success">
 			Successfully submitted. Thank you for your application. We will get back to you within 4
@@ -146,6 +151,10 @@
 			}}
 		>
 			<h3>Apply now for next session</h3>
+			<p class="error">
+				We have reached our maximum capacity for this session. All new applications will be held in
+				backlog for upcoming session. Thank you for your interest.
+			</p>
 			<label for="name">Name</label>
 			<input id="name" name="name" type="text" required placeholder="name (required)" />
 
