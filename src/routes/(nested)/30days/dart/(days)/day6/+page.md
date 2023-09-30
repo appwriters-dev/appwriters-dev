@@ -1,4 +1,4 @@
-# Password Generator in Dart: A Simple Project Guide
+# Building a Password Generator in Dart
 
 Welcome back, Dart learners! We have been on a journey together, creating some cool projects. Remember the temperature converter, simple arithmetic calculator, Todo list application, number guessing game, and text analyzer we made? Now, it's time to add one more to our list. Today, we'll be building a simple, yet very useful tool: a Password Generator.
 
