@@ -1,12 +1,8 @@
-# Blog Post: Building a Countdown Timer in Dart - Project 8 of 30
+# Building a Countdown Timer in Dart
 
-Hello, Dart developers! Today, we're diving into day 8 of our "30 Days of Dart Projects" series. As you might already know, we've built a number of exciting tools and games in Dart during the past week. Now, let's make our journey even more interesting by building a "Countdown Timer" in Dart. We'll explain the code in simple English and use analogies to make it even easier to understand.
+Hello again, Today, we're diving into day 8 of our "30 Days of Dart Projects" series by building a "Countdown Timer" in Dart. Countdown Timer that will count down from a specified number of seconds. Imagine it as your personal digital hourglass but instead of sand, it uses seconds. You tell it when to start and it ticks away one second at a time, giving you updates until it reaches zero.
 
-## Project Overview
-
-Today's project is a Countdown Timer that will count down from a specified number of seconds. Imagine it as your personal digital hourglass but instead of sand, it uses seconds. You tell it when to start and it ticks away one second at a time, giving you updates until it reaches zero.
-
-## The Dart Code
+## Complete code
 
 Here's the complete code of our Countdown Timer:
 

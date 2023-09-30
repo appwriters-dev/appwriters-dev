@@ -1,4 +1,4 @@
-## Building a Tic-Tac-Toe Game in Dart: Day 7 of Dart Projects
+## Building a Tic-Tac-Toe Game in Dart
 
 Welcome back to our coding journey! Today, we're stepping up our game - quite literally - by creating a console-based Tic-Tac-Toe game in Dart. This game will feature two players, represented by 'X' and 'O', taking turns to mark spots on the game board. Let's dive right in!
 
