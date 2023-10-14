@@ -34,16 +34,20 @@ fieldset {
 	border: 0;
 }
 
-input {
+input, select {
 	display: block;
 	font-size: inherit;
 	padding: 0.5rem;
-	border: 1px solid var(--darker);
+	border: 1px solid var(--neutral100);
 	border-radius: 0.125rem;
 	width: 100%;
 	accent-color: var(--accent);
 	background-color: transparent;
 
+	&:focus {
+		outline-color: var(--accent);
+	}
+	
 	&[type='radio'],
 	&[type='checkbox'] {
 		display: initial;
@@ -61,5 +65,5 @@ fieldset {
 }
 
 ::placeholder {
-	color: var(--dark);
+	color: var(--neutral100);
 }
