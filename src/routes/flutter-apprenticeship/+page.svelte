@@ -25,30 +25,17 @@
 </svelte:head>
 
 <div class="hero">
-	<h1>Flutter apprenticeship - Advanced Course</h1>
+	<h1>Flutter apprenticeship</h1>
+	<p>Flutter course for everybody</p>
 	<ul>
-		<li><strong>Mode</strong>: Sync (over google meet) + Async (Over chat)</li>
+		<li><strong>Mode</strong>: Online</li>
 		<li><strong>Duration</strong>: 3 Months</li>
 		<li><strong>Price</strong>: NPR. 28,888 (Nepal only)</li>
 	</ul>
 </div>
 
 <div class="content">
-	<p><strong>Prerequisites:</strong></p>
-	<ul>
-		<li>Basic familiarity with the command line interface.</li>
-		<li>Understanding of fundamental programming concepts.</li>
-		<li>Basic knowledge of Object-Oriented Programming (OOP) principles.</li>
-		<li>Familiarity with basic data structures and algorithms.</li>
-		<li>Basic knowledge of using Git and GitHub for version control.</li>
-	</ul>
-	<p>
-		<strong>Note:</strong> It's essential to have a good foundation in these areas before enrolling in
-		the mentorship program to take the most benefit out of the program. If you need to brush up on any
-		of these topics, there are various resources available online to help you gain proficiency.
-	</p>
-
-	<p><strong>Who is this program for?</strong></p>
+	<p><strong>Who should join?</strong></p>
 
 	<p>
 		This mentorship program is ideal for individuals who are interested in becoming proficient
@@ -131,6 +118,21 @@
 			applications with a team.
 		</li>
 	</ul>
+
+	<p><strong>Prerequisites:</strong></p>
+	<ul>
+		<li>Basic familiarity with the command line interface.</li>
+		<li>Understanding of fundamental programming concepts.</li>
+		<li>Basic knowledge of Object-Oriented Programming (OOP) principles.</li>
+		<li>Familiarity with basic data structures and algorithms.</li>
+		<li>Basic knowledge of using Git and GitHub for version control.</li>
+	</ul>
+	<p>
+		<strong>Note:</strong> It's essential to have a good foundation in these areas before enrolling in
+		the mentorship program to take the most benefit out of the program. If you need to brush up on any
+		of these topics, there are various resources available online to help you gain proficiency.
+	</p>
+
 	{#if form?.success}
 		<p class="success">
 			Successfully submitted. Thank you for your application. We will get back to you within 4
