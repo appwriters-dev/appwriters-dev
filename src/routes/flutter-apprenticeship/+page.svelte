@@ -151,10 +151,10 @@
 			}}
 		>
 			<h3>Apply now for next session</h3>
-			<p class="error">
+			<!-- <p class="error">
 				We have reached our maximum capacity for this session. All new applications will be held in
 				backlog for upcoming session. Thank you for your interest.
-			</p>
+			</p> -->
 			<label for="name">Name</label>
 			<input id="name" name="name" type="text" required placeholder="name (required)" />
 
