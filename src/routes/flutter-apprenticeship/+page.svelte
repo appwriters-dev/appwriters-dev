@@ -35,6 +35,17 @@
 </div>
 
 <div class="content">
+	<p><strong>What will you learn?</strong></p>
+
+	<ul>
+		<li><strong>Flutter Mastery</strong>: This course is your gateway to becoming a Flutter expert. You'll dive deep into Flutter, covering all the essential topics needed to craft production-quality applications. <a href="/30days/flutter">Explore the syllabus here</a>.</li>
+		<li><strong>Hands-On Project</strong>: Beyond just Flutter, building mobile apps demands integration with various tools, data structures, and more. This program guides you in creating a comprehensive project from scratch, equipping you with practical skills.</li>
+		<li><strong>Git Collaboration</strong>: Learn the ropes of seamless collaboration using Git within a team setting. Discover industry-standard Git workflows that foster effective teamwork.</li>
+		<li><strong>Build Your Portfolio</strong>: Alongside the main project, you'll embark on smaller projects to showcase your skills. These will be published on your GitHub, helping you construct a robust portfolio.</li>
+		<li><strong>Best Practices</strong>: Gain insights into Flutter's best practices, including file and folder organization, state management, and more. These practices will empower you to write code that's easy to understand, scalable, and maintainable.</li>
+		<li><strong>Pair Programming & Code Reviews</strong>: Real-world teamwork often involves code reviews and pair programming. This program emphasizes these critical aspects, ensuring you're well-prepared for the collaborative nature of professional development.</li>
+	</ul>
+
 	<p><strong>Who should join?</strong></p>
 
 	<p>
