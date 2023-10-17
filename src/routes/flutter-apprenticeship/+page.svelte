@@ -25,11 +25,11 @@
 </svelte:head>
 
 <div class="hero">
-	<h1>Flutter apprenticeship</h1>
+	<h1>Flutter apprenticeship - Advanced Course</h1>
 	<ul>
 		<li><strong>Mode</strong>: Sync (over google meet) + Async (Over chat)</li>
 		<li><strong>Duration</strong>: 3 Months</li>
-		<li><strong>Price</strong>: NPR. 30000 (Nepal only)</li>
+		<li><strong>Price</strong>: NPR. 28,888 (Nepal only)</li>
 	</ul>
 </div>
 
