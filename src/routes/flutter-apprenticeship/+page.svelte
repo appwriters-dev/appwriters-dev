@@ -26,29 +26,50 @@
 
 <div class="hero">
 	<h1>Flutter apprenticeship</h1>
+	<p>Flutter course for everybody</p>
 	<ul>
-		<li><strong>Mode</strong>: Sync (over google meet) + Async (Over chat)</li>
+		<li><strong>Mode</strong>: Online</li>
 		<li><strong>Duration</strong>: 3 Months</li>
-		<li><strong>Price</strong>: NPR. 30000 (Nepal only)</li>
+		<li><strong>Price</strong>: NPR. 28,888 (Nepal only)</li>
 	</ul>
 </div>
 
 <div class="content">
-	<p><strong>Prerequisites:</strong></p>
-	<ul>
-		<li>Basic familiarity with the command line interface.</li>
-		<li>Understanding of fundamental programming concepts.</li>
-		<li>Basic knowledge of Object-Oriented Programming (OOP) principles.</li>
-		<li>Familiarity with basic data structures and algorithms.</li>
-		<li>Basic knowledge of using Git and GitHub for version control.</li>
-	</ul>
-	<p>
-		<strong>Note:</strong> It's essential to have a good foundation in these areas before enrolling in
-		the mentorship program to take the most benefit out of the program. If you need to brush up on any
-		of these topics, there are various resources available online to help you gain proficiency.
-	</p>
+	<p><strong>What will you learn?</strong></p>
 
-	<p><strong>Who is this program for?</strong></p>
+	<ul>
+		<li>
+			<strong>Flutter Mastery</strong>: This course is your gateway to becoming a Flutter expert.
+			You'll dive deep into Flutter, covering all the essential topics needed to craft
+			production-quality applications. <a href="/30days/flutter">Explore the syllabus here</a>.
+		</li>
+		<li>
+			<strong>Hands-On Project</strong>: Beyond just Flutter, building mobile apps demands
+			integration with various tools, data structures, and more. This program guides you in creating
+			a comprehensive project from scratch, equipping you with practical skills.
+		</li>
+		<li>
+			<strong>Git Collaboration</strong>: Learn the ropes of seamless collaboration using Git within
+			a team setting. Discover industry-standard Git workflows that foster effective teamwork.
+		</li>
+		<li>
+			<strong>Build Your Portfolio</strong>: Alongside the main project, you'll embark on smaller
+			projects to showcase your skills. These will be published on your GitHub, helping you
+			construct a robust portfolio.
+		</li>
+		<li>
+			<strong>Best Practices</strong>: Gain insights into Flutter's best practices, including file
+			and folder organization, state management, and more. These practices will empower you to write
+			code that's easy to understand, scalable, and maintainable.
+		</li>
+		<li>
+			<strong>Pair Programming & Code Reviews</strong>: Real-world teamwork often involves code
+			reviews and pair programming. This program emphasizes these critical aspects, ensuring you're
+			well-prepared for the collaborative nature of professional development.
+		</li>
+	</ul>
+
+	<p><strong>Who should join?</strong></p>
 
 	<p>
 		This mentorship program is ideal for individuals who are interested in becoming proficient
@@ -131,6 +152,21 @@
 			applications with a team.
 		</li>
 	</ul>
+
+	<p><strong>Prerequisites:</strong></p>
+	<ul>
+		<li>Basic familiarity with the command line interface.</li>
+		<li>Understanding of fundamental programming concepts.</li>
+		<li>Basic knowledge of Object-Oriented Programming (OOP) principles.</li>
+		<li>Familiarity with basic data structures and algorithms.</li>
+		<li>Basic knowledge of using Git and GitHub for version control.</li>
+	</ul>
+	<p>
+		<strong>Note:</strong> It's essential to have a good foundation in these areas before enrolling in
+		the mentorship program to take the most benefit out of the program. If you need to brush up on any
+		of these topics, there are various resources available online to help you gain proficiency.
+	</p>
+
 	{#if form?.success}
 		<p class="success">
 			Successfully submitted. Thank you for your application. We will get back to you within 4
@@ -151,10 +187,10 @@
 			}}
 		>
 			<h3>Apply now for next session</h3>
-			<p class="error">
+			<!-- <p class="error">
 				We have reached our maximum capacity for this session. All new applications will be held in
 				backlog for upcoming session. Thank you for your interest.
-			</p>
+			</p> -->
 			<label for="name">Name</label>
 			<input id="name" name="name" type="text" required placeholder="name (required)" />
 
@@ -222,11 +258,5 @@
 		&.success {
 			color: green;
 		}
-	}
-
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 20px;
 	}
 </style>
