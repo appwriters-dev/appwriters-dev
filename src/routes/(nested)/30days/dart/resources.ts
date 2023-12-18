@@ -73,6 +73,13 @@ export const resources = [
         "keywords": ["Dart Programming, Dart Game Development, Console-based Hangman Game, Dart for Beginners, Dart Tutorials, Learning Dart, Dart Challenge, Dart Hangman Game"],
         "description": "Learn to code a console-based Hangman game in Dart in our 9th day of the 30-day Dart programming challenge. This post breaks down the game development process into simple steps, perfect for beginners and intermediate learners alike."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "File organizer",
+        "link": "/30days/dart/day10",
+        "keywords": ["Dart Programming, Dart scripts, automate, Dart for Beginners, Dart Tutorials, Learning Dart, Dart Challenge"],
+        "description": "Learn to write a script to organize your files automatically based on their types. This post breaks down the process into simple steps, perfect for beginners and intermediate learners alike."
+    },
 
     {
         "imageUrl": "https://placehold.co/600x400",
