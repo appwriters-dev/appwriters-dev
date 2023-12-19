@@ -80,6 +80,55 @@ void handlePostRequest(HttpRequest request) async {
 
 This function handles POST requests by reading the request body and echoing it back in the response.
 
+## The complete code
+
+```dart
+///
+/// Simple HTTP Server
+/// 
+import 'dart:convert';
+import 'dart:io';
+
+void main() async {
+  final server = await HttpServer.bind(InternetAddress.anyIPv4, 8080);
+  print('Server running on port 8080');
+
+  await for (var request in server) {
+    switch (request.method) {
+      case 'GET':
+        handleGetRequest(request);
+        break;
+      case 'POST':
+        handlePostRequest(request);
+        break;
+      default:
+        request.response.statusCode = HttpStatus.methodNotAllowed;
+        request.response.write('Unsupported request method: ${request.method}');
+        await request.response.close();
+        break;
+    }
+  }
+}
+
+void handleGetRequest(HttpRequest request) async {
+  final path = request.uri.path;
+  if (path == '/') {
+    request.response.write('Hello, world!');
+    await request.response.close();
+  } else {
+    request.response.statusCode = HttpStatus.notFound;
+    await request.response.close();
+  }
+}
+
+void handlePostRequest(HttpRequest request) async {
+  final body = await utf8.decodeStream(request);
+  request.response.write('Received POST request with body: $body');
+  await request.response.close();
+}
+
+```
+
 ## Running and Testing the Server
 
 To run the server, simply execute the Dart file. Once it's running, you can test it using a web browser or tools like Postman or cURL for both GET and POST requests.
