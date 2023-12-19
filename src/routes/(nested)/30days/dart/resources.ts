@@ -80,6 +80,13 @@ export const resources = [
         "keywords": ["Dart Programming, Dart scripts, automate, Dart for Beginners, Dart Tutorials, Learning Dart, Dart Challenge"],
         "description": "Learn to write a script to organize your files automatically based on their types. This post breaks down the process into simple steps, perfect for beginners and intermediate learners alike."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Simple HTTP server",
+        "link": "/30days/dart/day11",
+        "keywords": ["Dart Programming, Dart web server, http server, Dart for Beginners, Dart Tutorials, Learning Dart, Dart Challenge"],
+        "description": "Explore the basics of building a simple HTTP server in Dart. Perfect for beginners, this project of our 30-day coding challenge covers handling GET and POST requests, setting up a server, and testing it. Enhance your Dart skills and dive into web server development!"
+    },
 
     {
         "imageUrl": "https://placehold.co/600x400",
