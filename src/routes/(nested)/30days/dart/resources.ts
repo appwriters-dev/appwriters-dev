@@ -3,14 +3,40 @@ export const resources = [
         "imageUrl": "https://placehold.co/600x400",
         "title": "Temperature Converter",
         "link": "/30days/dart/day1",
-        "keywords": ["Dart, Dart Programming, Dart30, Coding Project, Learning Dart, Temperature Converter, Celsius to Fahrenheit, Fahrenheit to Celsius, Programming Basics, Code Breakdown, Code Explanation, Command-line Application, Dart IO, Programming Tutorial"],
+        "keywords": [
+            "Dart",
+            "Dart Programming",
+            "Dart30",
+            "Coding Project",
+            "Learning Dart",
+            "Temperature Converter",
+            "Celsius to Fahrenheit",
+            "Fahrenheit to Celsius",
+            "Programming Basics",
+            "Code Breakdown",
+            "Code Explanation",
+            "Command-line Application",
+            "Dart IO",
+            "Programming Tutorial"
+        ],
         "description": "Simple command line temperature converter in dart. This application, converts Celsius to Fahrenheit and vice versa. Dive into the breakdown of this fundamental coding project!"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Calculator",
         "link": "/30days/dart/day2",
-        "keywords": ["Dart programming, beginner coding project, arithmetic calculator, input/output in Dart, control structures, basic data types, Dart for beginners, simple Dart project, learn Dart, Dart tutorial"],
+        "keywords": [
+            "Dart programming",
+            "beginner coding project",
+            "arithmetic calculator",
+            "input/output in Dart",
+            "control structures",
+            "basic data types",
+            "Dart for beginners",
+            "simple Dart project",
+            "learn Dart",
+            "Dart tutorial"
+        ],
         "description": "Discover how to build a simple arithmetic calculator with Dart. This step-by-step guide breaks down code into simple English, explaining user input, basic data types, and control structures in Dart. Suitable for beginners!"
     },
     {
@@ -35,58 +61,169 @@ export const resources = [
         "imageUrl": "https://placehold.co/600x400",
         "title": "Number guessing game",
         "link": "/30days/dart/day4",
-        "keywords": ["Dart Programming, Coding Challenge, Number Guessing Game, User Input, Random Numbers, Conditional Statements, 30 projects in 30 days, Code Breakdown, Learning Dart"],
+        "keywords": [
+            "Dart Programming",
+            "Coding Challenge",
+            "Number Guessing Game",
+            "User Input",
+            "Random Numbers",
+            "Conditional Statements",
+            "30 projects in 30 days",
+            "Code Breakdown",
+            "Learning Dart"
+        ],
         "description": "Uncover the magic of Dart as we build a simple yet fun Number Guessing Game in our '30 projects in 30 days' challenge. We break down the code, explaining each section in plain English and using engaging analogies. Step into the world of user input, random number generation, and conditional statements!"
     },
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Text Analyzer",
         "link": "/30days/dart/day5",
-        "keywords": ["Dart, Dart Programming, Text Analyzer, File Handling, Regular Expressions, Code Explanation, Learning Dart, Dart Project, Text Manipulation, Coding in Dart, Dart for Beginners, Dart Tutorial, Programming Blog, Word Count, Sentence Count, Paragraph Count"],
+        "keywords": [
+            "Dart",
+            "Dart Programming",
+            "Text Analyzer",
+            "File Handling",
+            "Learning Dart",
+            "Dart Project",
+            "Coding in Dart",
+            "Dart for Beginners",
+            "Dart Tutorial",
+        ],
         "description": "Join us on Day 5 of our \"Building 30 Projects in Dart\" series. In this post, we walk you through creating a Text Analyzer in Dart that counts the number of words, sentences, and paragraphs in a given text file, using simple English and illustrative analogies."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Password Generator",
         "link": "/30days/dart/day6",
-        "keywords": ["Dart Programming, Password Generator, Dart for Beginners, Random Number Generation, User Input in Dart, Dart String Manipulation, Dart Project Tutorial, Dart Learning Guide, ASCII Characters in Dart, Dart List Generation"],
+        "keywords": [
+            "Dart Programming",
+            "Password Generator",
+            "Dart for Beginners",
+            "Random Number Generation",
+            "Dart String Manipulation",
+            "Dart Learning Guide",
+            "ASCII Characters in Dart",
+        ],
         "description": "Learn to build a simple yet powerful password generator in Dart. This step-by-step guide teaches you how to work with user input, generate random numbers, and manipulate strings in Dart."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Tic-Tac-Toe Game",
         "link": "/30days/dart/day7",
-        "keywords": ["Dart, Tic-Tac-Toe, Game Development, Dart Projects, Console-based Game, Dart Programming, Coding Tutorial, Dart Tutorial, Dart Game, Coding in Dart, Learn Dart, Dart Loops, Dart Lists, Dart Conditionals, User Input in Dart"],
+        "keywords": [
+            "Dart",
+            "Tic-Tac-Toe",
+            "Dart Projects",
+            "Dart Programming",
+            "Dart Tutorial",
+            "Dart Game",
+            "Learn Dart",
+            "Dart Loops",
+            "Dart Lists",
+            "Dart Conditionals",
+        ],
         "description": "Join us in Day 7 of our Dart Projects series as we build a console-based Tic-Tac-Toe game using Dart. Learn about multi-dimensional lists, loops, conditionals, and user input through a fun, classic game."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Countdown Timer",
         "link": "/30days/dart/day8",
-        "keywords": ["Dart programming, Dart tutorial, Countdown Timer, Dart Timer class, Dart async, Dart IO, Building Dart projects, Dart for beginners, Learning Dart, Coding tutorial, 30 days of Dart, Step-by-step Dart tutorial"],
+        "keywords": [
+            "Dart tutorial",
+            "Countdown Timer",
+            "Dart Timer class",
+            "Building Dart projects",
+            "Dart for beginners",
+            "Learning Dart",
+            "30 days of Dart",
+            "Step-by-step Dart tutorial"
+        ],
         "description": "Dive into our guide on creating a countdown timer in Dart. This step-by-step tutorial simplifies the process and uses analogies to explain the code. Ideal for beginners and those looking to build practical Dart projects."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Hangman Game",
         "link": "/30days/dart/day9",
-        "keywords": ["Dart Programming, Dart Game Development, Console-based Hangman Game, Dart for Beginners, Dart Tutorials, Learning Dart, Dart Challenge, Dart Hangman Game"],
+        "keywords": [
+            "Dart Programming",
+            "Dart Game Development",
+            "Console-based Hangman Game",
+            "Dart for Beginners",
+            "Dart Tutorials",
+            "Learning Dart",
+            "Dart Challenge",
+            "Dart Hangman Game"
+        ],
         "description": "Learn to code a console-based Hangman game in Dart in our 9th day of the 30-day Dart programming challenge. This post breaks down the game development process into simple steps, perfect for beginners and intermediate learners alike."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "File organizer",
         "link": "/30days/dart/day10",
-        "keywords": ["Dart Programming, Dart scripts, automate, Dart for Beginners, Dart Tutorials, Learning Dart, Dart Challenge"],
+        "keywords": [
+            "Dart Programming",
+            "Dart scripts",
+            "automate",
+            "Dart for Beginners",
+            "Dart Tutorials",
+            "Learning Dart",
+            "Dart Challenge"
+        ],
         "description": "Learn to write a script to organize your files automatically based on their types. This post breaks down the process into simple steps, perfect for beginners and intermediate learners alike."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
         "title": "Simple HTTP server",
         "link": "/30days/dart/day11",
-        "keywords": ["Dart Programming, Dart web server, http server, Dart for Beginners, Dart Tutorials, Learning Dart, Dart Challenge"],
+        "keywords": [
+            "Dart Programming",
+            "Dart web server",
+            "http server",
+            "Dart for Beginners",
+            "Dart Tutorials",
+            "Learning Dart",
+            "Dart Challenge"
+        ],
         "description": "Explore the basics of building a simple HTTP server in Dart. Perfect for beginners, this project of our 30-day coding challenge covers handling GET and POST requests, setting up a server, and testing it. Enhance your Dart skills and dive into web server development!"
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "File size calculator",
+        "link": "/30days/dart/day12",
+        "keywords": [
+            "Dart programming",
+            "file size calculation",
+            "Dart file handling",
+            "Dart directory operations",
+            "Dart IO operations",
+            "Dart asynchronous programming",
+            "Dart for beginners",
+            "learning Dart",
+            "Dart filesystem entity",
+            "Dart code tutorial"
+        ],
+        "description": "Explore our step-by-step guide on creating a File Size Calculator in Dart. Perfect for junior developers, this blog post simplifies file system operations in Dart, covering everything from reading input to calculating file and directory sizes."
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Password strength checker",
+        "link": "/30days/dart/day13",
+        "keywords": [
+            "Dart programming",
+            "Password strength checker",
+            "Flutter development",
+            "Secure password practices",
+            "Regular expressions in Dart",
+            "String manipulation",
+            "User input handling",
+            "Software security",
+            "Authentication systems",
+            "Dart tutorials"
+        ],
+        "description": "Explore our detailed blog post on creating a Password Strength Checker in Dart. Learn about Dart programming, regular expressions, and secure password practices step by step."
+    },
+
+
 
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -101,20 +238,6 @@ export const resources = [
         "link": "/30days/dart/day9",
         "keywords": ["Networking", "Dart", "HTTP Requests", "JSON Parsing"],
         "description": "Learn the basics of networking in Dart, including how to make HTTP requests and parse JSON data in your Flutter app."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "File Size Calculator",
-        "link": "/30days/dart/day11",
-        "keywords": ["User Interface Design", "UI Design", "Widgets", "Text", "Container", "Row", "Column"],
-        "description": "Learn the basics of UI design in Flutter, including simple widgets like Text, Container, Row, and Column, and create a simple UI in your Flutter app."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Password strength checker",
-        "link": "/30days/dart/day12",
-        "keywords": ["User Interface Design", "Scrollable Layout", "Scrolling Widgets", "SingleChildScrollView", "ListView", "GridView"],
-        "description": "Continue learning about UI design in Flutter by building a scrollable layout and exploring scrolling widgets like SingleChildScrollView, ListView, GridView and more."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
@@ -220,44 +343,6 @@ export const resources = [
         "description": "Learn how to use plugins in Flutter and how to create and use them. Implement plugins in your Flutter app.",
         "link": "/30days/dart/day27",
         "keywords": ["Flutter", "plugins", "create plugins", "use plugins", "implement plugins"]
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Testing in Flutter",
-        "link": "/30days/dart/day28",
-        "keywords": [
-            "testing",
-            "flutter",
-            "write",
-            "run",
-            "implement",
-            "app"
-        ],
-        "description": "This tutorial will teach you about testing in Flutter, including how to write and run tests, and how to implement tests in your Flutter app."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Debugging and Dev Tools",
-        "link": "/30days/dart/day29",
-        "keywords": [
-            "debug",
-            "flutter",
-            "dev tools",
-        ],
-        "description": "Learn to debug and fix issues in your application. Learn to use the DevTools to debug your Flutter app. Understand the need to use DevTools and debugging."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Building and Publishing",
-        "link": "/30days/dart/day30",
-        "keywords": [
-            "building",
-            "publishing",
-            "flutter",
-            "app stores",
-            "flutter build"
-        ],
-        "description": "Learn how to build and publish your Flutter app to the various platform app stores. Understand how to prepare your app for release, build your Flutter app for production, and prepare and publish your app."
     }
 ];
 
