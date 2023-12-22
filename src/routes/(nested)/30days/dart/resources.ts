@@ -222,6 +222,24 @@ export const resources = [
         ],
         "description": "Explore our detailed blog post on creating a Password Strength Checker in Dart. Learn about Dart programming, regular expressions, and secure password practices step by step."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Typing speed test",
+        "link": "/30days/dart/day14",
+        "keywords": [
+            "Dart programming",
+            "typing speed test",
+            "coding tutorial",
+            "beginner programming guide",
+            "Dart syntax",
+            "typing accuracy measurement",
+            "interactive Dart program",
+            "programming skills enhancement",
+            "console-based application",
+            "string processing in Dart"
+        ],
+        "description": "Explore our in-depth guide on creating a Dart program to test typing speed and accuracy. Perfect for beginners and experienced developers, this article breaks down each step of the program, offering insights into Dart syntax and functionality."
+    },
 
 
 
@@ -245,13 +263,6 @@ export const resources = [
         "link": "/30days/dart/day13",
         "keywords": ["Assets", "Images", "Fonts", "pubspec.yaml"],
         "description": "Discover how to add images and fonts to your Flutter app, and learn how to use the pubspec.yaml file to manage your assets."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Typoing speed test",
-        "link": "/30days/dart/day14",
-        "keywords": ["Interactive UI", "State", "StatefulWidget", "setState()"],
-        "description": "Understand the concepts of state and StatefulWidget in Flutter, and learn how to implement stateful widgets using setState() in your Flutter app."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
