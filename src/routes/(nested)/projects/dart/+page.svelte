@@ -17,14 +17,14 @@
 
 <section>
 	<div class="hero">
-		<h1>#Dart30</h1>
-		<p><b>30</b> Days <b>Dart</b> Coding Challenge</p>
-		<p>Build <b>30</b> projects in <b>30</b> days with <b>30</b> tutorials</p>
+		<h1>#DartProjects</h1>
+		<p><b>Dart</b> Coding Challenges</p>
+		<p>Learn <b>Dart</b> step-by-step by building <b>projects</b></p>
 	</div>
 	<div class="intro">
 		<div class="container">
 			<div class="content">
-				<p>30 projects to learn and brush up your Dart skills.</p>
+				<p>Build projects to learn and brush up your Dart skills.</p>
 			</div>
 		</div>
 	</div>

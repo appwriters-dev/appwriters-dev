@@ -6,8 +6,13 @@
 	export let day = 0;
 	export let nextReleased = true;
 
-	export let title;
+	/**
+	 * @type {string}
+	 */
+	 export let title;
+	 /** @type {string} */
 	export let basePath;
+	/** @type {string} */
 	export let project;
 </script>
 
@@ -16,8 +21,9 @@
 <div class="container">
 	<slot />
 	<p>
-		<b>Enjoying? Tell your friends. </b><Share
-			message="🎉 I'm having a blast on day {day} of my {project} journey! 🚀 You should definitely start your own journey too! 💪"
+		<b>Enjoying? Tell your friends. </b>
+		<Share
+			message="🎉 I'm having a blast on Dart challenge, learning by building {project}! 🚀 You should definitely start your own journey too! 💪"
 			url="{siteLink}/projects/{basePath}/project{day}"
 		/>
 	</p>
@@ -27,12 +33,12 @@
 		{:else}
 			<div />
 		{/if}
-		{#if nextReleased && day < 30}
+		{#if nextReleased && day < 15}
 			<a href="/projects/{basePath}/project{day + 1}">project {day + 1} <i class="icon-arrow-right" /> </a>
 		{/if}
-		{#if day == 30}
+		<!-- {#if day == 30}
 			<a href="/projects/{basePath}/whats-next">What's Next? <i class="icon-arrow-right" /> </a>
-		{/if}
+		{/if} -->
 	</nav>
 </div>
 
