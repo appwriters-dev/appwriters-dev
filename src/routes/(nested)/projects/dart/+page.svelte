@@ -1,7 +1,5 @@
 <script>
-	import AdditionalResources from './additionalResources.svelte';
 	import Grid from './grid.svelte';
-	import Testimonials from './testimonials.svelte';
 	export let data;
 </script>
 
@@ -19,50 +17,21 @@
 
 <section>
 	<div class="hero">
-		<h1>#30DaysMasterFlutter</h1>
-		<p><b>30</b> Days <b>Dart</b> and <b>Flutter</b> Challenge</p>
-		<p>FREE | Easy to Follow | Project Based</p>
+		<h1>#DartProjects</h1>
+		<p><b>Dart</b> Coding Challenges</p>
+		<p>Learn <b>Dart</b> step-by-step by building <b>projects</b></p>
 	</div>
 	<div class="intro">
 		<div class="container">
 			<div class="content">
-				<p>
-					Learn the basics of Flutter and Dart in 30 days! We provide a roadmap, resources, and
-					project ideas to help you along your journey.
-				</p>
-				<p>
-					In just 30 days, this Flutter learning challenge will help you learn the basics of Dart
-					and Flutter through daily project building and easy-to-follow learning materials. By the
-					end of the challenge, you'll have a better understanding of Dart and Flutter and a
-					collection of projects to showcase your skills.
-				</p>
-
-				<p>
-					<a href="/30days/flutter/before-you-begin" class="button inverse">Before you begin <i class="icon-arrow-right"></i></a>
-				</p>
-			</div>
-			<div class="image">
-				<img alt="Master Flutter" src="/images/30days/flutter_header_bg.svg" />
+				<p>Build projects to learn and brush up your Dart skills.</p>
 			</div>
 		</div>
 	</div>
-
-	<section class="tip">
-		<div class="container">
-			<div class="content">
-				<i class="icon-share" /> We want to see how you are doing. Share your progress with
-				<b>#30DaysMasterFlutter</b> in our Discord and your social medias.
-			</div>
-		</div>
-	</section>
 
 	<div class="content">
 		<Grid resources={data.resources} />
 	</div>
-
-	<Testimonials />
-
-	<AdditionalResources />
 </section>
 
 <style lang="scss">
@@ -121,18 +90,6 @@
 			}
 		}
 	}
-	.active-day {
-		background-color: var(--white);
-		text-align: center;
-		ul {
-			list-style: none;
-		}
-		article {
-			max-width: 42rem;
-			margin: 0 auto;
-			padding: 2rem;
-		}
-	}
 	.intro {
 		box-sizing: border-box;
 		padding: 2rem;
@@ -160,32 +117,8 @@
 			max-width: 62rem;
 		}
 	}
-
-	.tip {
-		.content {
-			max-width: 42rem;
-			margin: 0 auto;
-			text-align: center;
-			padding: 2rem;
-			box-sizing: border-box;
-		}
-	}
 	.content {
 		max-width: 80rem;
 		margin: 0 auto;
-	}
-	.what-is .content {
-		max-width: 62rem;
-		padding: 2rem;
-		box-sizing: border-box;
-	}
-	.coming-soon {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: black;
-		img {
-			max-width: 700px;
-		}
 	}
 </style>

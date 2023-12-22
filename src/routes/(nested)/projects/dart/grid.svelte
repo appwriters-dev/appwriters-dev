@@ -5,21 +5,17 @@
 <div class="container">
 	<div class="grid">
 		{#each resources as resource, index}
-			<a class="grid-item" href={resource.link}>
-				<!-- <div class="grid-item"> -->
-				<!-- <img src={resource.imageUrl} alt="Day {index + 1}" /> -->
-				<span class="tag primary">Day {index + 1}</span>
-				<h4>{resource.title}</h4>
-				<ul>
-					{#each resource.objectives as objective}
-						<li>{objective}</li>
-					{/each}
-				</ul>
-				<!-- <a class="button" href={resource.link}>Learn More</a> -->
-				<!-- </div>  -->
+		<a class="grid-item" href="{resource.link}">
+			<!-- <div class="grid-item"> -->
+					<!-- <img src={resource.imageUrl} alt="Day {index + 1}" /> -->
+					<span class="tag primary">{index + 1}</span>
+					<h5>{resource.title}</h5>
+                    <p>{resource.description}</p>
 			</a>
 		{/each}
 	</div>
+
+	<h3>more projects will be added soon...</h3>
 </div>
 
 <style lang="scss">
@@ -61,8 +57,8 @@
 		object-fit: cover;
 	}
 
-	.grid-item h4 {
-		margin-top: 30px;
+	.grid-item h5 {
+		margin-top: 20px;
 		margin-bottom: 5px;
 		color: var(--h2);
 	}
@@ -72,7 +68,7 @@
 		margin-bottom: 10px;
 	}
 
-	a {
+	 a {
 		display: inline-block;
 		text-decoration: none;
 		color: inherit;

@@ -16,13 +16,11 @@
 	<meta name="twitter:description" content={data.metaDescription} />
 </svelte:head>
 
-<DayContent
-	title="#30DaysMasterFlutter"
-	basePath="flutter"
-	project="#30DaysMasterFlutter"
-	day={data.day}
-	nextReleased={data.nextReleased}
->
+<DayContent 
+	title="#DartProjects"
+	basePath="dart"
+	project="#DartProjects"
+	day={data.day}  nextReleased={data.nextReleased}>
 	<slot />
 </DayContent>
 <Footer />

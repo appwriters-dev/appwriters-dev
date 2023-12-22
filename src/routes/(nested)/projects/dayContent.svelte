@@ -6,33 +6,39 @@
 	export let day = 0;
 	export let nextReleased = true;
 
-	export let title;
+	/**
+	 * @type {string}
+	 */
+	 export let title;
+	 /** @type {string} */
 	export let basePath;
+	/** @type {string} */
 	export let project;
 </script>
 
-<Header {title} subtitle="Day {day}" />
+<Header {title} subtitle="Project {day}" />
 
 <div class="container">
 	<slot />
 	<p>
-		<b>Enjoying? Tell your friends. </b><Share
-			message="🎉 I'm having a blast on day {day} of my {project} journey! 🚀 You should definitely start your own journey too! 💪"
-			url="{siteLink}/30days/{basePath}/day{day}"
+		<b>Enjoying? Tell your friends. </b>
+		<Share
+			message="🎉 I'm having a blast on Dart challenge, learning by building {project}! 🚀 You should definitely start your own journey too! 💪"
+			url="{siteLink}/projects/{basePath}/project{day}"
 		/>
 	</p>
 	<nav class="end-nav">
 		{#if day > 1}
-			<a href="/30days/{basePath}/day{day - 1}"><i class="icon-arrow-left" /> day {day - 1}</a>
+			<a href="/projects/{basePath}/project{day - 1}"><i class="icon-arrow-left" /> project {day - 1}</a>
 		{:else}
 			<div />
 		{/if}
-		{#if nextReleased && day < 30}
-			<a href="/30days/{basePath}/day{day + 1}">day {day + 1} <i class="icon-arrow-right" /> </a>
+		{#if nextReleased && day < 15}
+			<a href="/projects/{basePath}/project{day + 1}">project {day + 1} <i class="icon-arrow-right" /> </a>
 		{/if}
-		{#if day == 30}
-			<a href="/30days/{basePath}/whats-next">What's Next? <i class="icon-arrow-right" /> </a>
-		{/if}
+		<!-- {#if day == 30}
+			<a href="/projects/{basePath}/whats-next">What's Next? <i class="icon-arrow-right" /> </a>
+		{/if} -->
 	</nav>
 </div>
 
