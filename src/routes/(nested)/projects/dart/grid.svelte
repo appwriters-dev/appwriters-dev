@@ -14,6 +14,8 @@
 			</a>
 		{/each}
 	</div>
+
+	<h3>more projects will be added soon...</h3>
 </div>
 
 <style lang="scss">
