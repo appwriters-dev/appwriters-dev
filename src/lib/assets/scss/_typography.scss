@@ -46,7 +46,7 @@ h1 {
 
 h2 {
 	font-size: 2rem;
-
+	color: var(--h2);
 	@media (min-width: vars.$smMin) {
 		font-size: 2.2rem;
 	}
@@ -54,17 +54,21 @@ h2 {
 
 h3 {
 	font-size: 1.8rem;
+	color: var(--h3);
 }
 
 h4 {
 	font-size: 1.6rem;
+	color: var(--headingRemaining);
 }
 
 h5 {
 	font-size: 1.35rem;
+	color: var(--headingRemaining);
 }
 
 h6 {
+	color: var(--headingRemaining);
 	font-size: 1.1rem;
 }
 
