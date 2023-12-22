@@ -18,17 +18,17 @@
 	<p>
 		<b>Enjoying? Tell your friends. </b><Share
 			message="🎉 I'm having a blast on day {day} of my {project} journey! 🚀 You should definitely start your own journey too! 💪"
-			url="{siteLink}/projects/{basePath}/day{day}"
+			url="{siteLink}/projects/{basePath}/project{day}"
 		/>
 	</p>
 	<nav class="end-nav">
 		{#if day > 1}
-			<a href="/projects/{basePath}/day{day - 1}"><i class="icon-arrow-left" /> day {day - 1}</a>
+			<a href="/projects/{basePath}/project{day - 1}"><i class="icon-arrow-left" /> project {day - 1}</a>
 		{:else}
 			<div />
 		{/if}
 		{#if nextReleased && day < 30}
-			<a href="/projects/{basePath}/day{day + 1}">day {day + 1} <i class="icon-arrow-right" /> </a>
+			<a href="/projects/{basePath}/project{day + 1}">project {day + 1} <i class="icon-arrow-right" /> </a>
 		{/if}
 		{#if day == 30}
 			<a href="/projects/{basePath}/whats-next">What's Next? <i class="icon-arrow-right" /> </a>
