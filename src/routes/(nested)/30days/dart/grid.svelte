@@ -58,6 +58,7 @@
 	.grid-item h5 {
 		margin-top: 20px;
 		margin-bottom: 5px;
+		color: var(--h2);
 	}
 
 	.grid-item ul {
