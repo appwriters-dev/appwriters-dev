@@ -240,6 +240,13 @@ export const resources = [
         ],
         "description": "Explore our in-depth guide on creating a Dart program to test typing speed and accuracy. Perfect for beginners and experienced developers, this article breaks down each step of the program, offering insights into Dart syntax and functionality."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Fetch system information",
+        "link": "/30days/dart/day15",
+        "keywords": ["Dart programming", "system information", "Flutter development", "Dart for system data", "coding tutorial", "programming guide", "Dart system functions", "software development", "cross-platform programming", "Dart tips"],
+        "description": "Discover how to fetch and display system information using Dart in our latest blog post. Ideal for Flutter developers, this guide breaks down a simple Dart program to understand system-level interactions and enhance your coding skills."
+    },
 
 
 
@@ -298,13 +305,6 @@ export const resources = [
         "link": "/30days/dart/day19",
         "keywords": ["Navigator 2.0", "Declarative Navigation", "Go Router"],
         "description": "Take a deeper dive into navigation in Flutter with Navigator 2.0 and the Go Router, and learn how to implement declarative navigation in your Flutter app using the Go Router."
-    },
-    {
-        "imageUrl": "https://placehold.co/600x400",
-        "title": "Fetch system info",
-        "link": "/30days/dart/day20",
-        "keywords": ["Flutter Packages", "Libraries"],
-        "description": "Discover the world of Flutter packages and libraries, including how to use existing packages and how to create your own, and learn how to implement them in your Flutter app."
     },
     {
         "imageUrl": "https://placehold.co/600x400",
