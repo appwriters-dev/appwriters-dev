@@ -12,7 +12,7 @@ export async function load({ url, params, fetch, session, context }) {
     return {
         day: day,
         nextReleased: true,
-        title: `Day ${day}: ${dayData.title} | #Dart30`,
+        title: `Project ${day}: ${dayData.title} | #DartProjects`,
         metaDescription: dayData.description,
         metaKeywords: dayData.keywords.join(', '),
         metaAuthor: "Damodar Lohani",

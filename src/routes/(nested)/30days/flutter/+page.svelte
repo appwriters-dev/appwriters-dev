@@ -1,6 +1,4 @@
 <script>
-	import Countdown from '$lib/components/Countdown.svelte';
-	import { config } from '../config';
 	import AdditionalResources from './additionalResources.svelte';
 	import Grid from './grid.svelte';
 	import Testimonials from './testimonials.svelte';
