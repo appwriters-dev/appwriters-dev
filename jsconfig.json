@@ -15,5 +15,10 @@
 		"src/**/*.d.ts",
 		"src/**/*.js",
 		"src/**/*.svelte"
+	],
+	"exclude": [
+		"node_modules/*",
+		"static/*",
+		".svelte-kit/*"
 	]
 }
