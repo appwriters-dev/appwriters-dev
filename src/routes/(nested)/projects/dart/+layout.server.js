@@ -1,4 +1,4 @@
-import { config } from '../config';
+import { config } from '../../30days/config';
 import { resources } from './resources';
 
 export const prerender = false;

@@ -16,9 +16,9 @@
 </svelte:head>
 
 <DayContent 
-	title="#Dart30"
+	title="#DartProjects"
 	basePath="dart"
-	project="#Dart30"
+	project="#DartProjects"
 	day={data.day}  nextReleased={data.nextReleased}>
 	<slot />
 </DayContent>
