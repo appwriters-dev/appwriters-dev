@@ -1,5 +1,5 @@
 ---
-title: Let's Build an Android Launcher Application with Flutter
+title: Let\'s Build an Android Launcher Application with Flutter
 slug: lets-build-an-android-launcher-application-with-flutter
 date: 2023-03-17
 excerpt: Launcher app is one of the most important application for android mobile users. In this article we are going to learn to build Android launcher application using Flutter framework.
@@ -14,7 +14,7 @@ Launcher app is one of the most important application for android mobile users. 
 There is also a video tutorial, it's old but most of the things are still relevant
 
 <div class="player">
-    <iframe src="https://www.youtube.com/embed/5QJU3QIBLIw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="player" src="https://www.youtube.com/embed/5QJU3QIBLIw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Let's start by creating a Flutter project. As we only need Android project, let's create a project using following command.
@@ -56,24 +56,24 @@ Next, we would want to show the system wallpaper as the background, for that we 
 
 Open `android/app/src/main/res/values/styles.xml` and add the following style
 ```xml
-<style name="Theme.Transparent" parent="android:Theme">
+\<style name="Theme.Transparent" parent="android:Theme"></style>;
 	<item name="android:windowBackground">@android:color/white</item>
 	<item name="android:windowContentOverlay">@null</item>
 	<item name="android:windowNoTitle">true</item>
 	<item name="android:backgroundDimEnabled">false</item>
 	<item name="android:windowShowWallpaper">true</item>
-</style>
+\</style>
 ```
 
 Open `android/app/src/main/res/values-night/styles.xml` and add the following style
 ```xml
-<style name="Theme.Transparent" parent="android:Theme">
+&lt;style name="Theme.Transparent" parent="android:Theme">
 	<item name="android:windowBackground">@android:color/white</item>
 	<item name="android:windowContentOverlay">@null</item>
 	<item name="android:windowNoTitle">true</item>
 	<item name="android:backgroundDimEnabled">false</item>
 	<item name="android:windowShowWallpaper">true</item>
-</style>
+&lt;/style>
 ```
 
 This style is used to display the system wallpaper as the activity background for both light and dark mode.
