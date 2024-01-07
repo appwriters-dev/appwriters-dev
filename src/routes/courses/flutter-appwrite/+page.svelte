@@ -9,7 +9,7 @@
 
 <div class="player-wrapper">
 	<div class="player">
-        <!-- TODO change video -->
+		<!-- TODO change video -->
 		<iframe
 			title="player"
 			src="https://www.youtube.com/embed/5QJU3QIBLIw"
@@ -35,9 +35,65 @@
 			> course first.
 		</p>
 	</section>
+	<section class="curriculum">
+		<h2>The curriculum</h2>
+		<hr />
+		<div class="grid">
+			<div class="cell">
+				<h3><span>01</span> Introduction</h3>
+				<p>
+					Introduces Flutter and Appwrite and explains why combination powers you to build virtually
+					any kinds of applications.
+				</p>
+			</div>
+			<div class="cell">
+				<h3><span>02</span> Getting started with Appwrite</h3>
+				<p>
+					Sign up to Appwrite cloud and create a Appwrite project that will host data for your
+					application.
+				</p>
+			</div>
+			<div class="cell">
+				<h3><span>03</span> Getting started with Appwrite</h3>
+				<p>
+					Sign up to Appwrite cloud and create a Appwrite project that will host data for your
+					application.
+				</p>
+			</div>
+			<div class="cell">
+				<h3><span>04</span> Getting started with Flutter</h3>
+				<p>
+					Create new Flutter project and push to GitHub. Setup basic GitHub action to help maintain
+					code quality.
+				</p>
+			</div>
+			<div class="cell">
+				<h3><span>05</span> Dependency injection</h3>
+				<p>
+					Set up dependency injection in Flutter using <a href="https://pub.dev/packages/get_it"
+						>get_it</a
+					>
+				</p>
+			</div>
+            <div class="cell">
+                <h3><span>06</span> State management</h3>
+                <p>
+                    Set up state management in Flutter using <a href="https://pub.dev/packages/flutter_riverpod">riverpod</a>
+            </div>
+		</div>
+	</section>
 </main>
 
 <style lang="scss">
+	.main {
+		max-width: 64rem;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+	.intro {
+		max-width: 42rem;
+		margin: 0 auto;
+	}
 	.hero {
 		text-align: center;
 		width: 100%;
@@ -52,6 +108,47 @@
 		}
 		background-color: var(--accent);
 		color: var(--paper);
+	}
+
+    hr {
+        border-top: 1px solid var(--backgroundDark);
+    }
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+		grid-gap: 2rem;
+		margin: 2rem 0;
+
+		.cell {
+			padding: 1rem;
+			border-radius: 0.5rem;
+			background-color: var(--backgroundDark);
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid var(--neutral100);
+            }
+			h3 {
+				margin: 0;
+				padding: 0;
+				font-size: 1.5rem;
+                line-height: 1.7rem;
+				margin-bottom: 1rem;
+				color: var(--ink);
+				span {
+                    font-size: 1rem;
+					color: var(--paper);
+					background-color: var(--ink);
+					padding: 0.25rem 0.5rem;
+					border-radius: 1rem;
+				}
+			}
+			p {
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
 	.player-wrapper {
 		width: 100%;
