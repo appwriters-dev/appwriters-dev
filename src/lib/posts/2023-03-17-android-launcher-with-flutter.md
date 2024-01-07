@@ -1,5 +1,5 @@
 ---
-title: Let\'s Build an Android Launcher Application with Flutter
+title: "Let's Build an Android Launcher Application with Flutter"
 slug: lets-build-an-android-launcher-application-with-flutter
 date: 2023-03-17
 excerpt: Launcher app is one of the most important application for android mobile users. In this article we are going to learn to build Android launcher application using Flutter framework.
