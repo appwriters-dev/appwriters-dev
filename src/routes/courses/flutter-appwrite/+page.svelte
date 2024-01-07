@@ -1,8 +1,7 @@
 <div class="hero">
-	<h1>Cross platform apps with Flutter and Appwrite</h1>
+	<h1>Complete Flutter and Appwrite course</h1>
 	<p>
-		Learn to build cross platform application with Flutter using open source Back-end-as-a-service
-		platform Appwrite. An exciting course to learn all about building beautiful and functional
+		An exciting course to learn all about building beautiful and functional
 		applications with Flutter using the back-end power of Appwrite.
 	</p>
 </div>
@@ -34,6 +33,10 @@
 				>30DaysMasterFlutter</a
 			> course first.
 		</p>
+        <h3>Why Flutter and Appwrite?</h3>
+        <p>
+            <strong>Flutter</strong> is <strong>the framework</strong> for building applications for any platform out there. <strong>Appwrite</strong> is <strong>the open source backend server</strong> with first class support for Flutter applications. Together, they are a powerful combination to build any kinds of applications that you can imagine.
+        </p>
 	</section>
 	<section class="curriculum">
 		<h2>The curriculum</h2>
@@ -70,9 +73,7 @@
 			<div class="cell">
 				<h3><span>05</span> Dependency injection</h3>
 				<p>
-					Set up dependency injection in Flutter using <a href="https://pub.dev/packages/get_it"
-						>get_it</a
-					>
+					Set up dependency injection in Flutter using <a href="https://pub.dev/packages/get_it">get_it</a>
 				</p>
 			</div>
             <div class="cell">
@@ -98,16 +99,21 @@
 		text-align: center;
 		width: 100%;
 		padding: 4rem;
+        background-color: var(--accent);
+        color: var(--paper);
 		h1 {
+            max-width: 64rem;
 			color: var(--paper);
 			padding: 0;
-			margin: 0;
+			margin: 0 auto;
 			&::after {
 				content: none;
 			}
 		}
-		background-color: var(--accent);
-		color: var(--paper);
+        p {
+            max-width: 64rem;
+            margin: 1rem auto;
+        }
 	}
 
     hr {
