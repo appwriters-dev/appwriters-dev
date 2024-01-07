@@ -19,7 +19,7 @@
 	</div>
 </div>
 
-<main class="main">
+<main id="main">
 	<section class="intro">
 		<h2>Start now, it's free</h2>
 		<p>
@@ -86,7 +86,7 @@
 </main>
 
 <style lang="scss">
-	.main {
+	#main {
 		max-width: 64rem;
 		margin: 0 auto;
 		padding: 0 2rem;
