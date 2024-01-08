@@ -57,6 +57,12 @@
 				</p>
 			</div>
 			<div class="cell">
+				<h3><span>03</span> Flutter and Appwrite integration </h3>
+				<p>
+					Integrate Flutter and Appwrite projects so that they can communicate with each other.
+				</p>
+			</div>
+			<div class="cell">
 				<h3><span>03</span> Dependency injection</h3>
 				<p>
 					Set up dependency injection in Flutter using <a href="https://pub.dev/packages/get_it">get_it</a>
