@@ -43,41 +43,27 @@
 		<hr />
 		<div class="grid">
 			<div class="cell">
-				<h3><span>01</span> Introduction</h3>
-				<p>
-					Introduces Flutter and Appwrite and explains why combination powers you to build virtually
-					any kinds of applications.
-				</p>
-			</div>
-			<div class="cell">
-				<h3><span>02</span> Getting started with Appwrite</h3>
+				<h3><span>01</span> Getting started with Appwrite</h3>
 				<p>
 					Sign up to Appwrite cloud and create a Appwrite project that will host data for your
 					application.
 				</p>
 			</div>
 			<div class="cell">
-				<h3><span>03</span> Getting started with Appwrite</h3>
-				<p>
-					Sign up to Appwrite cloud and create a Appwrite project that will host data for your
-					application.
-				</p>
-			</div>
-			<div class="cell">
-				<h3><span>04</span> Getting started with Flutter</h3>
+				<h3><span>02</span> Getting started with Flutter</h3>
 				<p>
 					Create new Flutter project and push to GitHub. Setup basic GitHub action to help maintain
 					code quality.
 				</p>
 			</div>
 			<div class="cell">
-				<h3><span>05</span> Dependency injection</h3>
+				<h3><span>03</span> Dependency injection</h3>
 				<p>
 					Set up dependency injection in Flutter using <a href="https://pub.dev/packages/get_it">get_it</a>
 				</p>
 			</div>
             <div class="cell">
-                <h3><span>06</span> State management</h3>
+                <h3><span>04</span> State management</h3>
                 <p>
                     Set up state management in Flutter using <a href="https://pub.dev/packages/flutter_riverpod">riverpod</a>
             </div>
