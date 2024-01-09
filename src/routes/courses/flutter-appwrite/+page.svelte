@@ -1,9 +1,10 @@
+<script>
+	export let data;
+</script>
+
 <div class="hero">
-	<h1>Complete Flutter and Appwrite course</h1>
-	<p>
-		An exciting course to learn all about building beautiful and functional
-		applications with Flutter using the back-end power of Appwrite.
-	</p>
+	<h1>{data.title}</h1>
+	<p>{data.subtitle}</p>
 </div>
 
 <div class="player-wrapper">
@@ -11,7 +12,7 @@
 		<!-- TODO change video -->
 		<iframe
 			title="player"
-			src="https://www.youtube.com/embed/IeZXtOH60kU"
+			src="https://www.youtube.com/embed/{data.introVideo}"
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen
@@ -42,37 +43,12 @@
 		<h2>The curriculum</h2>
 		<hr />
 		<div class="grid">
-			<div class="cell">
-				<h3><span>01</span> Getting started with Appwrite</h3>
-				<p>
-					Sign up to Appwrite cloud and create a Appwrite project that will host data for your
-					application.
-				</p>
-			</div>
-			<div class="cell">
-				<h3><span>02</span> Getting started with Flutter</h3>
-				<p>
-					Create new Flutter project and push to GitHub. Setup basic GitHub action to help maintain
-					code quality.
-				</p>
-			</div>
-			<div class="cell">
-				<h3><span>03</span> Flutter and Appwrite integration </h3>
-				<p>
-					Integrate Flutter and Appwrite projects so that they can communicate with each other.
-				</p>
-			</div>
-			<div class="cell">
-				<h3><span>03</span> Dependency injection</h3>
-				<p>
-					Set up dependency injection in Flutter using <a href="https://pub.dev/packages/get_it">get_it</a>
-				</p>
-			</div>
-            <div class="cell">
-                <h3><span>04</span> State management</h3>
-                <p>
-                    Set up state management in Flutter using <a href="https://pub.dev/packages/flutter_riverpod">riverpod</a>
-            </div>
+			{#each data.curriculum as item}
+				<div class="cell">
+					<h3><span>{item.number}</span> {item.title}</h3>
+					<p>{item.description}</p>
+				</div>
+			{/each }
 		</div>
 	</section>
 </main>
