@@ -28,20 +28,20 @@ export const load = async ({ url, fetch }) => {
                 number: '04',
                 id: 'dependency-injection',
                 title: 'Dependency injection',
-                description: 'Set up dependency injection in Flutter using get_it',
+                description: 'Set up dependency injection in Flutter using <a target="_blank" href="https://pub.dev/packages/get_it">get it</a>.',
 
             },
             {
                 number: '05',
                 id: 'state-management',
                 title: 'State management',
-                description: 'Set up state management in Flutter using riverpod',
+                description: 'Set up state management in Flutter using <a target="_blank" href="https://pub.dev/packages/flutter_riverpod">riverpod</a>.',
             },
             {
                 number: '06',
                 id: 'routing',
                 title: 'Routing',
-                description: 'Set up routing in Flutter application using Go router package.',
+                description: 'Set up routing in Flutter application using <a target="_blank" href="https://pub.dev/packages/go_router">Go router</a> package.',
             }
         ]
     }

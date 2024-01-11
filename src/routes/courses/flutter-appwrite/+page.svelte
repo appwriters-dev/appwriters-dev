@@ -1,24 +1,14 @@
 <script>
+	import Header from "./header.svelte";
+	import Video from './video.svelte';
+
 	export let data;
 </script>
 
-<div class="hero">
-	<h1>{data.title}</h1>
-	<p>{data.subtitle}</p>
-</div>
+<Header title={data.title} subtitle={data.subtitle} />
 
-<div class="player-wrapper">
-	<div class="player">
-		<!-- TODO change video -->
-		<iframe
-			title="player"
-			src="https://www.youtube.com/embed/{data.introVideo}"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowfullscreen
-		></iframe>
-	</div>
-</div>
+<Video id={data.introVideo} />
+
 
 <main id="main">
 	<section class="intro">
@@ -45,8 +35,13 @@
 		<div class="grid">
 			{#each data.curriculum as item}
 				<div class="cell">
-					<h3><span>{item.number}</span> {item.title}</h3>
-					<p>{item.description}</p>
+
+					<a href="/courses/flutter-appwrite/{item.id}">
+						<div class="content">
+							<h3><span>{item.number}</span> {item.title}</h3>
+							<p>{@html item.description}</p>
+						</div>
+					</a>
 				</div>
 			{/each }
 		</div>
@@ -63,26 +58,7 @@
 		max-width: 42rem;
 		margin: 0 auto;
 	}
-	.hero {
-		text-align: center;
-		width: 100%;
-		padding: 4rem;
-        background-color: var(--accent);
-        color: var(--paper);
-		h1 {
-            max-width: 64rem;
-			color: var(--paper);
-			padding: 0;
-			margin: 0 auto;
-			&::after {
-				content: none;
-			}
-		}
-        p {
-            max-width: 64rem;
-            margin: 1rem auto;
-        }
-	}
+	
 
     hr {
         border-top: 1px solid var(--backgroundDark);
@@ -122,26 +98,15 @@
 				margin: 0;
 				padding: 0;
 			}
+			> a {
+				text-decoration: none;
+				color: var(--ink);
+				display: block;
+				&:hover {
+					text-decoration: none;
+				}
+			}
 		}
 	}
-	.player-wrapper {
-		width: 100%;
-		padding-top: 4rem;
-		max-width: 64rem;
-		margin: 0 auto;
-	}
-	:global(.player) {
-		position: relative;
-		width: 100%;
-		padding-bottom: 56.25%;
-		margin-bottom: var(--ifm-paragraph-margin-bottom);
-	}
-
-	:global(.player > iframe) {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		left: 0px;
-		top: 0px;
-	}
+	
 </style>
