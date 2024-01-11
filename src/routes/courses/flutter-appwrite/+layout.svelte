@@ -1,11 +1,11 @@
 <script>
-    import { page } from "$app/stores";
-    import Header from "./header.svelte";
-    import Video from "./video.svelte";
+	import { page } from '$app/stores';
+	import Header from './header.svelte';
+	import Video from './video.svelte';
 </script>
 
 <svelte:head>
-    <title>{$page.data.title}</title>
+	<title>{$page.data.title}</title>
 	<meta name="description" content={$page.data.metaDescription} />
 	<meta name="keywords" content={$page.data.metaKeywords} />
 	<meta name="author" content="Damodar Lohani" />
@@ -18,6 +18,8 @@
 
 <Header title={$page.data.title} subtitle={$page.data.subtitle} />
 
-<Video id={$page.data.videoId} />
+{#if $page.data.videoId}
+	<Video id={$page.data.videoId} />
+{/if}
 
 <slot />
