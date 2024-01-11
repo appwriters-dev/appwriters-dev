@@ -9,6 +9,6 @@ export const load = async ({ url, fetch, params }) => {
         title: data.lesson.title,
         subtitle: data.lesson.subtitle,
         content: data.lesson.content,
-        videoId: 'IeZXtOH60kU',
+        videoId: data.lesson.videoId,
     }
 }

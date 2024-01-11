@@ -1,7 +1,8 @@
 ---
 id: getting-started-with-flutter
 title: Getting started with Flutter
-description: In this lesson, we will learn how to get started with Flutter and create our first Flutter app.
+subtitle: In this lesson, we will learn how to get started with Flutter and create our first Flutter app.
+videoId: OsnAmPDo83Y
 ---
 
 

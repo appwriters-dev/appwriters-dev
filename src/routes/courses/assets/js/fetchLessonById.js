@@ -18,6 +18,7 @@ const fetchLessonById = async (courseId, lessonId) => {
                 id: post.metadata.id,
                 subtitle: post.metadata.subtitle,
                 path: path,
+                videoId: post.metadata.videoId,
                 content: post.metadata.id == lessonId ? post.default.render().html : ''
             }
         })
