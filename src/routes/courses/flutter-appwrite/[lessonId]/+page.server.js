@@ -3,6 +3,7 @@ import fetchLessonById from '../../assets/js/fetchLessonById.js';
 
 export const load = async ({ url, fetch, params }) => {
     let data = await fetchLessonById('flutter-appwrite', params.lessonId);
+
 	return {
         lessonId: params.lessonId,
         title: data.lesson.title,
