@@ -12,7 +12,7 @@
 
 <div class="hero">
 	<h1>{title}</h1>
-	<p>{subtitle}</p>
+	<p>{@html subtitle}</p>
 </div>
 
 <style lang="scss">
