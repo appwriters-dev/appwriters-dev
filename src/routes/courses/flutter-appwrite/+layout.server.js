@@ -4,7 +4,7 @@ export const load = async ({ url, fetch }) => {
 	return {
         title: 'Complete Flutter and Appwrite course',
         subtitle: 'An exciting course to learn allabout building beautiful and functional cross-platform applications with Flutter using the backend power of Appwrite',
-        videoId: 'IeZXtOH60kU',
+        videoId: 'cmboLwHvsFU',
         curriculum: [
             {
                 number: '01',
