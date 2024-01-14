@@ -8,9 +8,14 @@
       
       */
 	export let subtitle;
+
+	/**
+	 * @type {boolean}
+	 */
+	export let isMain = false;
 </script>
 
-<div class="hero">
+<div class="hero {isMain ? 'main': ''}">
 	<h1>{title}</h1>
 	<p>{@html subtitle}</p>
 </div>
@@ -20,11 +25,19 @@
 		text-align: center;
 		width: 100%;
 		padding: 4rem;
-		background-color: var(--accent);
-		color: var(--paper);
+		background-color: var(--backgroundDark);
+		color: var(--ink);
+		&.main {
+			background-color: var(--accent);
+			color: var(--paper);
+
+			h1 {
+				color: var(--paper);
+			}
+		}
 		h1 {
 			max-width: 64rem;
-			color: var(--paper);
+			color: var(--ink);
 			padding: 0;
 			margin: 0 auto;
 			&::after {
