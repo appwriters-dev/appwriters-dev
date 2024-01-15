@@ -42,7 +42,25 @@ export const load = async ({ url, fetch }) => {
                 id: 'routing',
                 title: 'Routing',
                 description: 'Set up routing in Flutter application using <a target="_blank" href="https://pub.dev/packages/go_router">Go router</a> package.',
-            }
+            },
+            {
+                number: '07',
+                id: 'creating-account-for-your-user',
+                title: 'Creating account for your user',
+                description: 'We will create a form that will allow users to create an account in our application. Appwrite will handle the user management for us.', 
+            },
+            {
+                number: '08',
+                id: 'authenticate-user',
+                title: 'Authenticate user - login',
+                description: 'Allow user to login using their email and password.', 
+            },
+            {
+                number: '09',
+                id: 'authenticated-routes',
+                title: 'Authenticated routes',
+                description: 'Update routing logic to check user authentication status before allowing access to certain routes.', 
+            },
         ]
     }
 };
