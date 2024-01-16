@@ -5,22 +5,27 @@
 	export let id;
 </script>
 
-<div class="player-wrapper">
-	<div class="player">
-		<iframe
-			title="player"
-			src="https://www.youtube.com/embed/{id}"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowfullscreen
-		></iframe>
+<div class="background">
+	<div class="player-wrapper">
+		<div class="player">
+			<iframe
+				title="player"
+				src="https://www.youtube.com/embed/{id}"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</div>
 	</div>
 </div>
 
 <style lang="scss">
+	.background {
+		background-color: var(--slate);
+		padding: 4rem;
+	}
 	.player-wrapper {
 		width: 100%;
-		padding-top: 4rem;
 		max-width: 64rem;
 		margin: 0 auto;
 	}
