@@ -57,6 +57,12 @@ export const load = async ({ url, fetch }) => {
             },
             {
                 number: '09',
+                id: 'auth-state',
+                title: 'Authentication state manager',
+                description: 'Setup authentication state manager using riverpod.', 
+            },
+            {
+                number: '10',
                 id: 'authenticated-routes',
                 title: 'Authenticated routes',
                 description: 'Update routing logic to check user authentication status before allowing access to certain routes.', 
