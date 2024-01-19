@@ -14,7 +14,7 @@ To create a Flutter platform in Appwrite
 - On the project overview page, in the **Add a platform** section click on the **Flutter** button.
 - On the widzard that appears, select the appropriate platform, we are selecting `macos`.
 - Provide a easy to understand name for you platform and the Bundle Identifier of your Flutter app and click on the **Next** button.
-- Next you will see the information on how to add the Appwrite SDK to your Flutter app. We have already done that, so we can skip this step. Click on the **Skip optional steps** button.
+- Next you will see the information on how to add the Appwrite SDK to your Flutter app. We will do that in the next section, so for now we can skip it. Click on the **Skip optional steps** button.
 
 You can follow the similar steps to add other platforms to your Appwrite project.
 
