@@ -27,8 +27,7 @@
 		<div class="grid">
 			{#each data.curriculum as item}
 				<div class="cell">
-
-					<a href="/courses/flutter-appwrite/{item.id}">
+					<a href={item.published ? '/courses/flutter-appwrite/' + item.id : '#'}>
 						<div class="content">
 							<h3><span>{item.number}</span> {item.title}</h3>
 							<p>{@html item.description}</p>

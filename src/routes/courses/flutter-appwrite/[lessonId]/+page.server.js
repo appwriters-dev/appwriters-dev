@@ -11,14 +11,22 @@ export const load = async ({ url, fetch, params, parent }) => {
     }
 
     let { title, curriculum } = await parent();
-
+    
     let current = curriculum.findIndex((lesson) => lesson.id === params.lessonId);
     if (current === -1) return redirect(302, '/courses/flutter-appwrite');
-
+    let currentItem = curriculum[current];
+    console.log(currentItem);
+    if(!currentItem.published) {
+        return redirect(302, '/courses/flutter-appwrite');
+    }
+    
     var next = null;
     var previous = null;
     if (current < curriculum.length - 1)
         next = curriculum[current + 1];
+    if(!next?.published) {
+        next = null;
+    }
 
     if (current > 0)
         previous = curriculum[current - 1];
