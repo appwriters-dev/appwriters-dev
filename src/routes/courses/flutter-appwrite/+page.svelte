@@ -31,6 +31,9 @@
 						<div class="content">
 							<h3><span>{item.number}</span> {item.title}</h3>
 							<p>{@html item.description}</p>
+							{#if !item.published}
+								<p class='primary'><em>coming soon...</em></p>
+							{/if}
 						</div>
 					</a>
 				</div>
@@ -88,6 +91,9 @@
 			p {
 				margin: 0;
 				padding: 0;
+				&.primary {
+					color: var(--primary);
+				}
 			}
 			> a {
 				text-decoration: none;
