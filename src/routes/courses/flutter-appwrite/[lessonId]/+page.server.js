@@ -15,7 +15,7 @@ export const load = async ({ url, fetch, params, parent }) => {
     let current = curriculum.findIndex((lesson) => lesson.id === params.lessonId);
     if (current === -1) return redirect(302, '/courses/flutter-appwrite');
     let currentItem = curriculum[current];
-    console.log(currentItem);
+
     if(!currentItem.published) {
         return redirect(302, '/courses/flutter-appwrite');
     }

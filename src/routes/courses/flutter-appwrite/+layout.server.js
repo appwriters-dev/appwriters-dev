@@ -1,6 +1,8 @@
 import { redirect } from '@sveltejs/kit';
 import { FLUTTER_APPWRITE_LESSONS_PUBLISHED } from '$env/static/private';
 
+export const prerender = false;
+
 export const load = async ({ url, fetch }) => {
 	return {
         title: 'Complete Flutter and Appwrite course',
