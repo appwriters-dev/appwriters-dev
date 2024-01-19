@@ -15,37 +15,40 @@
 	export let isMain = false;
 </script>
 
-<div class="hero {isMain ? 'main': ''}">
+<div class="hero {isMain ? 'main' : ''}">
 	<h1>{title}</h1>
 	<p>{@html subtitle}</p>
 </div>
 
 <style lang="scss">
 	.hero {
-		text-align: center;
 		width: 100%;
 		padding: 4rem;
-		background-color: var(--backgroundDark);
 		color: var(--ink);
 		&.main {
+			text-align: center;
 			background-color: var(--accent);
 			color: var(--paper);
 
 			h1 {
 				color: var(--paper);
+				max-width: 64rem;
+			}
+			p {
+				max-width: 64rem;
 			}
 		}
 		h1 {
-			max-width: 64rem;
 			color: var(--ink);
 			padding: 0;
 			margin: 0 auto;
+			max-width: 42rem;
 			&::after {
 				content: none;
 			}
 		}
 		p {
-			max-width: 64rem;
+			max-width: 42rem;
 			margin: 1rem auto;
 		}
 	}

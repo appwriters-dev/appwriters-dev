@@ -3,9 +3,14 @@
 	 * @type {string}
 	 */
 	export let id;
+
+	/**
+	 * @type {boolean}
+	 */
+	export let isMain = true;
 </script>
 
-<div class="background">
+<div class={isMain ? 'background' : ''}>
 	<div class="player-wrapper">
 		<div class="player">
 			<iframe
@@ -21,7 +26,7 @@
 
 <style lang="scss">
 	.background {
-		background-color: var(--slate);
+		background-color: var(--black);
 		padding: 4rem;
 	}
 	.player-wrapper {

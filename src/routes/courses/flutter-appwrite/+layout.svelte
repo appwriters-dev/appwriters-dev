@@ -16,17 +16,14 @@
 	<meta name="twitter:description" content={$page.data.metaDescription} />
 </svelte:head>
 
-{#if $page.data.lessonId == null}
-	<Header isMain={$page.data.lessonId == null} title={$page.data.title} subtitle={$page.data.subtitle} />
-{/if}
-
+<Header
+	isMain={$page.data.lessonId == null}
+	title={$page.data.title}
+	subtitle={$page.data.subtitle}
+/>
 
 {#if $page.data.videoId}
-	<Video id={$page.data.videoId} />
-{/if}
-
-{#if $page.data.lessonId != null}
-	<Header isMain={$page.data.lessonId == null} title={$page.data.title} subtitle={$page.data.subtitle} />
+	<Video id={$page.data.videoId} isMain={$page.data.lessonId == null} />
 {/if}
 
 <slot />
