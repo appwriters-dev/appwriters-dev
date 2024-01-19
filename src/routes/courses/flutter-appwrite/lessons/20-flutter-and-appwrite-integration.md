@@ -5,16 +5,20 @@ subtitle: In this lesson, we will learn how to integrate Appwrite with Flutter.
 videoId: "3-ejU2yU-rQ"
 ---
 
-In this lesson, we will learn to integrate Appwrite with Flutter. For Appwrite server to know about our Flutter app, we need to add platforms in our Appwrite project and for Flutter app to be able to communicate with Appwrite server, we need to add Appwrite SDK to our Flutter app.
+In this lesson, we will learn to integrate Appwrite with Flutter.
 
 ## Creating a Flutter platform in Appwrite
 
-To create a Flutter platform in Appwrite 
+To create a Flutter platform in Appwrite
+
 - open the Appwrite dashboard and open your project.
 - On the project overview page, in the **Add a platform** section click on the **Flutter** button.
 - On the widzard that appears, select the appropriate platform, we are selecting `macos`.
-- Provide a easy to understand name for you platform and the Bundle Identifier of your Flutter app and click on the **Next** button.
-- Next you will see the information on how to add the Appwrite SDK to your Flutter app. We will do that in the next section, so for now we can skip it. Click on the **Skip optional steps** button.
+- Provide a easy to understand name for you platform and the Bundle Identifier of your Flutter app
+- Click on the **Next** button.
+- Wizard will show the information on how to add the Appwrite SDK to your Flutter app.
+- We will do that in the next section, so for now we can skip it.
+- Click on the **Skip optional steps** button.
 
 You can follow the similar steps to add other platforms to your Appwrite project.
 
@@ -29,7 +33,7 @@ dependencies:
   appwrite: ^11.0.1
 ```
 
-We can also do the same from the terminal. First, open the terminal and navigate to the `flappwrite_tracker` folder. Then, run the following command to add the dependency:
+We can also do the same from the terminal. 
 
 ```bash
 flutter pub add appwrite
@@ -43,7 +47,9 @@ flutter pub get
 
 ## Initializing Appwrite SDK
 
-To initialize Appwrite SDK, we will create a new file called `appwrite.dart` in the `lib/appwrite` folder. Then, we will add the following code to the file:
+To initialize Appwrite SDK
+
+- Create a new file called `appwrite.dart` in the `lib/appwrite` folder.
 
 ```dart
 import 'package:appwrite/appwrite.dart';
@@ -58,5 +64,9 @@ class Appwrite {
 }
 ```
 
-In the above code, we are creating a new `Appwrite` class and initializing the Appwrite SDK in the constructor. We are also setting the endpoint and project ID for the Appwrite SDK. You can find the endpoint and project ID in the Appwrite dashboard.
+In the above code
+- We are creating a new `Appwrite` class
+- Initializing the Appwrite SDK in the constructor.
+- We set the endpoint and project ID in the `client` object.
+- You can find the endpoint and project ID in the Appwrite dashboard.
 
