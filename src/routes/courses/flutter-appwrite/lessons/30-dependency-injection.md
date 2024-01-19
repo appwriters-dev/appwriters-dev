@@ -15,14 +15,13 @@ Dependency injection is a technique in which an object receives other objects th
 
 GetIt is a simple service locator for Dart and Flutter projects. It allows to register dependencies and later retrieve them across the app. It also allows to register factories, singletons, lazy singletons, and static dependencies.
 
-
 ## Installing GetIt
 
 To install GetIt, we need to add the following dependency to our `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  get_it: ^7.2.0
+  get_it: ^7.6.6
 ```
 
 We can also do the same from the terminal. First, open the terminal and navigate to the `flappwrite_tracker` folder. Then, run the following command to add the dependency:
