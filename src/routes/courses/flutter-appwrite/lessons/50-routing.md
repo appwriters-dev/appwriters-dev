@@ -1,7 +1,7 @@
 ---
 title: Setup routing with go_router
 id: routing
-subtitle: In this lesson, we will learn setup application routing using go_router.
+subtitle: Routing is essential, learn to setup routing with go_router (officially supported routing library for Flutter)
 videoId: 69HUy0mGIaU
 ---
 
