@@ -1,7 +1,7 @@
 ---
 title: Flutter and Appwrite integration
 id: flutter-and-appwrite-integration
-subtitle: In this lesson, we will learn how to integrate Appwrite with Flutter.
+subtitle: Integrate Flutter and Appwrite to create a full-stack application
 videoId: "3-ejU2yU-rQ"
 ---
 

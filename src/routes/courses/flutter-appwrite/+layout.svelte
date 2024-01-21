@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
+	import VideoEmbed from '$lib/components/VideoEmbed.svelte';
 	import Header from './header.svelte';
-	import Video from './video.svelte';
 </script>
 
 <svelte:head>
@@ -23,7 +23,7 @@
 />
 
 {#if $page.data.videoId}
-	<Video id={$page.data.videoId} isMain={$page.data.lessonId == null} />
+	<VideoEmbed id={$page.data.videoId} background={$page.data.lessonId == null} />
 {/if}
 
 <slot />

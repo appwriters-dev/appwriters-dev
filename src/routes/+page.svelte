@@ -1,5 +1,6 @@
 <script>
 	import RecentPostsList from '$lib/components/RecentPostsList.svelte';
+	import VideoEmbed from '$lib/components/VideoEmbed.svelte';
 	import { siteTitle } from '$lib/config';
 	import SiteMetas from '../lib/components/SiteMetas.svelte';
 	export let data;
@@ -21,14 +22,14 @@
 </div>
 
 <main id="main">
-	<div class="container">
+	<!-- <div class="container">
 		<article>
-			<!-- <p>Whether you're a beginner or an experienced developer, our website offers a wealth of resources to help you stay up-to-date with the latest tools, techniques, and best practices in the industry.</p>
+			<p>Whether you're a beginner or an experienced developer, our website offers a wealth of resources to help you stay up-to-date with the latest tools, techniques, and best practices in the industry.</p>
 			
 			
-			<p>At appwriters.dev, we believe that learning should be accessible and fun. That's why our content is designed to be easy to understand, yet challenging enough to help you grow your skills. Whether you're looking to build your first app or take your development career to the next level, we've got you covered.</p> -->
+			<p>At appwriters.dev, we believe that learning should be accessible and fun. That's why our content is designed to be easy to understand, yet challenging enough to help you grow your skills. Whether you're looking to build your first app or take your development career to the next level, we've got you covered.</p>
 		</article>
-	</div>
+	</div> -->
 
 	<div class="master-flutter-challenge">
 		<div class="container">
@@ -48,7 +49,31 @@
 			</article>
 		</div>
 	</div>
-<!-- 	
+	<div class="flutter-appwrite-course">
+		<div class="container">
+			<VideoEmbed background={false} id="cmboLwHvsFU" />
+			<article>
+				<h2>Flutter Appwrite course</h2>
+				<p>
+					Only course required to learn Flutter and Appwrite to build a full-stack, cross-platform,
+					application from scratch.
+					<br />
+					<br />
+					By the end of this course, you will have a solid understanding of integrating Appwrite with
+					Flutter and be able to build any kinds of applications that you want.
+				</p>
+				<p>
+					<a
+						class="button button--outline button--primary button--md"
+						href="/courses/flutter-appwrite"
+					>
+						Get Started
+					</a>
+				</p>
+			</article>
+		</div>
+	</div>
+	<!-- 	
 	<div class="master-flutter-challenge">
 		<div class="container">
 			<article>
@@ -70,8 +95,8 @@
 			</article>
 		</div>
 	</div> -->
-	
-	<div class="container">
+
+	<div class="container white">
 		<article class="master-flutter book">
 			<h3>Master Flutter</h3>
 			<p>
@@ -217,6 +242,9 @@
 		padding: 2rem;
 		text-align: center;
 	}
+	.flutter-appwrite-course {
+		padding: 4rem;
+	}
 	.images {
 		display: flex;
 		justify-content: center;
@@ -243,10 +271,18 @@
 	}
 
 	.container {
+		&.white {
+			background-color: var(--white);
+		}
 		> article {
 			max-width: 42rem;
 			margin: 0 auto;
 			width: 100%;
+
+			&.master-flutter {
+				padding-bottom: 2rem;
+			}
+
 			@media screen and (max-width: 700px) {
 				padding: 12px;
 			}

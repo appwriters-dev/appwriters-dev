@@ -7,10 +7,10 @@
 	/**
 	 * @type {boolean}
 	 */
-	export let isMain = true;
+	export let background = true;
 </script>
 
-<div class={isMain ? 'background' : ''}>
+<div class={background ? 'background' : ''}>
 	<div class="player-wrapper">
 		<div class="player">
 			<iframe

@@ -1,7 +1,7 @@
 ---
 title: Dependency injection
 id: dependency-injection
-subtitle: In this lesson, we will learn how to manage dependencies using the GetIt package.
+subtitle: Manage dependencies properly with GetIt
 videoId: oc73TnuEitg
 ---
 

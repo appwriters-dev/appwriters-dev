@@ -1,7 +1,7 @@
 ---
 title: State management
 id: state-management
-subtitle: In this lesson, we will learn how to setup riverpod for state management in our application.
+subtitle: Setup riverpod for managing state in our application
 videoId: 8k42p7HK8v0
 ---
 

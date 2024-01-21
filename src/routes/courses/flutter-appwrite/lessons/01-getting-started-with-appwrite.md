@@ -1,7 +1,7 @@
 ---
 title: Getting started with Appwrite
 id: getting-started-with-appwrite
-subtitle: Sign up to Appwrite cloud and create your first project
+subtitle: Get started with Appwrite by creating your first project.
 videoId: WiOOowM9FVE
 ---
 
