@@ -51,14 +51,16 @@
 	</div>
 	<div class="flutter-appwrite-course">
 		<div class="container">
-			<VideoEmbed isMain={false} id="cmboLwHvsFU" />
+			<VideoEmbed background={false} id="cmboLwHvsFU" />
 			<article>
 				<h2>Flutter Appwrite course</h2>
 				<p>
-					Only course required to learn Flutter and Appwrite to build a full-stack, cross-platform, application from scratch.
+					Only course required to learn Flutter and Appwrite to build a full-stack, cross-platform,
+					application from scratch.
 					<br />
 					<br />
-					By the end of this course, you will have a solid understanding of integrating Appwrite with Flutter and be able to build any kinds of applications that you want.
+					By the end of this course, you will have a solid understanding of integrating Appwrite with
+					Flutter and be able to build any kinds of applications that you want.
 				</p>
 				<p>
 					<a
@@ -71,7 +73,7 @@
 			</article>
 		</div>
 	</div>
-<!-- 	
+	<!-- 	
 	<div class="master-flutter-challenge">
 		<div class="container">
 			<article>
@@ -93,7 +95,7 @@
 			</article>
 		</div>
 	</div> -->
-	
+
 	<div class="container white">
 		<article class="master-flutter book">
 			<h3>Master Flutter</h3>
