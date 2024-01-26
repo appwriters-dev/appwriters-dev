@@ -68,7 +68,7 @@ class Appwrite {
 ```
 
 
-## Updating home page to add navigation to sign up screen
+## Update home page to add navigation to sign up screen
 
 In `lib/home_page/home_page.dart` file
 
