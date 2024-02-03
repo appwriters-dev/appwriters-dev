@@ -19,7 +19,7 @@ Copy all the files in the linked folder to your project.
 Code: https://github.com/lohanidamodar/flappwrite_tracker/tree/feat-create-account/lib/features/login_screen
 
 ```
-lib/features/signup_screen/
+lib/features/login_screen/
 ├── login_screen.dart
 └── src
     ├── login_form.dart
