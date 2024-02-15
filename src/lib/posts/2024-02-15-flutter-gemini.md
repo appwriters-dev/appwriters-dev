@@ -16,9 +16,6 @@ In this article we are going to explore how to use the official Dart SDK which w
 
 Gemini is a new generative AI model from Google that can generate images, text, and audio. It is trained on a diverse range of data, including text, images, and audio, and can generate high-quality content in a wide variety of styles.
 
-## Get the API key
-Start by visiting the [makersuite](https://makersuite.google.com/app/apikey). Click on the "Create API Key" button and follow the instructions to create a new API key. Once created, copy the API key, so that you can use it in your Flutter app.
-
 ## Install the Dart SDK
 
 In your Flutter project, add the following dependency to your `pubspec.yaml` file:
@@ -88,6 +85,10 @@ class _HomeState extends State<Home> {
 ```
 
 ## Setup the SDK
+
+### Get the API key
+
+Start by visiting the [makersuite](https://makersuite.google.com/app/apikey). Click on the "Create API Key" button and follow the instructions to create a new API key. Once created, copy the API key, so that you can use it in your Flutter app.
 
 1. Setup the SDK with your API key.
 
