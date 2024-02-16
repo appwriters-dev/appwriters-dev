@@ -4,7 +4,7 @@ slug: google-generative-ai-with-flutter
 date: 2024-02-15
 excerpt: "Use the official Dart SDK to access Google's generative AI models in Flutter and build badass apps powered by Gemini."
 keywords: Dart,Flutter,Dart tutorial,Flutter tutorial,Mixins,Generative AI,Google Gemini
-coverImage: 
+coverImage: /images/flutter-gemini-thumbnail.webp
 coverWidth: 16
 coverHeight: 9
 categories: [Dart, Flutter]
