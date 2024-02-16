@@ -4,7 +4,7 @@ slug: dart-mixins-for-everyone
 date: 2023-10-14
 excerpt: "Mixins in Dart are a way of reusing a class's code in multiple class hierarchies. Mixins can be added to different classes to extend their capabilities, without the need for complex inheritance structures."
 keywords: Dart,Flutter,Dart tutorial,Flutter tutorial,Mixins
-coverImage: 
+coverImage: /images/dart-mixins.webp 
 coverWidth: 16
 coverHeight: 9
 categories: [Dart, Flutter]
