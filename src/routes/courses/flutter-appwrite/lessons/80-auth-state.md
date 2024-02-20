@@ -1,8 +1,8 @@
 ---
 title: Authentication state manager
 id: auth-state
-subtitle: Let's create a state manager for user authentication state.
-videoId: "SjvL-hkn-UY"
+subtitle: "Let's create a state manager for user authentication state."
+videoId: "NhGgCVC5XjY"
 ---
 
 Now that we have functions for authenticating users with Appwrite, we should create a state manager for authentication that will help us to manage the user's authentication state and build the UI accordingly.
