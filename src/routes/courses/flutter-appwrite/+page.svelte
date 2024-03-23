@@ -24,8 +24,11 @@
 	<section class="curriculum">
 		<h2>The curriculum</h2>
 		<hr />
+		{#each data.categories as category}
+		<h3>{category}</h3>
 		<div class="grid">
 			{#each data.curriculum as item}
+				{#if item.category === category}
 				<div class="cell">
 					<a href={item.published ? '/courses/flutter-appwrite/' + item.id : '#'}>
 						<div class="content">
@@ -37,8 +40,11 @@
 						</div>
 					</a>
 				</div>
+				{/if}
 			{/each }
 		</div>
+		<hr />
+		{/each}
 	</section>
 </main>
 
