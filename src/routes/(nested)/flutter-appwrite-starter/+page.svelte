@@ -1,12 +1,15 @@
 <script>
-	import { siteLink } from "$lib/config";
+	import { siteLink } from '$lib/config';
 
-    let metaDescription = 'Starter template for your next Flutter project with Appwrite, riverpod and go_router.';
-    let title = 'Flutter Appwrite starter';
-    let metaKeywords = 'flutter, appwrite, riverpod, go_router, starter, template, flutter template, flutter appwrite';
-    let repoUrl = 'https://github.com/lohanidamodar/flutter_appwrite_starter';
+	let metaDescription =
+		'Starter template for your next Flutter project with Appwrite, riverpod and go_router.';
+	let title = 'Flutter Appwrite starter';
+	let metaKeywords =
+		'flutter, appwrite, riverpod, go_router, starter, template, flutter template, flutter appwrite';
+	let repoUrl = 'https://github.com/lohanidamodar/flutter_appwrite_starter';
 	let thumbnail = '/images/flutter-appwrite-starter-thumbnail.png';
 </script>
+
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={metaDescription} />
@@ -24,18 +27,15 @@
 
 <p>
 	Building your next project with <a href="https://flutter.dev" target="_blank">Flutter</a> and
-	<a href="https://appwrite.io" target="_blank">Appwrite</a>? Then this is the template for you to get started.
+	<a href="https://appwrite.io" target="_blank">Appwrite</a>? Then this is the template for you to
+	get started.
 </p>
 
-<img src="{thumbnail}" alt="Flutter Appwrite starter" />
+<img src={thumbnail} alt="Flutter Appwrite starter" />
 
 <p>
-	Go directly to <a href="{repoUrl}" target="_blank"
-		>repository</a
-	>: <br />
-	<a href="{repoUrl}" target="_blank"
-		>{repoUrl}</a
-	>
+	Go directly to <a href={repoUrl} target="_blank">repository</a>: <br />
+	<a href={repoUrl} target="_blank">{repoUrl}</a>
 </p>
 
 <h2>Features</h2>
@@ -45,7 +45,9 @@ Below features are already configured in this template:
 <ul>
 	<li>Authentication (with Email/password)</li>
 	<li>State management with <a href="https://riverpod.dev" target="_blank">riverpod</a></li>
-	<li>Dependency injection using <a href="https://pub.dev/packages/get_it" target="_blank">get_it</a></li>
+	<li>
+		Dependency injection using <a href="https://pub.dev/packages/get_it" target="_blank">get_it</a>
+	</li>
 	<li>Localization ready</li>
 	<li>Google fonts</li>
 	<li>Image picker and cropper</li>
@@ -63,14 +65,13 @@ Below features are already configured in this template:
 <p>
 	If you are using Appwrite <a href="https://cloud.appwrite.io" target="_blank">cloud</a> or
 	Appwrite version 1.4.x then you should use the
-	<a href="{repoUrl}/tree/appwrite-1.5.x">main</a> branch
-	of this template.
+	<a href="{repoUrl}/tree/appwrite-1.5.x" target="_blank">main</a> branch of this template.
 </p>
 
 <p>
 	If you are looking to use Appwrite 1.5.x, please check the <a
 		href="{repoUrl}/tree/appwrite-1.5.x"
-		>appwrite-1.5.x</a
+		target="_blank">appwrite-1.5.x</a
 	> branch.
 </p>
 
@@ -96,4 +97,9 @@ Below features are already configured in this template:
 	</li>
 </ol>
 
-<p>If you have any queries or issues, feel free to raise <a href="https://github.com/lohanidamodar/flutter_appwrite_starter/issues" target="_blank">issue in the repository</a>.</p>
+<p>
+	If you have any queries or issues, feel free to raise <a
+		href="https://github.com/lohanidamodar/flutter_appwrite_starter/issues"
+		target="_blank">issue in the repository</a
+	>.
+</p>
