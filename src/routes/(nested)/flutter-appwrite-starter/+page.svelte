@@ -95,3 +95,5 @@ Below features are already configured in this template:
 		project id details;
 	</li>
 </ol>
+
+<p>If you have any queries or issues, feel free to raise <a href="https://github.com/lohanidamodar/flutter_appwrite_starter/issues" target="_blank">issue in the repository</a>.</p>
