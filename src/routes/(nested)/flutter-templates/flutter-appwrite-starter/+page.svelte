@@ -14,6 +14,7 @@
 	<title>{title}</title>
 	<meta name="description" content={metaDescription} />
 	<meta name="keywords" content={metaKeywords} />
+	<meta name="image" property="og:image" content="{siteLink}{thumbnail}" />
 	<meta name="author" content="Damodar Lohani" />
 	<meta name="robots" content="index, follow" />
 	<meta property="og:title" content={title} />
@@ -21,6 +22,7 @@
 	<meta property="og:description" content={metaDescription} />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={metaDescription} />
+	<meta name="twitter:image" content="{siteLink}{thumbnail}" />
 </svelte:head>
 
 <h1>{title}</h1>
