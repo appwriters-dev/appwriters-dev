@@ -22,7 +22,7 @@
 				<a href="/flutter-apprenticeship">Flutter apprenticeship</a>
 			</li>
 			<li>
-				<a href="/flutter-appwrite-starter">Flutter Appwrite starter</a>
+				<a href="/flutter-templates/flutter-appwrite-starter">Flutter Appwrite starter</a>
 			</li>
 			<li>
 				<a href="/30days/flutter">#30DaysMasterFlutter</a>
