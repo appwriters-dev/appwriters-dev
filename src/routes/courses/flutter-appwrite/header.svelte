@@ -28,10 +28,10 @@
 		&.main {
 			text-align: center;
 			background-color: var(--accent);
-			color: var(--paper);
+			color: var(--white);
 
 			h1 {
-				color: var(--paper);
+				color: var(--white);
 				max-width: 64rem;
 			}
 			p {

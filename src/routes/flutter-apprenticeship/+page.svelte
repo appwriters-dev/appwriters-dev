@@ -215,7 +215,7 @@
 		width: 100%;
 		padding: 2rem;
 		h1 {
-			color: var(--paper);
+			color: var(--white);
 			padding: 0;
 			margin: 0;
 			&::after {
@@ -223,7 +223,7 @@
 			}
 		}
 		background-color: var(--accent);
-		color: var(--paper);
+		color: var(--white);
 	}
 	.content {
 		padding: 2rem;

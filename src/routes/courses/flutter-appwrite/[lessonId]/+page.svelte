@@ -45,7 +45,7 @@
 		padding: 2rem;
 		background: var(--slate);
 		width: 100%;
-		color: var(--paper);
+		color: var(--white);
 		.content {
 			max-width: 42rem;
 			margin: 0 auto;
