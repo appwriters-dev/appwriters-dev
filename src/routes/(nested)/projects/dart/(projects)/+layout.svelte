@@ -29,10 +29,10 @@
 	:global(blockquote) {
 		background-color: var(--accent);
 		padding: 1rem 2rem;
-		color: var(--paper);
+		color: var(--white);
 	}
 	:global(blockquote a) {
-		color: var(--paper);
+		color: var(--white);
 		text-decoration: underline;
 	}
 	:global(blockquote ul ::marker) {

@@ -24,9 +24,8 @@
 <style lang="scss">
 	.container {
 		padding: 2rem;
-		background-color: var(--white);
+		background-color: var(--backgroundDark);
 		box-sizing: border-box;
-		background-color: var(--white);
 	}
 	.testimonials {
 		max-width: 42rem;
@@ -39,9 +38,9 @@
 
 	.testimonial {
 		border-radius: 5px;
-		background-color: white;
+		background-color: var(--paper);
 		// box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        background-color: var(--backgroundDark);
+        background-color: var(--background);
 		border-radius: 5px;
 		position: relative;
         .body {
@@ -52,14 +51,14 @@
             background-color: var(--primary);
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            color: var(--paper);
+            color: var(--white);
 			h4 {
 				margin-top: 0;
 				margin-bottom: 5px;
 			}
             h4, a {
 
-                color: var(--paper);
+                color: var(--white);
             }
 			p {
 				margin: 0;

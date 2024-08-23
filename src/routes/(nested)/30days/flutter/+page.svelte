@@ -38,7 +38,9 @@
 				</p>
 
 				<p>
-					<a href="/30days/flutter/before-you-begin" class="button inverse">Before you begin <i class="icon-arrow-right"></i></a>
+					<a href="/30days/flutter/before-you-begin" class="button inverse"
+						>Before you begin <i class="icon-arrow-right"></i></a
+					>
 				</p>
 			</div>
 			<div class="image">
@@ -112,7 +114,7 @@
 			z-index: 100;
 		}
 		p {
-			color: var(--paper);
+			color: var(--white);
 			z-index: 200;
 			text-transform: uppercase;
 			max-width: 60rem;
@@ -122,7 +124,7 @@
 		}
 	}
 	.active-day {
-		background-color: var(--white);
+		background-color: var(--paper);
 		text-align: center;
 		ul {
 			list-style: none;
@@ -137,7 +139,7 @@
 		box-sizing: border-box;
 		padding: 2rem;
 		background-color: var(--accent);
-		color: var(--paper);
+		color: var(--white);
 
 		.container {
 			display: flex;

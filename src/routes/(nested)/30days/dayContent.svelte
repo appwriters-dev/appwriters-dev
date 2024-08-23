@@ -48,7 +48,7 @@
 		justify-content: space-between;
 		a {
 			background: var(--primary);
-			color: var(--paper);
+			color: var(--white);
 			padding: 0.5rem 1rem;
 			border-radius: 4px;
 			&:hover {

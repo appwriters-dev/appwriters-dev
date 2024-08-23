@@ -16,9 +16,15 @@
 		padding: 2rem;
 	}
 }
+.theme-dark .button, .theme-dark a.button {
+	&.inverse {
+		background: var(--white);
+		color: var(--accent);
+	}
+}
 .button, a.button {
 	background: var(--accent);
-	color: var(--paper);
+	color: var(--white);
 	padding: 1rem;
 	border-radius: 8px;
 	font-weight: 500;
