@@ -33,7 +33,7 @@
 	.grid-item {
 		border-radius: 5px;
 		padding: 10px;
-		background-color: white;
+		background-color: var(--backgroundDark);
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		padding: 20px;
 		border-radius: 5px;
@@ -44,7 +44,7 @@
 			left: 0;
 			&.primary {
 				background-color: var(--primary);
-				color: var(--paper);
+				color: var(--white);
 				padding: 2px 8px;
 				border-end-end-radius: 2px;
 			}
@@ -74,7 +74,7 @@
 		color: inherit;
 
 		&:hover {
-			background-color: var(--backgroundDark);
+			background-color: var(--background);
 		}
 	}
 </style>

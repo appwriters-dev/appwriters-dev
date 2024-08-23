@@ -81,7 +81,7 @@
 			z-index: 100;
 		}
 		p {
-			color: var(--paper);
+			color: var(--white);
 			z-index: 200;
 			text-transform: uppercase;
 			max-width: 60rem;
@@ -94,7 +94,7 @@
 		box-sizing: border-box;
 		padding: 2rem;
 		background-color: var(--accent);
-		color: var(--paper);
+		color: var(--white);
 
 		.container {
 			display: flex;
