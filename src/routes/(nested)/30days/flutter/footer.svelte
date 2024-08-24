@@ -11,7 +11,7 @@
 
 <style lang="scss">
 	section {
-		background-color: #fff;
+		background-color: var(--backgroundDark);
 		padding: 2rem;
 		article {
 			max-width: 42rem;

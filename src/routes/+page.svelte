@@ -229,7 +229,7 @@
 	.hero {
 		padding: 2rem;
 		background-color: var(--accent);
-		color: var(--paper);
+		color: var(--white);
 		margin: 0;
 		.content {
 			max-width: 42rem;
@@ -238,7 +238,7 @@
 		}
 	}
 	.master-flutter-challenge {
-		background-color: var(--white);
+		background-color: var(--backgroundDark);
 		padding: 2rem;
 		text-align: center;
 	}
@@ -258,7 +258,7 @@
 	a {
 		&.button {
 			background: var(--accent);
-			color: var(--paper);
+			color: var(--white);
 			padding: 1rem;
 			border-radius: 8px;
 			font-weight: 500;
@@ -272,7 +272,7 @@
 
 	.container {
 		&.white {
-			background-color: var(--white);
+			background-color: var(--backgroundDark);
 		}
 		> article {
 			max-width: 42rem;

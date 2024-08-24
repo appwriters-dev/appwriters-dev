@@ -15,7 +15,7 @@
 		align-items: center;
 		text-align: center;
 		background: var(--accent);
-		color: var(--paper);
+		color: var(--white);
 		margin-bottom: 2rem;
 		padding: 2rem;
 		margin-top: -70px;
@@ -36,7 +36,7 @@
 		}
 		h3 {
 			z-index: 100;
-			color: var(--paper);
+			color: var(--white);
 		}
 		p {
 			z-index: 100;

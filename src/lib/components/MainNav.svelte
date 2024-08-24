@@ -14,5 +14,5 @@
 			</NavItem>
 		{/each}
 	</ul>
-	<HamburgerMenuButton closeOnly="true" />
+	<HamburgerMenuButton closeOnly={true} />
 </nav>

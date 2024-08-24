@@ -16,8 +16,8 @@
 <style lang="scss">
 	section {
 		text-align: center;
-		background-color: var(--ink);
-		color: var(--paper);
+		background-color: var(--background);
+		color: var(--ink);
 		article {
 			max-width: 62rem;
 			margin: 0 auto;
