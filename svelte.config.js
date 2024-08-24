@@ -29,6 +29,9 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		alias: {
+            $routes: './src/routes',
+		},
 		prerender: {
 			entries: [
 				'*',
