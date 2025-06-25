@@ -268,6 +268,13 @@ export const resources = [
         "keywords": ["Dart programming", "JSON processing", "API integration", "data analysis", "REST APIs", "JSON parsing", "data transformation", "statistical analysis", "data filtering", "file I/O", "interactive programming", "structured data"],
         "description": "Master JSON data processing in Dart! Learn to fetch data from APIs, parse JSON structures, analyze data patterns, filter and transform datasets, and export results. Perfect for API integration and data analysis."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "CSV File Analyzer",
+        "link": "/projects/dart/project19",
+        "keywords": ["Dart programming", "CSV parsing", "data analysis", "file processing", "statistical analysis", "data quality", "tabular data", "data visualization", "file formats", "data types", "descriptive statistics", "data validation"],
+        "description": "Build a comprehensive CSV analyzer in Dart! Learn to parse CSV files, detect data types automatically, generate statistical summaries, assess data quality, and create text-based visualizations."
+    },
 
 
 
