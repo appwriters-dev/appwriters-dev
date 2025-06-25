@@ -247,6 +247,20 @@ export const resources = [
         "keywords": ["Dart programming", "system information", "Flutter development", "Dart for system data", "coding tutorial", "programming guide", "Dart system functions", "software development", "cross-platform programming", "Dart tips"],
         "description": "Discover how to fetch and display system information using Dart in our latest blog post. Ideal for Flutter developers, this guide breaks down a simple Dart program to understand system-level interactions and enhance your coding skills."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Simple HTTP Server",
+        "link": "/projects/dart/project16",
+        "keywords": ["Dart programming", "HTTP server", "network programming", "web server", "dart:io", "async programming", "routing", "API endpoints", "JSON responses", "web development", "server development", "Flutter backend"],
+        "description": "Learn to build a complete HTTP server in Dart! This comprehensive guide covers network programming, request handling, routing, and serving both static content and JSON APIs. Perfect for understanding web server fundamentals."
+    },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Simple Web Scraper",
+        "link": "/projects/dart/project17",
+        "keywords": ["Dart programming", "web scraping", "HTTP client", "HTML parsing", "data extraction", "regular expressions", "network programming", "data collection", "web automation", "URL handling", "JSON serialization", "ethical scraping"],
+        "description": "Build a simple web scraper in Dart! Learn the basics of HTTP client programming, HTML parsing, data extraction with regex, and ethical scraping practices. Extract titles, links, images, and content from websites."
+    },
 
 
 
