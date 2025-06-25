@@ -261,6 +261,13 @@ export const resources = [
         "keywords": ["Dart programming", "web scraping", "HTTP client", "HTML parsing", "data extraction", "regular expressions", "network programming", "data collection", "web automation", "URL handling", "JSON serialization", "ethical scraping"],
         "description": "Build a simple web scraper in Dart! Learn the basics of HTTP client programming, HTML parsing, data extraction with regex, and ethical scraping practices. Extract titles, links, images, and content from websites."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "JSON Data Processor",
+        "link": "/projects/dart/project18",
+        "keywords": ["Dart programming", "JSON processing", "API integration", "data analysis", "REST APIs", "JSON parsing", "data transformation", "statistical analysis", "data filtering", "file I/O", "interactive programming", "structured data"],
+        "description": "Master JSON data processing in Dart! Learn to fetch data from APIs, parse JSON structures, analyze data patterns, filter and transform datasets, and export results. Perfect for API integration and data analysis."
+    },
 
 
 

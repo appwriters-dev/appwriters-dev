@@ -33,7 +33,7 @@
 		{:else}
 			<div />
 		{/if}
-		{#if nextReleased && day < 15}
+		{#if nextReleased && day < 30}
 			<a href="/projects/{basePath}/project{day + 1}">project {day + 1} <i class="icon-arrow-right" /> </a>
 		{/if}
 		<!-- {#if day == 30}
