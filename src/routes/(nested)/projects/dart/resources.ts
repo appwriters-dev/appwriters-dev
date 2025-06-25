@@ -275,6 +275,13 @@ export const resources = [
         "keywords": ["Dart programming", "CSV parsing", "data analysis", "file processing", "statistical analysis", "data quality", "tabular data", "data visualization", "file formats", "data types", "descriptive statistics", "data validation"],
         "description": "Build a comprehensive CSV analyzer in Dart! Learn to parse CSV files, detect data types automatically, generate statistical summaries, assess data quality, and create text-based visualizations."
     },
+    {
+        "imageUrl": "https://placehold.co/600x400",
+        "title": "Log File Monitor",
+        "link": "/projects/dart/project20",
+        "keywords": ["Dart programming", "log monitoring", "file watching", "real-time processing", "pattern recognition", "system monitoring", "log parsing", "alert systems", "event-driven programming", "DevOps", "error detection", "regex patterns"],
+        "description": "Create a powerful log file monitor in Dart! Learn real-time file watching, automatic log format detection, pattern-based alerting, and statistics tracking. Essential for system monitoring and debugging."
+    },
 
 
 
