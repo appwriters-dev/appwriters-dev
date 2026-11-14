@@ -12,7 +12,7 @@ categories: [Flutter]
 
 <base target="_blank" />
 
-Flutter 3.50 shipped this week, and I spent part of it moving a project onto it. The upgrade itself broke one thing on Android. Writing accessibility tests afterwards found three more problems, two of which had nothing to do with the new release and had been sitting in the code for a while.
+I recently moved a project onto Flutter 3.50 (released 9 November). The upgrade itself broke one thing on Android. Building an accessibility baseline afterwards turned up more. Some problems I found by reading the code, and three only showed up once the new tests ran. None of those had anything to do with the new release; they had been sitting in the code for a while.
 
 None of these are exotic. If you have a Flutter app with a `.dev` build flavour, a hand-rolled "pick a readable text colour" helper, or a text-size setting, there is a fair chance at least one of them is in your codebase too. Here is what each one looked like, why it happened, and how it was fixed.
 
@@ -131,11 +131,13 @@ Future<void> expectGuidelines(WidgetTester tester) async {
 
 We run that on every screen, in the light and the dark theme, at a phone size and a desktop size. Call `tester.ensureSemantics()` first, and dispose the handle at the end of the test. Adding a screen to the suite is one entry in a map of "how to get to this screen from a fresh app".
 
-It found the things you would expect: password visibility toggles with no label, text-size options that a screen reader announced as "A" four times, and accent swatches at 44dp instead of 48. It also taught us two less obvious lessons.
+While building the baseline, I also fixed a few things just by reading the code: password visibility toggles with no label, text-size options that a screen reader announced as "A" four times, and accent swatches at 44dp instead of 48. The tests now guard two of those. Remove a toggle's tooltip and `labeledTapTargetGuideline` fails; shrink the swatches and the tap-target guidelines fail. The "A" fix is not enforced, because those segments also have tooltips, and a tooltip counts as a label.
+
+The suite also taught us two less obvious lessons.
 
 ### Trap 1: desktop-sized tests must run as a desktop platform
 
-Widget tests run as Android by default. Setting a desktop *size* doesn't change that. But Flutter only shrinks tap targets and tightens visual density on desktop *platforms*, so a desktop-sized test on Android passed a theme that failed on a real Windows or macOS build.
+Widget tests run as Android by default. Setting a desktop *size* doesn't change that. But Flutter only shrinks tap targets and tightens visual density on desktop *platforms*. Android keeps padded targets at any size, so a desktop-sized test on Android passes a theme that fails the 48dp check on desktop platforms.
 
 The fix in the test is to run the desktop cases as a desktop platform:
 
@@ -148,7 +150,7 @@ testWidgets('settings meets the guidelines on a desktop', (tester) async {
 }, variant: desktopOnly);
 ```
 
-Once the test was really running as Windows, it failed, and the fix in the theme was to opt out of the desktop shrinking:
+The fix in the theme is to opt out of the desktop shrinking. Take these two lines out and six of the desktop guideline tests fail when they run as Windows. Run the same tests as Android and they still pass:
 
 ```dart
 theme.copyWith(
@@ -182,7 +184,7 @@ expect(
 
 ## 4. Text scaling, silently capped at 160%
 
-This pattern is everywhere. It applies an in-app text size on top of the device setting, with a clamp so layouts don't blow up:
+This one I found by reading the code, not with a test. It's a common pattern: apply an in-app text size on top of the device setting, with a clamp so layouts don't blow up:
 
 ```dart
 MediaQuery(
@@ -247,6 +249,6 @@ It found a real overflow straight away: on a wide window, the inline navigation 
 
 ## Wrapping up
 
-The pattern across all four: none of these showed up by looking at the app. The Gradle break at least fails loudly. The other three only appeared once a test checked them, and two of them were only checked properly once we made the tests run the way real devices do — as a desktop platform, at the user's real text size — and put each bug back to see the test fail.
+None of these showed up by looking at the app. The Gradle break at least fails loudly. The text-size cap and the unlabelled controls took a careful read of the code. The two contrast defects and the drawer overflow only appeared once a test checked for them. The tests themselves only held up after two more steps. They had to run the way real devices do: as a desktop platform, and at the user's real text size. And each fix had to be removed again to see a test fail.
 
 All of this landed in [beej](https://pub.dev/packages/beej) 1.3.0 and 1.4.0. beej is a Dart CLI I build that generates complete Flutter apps, so every app it generates now starts with these fixes and this test suite. The source is on [GitHub](https://github.com/lohanidamodar/beej), but none of the fixes above depend on it.
