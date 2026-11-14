@@ -35,16 +35,14 @@ export default defineConfig({
 
 			adapter: adapter(),
 			prerender: {
-				entries: [
-					'*',
-					'/api/posts/page/*',
-					'/blog/category/*/page/',
-					'/blog/category/*/page/*',
-					'/blog/category/page/',
-					'/blog/category/page/*',
-					'/blog/page/',
-					'/blog/page/*'
-				]
+				// '*' means every static route; paginated and category pages are found by crawling links.
+				// (Entries like '/blog/page/*' are not wildcards: they prerendered literal '*' pages,
+				// which also cannot be written as files on Windows.)
+				entries: ['*'],
+				// Three prerenderable routes are not linked from any page (/api/posts/page/[page],
+				// /blog/category/page/[page], /blog/category/[category]/page). They were never
+				// prerendered with real content; report them instead of failing the build.
+				handleUnseenRoutes: 'warn'
 			}
 		})
 	],
