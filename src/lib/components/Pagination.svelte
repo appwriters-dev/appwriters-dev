@@ -6,6 +6,7 @@
 
 	let pagesAvailable = $derived(Math.ceil(totalPosts / postsPerPage));
 
+	/** @param {number} page */
 	const isCurrentPage = (page) => page == currentPage;
 </script>
 

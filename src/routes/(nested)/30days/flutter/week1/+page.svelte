@@ -11,7 +11,7 @@
 		'Flutter, Dart, #30DaysofMasterFlutter, programming, mobile app development, environment setup, Dart functions, asynchronous programming, object-oriented programming, error handling, review, tutorial';
 </script>
 
-<svelte-head>
+<svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={description} />
 	<meta name="keywords" content={keywords} />
@@ -28,7 +28,7 @@
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:url" content="https://appwriters.dev/30days/flutter/week1" />
-</svelte-head>
+</svelte:head>
 
 <Header title="#30DaysMasterFlutter" subtitle="WEEK 1" />
 

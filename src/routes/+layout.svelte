@@ -80,7 +80,7 @@
 		applyTheme(initialTheme);
 		// preloadCode takes one internal path at a time; external links (YouTube) are skipped.
 		for (const { route } of navItems) {
-			if (route.startsWith('/')) preloadCode(route).catch(() => {});
+			if (route.startsWith('/')) preloadCode(route as any).catch(() => {});
 		}
 	});
 

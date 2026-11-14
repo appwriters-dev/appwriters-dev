@@ -8,6 +8,7 @@
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
 		data.meta;
 
+	/** @param {string} title */
 	const slugify = (title) =>
 		title
 			.replace(/\s+/g, '-')

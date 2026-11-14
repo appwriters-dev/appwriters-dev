@@ -2,7 +2,7 @@
 <script>
 	import PostsList from '#lib/components/PostsList.svelte';
 	import Pagination from '#lib/components/Pagination.svelte';
-	import { siteDescription } from '#lib/config.js';
+	import { postsPerPage, siteDescription } from '#lib/config.js';
 
 	/** @type {{data: any}} */
 	let { data } = $props();

@@ -8,7 +8,7 @@
 
 	const focusMain = () => {
 		const main = document.querySelector('main');
-		main.focus();
+		main?.focus();
 	};
 	const toggleTheme = () => {
 		currentTheme.set($currentTheme === 'dark' ? 'light' : 'dark');
@@ -28,7 +28,10 @@
 		<HamburgerMenuButton />
 		<div class="menu">
 			<MainNav />
-			<button onclick={toggleTheme}>
+			<button
+				onclick={toggleTheme}
+				aria-label={$currentTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+			>
 				<i class={$currentTheme === 'dark' ? 'icon-sun' : 'icon-moon'}></i>
 			</button>
 		</div>

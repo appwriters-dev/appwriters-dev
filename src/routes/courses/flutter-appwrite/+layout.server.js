@@ -1,6 +1,8 @@
 import { redirect } from '@sveltejs/kit';
 import { FLUTTER_APPWRITE_LESSONS_PUBLISHED } from '$app/env/private';
 
+const lessonsPublished = Number(FLUTTER_APPWRITE_LESSONS_PUBLISHED);
+
 export const prerender = false;
 
 export const load = async ({ url, fetch }) => {
@@ -22,7 +24,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Getting started with Appwrite',
 				description:
 					'Sign up to Appwrite cloud and create a Appwrite project that will host data for your application.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 1
+				published: lessonsPublished >= 1
 			},
 			{
 				number: '02',
@@ -31,7 +33,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Getting started with Flutter',
 				description:
 					'Create new Flutter project and push to GitHub. Setup basic GitHub action to help maintain code quality.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 2
+				published: lessonsPublished >= 2
 			},
 			{
 				number: '03',
@@ -40,7 +42,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Flutter and Appwrite integration',
 				description:
 					'Integrate Flutter and Appwrite projects so that they can communicate with each other.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 3
+				published: lessonsPublished >= 3
 			},
 			{
 				number: '04',
@@ -49,7 +51,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Dependency injection',
 				description:
 					'Set up dependency injection in Flutter using <a target="_blank" href="https://pub.dev/packages/get_it">get it</a>.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 4
+				published: lessonsPublished >= 4
 			},
 			{
 				number: '05',
@@ -58,7 +60,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'State management',
 				description:
 					'Set up state management in Flutter using <a target="_blank" href="https://pub.dev/packages/flutter_riverpod">riverpod</a>.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 5
+				published: lessonsPublished >= 5
 			},
 			{
 				number: '06',
@@ -67,7 +69,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Routing',
 				description:
 					'Set up routing in Flutter application using <a target="_blank" href="https://pub.dev/packages/go_router">Go router</a> package.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 6
+				published: lessonsPublished >= 6
 			},
 			{
 				number: '07',
@@ -76,7 +78,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Creating account for your user',
 				description:
 					'We will create a form that will allow users to create an account in our application. Appwrite will handle the user management for us.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 7
+				published: lessonsPublished >= 7
 			},
 			{
 				number: '08',
@@ -84,7 +86,7 @@ export const load = async ({ url, fetch }) => {
 				id: 'authenticate-user',
 				title: 'Authenticate user - login',
 				description: 'Allow user to login using their email and password.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 8
+				published: lessonsPublished >= 8
 			},
 			{
 				number: '09',
@@ -92,7 +94,7 @@ export const load = async ({ url, fetch }) => {
 				id: 'auth-state',
 				title: 'Authentication state manager',
 				description: 'Setup authentication state manager using riverpod.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 9
+				published: lessonsPublished >= 9
 			},
 			{
 				number: '10',
@@ -101,7 +103,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Authenticated routes',
 				description:
 					'Update routing logic to check user authentication status before allowing access to certain routes.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 10
+				published: lessonsPublished >= 10
 			},
 			{
 				number: '11',
@@ -110,7 +112,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Setup database',
 				description:
 					"Setup database and collection required to save user's projects with proper premissions.",
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 11
+				published: lessonsPublished >= 11
 			},
 			{
 				number: '12',
@@ -118,7 +120,7 @@ export const load = async ({ url, fetch }) => {
 				id: 'projects-state-manager',
 				title: 'Projects state manager',
 				description: 'Setup state management for managing projects data using riverpod.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 12
+				published: lessonsPublished >= 12
 			},
 			{
 				number: '13',
@@ -126,7 +128,7 @@ export const load = async ({ url, fetch }) => {
 				id: 'create-project',
 				title: 'Create project',
 				description: 'Learn how to add data to Appwrite database with proper permissions.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 13
+				published: lessonsPublished >= 13
 			},
 			{
 				number: '14',
@@ -135,7 +137,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'List projects',
 				description:
 					'Understand how to write simple queries to get data from Appwrite database and display.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 14
+				published: lessonsPublished >= 14
 			},
 			{
 				number: '15',
@@ -143,7 +145,7 @@ export const load = async ({ url, fetch }) => {
 				id: 'update-project',
 				title: 'Update project',
 				description: 'Learn how to let user update the data already saved in Appwrite database.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 15
+				published: lessonsPublished >= 15
 			},
 			{
 				number: '16',
@@ -152,7 +154,7 @@ export const load = async ({ url, fetch }) => {
 				title: 'Delete project',
 				description:
 					'Learn to build a safe delete operation with confirmation dialog to delete data in Appwrite database.',
-				published: FLUTTER_APPWRITE_LESSONS_PUBLISHED >= 16
+				published: lessonsPublished >= 16
 			}
 		]
 	};

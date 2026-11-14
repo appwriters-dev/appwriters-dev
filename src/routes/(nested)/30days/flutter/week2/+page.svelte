@@ -11,7 +11,7 @@
 		'Flutter, Dart, 30 Days of Flutter, Dependency Management, Networking, HTTP Requests, JSON Parsing, Interactive UI, State, StatefulWidget, User Input, Forms, Text Fields, Assets, Images, Fonts, Widgets, User Interface Design.';
 </script>
 
-<svelte-head>
+<svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={description} />
 	<meta name="keywords" content={keywords} />
@@ -28,7 +28,7 @@
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:url" content="https://appwriters.dev/30days/flutter/week2" />
-</svelte-head>
+</svelte:head>
 
 <Header title="#30DaysMasterFlutter" subtitle="WEEK 2" />
 

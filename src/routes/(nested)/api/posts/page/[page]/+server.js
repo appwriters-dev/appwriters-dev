@@ -4,7 +4,7 @@ import fetchPosts from '#lib/assets/js/fetchPosts.js';
 export const prerender = true;
 
 export const GET = async ({ params }) => {
-	const { page } = params || 1;
+	const page = Number(params.page) || 1;
 
 	const options = {
 		offset: (page - 1) * postsPerPage,

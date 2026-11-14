@@ -8,6 +8,6 @@ export const load = async ({ params }) => {
 			...post
 		};
 	} catch (err) {
-		error(404, err?.message ?? 'Not Found');
+		error(404, /** @type {any} */ (err)?.message ?? 'Not Found');
 	}
 };

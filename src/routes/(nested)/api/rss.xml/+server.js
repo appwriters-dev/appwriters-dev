@@ -6,12 +6,12 @@ export const prerender = true;
 export const GET = async () => {
 	const data = await Promise.all(
 		Object.entries(import.meta.glob('/src/lib/posts/*.md')).map(async ([path, page]) => {
-			const { metadata } = await page();
-			const slug = path.split('/').pop().split('.').shift();
-			return { slug, ...metadata };
+			const { metadata } = /** @type {{ metadata: Record<string, any> }} */ (await page());
+			const slug = path.split('/').pop()?.split('.').shift();
+			return /** @type {Record<string, any>} */ ({ slug, ...metadata });
 		})
 	).then((posts) => {
-		return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+		return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 	});
 
 	const body = render(data);
@@ -26,6 +26,7 @@ export const GET = async () => {
 };
 
 //Be sure to review and replace any applicable content below!
+/** @param {Record<string, any>[]} posts */
 const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>

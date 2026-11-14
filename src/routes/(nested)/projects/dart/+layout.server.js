@@ -3,7 +3,7 @@ import { resources } from './resources';
 
 export const prerender = false;
 
-/** @type {import('./$types').PageLoad} */
+/** @type {import('./$types').LayoutServerLoad} */
 export async function load() {
     return {
         resources: resources,

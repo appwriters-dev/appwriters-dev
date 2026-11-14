@@ -1,15 +1,20 @@
 import { postsPerPage } from '#lib/config.js';
 
+/** @typedef {{ metadata: Record<string, any>, default: import('svelte').Component }} MdModule */
+
+/**
+ * @param {{ offset?: number, limit?: number, category?: string }} [options]
+ */
 const fetchPosts = async ({ offset = 0, limit = postsPerPage, category = '' } = {}) => {
 	const posts = await Promise.all(
 		Object.entries(import.meta.glob('/src/lib/posts/*.md')).map(async ([path, resolver]) => {
-			const { metadata } = await resolver();
-			const slug = path.split('/').pop().slice(0, -3);
-			return { slug, ...metadata };
+			const { metadata } = /** @type {MdModule} */ (await resolver());
+			const slug = path.split('/').pop()?.slice(0, -3);
+			return /** @type {Record<string, any>} */ ({ slug, ...metadata });
 		})
 	);
 
-	let sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+	let sortedPosts = posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 	if (category) {
 		sortedPosts = sortedPosts.filter(

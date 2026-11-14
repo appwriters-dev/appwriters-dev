@@ -15,7 +15,7 @@
 	onclick={toggleIsMenuOpen}
 	aria-pressed={$isMenuOpen}
 	class="menu-button"
-	tabindex={$isMenuOpen || !closeOnly ? '0' : '-1'}
+	tabindex={$isMenuOpen || !closeOnly ? 0 : -1}
 >
 	<span class="sr-only">Toggle hamburger menu</span>
 	{#if closeOnly}

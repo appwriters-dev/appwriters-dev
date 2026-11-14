@@ -10,20 +10,26 @@
 </script>
 
 <div>
-	<a href="https://www.facebook.com/sharer.php?u={url}" target="_blank" rel="noreferrer"
+	<a
+		href="https://www.facebook.com/sharer.php?u={url}"
+		target="_blank"
+		rel="noreferrer"
+		aria-label="Share on Facebook"
 		><i class="icon-facebook"></i></a
 	>
 	<a
 		href="https://twitter.com/intent/tweet?url={url}&text={encodeURIComponent(message)}"
 		target="_blank"
-		rel="noreferrer"><i class="icon-twitter"></i></a
+		rel="noreferrer"
+		aria-label="Share on X (Twitter)"><i class="icon-twitter"></i></a
 	>
 	<a
 		href="https://reddit.com/submit?url={url}&title={encodeURIComponent(message)}"
 		target="_blank"
-		rel="noreferrer"><i class="icon-reddit"></i></a
+		rel="noreferrer"
+		aria-label="Share on Reddit"><i class="icon-reddit"></i></a
 	>
-	<button onclick={copy}><i class="icon-link"></i></button>
+	<button onclick={copy} aria-label="Copy link"><i class="icon-link"></i></button>
 </div>
 
 <style>

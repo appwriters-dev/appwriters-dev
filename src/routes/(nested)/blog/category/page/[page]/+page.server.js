@@ -14,7 +14,7 @@ export const load = async ({ fetch, params }) => {
 
 	const totalPostsRes = await fetch('/api/posts/count');
 	const total = await totalPostsRes.json();
-	const { posts } = await fetchPosts({ offset, page });
+	const { posts } = await fetchPosts({ offset });
 
 	return {
 		posts,

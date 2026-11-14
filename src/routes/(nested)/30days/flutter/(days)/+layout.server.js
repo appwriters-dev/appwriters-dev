@@ -4,8 +4,8 @@ import { resources } from '../resources';
 
 export const prerender = true;
 
-/** @type {import('./$types').LayoutLoad} */
-export async function load({ url, params, fetch, session, context }) {
+/** @type {import('./$types').LayoutServerLoad} */
+export async function load({ url }) {
     const paths = url.pathname.split('/');
     const day = parseInt(paths[paths.length - 1].replace('day', ''));
     const dayData = resources[day - 1];
