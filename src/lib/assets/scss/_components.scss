@@ -8,7 +8,16 @@
 	margin: 2rem 0 2rem -1rem;
 	font-style: italic;
 	border-radius: 0.125rem;
-	color: var(--paper);
+	// White reads on the accent blue in both themes (--paper is dark in the dark theme).
+	color: var(--white);
+
+	h1, h2, h3, h4, a {
+		color: var(--white);
+	}
+
+	a {
+		text-decoration: underline;
+	}
 
 	@media (min-width: vars.$smMin) {
 		width: calc(100% + 4rem);
