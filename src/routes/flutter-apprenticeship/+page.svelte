@@ -21,6 +21,7 @@
 	<meta property="og:image:height" content="630" />
 </svelte:head>
 
+<main id="main" tabindex="-1">
 <div class="hero">
 	<h1>Flutter apprenticeship</h1>
 	<p>Flutter course for everybody</p>
@@ -173,6 +174,7 @@
 		</p>
 	</Callout>
 </div>
+</main>
 
 <style lang="scss">
 	.hero {
