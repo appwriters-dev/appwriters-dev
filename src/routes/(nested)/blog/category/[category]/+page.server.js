@@ -1,4 +1,4 @@
-import fetchPosts from '$lib/assets/js/fetchPosts';
+import fetchPosts from '#lib/assets/js/fetchPosts.js';
 
 export const load = async ({ params }) => {
 	const category = params.category;

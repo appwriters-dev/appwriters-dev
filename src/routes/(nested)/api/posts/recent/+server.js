@@ -1,5 +1,4 @@
-import fetchPosts from '$lib/assets/js/fetchPosts';
-import { json } from '@sveltejs/kit';
+import fetchPosts from '#lib/assets/js/fetchPosts.js';
 
 export const prerender = true;
 
@@ -9,5 +8,5 @@ export const GET = async ({ url }) => {
 	};
 
 	const { posts } = await fetchPosts(options);
-	return json(posts);
+	return Response.json(posts);
 };

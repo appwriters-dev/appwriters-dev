@@ -1,5 +1,5 @@
 <script>
-	import SiteMetas from "$lib/components/SiteMetas.svelte";
+	import SiteMetas from '#lib/components/SiteMetas.svelte';
 
 	/** @type {{data: any}} */
 	let { data } = $props();

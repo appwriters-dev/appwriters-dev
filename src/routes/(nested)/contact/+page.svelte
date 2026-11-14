@@ -1,6 +1,6 @@
 <script>
-	import Callout from '$lib/components/Callout.svelte';
-	import SiteMetas from '$lib/components/SiteMetas.svelte';
+	import Callout from '#lib/components/Callout.svelte';
+	import SiteMetas from '#lib/components/SiteMetas.svelte';
 </script>
 
 <svelte:head>
@@ -17,5 +17,4 @@
 		color: var(--accent);
 		font-weight: 600;
 	}
-
 </style>

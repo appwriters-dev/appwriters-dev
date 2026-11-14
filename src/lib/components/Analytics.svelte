@@ -1,14 +1,14 @@
 <script>
-	import { run } from 'svelte/legacy';
+	import { page } from '$app/state';
+	import { PUBLIC_ANALYTICS_ID } from '$app/env/public';
 
-	import { page } from '$app/stores';
-	import { PUBLIC_ANALYTICS_ID } from '$env/static/public';
-
-	run(() => {
+	// Report each client-side navigation as a page view.
+	$effect(() => {
+		const page_path = page.url.pathname;
 		if (typeof gtag !== 'undefined') {
 			gtag('config', PUBLIC_ANALYTICS_ID, {
 				page_title: document.title,
-				page_path: $page.url.pathname
+				page_path
 			});
 		}
 	});

@@ -1,7 +1,7 @@
 <script>
-	import RecentPostsList from '$lib/components/RecentPostsList.svelte';
-	import VideoEmbed from '$lib/components/VideoEmbed.svelte';
-	import { siteTitle } from '$lib/config';
+	import RecentPostsList from '#lib/components/RecentPostsList.svelte';
+	import VideoEmbed from '#lib/components/VideoEmbed.svelte';
+	import { siteTitle } from '#lib/config.js';
 	import SiteMetas from '../lib/components/SiteMetas.svelte';
 	/** @type {{data: any}} */
 	let { data } = $props();
@@ -41,9 +41,9 @@
 					to build powerful Flutter apps.
 					<br />
 					<br />
-					Get started now, spend 2-3 hours each day learning the provided resources and building the
-					given project. By the end of the challenge, you'll have a better understanding of Dart and
-					Flutter and a collection of projects to showcase your skills.
+					Get started now, spend 2-3 hours each day learning the provided resources and building the given
+					project. By the end of the challenge, you'll have a better understanding of Dart and Flutter
+					and a collection of projects to showcase your skills.
 				</p>
 				<br />
 				<a href="/30days/flutter" class="button"><i class="icon-flutter"></i> start now</a>
@@ -92,7 +92,7 @@
 				</p>
 
 				<br />
-				<a href="/flutter-apprenticeship" class="button"><i class="icon-flutter" /> Apply now</a>
+				<a href="/flutter-apprenticeship" class="button"><i class="icon-flutter"></i> Apply now</a>
 			</article>
 		</div>
 	</div> -->

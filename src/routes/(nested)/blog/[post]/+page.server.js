@@ -1,4 +1,4 @@
-import fetchPostBySlug from '$lib/assets/js/fetchPostbySlug';
+import fetchPostBySlug from '#lib/assets/js/fetchPostbySlug.js';
 import { error } from '@sveltejs/kit';
 
 export const load = async ({ params }) => {
@@ -8,6 +8,6 @@ export const load = async ({ params }) => {
 			...post
 		};
 	} catch (err) {
-		throw error(404, err);
+		error(404, err?.message ?? 'Not Found');
 	}
 };

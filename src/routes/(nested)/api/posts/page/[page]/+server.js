@@ -1,6 +1,5 @@
-import { postsPerPage } from '$lib/config';
-import fetchPosts from '$lib/assets/js/fetchPosts';
-import { json } from '@sveltejs/kit';
+import { postsPerPage } from '#lib/config.js';
+import fetchPosts from '#lib/assets/js/fetchPosts.js';
 
 export const prerender = true;
 
@@ -14,5 +13,5 @@ export const GET = async ({ params }) => {
 
 	const { posts } = await fetchPosts(options);
 
-	return json(posts);
+	return Response.json(posts);
 };

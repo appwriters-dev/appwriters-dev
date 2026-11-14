@@ -3,8 +3,8 @@
 
 	import MainNav from './MainNav.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
-	import { siteTitle } from '$lib/config';
-	import { currentTheme } from '$routes/+layout.svelte';
+	import { siteTitle } from '#lib/config.js';
+	import { currentTheme } from '../../routes/+layout.svelte';
 
 	const focusMain = () => {
 		const main = document.querySelector('main');
@@ -29,7 +29,7 @@
 		<div class="menu">
 			<MainNav />
 			<button onclick={toggleTheme}>
-				<i class="{$currentTheme === 'dark' ? 'icon-sun' : 'icon-moon'}"></i>
+				<i class={$currentTheme === 'dark' ? 'icon-sun' : 'icon-moon'}></i>
 			</button>
 		</div>
 	</div>
@@ -57,7 +57,6 @@
 					color: var(--white);
 				}
 			}
-
 		}
 	}
 </style>

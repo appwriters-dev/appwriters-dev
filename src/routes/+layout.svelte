@@ -42,19 +42,17 @@
 </script>
 
 <script lang="ts">
-	import { run } from 'svelte/legacy';
-
-	import { browser } from '$app/environment';
+	import { browser } from '$app/env';
 	import { derived, writable } from 'svelte/store';
-	import { navigating, page, updated } from '$app/stores';
-	import '$lib/assets/scss/global.scss';
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
-	import { navItems } from '$lib/config';
+	import { navigating, page, updated } from '$app/state';
+	import '#lib/assets/scss/global.scss';
+	import Header from '#lib/components/Header.svelte';
+	import Footer from '#lib/components/Footer.svelte';
+	import { isMenuOpen } from '#lib/assets/js/store.js';
+	import { navItems } from '#lib/config.js';
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import Analytics from '$lib/components/Analytics.svelte';
+	import Analytics from '#lib/components/Analytics.svelte';
 	interface Props {
 		data: any;
 		children?: import('svelte').Snippet;
@@ -70,14 +68,6 @@
 	}
 
 	/**
-	 * Updates the global store with the current path. (Used for highlighting
-	 * the current page in the nav, but could be useful for other purposes.)
-	 **/
-	run(() => {
-		currentPage.set(data.path);
-	});
-
-	/**
 	 * This pre-fetches all top-level routes on the site in the background for faster loading.
 	 * https://kit.svelte.dev/docs/modules#$app-navigation-preloaddata
 	 *
@@ -86,15 +76,16 @@
 	 **/
 
 	onMount(() => {
-		const initialTheme = $page.route.id?.startsWith('/docs') ? getPreferredTheme() : 'dark';
+		const initialTheme = page.route.id?.startsWith('/docs') ? getPreferredTheme() : 'dark';
 		applyTheme(initialTheme);
-		const navRoutes = navItems.map((item) => item.route);
-		preloadCode(...navRoutes);
+		// preloadCode takes one internal path at a time; external links (YouTube) are skipped.
+		for (const { route } of navItems) {
+			if (route.startsWith('/')) preloadCode(route).catch(() => {});
+		}
 	});
 
-	run(() => {
-		if (browser) currentTheme.subscribe((theme) => applyTheme(theme));
-	});
+	// Re-apply the theme whenever it changes. Runs in the browser only.
+	$effect.pre(() => currentTheme.subscribe((theme) => applyTheme(theme)));
 </script>
 
 <Analytics />

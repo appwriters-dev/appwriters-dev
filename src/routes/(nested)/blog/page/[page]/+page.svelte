@@ -1,9 +1,9 @@
 <!-- This file handles any /blog/page/x route for pagination -->
 <script>
-	import PostsList from '$lib/components/PostsList.svelte';
-	import Pagination from '$lib/components/Pagination.svelte';
-	import { postsPerPage, siteDescription } from '$lib/config';
-	import SiteMetas from '$lib/components/SiteMetas.svelte';
+	import PostsList from '#lib/components/PostsList.svelte';
+	import Pagination from '#lib/components/Pagination.svelte';
+	import { postsPerPage, siteDescription } from '#lib/config.js';
+	import SiteMetas from '#lib/components/SiteMetas.svelte';
 
 	/** @type {{data: any}} */
 	let { data } = $props();

@@ -1,3 +1,5 @@
+import { render } from 'svelte/server';
+
 
 /**
  * 
@@ -19,7 +21,7 @@ const fetchLessonById = async (courseId, lessonId) => {
                 subtitle: post.metadata.subtitle,
                 path: path,
                 videoId: post.metadata.videoId,
-                content: post.metadata.id == lessonId ? post.default.render().html : ''
+                content: post.metadata.id == lessonId ? render(post.default).body : ''
             }
         })
     );

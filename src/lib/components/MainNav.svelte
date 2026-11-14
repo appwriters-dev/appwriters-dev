@@ -1,6 +1,6 @@
 <script>
-	import { navItems } from '$lib/config';
-	import { isMenuOpen } from '$lib/assets/js/store';
+	import { navItems } from '#lib/config.js';
+	import { isMenuOpen } from '#lib/assets/js/store.js';
 	import NavItem from './NavItem.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
 </script>

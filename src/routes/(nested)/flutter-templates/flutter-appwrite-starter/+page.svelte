@@ -1,5 +1,5 @@
 <script>
-	import { siteLink } from '$lib/config';
+	import { siteLink } from '#lib/config.js';
 
 	let metaDescription =
 		'Starter template for your next Flutter project with Appwrite, riverpod and go_router.';
@@ -90,12 +90,12 @@ Below features are already configured in this template:
 		Using <code>rename</code> package change the bundle ID and app name to whatever you want your
 		<code>dart run rename --bundleId com.new.package.name</code>
 		and <code>dart run rename --appname &quot;New App Name&quot;</code>. Check
-		<a href="https://pub.dev/packages/rename" target="_blank">rename</a> package for more details on
-		how to use it.
+		<a href="https://pub.dev/packages/rename" target="_blank">rename</a> package for more details on how
+		to use it.
 	</li>
 	<li>
-		in <code>lib/res/constants.dart</code> update endpoint and project id with your own endpoint and
-		project id details;
+		in <code>lib/res/constants.dart</code> update endpoint and project id with your own endpoint and project
+		id details;
 	</li>
 </ol>
 

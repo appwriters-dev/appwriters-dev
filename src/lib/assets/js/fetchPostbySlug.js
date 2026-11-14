@@ -1,10 +1,12 @@
+import { render } from 'svelte/server';
+
 
 const fetchPostBySlug = async (slug) => {
 	const posts = await Promise.all(
 		Object.entries(import.meta.glob('/src/lib/posts/*.md')).map(async ([path, resolver]) => {
 			const post = await resolver();
             const pslug = path.split('/').pop().slice(0, -3);
-            return {meta: post.metadata, path: path, pathSlug: pslug, postContent: post.metadata.slug == slug ? post.default.render().html: ''}
+            return {meta: post.metadata, path: path, pathSlug: pslug, postContent: post.metadata.slug == slug ? render(post.default).body: ''}
 		})
 	);
     const post = posts.find((post) => post.meta.slug == slug)

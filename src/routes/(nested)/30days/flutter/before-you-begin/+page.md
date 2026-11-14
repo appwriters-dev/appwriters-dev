@@ -45,4 +45,4 @@ Join us in this exceptional learning journey, where you'll embrace the thrill of
 
 Are you ready to embark on this exciting learning journey? Choose your preferred method and unlock your potential with **#30DaysMasterFlutter** today!
 
-<a href="/30days/flutter/day1" class="button">Begin today <i class="icon-arrow-right" /> </a>
+<a href="/30days/flutter/day1" class="button">Begin today <i class="icon-arrow-right"></i> </a>

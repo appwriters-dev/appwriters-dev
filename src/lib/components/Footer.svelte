@@ -1,6 +1,6 @@
 <script>
 	import MainNav from './MainNav.svelte';
-	import { siteAuthor, siteAuthorURL } from '$lib/config';
+	import { siteAuthor, siteAuthorURL } from '#lib/config.js';
 </script>
 
 <footer>

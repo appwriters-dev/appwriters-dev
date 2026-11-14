@@ -6,3 +6,4 @@ node_modules
 static/images/30days/flutter_header_bg.jpg
 static/images/30days/flutter_header_bg.jpeg
 *.http
+/.vercel

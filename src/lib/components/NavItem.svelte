@@ -1,13 +1,16 @@
 <script>
-	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
+	import { page } from '$app/state';
+	import { isMenuOpen } from '#lib/assets/js/store.js';
 
 	/** @type {{href: any, children?: import('svelte').Snippet}} */
 	let { href, children } = $props();
 
-	let isCurrentPage = $derived(href == '/' ? $currentPage == href : $currentPage.startsWith(href));
+	let isCurrentPage = $derived(
+		href == '/' ? page.url.pathname == href : page.url.pathname.startsWith(href)
+	);
 
 	const maybeCloseMenu = () => {
-		if (href != $currentPage) {
+		if (href != page.url.pathname) {
 			isMenuOpen.set(false);
 		}
 	};

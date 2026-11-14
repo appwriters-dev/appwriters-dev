@@ -1,7 +1,7 @@
 <script>
-	import { page } from '$app/stores';
-	import Share from '$lib/components/Share.svelte';
-	import { siteAuthor, siteLink, siteTitle } from '$lib/config';
+	import { page } from '$app/state';
+	import Share from '#lib/components/Share.svelte';
+	import { siteAuthor, siteLink, siteTitle } from '#lib/config.js';
 
 	/** @type {{data: any}} */
 	let { data } = $props();
@@ -44,14 +44,14 @@
 
 <article class="post">
 	{#if coverImage}
-	<img
-		class="cover-image"
-		src={coverImage}
-		alt="{title}"
-		style="aspect-ratio: {coverWidth} / {coverHeight};"
-		width={coverWidth}
-		height={coverHeight}
-	/>
+		<img
+			class="cover-image"
+			src={coverImage}
+			alt={title}
+			style="aspect-ratio: {coverWidth} / {coverHeight};"
+			width={coverWidth}
+			height={coverHeight}
+		/>
 	{/if}
 
 	<h1>{title}</h1>
@@ -84,8 +84,12 @@
 	{/if}
 
 	{@html data.postContent}
-	
-	<p> <b>Enjoyed? Tell your friends.</b> <Share url="{siteLink}/blog/{$page.params.post}" message={excerpt} /> </p>
+
+	<p>
+		<b>Enjoyed? Tell your friends.</b>
+
+		<Share url="{siteLink}/blog/{page.params.post}" message={excerpt} />
+	</p>
 </article>
 
 <style lang="scss">

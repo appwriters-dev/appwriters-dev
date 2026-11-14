@@ -1,11 +1,10 @@
 <script>
-	import { postsPerPage } from '$lib/config';
+	import { postsPerPage } from '#lib/config.js';
 
 	/** @type {{currentPage: any, totalPosts: any, path?: string}} */
 	let { currentPage, totalPosts, path = '/blog/page' } = $props();
 
 	let pagesAvailable = $derived(Math.ceil(totalPosts / postsPerPage));
-	
 
 	const isCurrentPage = (page) => page == currentPage;
 </script>

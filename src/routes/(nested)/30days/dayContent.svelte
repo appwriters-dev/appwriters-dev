@@ -1,18 +1,10 @@
 <script>
-	import Share from '$lib/components/Share.svelte';
-	import { siteLink } from '$lib/config';
+	import Share from '#lib/components/Share.svelte';
+	import { siteLink } from '#lib/config.js';
 	import Header from './header.svelte';
 
-
 	/** @type {{day?: number, nextReleased?: boolean, title: any, basePath: any, project: any, children?: import('svelte').Snippet}} */
-	let {
-		day = 0,
-		nextReleased = true,
-		title,
-		basePath,
-		project,
-		children
-	} = $props();
+	let { day = 0, nextReleased = true, title, basePath, project, children } = $props();
 </script>
 
 <Header {title} subtitle="Day {day}" />

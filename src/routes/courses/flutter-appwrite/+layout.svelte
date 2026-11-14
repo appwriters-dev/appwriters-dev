@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/state';
-	import VideoEmbed from '$lib/components/VideoEmbed.svelte';
+	import VideoEmbed from '#lib/components/VideoEmbed.svelte';
 	import Header from './header.svelte';
 	/** @type {{children?: import('svelte').Snippet}} */
 	let { children } = $props();
@@ -18,11 +18,7 @@
 	<meta name="twitter:description" content={page.data.metaDescription} />
 </svelte:head>
 
-<Header
-	isMain={page.data.lessonId == null}
-	title={page.data.title}
-	subtitle={page.data.subtitle}
-/>
+<Header isMain={page.data.lessonId == null} title={page.data.title} subtitle={page.data.subtitle} />
 
 {#if page.data.videoId}
 	<VideoEmbed id={page.data.videoId} background={page.data.lessonId == null} />

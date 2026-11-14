@@ -1,5 +1,5 @@
 <script>
-	import { siteTitle, siteDescription, siteAuthor } from '$lib/config';
+	import { siteTitle, siteDescription, siteAuthor } from '#lib/config.js';
 </script>
 
 <meta name="description" content={siteDescription} />

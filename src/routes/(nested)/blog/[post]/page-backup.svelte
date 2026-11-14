@@ -1,5 +1,5 @@
 <script>
-	import { siteTitle } from '$lib/config';
+	import { siteTitle } from '#lib/config.js';
 	import { json } from '@sveltejs/kit';
 
 	/** @type {{data: any}} */

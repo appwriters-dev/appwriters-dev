@@ -1,5 +1,5 @@
 <script>
-	import { defaultCoverImage } from '$lib/config';
+	import { defaultCoverImage } from '#lib/config.js';
 
 	/** @type {{posts?: any}} */
 	let { posts = [] } = $props();
@@ -23,7 +23,6 @@
 				</a>
 				<p>{post.excerpt}</p>
 			</article>
-
 		</li>
 	{/each}
 </ul>

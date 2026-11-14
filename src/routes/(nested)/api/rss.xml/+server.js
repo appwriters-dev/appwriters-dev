@@ -1,11 +1,11 @@
 // IMPORTANT: update all these property values in src/lib/config.js
-import { siteTitle, siteDescription, siteURL, siteLink } from '$lib/config';
+import { siteTitle, siteDescription, siteURL, siteLink } from '#lib/config.js';
 
 export const prerender = true;
 
 export const GET = async () => {
 	const data = await Promise.all(
-		Object.entries(import.meta.glob('$lib/posts/*.md')).map(async ([path, page]) => {
+		Object.entries(import.meta.glob('/src/lib/posts/*.md')).map(async ([path, page]) => {
 			const { metadata } = await page();
 			const slug = path.split('/').pop().split('.').shift();
 			return { slug, ...metadata };

@@ -12,6 +12,6 @@ export const load = async ({ url, fetch }) => {
 			path: url.pathname
 		};
 	} catch (err) {
-		throw error(500, err);
+		error(500, err instanceof Error ? err.message : String(err));
 	}
 };
