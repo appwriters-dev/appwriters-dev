@@ -1,6 +1,7 @@
 <script>
 	import Grid from './grid.svelte';
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 </script>
 
 <svelte:head>

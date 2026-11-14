@@ -1,9 +1,9 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 </script>
 
 <div class="error">
-	<p>{$page.status}: {$page.error.message}</p>
+	<p>{page.status}: {page.error.message}</p>
 	<p>The page you are looking for could not be found.</p>
 	<p>Please check the URL and try again, or return to the <a href="/">homepage</a>.</p>
 </div>

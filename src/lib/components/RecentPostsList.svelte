@@ -1,7 +1,8 @@
 <script>
 	import { defaultCoverImage } from '$lib/config';
 
-	export let posts = [];
+	/** @type {{posts?: any}} */
+	let { posts = [] } = $props();
 </script>
 
 <ul>

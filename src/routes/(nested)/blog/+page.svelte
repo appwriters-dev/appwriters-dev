@@ -4,7 +4,8 @@
 	import { siteTitle } from '$lib/config';
 	import SiteMetas from '$lib/components/SiteMetas.svelte';
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 </script>
 
 <svelte:head>

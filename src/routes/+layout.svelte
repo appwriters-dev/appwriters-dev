@@ -1,4 +1,4 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
 	export type Theme = 'dark' | 'light' | 'system';
 	export const currentTheme = (function () {
 		const store = writable<Theme>(getPreferredTheme());
@@ -42,6 +42,8 @@
 </script>
 
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import { browser } from '$app/environment';
 	import { derived, writable } from 'svelte/store';
 	import { navigating, page, updated } from '$app/stores';
@@ -53,7 +55,12 @@
 	import { preloadCode } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import Analytics from '$lib/components/Analytics.svelte';
-	export let data;
+	interface Props {
+		data: any;
+		children?: import('svelte').Snippet;
+	}
+
+	let { data, children }: Props = $props();
 
 	function applyTheme(theme: Theme) {
 		const resolvedTheme = theme === 'system' ? getSystemTheme() : theme;
@@ -66,7 +73,9 @@
 	 * Updates the global store with the current path. (Used for highlighting
 	 * the current page in the nav, but could be useful for other purposes.)
 	 **/
-	$: currentPage.set(data.path);
+	run(() => {
+		currentPage.set(data.path);
+	});
 
 	/**
 	 * This pre-fetches all top-level routes on the site in the background for faster loading.
@@ -83,7 +92,9 @@
 		preloadCode(...navRoutes);
 	});
 
-	$: if (browser) currentTheme.subscribe((theme) => applyTheme(theme));
+	run(() => {
+		if (browser) currentTheme.subscribe((theme) => applyTheme(theme));
+	});
 </script>
 
 <Analytics />
@@ -91,7 +102,7 @@
 <div class="layout" class:open={$isMenuOpen}>
 	<Header />
 	{#key data.path}
-		<slot />
+		{@render children?.()}
 	{/key}
 	<Footer />
 </div>

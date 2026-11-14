@@ -5,12 +5,13 @@
 	import { postsPerPage } from '$lib/config';
 	import SiteMetas from '$lib/components/SiteMetas.svelte';
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 
 	const { page, posts, category, total } = data;
 
-	$: lowerBound = page * postsPerPage - (postsPerPage - 1) || 1;
-	$: upperBound = Math.min(page * postsPerPage, total);
+	let lowerBound = $derived(page * postsPerPage - (postsPerPage - 1) || 1);
+	let upperBound = $derived(Math.min(page * postsPerPage, total));
 </script>
 
 <svelte:head>

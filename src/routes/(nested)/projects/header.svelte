@@ -1,6 +1,6 @@
 <script>
-    export let title;
-    export let subtitle;
+	/** @type {{title: any, subtitle: any}} */
+	let { title, subtitle } = $props();
 </script>
 <header>
 	<h3>{title}</h3>

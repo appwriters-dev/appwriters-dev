@@ -1,9 +1,10 @@
 <script>
 	import { enhance } from '$app/forms';
-	/** @type {import('./$types').ActionData} */
-	export let form;
+	
+	/** @type {{form: import('./$types').ActionData}} */
+	let { form } = $props();
 
-	let submitting = false;
+	let submitting = $state(false);
 	let metaDescription =
 		'Join our mentorship program to become a skilled Flutter developer. Gain hands-on experience through real-world projects, receive guidance from an experienced mentor, and learn industry standards. Prerequisites include basic programming concepts, OOP, Git, and command line skills.';
 	let keywords =

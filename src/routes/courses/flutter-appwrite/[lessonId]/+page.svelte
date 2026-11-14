@@ -1,5 +1,6 @@
 <script>
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 </script>
 
 <main id="main">
@@ -8,14 +9,14 @@
 	</section>
 	<nav class="end-nav">
 		{#if data.previous}
-			<a href="/courses/flutter-appwrite/{data.previous?.id}"><i class="icon-arrow-left" /> {data.previous.title}</a>
+			<a href="/courses/flutter-appwrite/{data.previous?.id}"><i class="icon-arrow-left"></i> {data.previous.title}</a>
 		{:else}
-			<div />
+			<div></div>
 		{/if}
 		{#if data.next}
-			<a href="/courses/flutter-appwrite/{data.next?.id}">{data.next.title} <i class="icon-arrow-right" /> </a>
+			<a href="/courses/flutter-appwrite/{data.next?.id}">{data.next.title} <i class="icon-arrow-right"></i> </a>
 		{:else}
-			<div />
+			<div></div>
 		{/if}
 	</nav>
 </main>

@@ -1,5 +1,6 @@
 <script>
-	export let resources;
+	/** @type {{resources: any}} */
+	let { resources } = $props();
 </script>
 
 <div class="container">

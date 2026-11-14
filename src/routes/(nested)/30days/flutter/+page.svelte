@@ -2,7 +2,8 @@
 	import AdditionalResources from './additionalResources.svelte';
 	import Grid from './grid.svelte';
 	import Testimonials from './testimonials.svelte';
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -52,7 +53,7 @@
 	<section class="tip">
 		<div class="container">
 			<div class="content">
-				<i class="icon-share" /> We want to see how you are doing. Share your progress with
+				<i class="icon-share"></i> We want to see how you are doing. Share your progress with
 				<b>#30DaysMasterFlutter</b> in our Discord and your social medias.
 			</div>
 		</div>

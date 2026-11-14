@@ -1,11 +1,12 @@
 <script>
 	import { onDestroy } from 'svelte';
-	export let targetDate;
+	/** @type {{targetDate: any}} */
+	let { targetDate } = $props();
 	let timeLeft;
-	let days;
-	let hours;
-	let minutes;
-	let seconds;
+	let days = $state();
+	let hours = $state();
+	let minutes = $state();
+	let seconds = $state();
 
 	const updateTimeLeft = () => {
 		const now = new Date().getTime();

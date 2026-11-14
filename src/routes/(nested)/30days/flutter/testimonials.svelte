@@ -10,7 +10,7 @@
 					<h4>{name}</h4>
 					<p>
 						<a href={github} target="_blank" rel="noreferrer"
-							><i class="icon-github" /> ShankarBirTamang</a
+							><i class="icon-github"></i> ShankarBirTamang</a
 						>
 					</p>
 				</div>

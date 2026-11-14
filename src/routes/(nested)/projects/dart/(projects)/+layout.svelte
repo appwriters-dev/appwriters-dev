@@ -1,7 +1,8 @@
 <script>
 	import DayContent from '../../dayContent.svelte';
 	import Footer from '../footer.svelte';
-	export let data;
+	/** @type {{data: any, children?: import('svelte').Snippet}} */
+	let { data, children } = $props();
 </script>
 
 <svelte:head>
@@ -21,7 +22,7 @@
 	basePath="dart"
 	project="#DartProjects"
 	day={data.day}  nextReleased={data.nextReleased}>
-	<slot />
+	{@render children?.()}
 </DayContent>
 <Footer />
 

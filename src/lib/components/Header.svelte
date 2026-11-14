@@ -1,4 +1,6 @@
 <script>
+	import { preventDefault } from 'svelte/legacy';
+
 	import MainNav from './MainNav.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
 	import { siteTitle } from '$lib/config';
@@ -14,7 +16,7 @@
 </script>
 
 <header class="main-header">
-	<a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
+	<a onclick={preventDefault(focusMain)} class="skip-to-content-link" href="#main">
 		Skip to main content
 	</a>
 
@@ -26,8 +28,8 @@
 		<HamburgerMenuButton />
 		<div class="menu">
 			<MainNav />
-			<button on:click={toggleTheme}>
-				<i class="{$currentTheme === 'dark' ? 'icon-sun' : 'icon-moon'}" />
+			<button onclick={toggleTheme}>
+				<i class="{$currentTheme === 'dark' ? 'icon-sun' : 'icon-moon'}"></i>
 			</button>
 		</div>
 	</div>

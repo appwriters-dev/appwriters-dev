@@ -1,15 +1,17 @@
 <script>
+	import { run } from 'svelte/legacy';
+
 	import { page } from '$app/stores';
 	import { PUBLIC_ANALYTICS_ID } from '$env/static/public';
 
-	$: {
+	run(() => {
 		if (typeof gtag !== 'undefined') {
 			gtag('config', PUBLIC_ANALYTICS_ID, {
 				page_title: document.title,
 				page_path: $page.url.pathname
 			});
 		}
-	}
+	});
 </script>
 
 <svelte:head>

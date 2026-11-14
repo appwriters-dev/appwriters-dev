@@ -3,18 +3,22 @@
 	import { siteLink } from '$lib/config';
 	import Header from './header.svelte';
 
-	export let day = 0;
-	export let nextReleased = true;
 
-	export let title;
-	export let basePath;
-	export let project;
+	/** @type {{day?: number, nextReleased?: boolean, title: any, basePath: any, project: any, children?: import('svelte').Snippet}} */
+	let {
+		day = 0,
+		nextReleased = true,
+		title,
+		basePath,
+		project,
+		children
+	} = $props();
 </script>
 
 <Header {title} subtitle="Day {day}" />
 
 <div class="container">
-	<slot />
+	{@render children?.()}
 	<p>
 		<b>Enjoying? Tell your friends. </b><Share
 			message="🎉 I'm having a blast on day {day} of my {project} journey! 🚀 You should definitely start your own journey too! 💪"
@@ -23,15 +27,15 @@
 	</p>
 	<nav class="end-nav">
 		{#if day > 1}
-			<a href="/30days/{basePath}/day{day - 1}"><i class="icon-arrow-left" /> day {day - 1}</a>
+			<a href="/30days/{basePath}/day{day - 1}"><i class="icon-arrow-left"></i> day {day - 1}</a>
 		{:else}
-			<div />
+			<div></div>
 		{/if}
 		{#if nextReleased && day < 30}
-			<a href="/30days/{basePath}/day{day + 1}">day {day + 1} <i class="icon-arrow-right" /> </a>
+			<a href="/30days/{basePath}/day{day + 1}">day {day + 1} <i class="icon-arrow-right"></i> </a>
 		{/if}
 		{#if day == 30}
-			<a href="/30days/{basePath}/whats-next">What's Next? <i class="icon-arrow-right" /> </a>
+			<a href="/30days/{basePath}/whats-next">What's Next? <i class="icon-arrow-right"></i> </a>
 		{/if}
 	</nav>
 </div>

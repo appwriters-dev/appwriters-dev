@@ -1,6 +1,7 @@
 <script>
 	import Footer from "../footer.svelte";
-    export let data;
+    /** @type {{data: any}} */
+    let { data } = $props();
 </script>
 <section>
     <p>Released</p>

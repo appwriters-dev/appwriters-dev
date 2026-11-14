@@ -3,7 +3,8 @@
 	import VideoEmbed from '$lib/components/VideoEmbed.svelte';
 	import { siteTitle } from '$lib/config';
 	import SiteMetas from '../lib/components/SiteMetas.svelte';
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -45,7 +46,7 @@
 					Flutter and a collection of projects to showcase your skills.
 				</p>
 				<br />
-				<a href="/30days/flutter" class="button"><i class="icon-flutter" /> start now</a>
+				<a href="/30days/flutter" class="button"><i class="icon-flutter"></i> start now</a>
 			</article>
 		</div>
 	</div>
@@ -186,7 +187,7 @@
 				target="_blank"
 				rel="noreferrer"
 			>
-				<i class="icon icon-android" /> Download</a
+				<i class="icon icon-android"></i> Download</a
 			>
 			<a
 				href="https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882"
@@ -194,7 +195,7 @@
 				target="_blank"
 				rel="noreferrer"
 			>
-				<i class="icon icon-apple" /> Download</a
+				<i class="icon icon-apple"></i> Download</a
 			>
 			<a
 				class="button"
@@ -202,7 +203,7 @@
 				target="_blank"
 				rel="noreferrer"
 			>
-				<i class="icon icon-github" /> Star</a
+				<i class="icon icon-github"></i> Star</a
 			>
 		</article>
 	</div>

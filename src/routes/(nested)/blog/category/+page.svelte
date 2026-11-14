@@ -1,7 +1,8 @@
 <script>
 	import SiteMetas from "$lib/components/SiteMetas.svelte";
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 	const { uniqueCategories } = data;
 </script>
 

@@ -1,5 +1,7 @@
 <script>
 	import Footer from '../footer.svelte';
+	/** @type {{children?: import('svelte').Snippet}} */
+	let { children } = $props();
 
 	let title = "Before you begin | #30DaysMasterFlutter";
 	let description = "#30DaysMasterFlutter is not your ordinary Flutter course; it’s an innovative program designed to empower you in your journey of learning Flutter & Dart. This self-learning experience takes a different approach, providing you with the resources and guidance to explore and discover on your own.";
@@ -19,7 +21,7 @@
 </svelte:head>
 
 <div class="container">
-	<slot />
+	{@render children?.()}
 </div>
 
 <Footer />

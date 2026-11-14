@@ -3,7 +3,8 @@
 	import Share from '$lib/components/Share.svelte';
 	import { siteAuthor, siteLink, siteTitle } from '$lib/config';
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 
 	const {
 		title,

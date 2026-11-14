@@ -1,18 +1,10 @@
 <script>
-	/**
-	 * @type {string}
-	 */
-	export let title;
-	/**
-      * @type {string}
-      
-      */
-	export let subtitle;
+	
+	
 
-	/**
-	 * @type {boolean}
-	 */
-	export let isMain = false;
+	
+	/** @type {{title: string, subtitle: string, isMain?: boolean}} */
+	let { title, subtitle, isMain = false } = $props();
 </script>
 
 <div class="hero {isMain ? 'main' : ''}">

@@ -2,7 +2,8 @@
 	import { siteTitle } from '$lib/config';
 	import { json } from '@sveltejs/kit';
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 
 	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
 		data.meta;

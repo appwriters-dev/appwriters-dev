@@ -1,5 +1,6 @@
 <script>
-	export let posts = [];
+	/** @type {{posts?: any}} */
+	let { posts = [] } = $props();
 </script>
 
 <ul class="posts-list">

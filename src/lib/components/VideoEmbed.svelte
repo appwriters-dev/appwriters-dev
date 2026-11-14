@@ -1,13 +1,9 @@
 <script>
-	/**
-	 * @type {string}
-	 */
-	export let id;
+	
 
-	/**
-	 * @type {boolean}
-	 */
-	export let background = true;
+	
+	/** @type {{id: string, background?: boolean}} */
+	let { id, background = true } = $props();
 </script>
 
 <div class={background ? 'background' : ''}>
