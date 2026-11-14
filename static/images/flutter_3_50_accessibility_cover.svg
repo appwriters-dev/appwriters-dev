@@ -1,0 +1,9 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#D6E0DF"/>
+<g font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle">
+<text x="960" y="430" font-size="150" font-weight="800" fill="#00BFA6">Flutter 3.50</text>
+<text x="960" y="560" font-size="72" font-weight="700" fill="#1F2D3A">and the accessibility bugs</text>
+<text x="960" y="650" font-size="72" font-weight="700" fill="#1F2D3A">our tests found</text>
+<text x="960" y="790" font-size="40" font-weight="500" fill="#3D5466">Gradle · contrast · tap targets · 200% text</text>
+</g>
+</svg>
