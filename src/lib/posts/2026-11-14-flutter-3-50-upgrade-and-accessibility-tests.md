@@ -2,7 +2,7 @@
 title: "Upgrading to Flutter 3.50, and the accessibility bugs our tests found"
 slug: flutter-3-50-upgrade-and-accessibility-tests
 date: 2026-11-14
-excerpt: "An Android build break in Flutter 3.50, a contrast bug left behind by the wide-gamut Color change, and a text-size cap hiding in plain sight. What broke, why, and the tests that caught it."
+excerpt: "An Android build break in Flutter 3.50, a contrast bug left behind by the wide-gamut Color change, and a text-size cap hiding in plain sight. What broke, why, and the tests that now guard it."
 keywords: Flutter,Flutter 3.50,Dart,Android,Gradle,applicationIdSuffix,accessibility,a11y,WCAG,contrast,text scaling,widget testing,meetsGuideline
 coverImage: /images/flutter_3_50_accessibility_cover.svg
 coverWidth: 16
