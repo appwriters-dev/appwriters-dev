@@ -1,10 +1,6 @@
 <script>
-	import { enhance } from '$app/forms';
-	
-	/** @type {{form: import('./$types').ActionData}} */
-	let { form } = $props();
+	import Callout from '#lib/components/Callout.svelte';
 
-	let submitting = $state(false);
 	let metaDescription =
 		'Join our mentorship program to become a skilled Flutter developer. Gain hands-on experience through real-world projects, receive guidance from an experienced mentor, and learn industry standards. Prerequisites include basic programming concepts, OOP, Git, and command line skills.';
 	let keywords =
@@ -168,46 +164,14 @@
 		of these topics, there are various resources available online to help you gain proficiency.
 	</p>
 
-	{#if form?.success}
-		<p class="success">
-			Successfully submitted. Thank you for your application. We will get back to you within 4
-			business days.
+	<Callout>
+		<h3>Applications are closed for now</h3>
+		<p>
+			We are not taking applications for the Flutter apprenticeship at the moment. To hear when the
+			next session opens, follow <a href="https://youtube.com/@appwriters">Appwriters on YouTube</a>
+			or <a href="/contact">get in touch</a>.
 		</p>
-	{:else if form?.error}
-		<p class="error">Something went wrong. Please try again later.</p>
-	{:else}
-		<form
-			method="POST"
-			use:enhance={() => {
-				submitting = true;
-
-				return async ({ update }) => {
-					await update();
-					submitting = false;
-				};
-			}}
-		>
-			<h3>Apply now for next session</h3>
-			<!-- <p class="error">
-				We have reached our maximum capacity for this session. All new applications will be held in
-				backlog for upcoming session. Thank you for your interest.
-			</p> -->
-			<label for="name">Name</label>
-			<input id="name" name="name" type="text" required placeholder="name (required)" />
-
-			<label for="email">Email</label>
-			<input id="email" name="email" type="email" required placeholder="email (required)" />
-
-			<label for="phone">Phone</label>
-			<input id="phone" name="phone" type="phone" required placeholder="phone (required)" />
-
-			<input type="checkbox" name="agree" required id="agree" />
-
-			<label for="agree">I agree, I'm ready to embark on this Flutter Journey</label>
-
-			<button disabled={submitting} type="submit">{submitting ? 'wait..' : 'submit'}</button>
-		</form>
-	{/if}
+	</Callout>
 </div>
 
 <style lang="scss">
@@ -231,33 +195,7 @@
 		max-width: 48rem;
 		margin: 0 auto;
 	}
-	label {
-		margin-top: 16px;
-		margin-bottom: 8px;
-	}
-
-	input[type='checkbox'] {
-		display: inline-block;
-		width: 20px;
-		height: 20px;
-		background-color: #eee;
-		border-radius: 50%;
-		transition: all 0.3s ease-in-out;
-		box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-		cursor: pointer;
-	}
-
 	h3 {
-		margin: 0;
-	}
-
-	p {
-		&.error {
-			color: red;
-		}
-
-		&.success {
-			color: green;
-		}
+		margin-top: 0;
 	}
 </style>
