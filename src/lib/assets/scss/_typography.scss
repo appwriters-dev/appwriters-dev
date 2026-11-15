@@ -1,94 +1,140 @@
 @use './vars';
 
 body {
+	font-size: 1.0625rem;
+
 	@media (min-width: vars.$smMin) {
 		font-size: 1.125rem;
-	}
-
-	@media (min-width: vars.$lgMin) {
-		font-size: 1.25rem;
 	}
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-	margin: 2rem 0 1rem;
-	line-height: 1.1;
-	font-family: var(--accentFont);
-	font-weight: bold;
-	color: var(--primary);
+	margin: 2.2em 0 0.6em;
+	line-height: 1.15;
+	font-family: var(--headingFont);
+	font-weight: 800;
+	letter-spacing: -0.01em;
+	color: var(--text);
+	text-wrap: balance;
 }
 
 h1 {
-	font-size: 2.3rem;
-	margin: 0 0 3rem;
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 1rem;
-
-	&::after {
-		content: '';
-		height: 0.1em;
-		background: var(--accent);
-		width: 100%;
-		margin-left: -100%;
-		position: absolute;
-		bottom: 0;
-	}
-
-	@media (min-width: vars.$smMin) {
-		font-size: 2.8rem;
-	}
-
-	@media (min-width: vars.$lgMin) {
-		font-size: 3.2rem;
-	}
+	font-size: clamp(2.1rem, 1.4rem + 3vw, 3.4rem);
+	margin: 0 0 1.25rem;
+	line-height: 1.05;
 }
 
 h2 {
-	font-size: 2rem;
-	color: var(--h2);
-	@media (min-width: vars.$smMin) {
-		font-size: 2.2rem;
-	}
+	font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
 }
 
 h3 {
-	font-size: 1.8rem;
-	color: var(--h3);
+	font-size: clamp(1.3rem, 1.15rem + 0.6vw, 1.55rem);
 }
 
 h4 {
-	font-size: 1.6rem;
-	color: var(--headingRemaining);
+	font-size: 1.25rem;
 }
 
 h5 {
-	font-size: 1.35rem;
-	color: var(--headingRemaining);
-}
-
-h6 {
-	color: var(--headingRemaining);
 	font-size: 1.1rem;
 }
 
+h6 {
+	font-size: 1rem;
+}
+
+p {
+	margin: 0 0 1.1em;
+}
+
 a {
-	color: var(--primary);
+	color: var(--link);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
 	text-decoration: none;
+
 	&:hover {
 		text-decoration: underline;
 	}
 }
 
-ul {
-	list-style-type: square;
-	padding-left: 1.5rem;
+:focus-visible {
+	outline: 2px solid var(--brand);
+	outline-offset: 3px;
+	border-radius: 4px;
+}
 
-	ul {
-		list-style-type: circle;
-	}
+strong,
+b {
+	font-weight: 800;
+}
+
+ul,
+ol {
+	padding-left: 1.4rem;
 
 	::marker {
-		color: var(--accent);
+		color: var(--brand);
 	}
+}
+
+blockquote {
+	margin: 1.75rem 0;
+	padding: 1rem 1.25rem;
+	border-left: 3px solid var(--brand);
+	background: var(--surface);
+	border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+	color: var(--text);
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid var(--border);
+	margin: 2.5rem 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.95em;
+	display: block;
+	overflow-x: auto;
+
+	th,
+	td {
+		text-align: left;
+		padding: 0.6rem 0.8rem;
+		border-bottom: 1px solid var(--border);
+	}
+
+	th {
+		font-weight: 800;
+	}
+}
+
+// Small uppercase label above a section heading, as on popupbits.com.
+.eyebrow {
+	display: block;
+	font-family: var(--primaryFont);
+	font-size: 0.75rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--muted);
+	margin: 0 0 0.75rem;
+}
+
+.lead {
+	font-size: 1.15em;
+	color: var(--muted);
+	max-width: 40rem;
+}
+
+.muted {
+	color: var(--muted);
 }

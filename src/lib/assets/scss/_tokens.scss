@@ -1,0 +1,78 @@
+// Design tokens. Dark is the default theme; .theme-light (set on <body>) overrides the colours.
+// Text pairs were chosen for WCAG AA contrast: --text and --muted on --bg/--surface,
+// --link on --bg, and --on-brand on --brand.
+:root,
+.theme-dark {
+	--bg: #121211;
+	--surface: #1a1a18;
+	--surface-2: #232320;
+	--border: #2d2d2a;
+	--border-strong: #3f3f3b;
+	--text: #f1f0ec;
+	--muted: #a8a69f;
+	--brand: #ff6b2c;
+	--brand-strong: #ff8a57;
+	--brand-soft: rgb(255 107 44 / 0.12);
+	--link: #ff8a57;
+	--on-brand: #170a03;
+	--code-bg: #191917;
+	--shadow: 0 1px 0 rgb(255 255 255 / 0.03) inset, 0 12px 32px -16px rgb(0 0 0 / 0.6);
+
+	// Older names still used by some pages, mapped onto the tokens above.
+	--primary: var(--link);
+	--primaryDark: var(--brand-strong);
+	--accent: var(--surface-2);
+	--background: var(--bg);
+	--backgroundDark: var(--surface);
+	--lighterAccent: var(--surface-2);
+	--darker: var(--surface-2);
+	--slate: var(--surface-2);
+	--neutral100: var(--border-strong);
+	--neutral120: var(--muted);
+	--ink: var(--text);
+	--paper: var(--bg);
+	--white: #fff;
+	--black: #0b0b0a;
+	--h2: var(--text);
+	--h3: var(--text);
+	--headingRemaining: var(--text);
+
+	color-scheme: dark;
+}
+
+.theme-light {
+	--bg: #faf9f6;
+	--surface: #ffffff;
+	--surface-2: #f1efea;
+	--border: #e6e3dc;
+	--border-strong: #d2cec5;
+	--text: #1b1a17;
+	--muted: #5c5951;
+	--brand: #ff6b2c;
+	--brand-strong: #c2410c;
+	--brand-soft: rgb(255 107 44 / 0.1);
+	--link: #b33d0a;
+	--on-brand: #170a03;
+	--code-bg: #1b1b19;
+	--shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 12px 32px -18px rgb(0 0 0 / 0.18);
+	--white: #fff;
+
+	color-scheme: light;
+}
+
+:root {
+	--headingFont: 'Baloo 2', 'Nunito', system-ui, sans-serif;
+	--primaryFont: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+	--accentFont: var(--headingFont);
+	--codeFont: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+
+	--radius: 14px;
+	--radius-sm: 8px;
+	--radius-pill: 999px;
+	--wide: 72rem;
+	--narrow: 44rem;
+	--gutter: clamp(1rem, 4vw, 2rem);
+
+	font-size: 1rem;
+	line-height: 1.65;
+}

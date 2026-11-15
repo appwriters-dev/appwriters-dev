@@ -6,37 +6,25 @@
  **/
 
 export const siteTitle = 'Appwriters';
-export const siteDescription = 'Your go-to destination for learning modern application development for Mobile, Web and desktops using technologies such as Flutter, Dart, Appwrite, Javascript, and more!';
-export const siteURL = 'appwriters.dev';
-export const siteLink = 'https://appwriters.dev';
+export const siteDescription =
+	'Learn to build apps for mobile, web and desktop with Flutter, Dart and Appwrite: practical tutorials, a free Flutter and Appwrite course, and project-based challenges.';
+export const siteURL = 'www.appwriters.dev';
+export const siteLink = 'https://www.appwriters.dev';
 export const siteAuthor = 'Damodar Lohani';
 export const siteAuthorURL = 'https://dlohani.com.np';
-export const defaultCoverImage = 'images/default_cover.svg';
+export const defaultCoverImage = '/images/default_cover.svg';
 
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10;
 
-// Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
+// The main nav menu, shown in the header (and the full-screen menu on phones).
 export const navItems = [
-	{
-		title: 'Home',
-		route: '/',
-	},
-	{
-		title: 'Courses',
-		route: '/courses',
-	},
-	{
-		title: 'Blog',
-		route: '/blog'
-	},
-	{
-		title: 'Contact',
-		route: '/contact'
-	},
-	{
-		title: 'Youtube',
-		route: 'https://youtube.com/@appwriters',
-		icon: 'youtube'
-	}
+	{ title: 'Blog', route: '/blog' },
+	{ title: 'Courses', route: '/courses' },
+	{ title: '30 days', route: '/30days/flutter' },
+	{ title: 'Dart projects', route: '/projects/dart' },
+	{ title: 'Contact', route: '/contact' }
 ];
+
+export const youtubeURL = 'https://youtube.com/@appwriters';
+export const githubURL = 'https://github.com/appwriters-dev';

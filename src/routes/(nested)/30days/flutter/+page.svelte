@@ -113,6 +113,7 @@
 		}
 		h1 {
 			z-index: 100;
+			color: var(--white);
 		}
 		p {
 			color: var(--white);
@@ -140,7 +141,7 @@
 		box-sizing: border-box;
 		padding: 2rem;
 		background-color: var(--accent);
-		color: var(--white);
+		color: var(--text);
 
 		.container {
 			display: flex;

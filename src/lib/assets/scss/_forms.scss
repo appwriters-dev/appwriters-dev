@@ -2,30 +2,13 @@ form {
 	margin: 2rem 0;
 }
 
-button,
-input[type='submit'] {
-	font-size: 1rem;
-	padding: 0.5rem 1rem;
-	background: var(--darker);
-	color: var(--paper);
-	font-weight: bold;
-	border: 2px solid var(--darker);
-	border-radius: 0.125rem;
-	background: var(--darker);
-	margin: 2rem 0 0;
-	display: block;
-	width: max-content;
-	transition: background 0.2s;
-
-	&:hover,
-	&:focus {
-		background: var(--accent);
-	}
+button {
+	font: inherit;
 }
 
 label,
 fieldset {
-	font-weight: bold;
+	font-weight: 700;
 	display: inline-block;
 }
 
@@ -34,36 +17,31 @@ fieldset {
 	border: 0;
 }
 
-input, select {
+input,
+select,
+textarea {
 	display: block;
-	font-size: inherit;
-	padding: 0.5rem;
-	border: 1px solid var(--neutral100);
-	border-radius: 0.125rem;
+	font: inherit;
+	color: var(--text);
+	padding: 0.6rem 0.8rem;
+	border: 1px solid var(--border-strong);
+	border-radius: var(--radius-sm);
 	width: 100%;
-	accent-color: var(--accent);
-	background-color: transparent;
+	accent-color: var(--brand);
+	background-color: var(--surface);
 
 	&:focus {
-		outline-color: var(--accent);
+		outline: 2px solid var(--brand);
+		outline-offset: 1px;
 	}
-	
+
 	&[type='radio'],
 	&[type='checkbox'] {
 		display: initial;
 		width: auto;
-
-		&:not(:checked) + label {
-			font-weight: normal;
-		}
 	}
 }
 
-.form-section,
-fieldset {
-	margin-top: 1.5rem;
-}
-
 ::placeholder {
-	color: var(--neutral100);
+	color: var(--muted);
 }

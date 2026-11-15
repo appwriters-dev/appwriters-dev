@@ -1,318 +1,372 @@
 <script>
 	import RecentPostsList from '#lib/components/RecentPostsList.svelte';
-	import VideoEmbed from '#lib/components/VideoEmbed.svelte';
-	import { siteTitle } from '#lib/config.js';
-	import SiteMetas from '../lib/components/SiteMetas.svelte';
+	import SiteMetas from '#lib/components/SiteMetas.svelte';
+	import { siteTitle, siteDescription, siteLink, youtubeURL, githubURL } from '#lib/config.js';
+
 	/** @type {{data: any}} */
 	let { data } = $props();
+
+	const paths = [
+		{
+			href: '/courses/flutter-appwrite',
+			label: 'Course',
+			title: 'Flutter & Appwrite',
+			text: 'Build a full-stack time tracking app from scratch: setup, authentication, database and permissions. Free, with a video for every lesson.',
+			icon: 'icon-play'
+		},
+		{
+			href: '/30days/flutter',
+			label: 'Challenge',
+			title: '#30DaysMasterFlutter',
+			text: 'Two to three hours a day for 30 days. A roadmap, daily resources and a project each day take you from Dart basics to Flutter apps.',
+			icon: 'icon-calendar'
+		},
+		{
+			href: '/projects/dart',
+			label: 'Projects',
+			title: 'Dart projects',
+			text: 'Small command-line projects, from a temperature converter up, each with the full code and a walkthrough. Learn Dart by building.',
+			icon: 'icon-code'
+		},
+		{
+			href: '/flutter-templates/flutter-appwrite-starter',
+			label: 'Template',
+			title: 'Flutter Appwrite starter',
+			text: 'A starting point for Flutter apps backed by Appwrite, with authentication and routing already wired up.',
+			icon: 'icon-template'
+		},
+		{
+			href: 'https://masterflutter.appwriters.dev',
+			label: 'Guide',
+			title: 'Master Flutter',
+			text: 'A self-paced guide to Dart and Flutter through practical projects and hand-picked resources.',
+			icon: 'icon-book-open',
+			external: true
+		},
+		{
+			href: 'https://abcsofappwrite.appwriters.dev',
+			label: 'Guide · in progress',
+			title: "ABC's of Appwrite",
+			text: 'Get started with Appwrite, the open-source backend: authentication, databases, storage and functions.',
+			icon: 'icon-database',
+			external: true
+		}
+	];
+
+	const jsonLd = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		name: siteTitle,
+		url: siteLink,
+		description: siteDescription
+	});
 </script>
 
 <svelte:head>
-	<title>{siteTitle}</title>
+	<title>{siteTitle}: learn Flutter, Dart and Appwrite</title>
 	<SiteMetas />
+	{@html `<script type="application/ld+json">${jsonLd}</script>`}
 </svelte:head>
 
-<div class="hero">
-	<div class="content">
-		<p>
-			Welcome to appwriters.dev, your go-to destination for learning modern application development
-			for Mobile, Web and desktops using technologies such as Flutter, Dart, Appwrite, Javascript,
-			and more!
-		</p>
-	</div>
-</div>
-
-<main id="main">
-	<!-- <div class="container">
-		<article>
-			<p>Whether you're a beginner or an experienced developer, our website offers a wealth of resources to help you stay up-to-date with the latest tools, techniques, and best practices in the industry.</p>
-			
-			
-			<p>At appwriters.dev, we believe that learning should be accessible and fun. That's why our content is designed to be easy to understand, yet challenging enough to help you grow your skills. Whether you're looking to build your first app or take your development career to the next level, we've got you covered.</p>
-		</article>
-	</div> -->
-
-	<div class="master-flutter-challenge">
-		<div class="container">
-			<article>
-				<h2>Ready to master Dart & Flutter <br /> in just 30 days?</h2>
-				<p>
-					Join our <b>#30DaysMasterFlutter</b> challenge and gain the skills and experience you need
-					to build powerful Flutter apps.
-					<br />
-					<br />
-					Get started now, spend 2-3 hours each day learning the provided resources and building the given
-					project. By the end of the challenge, you'll have a better understanding of Dart and Flutter
-					and a collection of projects to showcase your skills.
-				</p>
-				<br />
-				<a href="/30days/flutter" class="button"><i class="icon-flutter"></i> start now</a>
-			</article>
-		</div>
-	</div>
-	<div class="flutter-appwrite-course">
-		<div class="container">
-			<VideoEmbed background={false} id="cmboLwHvsFU" />
-			<article>
-				<h2>Flutter Appwrite course</h2>
-				<p>
-					Only course required to learn Flutter and Appwrite to build a full-stack, cross-platform,
-					application from scratch.
-					<br />
-					<br />
-					By the end of this course, you will have a solid understanding of integrating Appwrite with
-					Flutter and be able to build any kinds of applications that you want.
-				</p>
-				<p>
-					<a
-						class="button button--outline button--primary button--md"
-						href="/courses/flutter-appwrite"
-					>
-						Get Started
-					</a>
-				</p>
-			</article>
-		</div>
-	</div>
-	<!-- 	
-	<div class="master-flutter-challenge">
-		<div class="container">
-			<article>
-				<h2>Flutter apprenticeship</h2>
-				<p>
-					Our program offers hands-on learning, personalized guidance, and real-world projects to
-					help you become a skilled Flutter developer. Join us today and gain industry-relevant
-					skills in a supportive, collaborative environment.
-				</p>
-
-				<p>
-					Who can benefit from this program? Beginners, self-learners, aspiring mobile app
-					developers, and anyone seeking practical experience and mentorship to excel in Flutter
-					development.
-				</p>
-
-				<br />
-				<a href="/flutter-apprenticeship" class="button"><i class="icon-flutter"></i> Apply now</a>
-			</article>
-		</div>
-	</div> -->
-
-	<div class="container white">
-		<article class="master-flutter book">
-			<h3>Master Flutter</h3>
-			<p>
-				Master Flutter - Your ultimate guide to learning Dart and Flutter through practical projects
-				and comprehensive resources.
+<main id="main" tabindex="-1" class="home">
+	<section class="hero wrap">
+		<div class="hero-text">
+			<span class="eyebrow">Flutter · Dart · Appwrite</span>
+			<h1>Learn to build real apps with Flutter and Appwrite</h1>
+			<p class="lead">
+				Practical tutorials, a free full-stack course and project-based challenges for building apps
+				on mobile, web and desktop.
 			</p>
-			<p>
-				Start learning Flutter today! Whether you're a beginner or a seasoned developer, our guide
-				has everything you need to become proficient in Dart and Flutter. Start now and gain access
-				to comprehensive projects and resources tailored specifically for self paced learning.
-			</p>
-			<p>
-				<a
-					class="button button--outline button--primary button--md"
-					target="_blank"
-					rel="noreferrer"
-					href="https://masterflutter.appwriters.dev"
-				>
-					Get Started
-				</a>
-			</p>
-		</article>
-	</div>
-	<div class="container">
-		<article class="abcs-of-appwrite book">
-			<h3>ABC's of Appwrite (WIP)</h3>
-			<p>
-				Use this guide to get started with Appwrite, an open source backend server for web, mobile
-				and Flutter developers. It provides a well designed set of REST and realtime APIs that you
-				can customize to your applications needs. With services like authentication and user
-				management, databases, storage, cloud functions and more, you can build any kind of
-				applications that you can imagine.
-			</p>
-			<p>
-				<a
-					class="button button--outline button--primary button--md"
-					target="_blank"
-					rel="noreferrer"
-					href="https://abcsofappwrite.appwriters.dev"
-				>
-					Get Started
-				</a>
-			</p>
-		</article>
-	</div>
-
-	<div class="container">
-		<div class="images">
-			<img
-				src="https://play-lh.googleusercontent.com/6jA0GV_n8YkL3ZnDIJly4za-nsbzWlzbnzNtby9MH8JNsVFWAP-XZx-RO3FyW9k6cxU=w1052-h592-rw"
-				alt="Flutter UI Challenge"
-			/>
-			<img
-				src="https://play-lh.googleusercontent.com/d6SOAfNfHth_-MfIL7vNASAwJpFbola3n6UZp5U8p0bkdvf_gAz3-qt0_EHEWMFCEpM=w1052-h592-rw"
-				alt="Flutter UI Challenge"
-			/>
-			<img
-				src="https://play-lh.googleusercontent.com/W0FksxppXjWgNr-ebJn0gTeltuTRk0t9mRrhE9fhCheV34OrBRJFQLPcJmk1S5su4Aw=w1052-h592-rw"
-				alt="Flutter UI Challenge"
-			/>
-		</div>
-		<article class="flutter-ui-challenge">
-			<h3>
-				Flutter UI Challenges - a collection of 100+ real-world Flutter UI designs with source code!
-			</h3>
-
-			<p>
-				With a wide range of UI designs for different industries and use cases, this app is perfect
-				for Flutter developers and enthusiasts who are looking for inspiration or want to learn more
-				about building beautiful user interfaces.
-			</p>
-
-			<p>
-				Each UI design comes with its source code right in the app, making it easy to learn and
-				implement. You can study the code, modify it to suit your needs and use it as a starting
-				point for your own projects.
-			</p>
-
-			<p>
-				Download the app now on the Google Play Store and start exploring the world of beautiful
-				Flutter UI designs!
-			</p>
-
-			<a
-				href="https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges"
-				class="button"
-				target="_blank"
-				rel="noreferrer"
-			>
-				<i class="icon icon-android"></i> Download</a
-			>
-			<a
-				href="https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882"
-				class="button"
-				target="_blank"
-				rel="noreferrer"
-			>
-				<i class="icon icon-apple"></i> Download</a
-			>
-			<a
-				class="button"
-				href="https://github.com/lohanidamodar/flutter_ui_challenges"
-				target="_blank"
-				rel="noreferrer"
-			>
-				<i class="icon icon-github"></i> Star</a
-			>
-		</article>
-	</div>
-
-	<div class="container">
-		<div class="posts">
-			<div class="header">
-				<h2>Recent Posts</h2>
+			<div class="button-row">
+				<a class="button" href="/courses/flutter-appwrite">Start the free course</a>
+				<a class="button button--ghost" href="/blog">Read the blog</a>
 			</div>
-			<RecentPostsList posts={data.posts} />
 		</div>
-	</div>
+		<figure class="hero-code" aria-hidden="true">
+			<div class="dots"><span></span><span></span><span></span></div>
+			<pre><code><span class="k">final</span> client = <span class="t">Client</span>()
+    .setEndpoint(<span class="s">'https://cloud.appwrite.io/v1'</span>)
+    .setProject(<span class="s">'appwriters'</span>);
+
+<span class="k">final</span> account = <span class="t">Account</span>(client);
+<span class="k">await</span> account.createEmailPasswordSession(
+  email: email,
+  password: password,
+);
+<span class="c">// You're in. Now build something.</span></code></pre>
+		</figure>
+	</section>
+
+	<section class="section wrap" aria-labelledby="latest">
+		<div class="section-head">
+			<div>
+				<span class="eyebrow">From the blog</span>
+				<h2 id="latest">Latest posts</h2>
+			</div>
+			<a href="/blog">All {data.totalPosts} posts →</a>
+		</div>
+		<RecentPostsList posts={data.posts} />
+	</section>
+
+	<section class="band">
+		<div class="wrap stats">
+			<div><strong>{data.totalPosts}</strong><span>Blog posts<br />on Flutter, Dart and Appwrite</span></div>
+			<div><strong>16</strong><span>Course lessons<br />from setup to database</span></div>
+			<div><strong>30</strong><span>Days of Flutter<br />with a project each day</span></div>
+			<div><strong>100+</strong><span>Flutter UI designs<br />with source code</span></div>
+		</div>
+	</section>
+
+	<section class="section wrap" aria-labelledby="paths">
+		<div class="section-head">
+			<div>
+				<span class="eyebrow">Learning paths</span>
+				<h2 id="paths">Pick where to start</h2>
+			</div>
+		</div>
+		<ul class="grid paths">
+			{#each paths as path (path.href)}
+				<li>
+					<article class="card card--link">
+						<span class="path-icon"><i class={path.icon} aria-hidden="true"></i></span>
+						<span class="eyebrow">{path.label}</span>
+						<h3>
+							<a
+								class="card__link"
+								href={path.href}
+								rel={path.external ? 'noreferrer' : undefined}
+							>
+								{path.title}{#if path.external}<span class="sr-only"> (external site)</span>{/if}
+							</a>
+						</h3>
+						<p>{path.text}</p>
+					</article>
+				</li>
+			{/each}
+		</ul>
+	</section>
+
+	<section class="wrap">
+		<div class="feature card">
+			<div class="feature-text">
+				<span class="eyebrow">Free app</span>
+				<h2>Flutter UI Challenges</h2>
+				<p>
+					More than a hundred real-world Flutter UI designs for different industries, each with its
+					source code right in the app. Study it, change it, and use it as a starting point for your
+					own screens.
+				</p>
+				<div class="button-row">
+					<a
+						class="button button--sm"
+						href="https://play.google.com/store/apps/details?id=com.popupbits.flutteruichallenges"
+						rel="noreferrer"><i class="icon-android" aria-hidden="true"></i> Google Play</a
+					>
+					<a
+						class="button button--ghost button--sm"
+						href="https://apps.apple.com/np/app/flutter-ui-challenges/id1473537882"
+						rel="noreferrer"><i class="icon-apple" aria-hidden="true"></i> App Store</a
+					>
+					<a
+						class="button button--ghost button--sm"
+						href="https://github.com/lohanidamodar/flutter_ui_challenges"
+						rel="noreferrer"><i class="icon-github" aria-hidden="true"></i> Source on GitHub</a
+					>
+				</div>
+			</div>
+			<div class="feature-shots">
+				<img
+					src="https://play-lh.googleusercontent.com/6jA0GV_n8YkL3ZnDIJly4za-nsbzWlzbnzNtby9MH8JNsVFWAP-XZx-RO3FyW9k6cxU=w1052-h592-rw"
+					alt="Flutter UI Challenges: the app's home screen"
+					loading="lazy"
+					width="1052"
+					height="592"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section class="section wrap cta">
+		<h2>Learn along on YouTube</h2>
+		<p class="lead">
+			Every course lesson has a video, and new tutorials go up on the channel first.
+		</p>
+		<div class="button-row">
+			<a class="button" href={youtubeURL} rel="noreferrer"
+				><i class="icon-youtube" aria-hidden="true"></i> Watch on YouTube</a
+			>
+			<a class="button button--ghost" href={githubURL} rel="noreferrer"
+				><i class="icon-github" aria-hidden="true"></i> Code on GitHub</a
+			>
+		</div>
+	</section>
 </main>
 
 <style lang="scss">
-	main {
-		max-width: 100%;
+	.home {
+		max-width: none;
+		padding: 0;
+	}
+
+	.hero {
+		display: grid;
+		gap: 3rem;
+		align-items: center;
+		padding-block: clamp(3rem, 8vw, 6.5rem) clamp(2rem, 5vw, 4rem);
+
+		@media (min-width: vars.$mdMin) {
+			grid-template-columns: 1.15fr 1fr;
+		}
+
+		h1 {
+			font-size: clamp(2.4rem, 1.5rem + 3.6vw, 4rem);
+			max-width: 14ch;
+		}
+	}
+
+	.hero-code {
+		margin: 0;
+		background: var(--code-bg);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		overflow: hidden;
+		min-width: 0;
+
+		.dots {
+			display: flex;
+			gap: 6px;
+			padding: 0.85rem 1rem;
+			border-bottom: 1px solid var(--border);
+
+			span {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: #3a3a36;
+			}
+		}
+
+		pre {
+			margin: 0;
+			border: 0;
+			border-radius: 0;
+			background: transparent;
+			font-size: 0.82rem;
+			color: #d7d5ce;
+		}
+
+		.k {
+			color: #ff8a57;
+		}
+		.t {
+			color: #8bd5ca;
+		}
+		.s {
+			color: #e6c07b;
+		}
+		.c {
+			color: #8a8880;
+			font-style: italic;
+		}
+	}
+
+	ul.grid {
+		list-style: none;
 		padding: 0;
 		margin: 0;
-	}
-	.icon {
-		font-size: 1.6rem;
-	}
-	.hero {
-		padding: 2rem;
-		background-color: var(--accent);
-		color: var(--white);
-		margin: 0;
-		.content {
-			max-width: 42rem;
-			margin: 0 auto;
-			text-align: center;
-		}
-	}
-	.master-flutter-challenge {
-		background-color: var(--backgroundDark);
-		padding: 2rem;
-		text-align: center;
-	}
-	.flutter-appwrite-course {
-		padding: 4rem;
-	}
-	.images {
-		display: flex;
-		justify-content: center;
-		img {
-			max-width: 333px;
-			width: 33%;
-			margin-top: 2rem;
-		}
-	}
 
-	a {
-		&.button {
-			background: var(--accent);
-			color: var(--white);
-			padding: 1rem;
-			border-radius: 8px;
-			font-weight: 500;
-			font-size: 0.8em;
-
-			&:hover {
-				background-blend-mode: color-dodge;
-			}
-		}
-	}
-
-	.container {
-		&.white {
-			background-color: var(--backgroundDark);
-		}
-		> article {
-			max-width: 42rem;
-			margin: 0 auto;
-			width: 100%;
-
-			&.master-flutter {
-				padding-bottom: 2rem;
-			}
-
-			@media screen and (max-width: 700px) {
-				padding: 12px;
-			}
-		}
-		> .posts {
-			margin: 0 auto;
-			margin-top: 3rem;
-			max-width: 80%;
+		li {
 			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			h2 {
-				overflow: hidden;
-				padding-bottom: 1rem;
-				position: relative;
-				&::after {
-					content: '';
-					height: 0.1em;
-					background: var(--accent);
-					width: 100%;
-					margin-left: -100%;
-					position: absolute;
-					bottom: 0;
-				}
-			}
+			margin: 0;
+		}
+
+		.card {
+			width: 100%;
 		}
 	}
-	.book {
-		padding-top: 2.5rem;
+
+	.paths .card {
+		gap: 0.2rem;
+
+		.eyebrow {
+			margin: 0.75rem 0 0.25rem;
+		}
+	}
+
+	.path-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.6rem;
+		height: 2.6rem;
+		border-radius: 12px;
+		background: var(--brand-soft);
+		color: var(--brand);
+		font-size: 1.25rem;
+	}
+
+	.stats {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem 1.5rem;
+		padding-block: 2.75rem;
+
+		@media (min-width: vars.$smMin) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		strong {
+			display: block;
+			font-family: var(--headingFont);
+			font-size: clamp(2rem, 1.6rem + 1.5vw, 2.6rem);
+			line-height: 1;
+			color: var(--brand);
+			margin-bottom: 0.4rem;
+		}
+
+		span {
+			font-size: 0.9rem;
+			color: var(--muted);
+			line-height: 1.4;
+		}
+	}
+
+	.feature {
+		display: grid;
+		gap: 2rem;
+		align-items: center;
+		padding: clamp(1.5rem, 4vw, 3rem);
+
+		@media (min-width: vars.$mdMin) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		p {
+			font-size: 1rem;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			border-radius: var(--radius-sm);
+			border: 1px solid var(--border);
+		}
+	}
+
+	.cta {
+		text-align: center;
+
+		.lead {
+			margin-inline: auto;
+		}
+
+		.button-row {
+			justify-content: center;
+		}
 	}
 </style>

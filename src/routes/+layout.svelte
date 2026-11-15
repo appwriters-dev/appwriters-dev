@@ -62,9 +62,10 @@
 
 	function applyTheme(theme: Theme) {
 		const resolvedTheme = theme === 'system' ? getSystemTheme() : theme;
-		const className = `theme-${resolvedTheme}`;
-		document.body.classList.remove('theme-dark', 'theme-light');
-		document.body.classList.add(className);
+		// The class lives on <html> so the page background and overscroll match the theme.
+		document.documentElement.classList.remove('theme-dark', 'theme-light');
+		document.documentElement.classList.add('theme-' + resolvedTheme);
+		document.querySelector('meta[name="theme-color"]')?.setAttribute('content', resolvedTheme === 'light' ? '#faf9f6' : '#121211');
 	}
 
 	/**
@@ -76,8 +77,6 @@
 	 **/
 
 	onMount(() => {
-		const initialTheme = page.route.id?.startsWith('/docs') ? getPreferredTheme() : 'dark';
-		applyTheme(initialTheme);
 		// preloadCode takes one internal path at a time; external links (YouTube) are skipped.
 		for (const { route } of navItems) {
 			if (route.startsWith('/')) preloadCode(route as any).catch(() => {});

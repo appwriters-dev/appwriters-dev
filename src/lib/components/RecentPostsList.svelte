@@ -1,46 +1,24 @@
 <script>
-	import { defaultCoverImage } from '#lib/config.js';
+	import PostCard from './PostCard.svelte';
 
-	/** @type {{posts?: any}} */
+	/** @type {{posts?: any[]}} */
 	let { posts = [] } = $props();
 </script>
 
-<ul>
-	{#each posts as post}
-		<li>
-			<article>
-				<a href="/blog/{post.slug}">
-					<img
-						src={post.coverImage ?? defaultCoverImage}
-						alt=""
-						width={post.coverWidth ?? 16}
-						height={post.coverHeight ?? 9}
-						style="ratio: {post.coverWidth ?? 16} / {post.coverHeight ?? 9}"
-					/>
-					<h3>
-						{post.title}
-					</h3>
-				</a>
-				<p>{post.excerpt}</p>
-			</article>
-		</li>
+<ul class="grid post-grid">
+	{#each posts as post (post.slug)}
+		<li><PostCard {post} /></li>
 	{/each}
 </ul>
 
-<style lang="scss">
+<style>
 	ul {
-		display: flex;
 		list-style: none;
-		gap: 20px;
-		flex-wrap: wrap;
-		li {
-			flex-basis: 300px;
-			display: flex;
-			flex-grow: 1;
-		}
+		padding: 0;
+		margin: 0;
 	}
-	img {
-		height: 250px;
-		object-fit: cover;
+	li {
+		margin: 0;
+		display: flex;
 	}
 </style>

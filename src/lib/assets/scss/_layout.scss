@@ -1,18 +1,26 @@
 @use './vars';
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	box-sizing: border-box;
 	font-family: inherit;
+}
+
+img,
+video,
+iframe,
+svg {
 	max-width: 100%;
 }
 
+// Default page container: a readable column. Pages that need full-width bands
+// (home, courses) set their own layout inside <main>.
 main {
 	width: 100%;
-	max-width: 42rem;
-	margin: 1rem auto;
-	padding: 0 1rem;
+	max-width: calc(var(--narrow) + 2 * var(--gutter));
+	margin: 0 auto;
+	padding: clamp(2rem, 5vw, 3.5rem) var(--gutter) 4rem;
 }
 
 .layout {
@@ -20,94 +28,160 @@ main {
 	grid-template-columns: 100%;
 	grid-template-rows: auto 1fr auto;
 	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+.wrap {
+	width: 100%;
+	max-width: calc(var(--wide) + 2 * var(--gutter));
+	margin-inline: auto;
+	padding-inline: var(--gutter);
+}
+
+// Lets a listing page inside the narrow <main> column use the wide width.
+.breakout {
+	--breakout: min(var(--wide), calc(100vw - 2 * var(--gutter)));
+	width: var(--breakout);
+	margin-inline: calc((100% - var(--breakout)) / 2);
+}
+
+.narrow {
+	max-width: calc(var(--narrow) + 2 * var(--gutter));
+}
+
+.section {
+	padding-block: clamp(3rem, 7vw, 5.5rem);
+}
+
+.band {
+	background: var(--surface);
+	border-block: 1px solid var(--border);
 }
 
 img {
-	width: 100%;
-	max-width: 100%;
 	height: auto;
 }
 
-.post {
-	h1 {
-		margin-bottom: 1rem;
-	}
-
-	.meta {
-		font-size: 0.8rem;
-		margin-bottom: 2rem;
-	}
-
-	img + h1 {
-		margin-top: 1rem;
-	}
-}
-
 li {
-	margin-bottom: 0.25rem;
+	margin-bottom: 0.35rem;
 }
 
-.posts-list {
-	list-style-type: none;
-	padding: 0;
+// Section heading row: title on the left, a "see all" link on the right.
+.section-head {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: 1.75rem;
 
-	li {
-		margin-bottom: 6rem;
-	}
-
-	img + h2 {
-		margin-top: 1rem;
+	h2 {
+		margin: 0;
 	}
 
 	a {
-		display: block;
+		font-weight: 700;
+		white-space: nowrap;
 	}
 }
 
-.post-footer {
-	ul {
-		padding: 0;
+// Page header used by listing pages (blog, categories, contact).
+.page-head {
+	margin-bottom: 2.5rem;
+
+	h1 {
+		margin-bottom: 0.5rem;
 	}
 
-	li {
-		display: inline-block;
-		font-size: 0.8rem;
-
-		a {
-			padding: 0.5rem 0.75rem;
-			text-transform: uppercase;
-			font-family: var(--primaryFont);
-			font-weight: bold;
-		}
-
-		+ li {
-			margin-left: 0.5rem;
-		}
+	p {
+		color: var(--muted);
+		margin: 0;
 	}
 }
 
-:where(h2, h3, h4, h5, h6) {
+.post {
+	.cover-image {
+		border-radius: var(--radius);
+		border: 1px solid var(--border);
+		margin-bottom: 2rem;
+		width: 100%;
+		object-fit: cover;
+		background: var(--surface);
+	}
+
+	h1 {
+		margin-bottom: 1rem;
+		font-size: clamp(2rem, 1.4rem + 2.4vw, 2.9rem);
+	}
+
+	:is(h2, h3, h4) code {
+		font-size: 0.8em;
+	}
+
+	.meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem 1rem;
+		font-size: 0.9rem;
+		color: var(--muted);
+		margin-bottom: 2.5rem;
+		padding-bottom: 1.5rem;
+		border-bottom: 1px solid var(--border);
+	}
+
+	img {
+		border-radius: var(--radius-sm);
+	}
+}
+
+// Heading anchor links added by rehype-autolink-headings.
+:where(h1, h2, h3, h4, h5, h6) {
+	scroll-margin-top: 5rem;
+
 	.icon-link {
 		position: relative;
 
 		&::before {
 			content: url('/link.svg');
-			fill: currentColor;
 			position: absolute;
-			left: -1rem;
+			left: -1.25rem;
 			width: 1rem;
 			height: 1rem;
 			top: 0;
-			opacity: 0.2;
+			opacity: 0;
 			transition: opacity 0.2s;
-
-			@media (min-width: vars.$smMin) {
-				left: -1.5rem;
-			}
 		}
+	}
 
-		&:hover::before {
-			opacity: 1;
+	&:hover .icon-link::before {
+		opacity: 0.5;
+	}
+}
+
+// Previous / next navigation at the end of lessons, days and projects.
+.end-nav {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin: 3rem 0 1rem;
+	flex-wrap: wrap;
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.7rem 1.1rem;
+		border-radius: var(--radius-pill);
+		border: 1px solid var(--border-strong);
+		background: var(--surface);
+		color: var(--text);
+		font-weight: 700;
+		text-decoration: none;
+		max-width: 100%;
+
+		&:hover {
+			border-color: var(--brand);
+			text-decoration: none;
 		}
 	}
 }

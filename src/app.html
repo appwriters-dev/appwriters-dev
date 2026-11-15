@@ -1,24 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="theme-dark">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#121211" />
+		<link rel="icon" href="/favicon.png" />
+		<link rel="alternate" type="application/rss+xml" title="Appwriters blog" href="/api/rss.xml" />
+		<link rel="alternate" type="text/plain" title="Site guide for AI agents" href="/llms.txt" />
+		<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+		<script>
+			// Apply the saved theme before the page paints, so a light-theme reader never sees a dark flash.
+			try {
+				var t = localStorage.getItem('theme');
+				if (t === 'system') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+				if (t === 'light') document.documentElement.className = 'theme-light';
+			} catch (e) {}
+		</script>
 
-		%sveltekit.head%
-		<!-- You can replace this block to update the Google fonts used in the project -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink-icons" />
-		<!-- End Google Fonts block -->
 
-		<!-- You can add global <meta> tags here, but anything not global or dynamic should be a `<svelte:head>` tag on the proper page(s) instead. -->
+		%sveltekit.head%
 	</head>
-	<body class="theme-dark">
+	<body>
 		<div id="svelte">%sveltekit.body%</div>
 	</body>
 </html>

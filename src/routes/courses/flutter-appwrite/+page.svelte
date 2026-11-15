@@ -3,114 +3,112 @@
 	let { data } = $props();
 </script>
 
-<main id="main">
-	<section class="intro">
+<main id="main" tabindex="-1" class="course">
+	<section class="intro narrow">
 		<h2>Start now, it's free</h2>
 		<p>
-			In this course you will build a time tracking application using Flutter and Appwrite as a
-			back-end service to authenticate users and manage all kinds of user data.
+			In this course you will build a time tracking application using Flutter, with Appwrite as the
+			back-end service that authenticates users and manages their data.
 		</p>
 		<p>
-			This course should provide you a foundation to build any kinds of projects using Flutter and
-			Appwrite. For effective learning of this course, you should know the basics of Flutter. If you
-			have never coded in Dart/Flutter, we recommend you to take our <a href="/30days/flutter"
-				>30DaysMasterFlutter</a
-			> course first.
+			It gives you a foundation for building any kind of project with Flutter and Appwrite. You
+			should know the basics of Flutter first. If you have never coded in Dart or Flutter, take our
+			<a href="/30days/flutter">#30DaysMasterFlutter</a> challenge first.
 		</p>
-        <h3>Why Flutter and Appwrite?</h3>
-        <p>
-            <strong>Flutter</strong> is <strong>the framework</strong> for building applications for any platform out there. <strong>Appwrite</strong> is <strong>the open source backend server</strong> with first class support for Flutter applications. Together, they are a powerful combination to build any kinds of applications that you can imagine.
-        </p>
+		<h3>Why Flutter and Appwrite?</h3>
+		<p>
+			<strong>Flutter</strong> builds applications for every platform out there.
+			<strong>Appwrite</strong> is the open-source backend server with first-class support for Flutter.
+			Together they are a powerful combination for building whatever you can imagine.
+		</p>
 	</section>
-	<section class="curriculum">
-		<h2>The curriculum</h2>
-		<hr />
-		{#each data.categories as category}
-		<h3>{category}</h3>
-		<div class="grid">
-			{#each data.curriculum as item}
-				{#if item.category === category}
-				<div class="cell">
-					<a href={item.published ? '/courses/flutter-appwrite/' + item.id : '#'}>
-						<div class="content">
-							<h3><span>{item.number}</span> {item.title}</h3>
-							<p>{@html item.description}</p>
-							{#if !item.published}
-								<p class='primary'><em>coming soon...</em></p>
+
+	<section class="curriculum" aria-labelledby="curriculum">
+		<span class="eyebrow">{data.curriculum.length} lessons</span>
+		<h2 id="curriculum">The curriculum</h2>
+		{#each data.categories as category (category)}
+			<h3 class="category">{category}</h3>
+			<ol class="grid">
+				{#each data.curriculum.filter((/** @type {any} */ item) => item.category === category) as item (item.id)}
+					<li class="card" class:card--link={item.published} class:soon={!item.published}>
+						<span class="number">{item.number}</span>
+						<h4>
+							{#if item.published}
+								<a class="card__link" href="/courses/flutter-appwrite/{item.id}">{item.title}</a>
+							{:else}
+								{item.title}
 							{/if}
-						</div>
-					</a>
-				</div>
-				{/if}
-			{/each }
-		</div>
-		<hr />
+						</h4>
+						<p>{@html item.description}</p>
+						{#if !item.published}
+							<span class="tag">Coming soon</span>
+						{/if}
+					</li>
+				{/each}
+			</ol>
 		{/each}
 	</section>
 </main>
 
 <style lang="scss">
-	#main {
-		max-width: 64rem;
-		margin: 0 auto;
-		padding: 0 2rem;
+	.course {
+		max-width: calc(var(--wide) + 2 * var(--gutter));
 	}
+
 	.intro {
-		max-width: 42rem;
-		margin: 0 auto;
-	}
-	
+		max-width: var(--narrow);
+		margin-bottom: 3rem;
 
-    hr {
-        border-top: 1px solid var(--backgroundDark);
-    }
-
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-		grid-gap: 2rem;
-		margin: 2rem 0;
-
-		.cell {
-			padding: 1rem;
-			border-radius: 0.5rem;
-			background-color: var(--backgroundDark);
-            box-sizing: border-box;
-            border: 2px solid transparent;
-            &:hover {
-                border: 2px solid var(--neutral100);
-            }
-			h3 {
-				margin: 0;
-				padding: 0;
-				font-size: 1.5rem;
-                line-height: 1.7rem;
-				margin-bottom: 1rem;
-				color: var(--ink);
-				span {
-                    font-size: 1rem;
-					color: var(--paper);
-					background-color: var(--ink);
-					padding: 0.25rem 0.5rem;
-					border-radius: 1rem;
-				}
-			}
-			p {
-				margin: 0;
-				padding: 0;
-				&.primary {
-					color: var(--primary);
-				}
-			}
-			> a {
-				text-decoration: none;
-				color: var(--ink);
-				display: block;
-				&:hover {
-					text-decoration: none;
-				}
-			}
+		h2 {
+			margin-top: 0;
 		}
 	}
-	
+
+	#curriculum {
+		margin-top: 0;
+	}
+
+	.category {
+		margin: 2.5rem 0 1rem;
+		font-size: 1.2rem;
+		color: var(--muted);
+	}
+
+	ol {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		margin: 0;
+		gap: 0.5rem;
+
+		// Links inside the description stay clickable above the card's stretched link.
+		p :global(a) {
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	.number {
+		font-family: var(--headingFont);
+		font-weight: 800;
+		color: var(--brand);
+		font-size: 0.95rem;
+	}
+
+	h4 {
+		margin: 0;
+		font-size: 1.2rem;
+	}
+
+	.soon {
+		opacity: 0.7;
+
+		.tag {
+			align-self: flex-start;
+			margin-top: 0.5rem;
+		}
+	}
 </style>

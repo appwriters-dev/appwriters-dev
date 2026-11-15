@@ -44,8 +44,8 @@
 			top: 0;
 			left: 0;
 			&.primary {
-				background-color: var(--primary);
-				color: var(--white);
+				background-color: var(--brand);
+				color: var(--on-brand);
 				padding: 2px 8px;
 				border-end-end-radius: 2px;
 			}

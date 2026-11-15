@@ -43,8 +43,8 @@
 		display: flex;
 		justify-content: space-between;
 		a {
-			background: var(--primary);
-			color: var(--white);
+			background: var(--brand);
+			color: var(--on-brand);
 			padding: 0.5rem 1rem;
 			border-radius: 4px;
 			&:hover {

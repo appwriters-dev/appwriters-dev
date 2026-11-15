@@ -2,33 +2,33 @@
 	import { page } from '$app/state';
 </script>
 
-<div class="error">
-	<p>{page.status}: {page.error?.message}</p>
-	<p>The page you are looking for could not be found.</p>
-	<p>Please check the URL and try again, or return to the <a href="/">homepage</a>.</p>
-</div>
+<svelte:head>
+	<title>{page.status === 404 ? 'Page not found' : 'Something went wrong'} | Appwriters</title>
+</svelte:head>
+
+<main id="main" tabindex="-1" class="error">
+	<span class="eyebrow">Error {page.status}</span>
+	<h1>{page.status === 404 ? 'This page went missing' : 'Something went wrong'}</h1>
+	<p class="lead">
+		{page.status === 404
+			? "The address may be mistyped, or the page may have moved."
+			: page.error?.message}
+	</p>
+	<div class="button-row">
+		<a class="button" href="/">Go to the home page</a>
+		<a class="button button--ghost" href="/blog">Browse the blog</a>
+	</div>
+</main>
 
 <style>
 	.error {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		text-align: center;
+		padding-block: clamp(4rem, 12vw, 8rem);
 	}
-
-	h1 {
-		font-size: 3rem;
-		margin-bottom: 2rem;
+	.lead {
+		margin-inline: auto;
 	}
-
-	p {
-		font-size: 1.5rem;
-		margin-bottom: 1rem;
-	}
-
-	a {
-		color: blue;
-		text-decoration: underline;
+	.button-row {
+		justify-content: center;
 	}
 </style>

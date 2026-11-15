@@ -16,12 +16,28 @@
 	<meta property="og:description" content={page.data.metaDescription} />
 	<meta name="twitter:title" content={page.data.title} />
 	<meta name="twitter:description" content={page.data.metaDescription} />
+	{#if page.data.lessonId}
+		<link
+			rel="alternate"
+			type="text/markdown"
+			title="This lesson as Markdown"
+			href="/courses/flutter-appwrite/{page.data.lessonId}.md"
+		/>
+	{/if}
 </svelte:head>
 
 <Header isMain={page.data.lessonId == null} title={page.data.title} subtitle={page.data.subtitle} />
 
 {#if page.data.videoId}
-	<VideoEmbed id={page.data.videoId} background={page.data.lessonId == null} />
+	<div class="wrap video" class:narrow={page.data.lessonId != null}>
+		<VideoEmbed id={page.data.videoId} background={false} />
+	</div>
 {/if}
 
 {@render children?.()}
+
+<style>
+	.video {
+		margin-top: 2rem;
+	}
+</style>

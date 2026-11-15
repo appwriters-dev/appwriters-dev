@@ -1,3 +1,4 @@
+@use './tokens';
 @use './typography';
 @use './layout';
 @use './components';
@@ -14,12 +15,33 @@ main:focus {
 	outline: none;
 }
 
+html {
+	background: var(--bg);
+	-webkit-text-size-adjust: 100%;
+}
+
 body {
 	margin: 0;
 	min-height: 100vh;
-	color: var(--ink);
+	color: var(--text);
 	font-family: var(--primaryFont);
-	background: var(--paper);
+	background: var(--bg);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+::selection {
+	background: var(--brand);
+	color: var(--on-brand);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }

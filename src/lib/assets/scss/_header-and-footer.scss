@@ -1,218 +1,256 @@
 @use './vars';
 
-header,
-footer {
-	font-family: var(--primaryFont);
-	padding: 2.5rem 2rem;
+.main-header {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	border-bottom: 1px solid var(--border);
 
-	a {
-		text-decoration: none;
-
-		&.active {
-			font-weight: bold;
-		}
+	// The blur sits on a pseudo-element: backdrop-filter on the header itself would make it
+	// the containing block for the phone menu's position: fixed, trapping the menu inside it.
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background: color-mix(in srgb, var(--bg) 88%, transparent);
+		-webkit-backdrop-filter: saturate(1.4) blur(12px);
+		backdrop-filter: saturate(1.4) blur(12px);
 	}
 
-	nav ul {
-		list-style-type: none;
+	.inner {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 0rem 1.5rem;
-		padding: 0;
-		margin: 0;
-
-		a:hover {
-			text-decoration: underline;
-		}
-	}
-
-	svg {
-		fill: currentColor;
-	}
-}
-
-header {
-	padding: 1rem 2rem;
-	background: var(--background);
-	color: var(--darker);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	@media (min-width: vars.$smMin) {
-		height: auto;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		height: 4rem;
 	}
 
 	.site-title {
-		font-family: var(--accentFont);
-		font-size: 2.1rem;
-		line-height: 1;
-		color: var(--primary);
-		text-align: center;
-		margin: 0;
-		font-size: 1.4rem;
-		font-weight: bold;
-		display: flex;
-		justify-content: center;
+		display: inline-flex;
 		align-items: center;
+		gap: 0.6rem;
+		font-family: var(--headingFont);
+		font-weight: 800;
+		font-size: 1.3rem;
+		color: var(--text);
+		text-decoration: none;
+		line-height: 1;
+
 		.site-logo {
-			height: 32px;
+			width: 30px;
+			height: 30px;
 		}
 
-		@media (min-width: vars.$smMin) {
-			font-size: 1.6rem;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.actions {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	.icon-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		border-radius: var(--radius-pill);
+		background: transparent;
+		color: var(--muted);
+		font-size: 1.15rem;
+		cursor: pointer;
+
+		&:hover {
+			color: var(--text);
+			background: var(--surface-2);
 		}
 	}
 
 	.menu-button {
-		margin: 0;
-		background: transparent !important;
-		color: inherit;
-		padding: 0;
-		border: 0;
-		width: 2rem;
-
 		@media (min-width: vars.$smMin) {
 			display: none;
 		}
 	}
-
-	.main-nav {
-		position: fixed;
-		z-index: 2;
-		top: 0;
-		left: 0;
-		transform: translateX(-100vw);
-		visibility: hidden;
-		width: 100%;
-		height: 100vh;
-		pointer-events: none;
-		opacity: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: var(--darker);
-		color: var(--paper);
-		transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-
-		&.open {
-			transform: translateX(0);
-			opacity: 1;
-			pointer-events: unset;
-			visibility: unset;
-
-			li {
-				opacity: 0;
-				animation: slide_in_left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
-
-				a {
-					color: inherit;
-				}
-
-				// Probably shouldn't have more than 8 main nav menu items, but if you do, you can adjust this
-				@for $i from 1 through 8 {
-					&:nth-of-type(#{$i}) {
-						animation-delay: 0.15s + $i * 0.05s;
-					}
-				}
-			}
-		}
-
-		.menu-button {
-			position: absolute;
-			top: 2rem;
-			right: 2rem;
-		}
-
-		ul li {
-			font-size: 1.2rem;
-			display: block;
-			width: 100%;
-			text-align: center;
-			margin-bottom: calc(0.2rem + 2vh);
-		}
-
-		@media (min-width: vars.$smMin) {
-			opacity: 1;
-			transform: none;
-			position: unset;
-			height: auto;
-			width: auto;
-			background: unset;
-			pointer-events: unset;
-			visibility: unset;
-			color: inherit;
-
-			ul {
-				width: max-content;
-
-				li {
-					font-size: inherit;
-					display: initial;
-					width: initial;
-					text-align: initial;
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
 }
 
-footer {
-	background: var(--backgroundDark);
-	color: var(--ink);
-	display: grid;
-	grid-template-columns: 100%;
-	align-items: stretch;
-	gap: 2rem;
+.main-nav {
+	ul {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-	@media (min-width: vars.$smMin) {
-		grid-template-columns: 1fr 1fr 2fr;
+	li {
+		margin: 0;
+	}
+
+	a {
+		display: block;
+		padding: 0.45rem 0.8rem;
+		border-radius: var(--radius-pill);
+		color: var(--muted);
+		font-weight: 700;
+		font-size: 0.95rem;
+		text-decoration: none;
+
+		&:hover {
+			color: var(--text);
+			text-decoration: none;
+		}
+
+		&.active {
+			color: var(--text);
+			background: var(--surface-2);
+		}
 	}
 
 	.menu-button {
 		display: none;
 	}
 
-	p {
-		margin: 0;
+	// Phones: the nav becomes a full-screen sheet opened by the menu button.
+	@media (max-width: vars.$xsMax) {
+		position: fixed;
+		inset: 0;
+		z-index: 60;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2rem;
+		background: var(--bg);
+
+		// display: none (not a fade) while closed, so nothing shows through and the
+		// links are out of the tab order; opening plays a short fade-in.
+		&.open {
+			display: flex;
+			animation: menu_in 0.2s ease-out;
+		}
+
+		ul {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 0.25rem;
+		}
+
+		a {
+			font-family: var(--headingFont);
+			font-size: 1.9rem;
+			font-weight: 800;
+			padding: 0.4rem 0;
+			background: none !important;
+		}
+
+		.menu-button {
+			display: inline-flex;
+			position: absolute;
+			top: 0.75rem;
+			right: var(--gutter);
+		}
+	}
+}
+
+.site-footer {
+	border-top: 1px solid var(--border);
+	background: var(--bg);
+	color: var(--muted);
+	font-size: 0.95rem;
+	padding-top: 3.5rem;
+
+	.columns {
+		display: grid;
+		gap: 2.5rem;
+		grid-template-columns: 1fr;
+
+		@media (min-width: vars.$smMin) {
+			grid-template-columns: 2fr 1fr 1fr 1fr;
+		}
+	}
+
+	.brand {
+		max-width: 22rem;
+
+		.name {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5rem;
+			font-family: var(--headingFont);
+			font-weight: 800;
+			font-size: 1.2rem;
+			color: var(--text);
+			text-decoration: none;
+			margin-bottom: 0.75rem;
+
+			img {
+				width: 26px;
+				height: 26px;
+			}
+		}
+	}
+
+	h2 {
+		font-family: var(--primaryFont);
 		font-size: 0.8rem;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--text);
+		margin: 0 0 1rem;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			margin-bottom: 0.55rem;
+		}
 	}
 
 	a {
-		color: inherit;
+		color: var(--muted);
+		text-decoration: none;
+
+		&:hover {
+			color: var(--text);
+		}
 	}
 
-	nav {
-		display: initial;
-
-		ul {
-			display: initial;
-
-			li + li {
-				margin-top: 0.5rem;
-			}
-		}
+	.bottom {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-top: 3rem;
+		padding-block: 1.5rem;
+		border-top: 1px solid var(--border);
+		font-size: 0.85rem;
 	}
 }
 
 .skip-to-content-link {
 	position: absolute;
-	top: -6rem;
-	left: 0;
-	padding: 0.5em;
-	opacity: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 3rem;
-	background: var(--darker);
-	color: var(--background);
+	top: 0.5rem;
+	left: 0.5rem;
+	z-index: 100;
+	padding: 0.6rem 1rem;
+	border-radius: var(--radius-sm);
+	background: var(--brand);
+	color: var(--on-brand);
+	font-weight: 800;
+	transform: translateY(-200%);
 
 	&:focus {
-		transform: translateY(6rem);
-		opacity: 1;
-		z-index: 11;
+		transform: none;
 	}
 }

@@ -48,17 +48,17 @@
         }
 		.header {
             padding: 1rem 1.5rem;
-            background-color: var(--primary);
+            background-color: var(--brand);
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            color: var(--white);
+            color: var(--on-brand);
 			h4 {
 				margin-top: 0;
 				margin-bottom: 5px;
 			}
             h4, a {
 
-                color: var(--white);
+                color: var(--on-brand);
             }
 			p {
 				margin: 0;

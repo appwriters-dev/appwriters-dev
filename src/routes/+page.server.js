@@ -1,6 +1,8 @@
 export const load = async ({ url, fetch }) => {
-	const postRes = await fetch(`${url.origin}/api/posts/recent`);
-	const posts = await postRes.json();
+	const [posts, totalPosts] = await Promise.all([
+		fetch(`${url.origin}/api/posts/recent`).then((res) => res.json()),
+		fetch(`${url.origin}/api/posts/count`).then((res) => res.json())
+	]);
 
-	return { posts };
+	return { posts, totalPosts };
 };

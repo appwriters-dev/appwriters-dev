@@ -15,6 +15,7 @@
 	<meta property="og:description" content={data.metaDescription} />
 	<meta name="twitter:title" content={data.title} />
 	<meta name="twitter:description" content={data.metaDescription} />
+	<link rel="alternate" type="text/markdown" title="This day as Markdown" href="/30days/flutter/day{data.day}.md" />
 </svelte:head>
 
 <DayContent
@@ -28,17 +29,3 @@
 </DayContent>
 <Footer />
 
-<style lang="scss">
-	:global(blockquote) {
-		background-color: var(--accent);
-		padding: 1rem 2rem;
-		color: var(--white);
-	}
-	:global(blockquote a) {
-		color: var(--white);
-		text-decoration: underline;
-	}
-	:global(blockquote ul ::marker) {
-		color: white;
-	}
-</style>

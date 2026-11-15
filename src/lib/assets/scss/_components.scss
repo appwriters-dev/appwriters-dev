@@ -1,61 +1,181 @@
 @use 'vars';
 
-.callout {
-	background: var(--accent);
-	padding: 2rem 1rem;
-	width: calc(100% + 2rem);
-	max-width: unset;
-	margin: 2rem 0 2rem -1rem;
-	font-style: italic;
-	border-radius: 0.125rem;
-	// White reads on the accent blue in both themes (--paper is dark in the dark theme).
-	color: var(--white);
-
-	h1, h2, h3, h4, a {
-		color: var(--white);
-	}
-
-	a {
-		text-decoration: underline;
-	}
-
-	@media (min-width: vars.$smMin) {
-		width: calc(100% + 4rem);
-		margin: 2rem 0 2rem -2rem;
-		padding: 2rem;
-	}
-}
-.theme-dark .button, .theme-dark a.button {
-	&.inverse {
-		background: var(--white);
-		color: var(--accent);
-	}
-}
-.button, a.button {
-	background: var(--accent);
-	color: var(--white);
-	padding: 1rem;
-	border-radius: 8px;
-	font-weight: 500;
-	font-size: 0.8em;
-
-	&.inverse {
-		background: var(--paper);
-		color: var(--accent);
-		font-weight: bold;
-	}
+// Buttons. .button is the filled brand button; .button--ghost the outlined one.
+.button,
+a.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.7rem 1.25rem;
+	border-radius: var(--radius-pill);
+	border: 1px solid var(--brand);
+	background: var(--brand);
+	color: var(--on-brand);
+	font-family: var(--primaryFont);
+	font-weight: 800;
+	font-size: 0.95rem;
+	line-height: 1.2;
+	text-decoration: none;
+	cursor: pointer;
+	transition:
+		background 0.15s,
+		border-color 0.15s,
+		transform 0.15s;
 
 	&:hover {
-		background-blend-mode: color-dodge;
+		background: var(--brand-strong);
+		border-color: var(--brand-strong);
+		text-decoration: none;
+	}
+
+	.theme-light &:hover {
+		background: #ff874f;
+		border-color: #ff874f;
+	}
+
+	&:active {
+		transform: translateY(1px);
+	}
+
+	&.button--ghost,
+	&.button--outline,
+	&.inverse {
+		background: transparent;
+		color: var(--text);
+		border-color: var(--border-strong);
+
+		&:hover {
+			border-color: var(--text);
+			background: transparent;
+		}
+	}
+
+	&.button--sm {
+		padding: 0.45rem 0.9rem;
+		font-size: 0.85rem;
 	}
 }
+
+.button-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-top: 1.75rem;
+}
+
+// Cards: rounded, bordered surfaces, as on popupbits.com.
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: 1.5rem;
+	color: var(--text);
+	transition:
+		border-color 0.15s,
+		transform 0.15s;
+
+	&.card--link:hover {
+		border-color: var(--border-strong);
+		transform: translateY(-2px);
+	}
+
+	// Make the whole card clickable through its main link.
+	.card__link {
+		color: inherit;
+		text-decoration: none;
+
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			border-radius: inherit;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	h3 {
+		margin: 0 0 0.5rem;
+		font-size: 1.3rem;
+	}
+
+	p {
+		color: var(--muted);
+		font-size: 0.95rem;
+		margin: 0;
+	}
+}
+
+.grid {
+	display: grid;
+	gap: 1.25rem;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+}
+
+.tag,
+.tags a {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.2rem 0.65rem;
+	border-radius: var(--radius-pill);
+	border: 1px solid var(--border-strong);
+	font-size: 0.75rem;
+	font-weight: 800;
+	letter-spacing: 0.04em;
+	color: var(--muted);
+	text-decoration: none;
+	line-height: 1.5;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		margin: 0;
+	}
+
+	a:hover {
+		color: var(--text);
+		border-color: var(--text);
+		text-decoration: none;
+	}
+}
+
+.callout {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-left: 3px solid var(--brand);
+	border-radius: var(--radius-sm);
+	padding: 1.25rem 1.5rem;
+	margin: 2rem 0;
+	color: var(--text);
+
+	:is(h1, h2, h3, h4) {
+		margin-top: 0;
+	}
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
 .pagination {
-	margin: 0 0 1rem;
+	margin: 2.5rem 0 1rem;
 
 	ul {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: start;
 		list-style-type: none;
 		gap: 0.5rem;
 		margin: 0;
@@ -66,24 +186,26 @@
 		}
 
 		a {
-			text-decoration: none;
-			line-height: 1;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 2em;
-			height: 2em;
-			font-family: var(--primaryFont);
-			font-weight: bold;
+			min-width: 2.5rem;
+			height: 2.5rem;
+			padding: 0 0.6rem;
+			border-radius: var(--radius-pill);
+			border: 1px solid var(--border-strong);
+			color: var(--text);
+			font-weight: 800;
+			text-decoration: none;
 
 			&:hover {
-				color: var(--primaryDark);
-				text-decoration: underline;
+				border-color: var(--text);
 			}
 
 			&[aria-current='true'] {
-				background: var(--accent);
-				color: var(--background);
+				background: var(--brand);
+				border-color: var(--brand);
+				color: var(--on-brand);
 			}
 		}
 	}
@@ -94,14 +216,8 @@ aside.toc {
 	right: 0;
 	width: 350px;
 	top: 6rem;
-	nav {
-		&.toc {
-			a {
-				display: block;
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-		}
+
+	nav.toc a {
+		display: block;
 	}
 }

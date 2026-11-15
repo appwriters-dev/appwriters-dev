@@ -1,65 +1,51 @@
 <script>
-	import { preventDefault } from 'svelte/legacy';
-
 	import MainNav from './MainNav.svelte';
 	import HamburgerMenuButton from './HamburgerMenuButton.svelte';
 	import { siteTitle } from '#lib/config.js';
-	import { currentTheme } from '../../routes/+layout.svelte';
+	import { isMenuOpen } from '#lib/assets/js/store.js';
+	import { currentTheme, themeInUse } from '../../routes/+layout.svelte';
 
-	const focusMain = () => {
+	/** @param {MouseEvent} event */
+	const focusMain = (event) => {
+		event.preventDefault();
 		const main = document.querySelector('main');
 		main?.focus();
+		main?.scrollIntoView();
 	};
 	const toggleTheme = () => {
-		currentTheme.set($currentTheme === 'dark' ? 'light' : 'dark');
+		currentTheme.set($themeInUse === 'dark' ? 'light' : 'dark');
+	};
+
+	// While the phone menu is open, the page behind it does not scroll, and Escape closes it.
+	$effect(() => {
+		document.body.style.overflow = $isMenuOpen ? 'hidden' : '';
+	});
+	/** @param {KeyboardEvent} event */
+	const onKeydown = (event) => {
+		if (event.key === 'Escape' && $isMenuOpen) isMenuOpen.set(false);
 	};
 </script>
 
-<header class="main-header">
-	<a onclick={preventDefault(focusMain)} class="skip-to-content-link" href="#main">
-		Skip to main content
-	</a>
+<svelte:window onkeydown={onKeydown} />
 
-	<a href="/" class="site-title">
-		<img class="site-logo" src="/logo-512.svg" alt="Logo" />
-		{siteTitle.substring(1)}
-	</a>
-	<div class="index">
-		<HamburgerMenuButton />
-		<div class="menu">
+<a onclick={focusMain} class="skip-to-content-link" href="#main">Skip to main content</a>
+
+<header class="main-header">
+	<div class="wrap inner">
+		<a href="/" class="site-title">
+			<img class="site-logo" src="/logo-512.svg" alt="" width="30" height="30" />
+			{siteTitle}
+		</a>
+		<div class="actions">
 			<MainNav />
 			<button
+				class="icon-button"
 				onclick={toggleTheme}
-				aria-label={$currentTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+				aria-label={$themeInUse === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
 			>
-				<i class={$currentTheme === 'dark' ? 'icon-sun' : 'icon-moon'}></i>
+				<i class={$themeInUse === 'dark' ? 'icon-sun' : 'icon-moon'} aria-hidden="true"></i>
 			</button>
+			<HamburgerMenuButton />
 		</div>
 	</div>
 </header>
-
-<style lang="scss">
-	.site-title,
-	.index {
-		z-index: 1000;
-	}
-	.menu {
-		display: flex;
-
-		button {
-			background: none;
-			border: none;
-			cursor: pointer;
-			color: var(--primary);
-			margin: 0;
-			margin-left: 1rem;
-
-			&:hover {
-				color: var(--black);
-				:global(.theme-dark) & {
-					color: var(--white);
-				}
-			}
-		}
-	}
-</style>

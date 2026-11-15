@@ -1,47 +1,50 @@
 <script>
-	
-	
-
-	
 	/** @type {{title: string, subtitle: string, isMain?: boolean}} */
 	let { title, subtitle, isMain = false } = $props();
 </script>
 
-<div class="hero {isMain ? 'main' : ''}">
-	<h1>{title}</h1>
-	<p>{@html subtitle}</p>
+<div class="course-hero" class:main={isMain}>
+	<div class="wrap" class:narrow={!isMain}>
+		{#if isMain}
+			<span class="eyebrow">Free course · Flutter + Appwrite</span>
+		{:else}
+			<a class="back" href="/courses/flutter-appwrite">← Flutter &amp; Appwrite course</a>
+		{/if}
+		<h1>{title}</h1>
+		<p class="lead">{@html subtitle}</p>
+	</div>
 </div>
 
 <style lang="scss">
-	.hero {
-		width: 100%;
-		padding: 4rem;
-		color: var(--ink);
+	.course-hero {
+		padding-block: clamp(2.5rem, 6vw, 4.5rem) 2rem;
+
 		&.main {
-			text-align: center;
-			background-color: var(--accent);
-			color: var(--white);
+			padding-bottom: clamp(2.5rem, 6vw, 4rem);
+			border-bottom: 1px solid var(--border);
+			background:
+				radial-gradient(60rem 20rem at 85% -10%, var(--brand-soft), transparent 70%),
+				var(--bg);
 
 			h1 {
-				color: var(--white);
-				max-width: 64rem;
-			}
-			p {
-				max-width: 64rem;
+				max-width: 22ch;
 			}
 		}
+
 		h1 {
-			color: var(--ink);
-			padding: 0;
-			margin: 0 auto;
-			max-width: 42rem;
-			&::after {
-				content: none;
-			}
+			margin-bottom: 1rem;
 		}
-		p {
-			max-width: 42rem;
-			margin: 1rem auto;
+
+		.lead {
+			margin: 0;
 		}
+	}
+
+	.back {
+		display: inline-block;
+		margin-bottom: 1.25rem;
+		font-size: 0.9rem;
+		font-weight: 700;
+		color: var(--muted);
 	}
 </style>

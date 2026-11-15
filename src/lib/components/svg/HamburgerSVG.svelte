@@ -1,8 +1,1 @@
-<svg
-	viewBox="0 0 128 128"
-	version="1.1"
-	style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-	><g><rect x="0" y="12.48" width="128" height="18.688" /></g><g
-		><rect x="0" y="96.832" width="128" height="18.688" /></g
-	><g><rect x="0" y="54.656" width="128" height="18.688" /></g></svg
->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>

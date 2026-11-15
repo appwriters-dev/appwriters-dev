@@ -1,8 +1,7 @@
-<!-- Renders posts listed by category -->
 <script>
-	import PostsList from '#lib/components/PostsList.svelte';
-	import Pagination from '#lib/components/Pagination.svelte';
-	import { postsPerPage, siteDescription } from '#lib/config.js';
+	import BlogListing from '#lib/components/BlogListing.svelte';
+	import { postsPerPage, siteTitle } from '#lib/config.js';
+	import SiteMetas from '#lib/components/SiteMetas.svelte';
 
 	/** @type {{data: any}} */
 	let { data } = $props();
@@ -13,22 +12,14 @@
 </script>
 
 <svelte:head>
-	<title>Blog category - page {page}</title>
-	<meta data-key="description" name={siteDescription} />
+	<title>Blog, page {page} | {siteTitle}</title>
+	<SiteMetas />
 </svelte:head>
 
-<!-- TODO: this is duplicated across multiple `+page.svelte` files -->
-{#if posts.length}
-	<h1>Posts {lowerBound}–{upperBound} of {totalPosts}</h1>
-	<Pagination currentPage={page} {totalPosts} />
-
-	<PostsList {posts} />
-
-	<Pagination currentPage={page} {totalPosts} />
-{:else}
-	<h1>Oops!</h1>
-
-	<p>Sorry, no posts to show here.</p>
-
-	<a href="/blog">Back to blog</a>
-{/if}
+<BlogListing
+	title="Blog, page {page}"
+	subtitle="Posts {lowerBound}–{upperBound} of {totalPosts}"
+	{posts}
+	currentPage={page}
+	{totalPosts}
+/>
