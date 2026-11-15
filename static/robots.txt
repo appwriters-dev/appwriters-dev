@@ -1,0 +1,8 @@
+# Appwriters is written to be read by people and by AI agents.
+# A map of the site for agents, with a Markdown copy of every post and lesson: /llms.txt
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+Sitemap: https://www.appwriters.dev/sitemap.xml
