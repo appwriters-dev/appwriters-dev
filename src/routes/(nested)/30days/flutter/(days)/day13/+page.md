@@ -62,8 +62,8 @@ Text(
 
 > **More projects**
 >
-> - [Using image assets](https://masterflutter.appwriters.dev/ch08-assets/ls01-images)
-> - [Using custom fonts](https://masterflutter.appwriters.dev/ch08-assets/ls02-fonts)
+> - [Using image assets](/courses/master-flutter/ch08-assets/ls01-images)
+> - [Using custom fonts](/courses/master-flutter/ch08-assets/ls02-fonts)
 > 
 
 ## Resources

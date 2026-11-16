@@ -76,7 +76,7 @@ class MyApp extends StatelessWidget {
 
 - Practice building more UIs with Flutter. You can find inspiration from existing apps in the Play Store or App Store. You can also check out the [Flutter UI challenges GitHub repository](https://github.com/lohanidamodar/flutter_ui_challenges) for more ideas.
 
-> [more projects](https://masterflutter.appwriters.dev/ch05-flutter-basics/ls03-basic-layout)
+> [more projects](/courses/master-flutter/ch05-flutter-basics/ls03-basic-layout)
 
 ### Resources
 

@@ -40,7 +40,7 @@ void main() async {
 }
 ```
  
-> [more projects](https://masterflutter.appwriters.dev/ch04-asynchronous-programming-rest-api-and-json/ls01-introduction-to-asynchronous-programming)
+> [more projects](/courses/master-flutter/ch04-asynchronous-programming-rest-api-and-json/ls01-introduction-to-asynchronous-programming)
 
 
 ## Resources

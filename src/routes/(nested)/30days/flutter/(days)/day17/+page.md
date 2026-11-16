@@ -44,7 +44,7 @@ void _showAlertDialog() {
 }
 ```
 
-> [more projects](https://masterflutter.appwriters.dev/ch07-interactivity/ls03-alerts-and-dialogs)
+> [more projects](/courses/master-flutter/ch07-interactivity/ls03-alerts-and-dialogs)
 
 ## Resources
 

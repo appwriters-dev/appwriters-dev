@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/state';
 	import VideoEmbed from '#lib/components/VideoEmbed.svelte';
-	import Header from './header.svelte';
+	import CourseHero from '#lib/components/CourseHero.svelte';
 	/** @type {{children?: import('svelte').Snippet}} */
 	let { children } = $props();
 </script>
@@ -26,7 +26,13 @@
 	{/if}
 </svelte:head>
 
-<Header isMain={page.data.lessonId == null} title={page.data.title} subtitle={page.data.subtitle} />
+<CourseHero
+	isMain={page.data.lessonId == null}
+	eyebrow="Free course · Flutter + Appwrite"
+	back={{ href: '/courses/flutter-appwrite', label: 'Flutter & Appwrite course' }}
+	title={page.data.title}
+	subtitle={page.data.subtitle}
+/>
 
 {#if page.data.videoId}
 	<div class="wrap video" class:narrow={page.data.lessonId != null}>

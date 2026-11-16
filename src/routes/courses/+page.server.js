@@ -1,5 +1,13 @@
-import { redirect } from '@sveltejs/kit';
+import { getChapters } from '#lib/server/masterFlutter.js';
 
-export const load = async ({ url, fetch }) => {
-	throw redirect(302, '/courses/flutter-appwrite')
+export const prerender = true;
+
+export const load = () => {
+	const chapters = getChapters();
+	return {
+		masterFlutter: {
+			chapters: chapters.length,
+			lessons: chapters.reduce((sum, chapter) => sum + chapter.lessons.length, 0)
+		}
+	};
 };

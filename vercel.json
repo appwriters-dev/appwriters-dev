@@ -1,0 +1,58 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"redirects": [
+		{
+			"source": "/courses/master-flutter/intro",
+			"destination": "/courses/master-flutter",
+			"permanent": true
+		},
+		{
+			"source": "/",
+			"has": [{ "type": "host", "value": "(?:www\\.)?flutterforbeginner\\.com" }],
+			"destination": "https://www.appwriters.dev/courses/master-flutter",
+			"permanent": true
+		},
+		{
+			"source": "/intro",
+			"has": [{ "type": "host", "value": "(?:www\\.)?flutterforbeginner\\.com" }],
+			"destination": "https://www.appwriters.dev/courses/master-flutter",
+			"permanent": true
+		},
+		{
+			"source": "/:path(sitemap\\.xml|robots\\.txt)",
+			"has": [{ "type": "host", "value": "(?:www\\.)?flutterforbeginner\\.com" }],
+			"destination": "https://www.appwriters.dev/:path",
+			"permanent": true
+		},
+		{
+			"source": "/:path*",
+			"has": [{ "type": "host", "value": "(?:www\\.)?flutterforbeginner\\.com" }],
+			"destination": "https://www.appwriters.dev/courses/master-flutter/:path*",
+			"permanent": true
+		},
+		{
+			"source": "/",
+			"has": [{ "type": "host", "value": "masterflutter\\.appwriters\\.dev" }],
+			"destination": "https://www.appwriters.dev/courses/master-flutter",
+			"permanent": true
+		},
+		{
+			"source": "/intro",
+			"has": [{ "type": "host", "value": "masterflutter\\.appwriters\\.dev" }],
+			"destination": "https://www.appwriters.dev/courses/master-flutter",
+			"permanent": true
+		},
+		{
+			"source": "/:path(sitemap\\.xml|robots\\.txt)",
+			"has": [{ "type": "host", "value": "masterflutter\\.appwriters\\.dev" }],
+			"destination": "https://www.appwriters.dev/:path",
+			"permanent": true
+		},
+		{
+			"source": "/:path*",
+			"has": [{ "type": "host", "value": "masterflutter\\.appwriters\\.dev" }],
+			"destination": "https://www.appwriters.dev/courses/master-flutter/:path*",
+			"permanent": true
+		}
+	]
+}

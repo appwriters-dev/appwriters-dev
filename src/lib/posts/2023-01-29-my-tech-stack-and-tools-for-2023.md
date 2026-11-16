@@ -55,7 +55,7 @@ Flutter is my framework of choice for mobile and desktop applications in recent 
 
 ### [Svelte](https://svelte.dev) & [Svelte Kit](https://kit.svelte.dev)
 
-I’ve worked with React, Angular and learned a little bit of VueJS as well. However, for a year and half now, I’m working with Svelte and Svelte Kit to build my applications. I love the simplicity of the framework. It’s easy to work with, organize and build. My recent projects live [reactbits.com](https://reactbits.com), [Master Flutter](https://masterflutter.appwriters.dev/), [ABCs of Appwrite](https://abcsofappwrite.appwriters.dev/) and [this blog](https://appwriters.dev) itself is built using Svelte Kit.
+I’ve worked with React, Angular and learned a little bit of VueJS as well. However, for a year and half now, I’m working with Svelte and Svelte Kit to build my applications. I love the simplicity of the framework. It’s easy to work with, organize and build. My recent projects live [reactbits.com](https://reactbits.com), [Master Flutter](/courses/master-flutter), [ABCs of Appwrite](https://abcsofappwrite.appwriters.dev/) and [this blog](https://appwriters.dev) itself is built using Svelte Kit.
 
 ### [Appwrite](https://appwrite.io)
 

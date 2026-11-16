@@ -8,6 +8,13 @@
 
 	const paths = [
 		{
+			href: '/courses/master-flutter',
+			label: 'Course · beginner',
+			title: 'Master Flutter',
+			text: 'Learn Dart and Flutter from zero in 10 chapters. Every lesson explains a topic, points to the best resources and gives you projects to build.',
+			icon: 'icon-book-open'
+		},
+		{
 			href: '/courses/flutter-appwrite',
 			label: 'Course',
 			title: 'Flutter & Appwrite',
@@ -34,14 +41,6 @@
 			title: 'Flutter Appwrite starter',
 			text: 'A starting point for Flutter apps backed by Appwrite, with authentication and routing already wired up.',
 			icon: 'icon-template'
-		},
-		{
-			href: 'https://masterflutter.appwriters.dev',
-			label: 'Guide',
-			title: 'Master Flutter',
-			text: 'A self-paced guide to Dart and Flutter through practical projects and hand-picked resources.',
-			icon: 'icon-book-open',
-			external: true
 		},
 		{
 			href: 'https://abcsofappwrite.appwriters.dev',

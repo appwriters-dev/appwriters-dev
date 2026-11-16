@@ -1,6 +1,7 @@
 // /llms.txt: a plain-text map of the site for AI agents (https://llmstxt.org).
 import { siteAuthor, siteDescription, siteLink, siteTitle, youtubeURL, githubURL } from '#lib/config.js';
 import { getDays, getLessons, getPosts, getProjects } from '#lib/server/content.js';
+import { course as masterFlutter, getChapters } from '#lib/server/masterFlutter.js';
 import { load as loadCourse } from '../courses/flutter-appwrite/+layout.server.js';
 
 export const prerender = true;
@@ -21,7 +22,7 @@ export const GET = async () => {
 		'',
 		`> ${siteDescription}`,
 		'',
-		`${siteTitle} (${siteLink}) is written by ${siteAuthor}. It has a blog, a free Flutter and Appwrite course, the #30DaysMasterFlutter challenge and a series of Dart projects. Each link below ending in .md is a Markdown version of that page; drop the .md for the HTML page.`,
+		`${siteTitle} (${siteLink}) is written by ${siteAuthor}. It has a blog, two free courses (Master Flutter for beginners, and Flutter & Appwrite), the #30DaysMasterFlutter challenge and a series of Dart projects. Each link below ending in .md is a Markdown version of that page; drop the .md for the HTML page.`,
 		'',
 		'## Blog posts',
 		'',
@@ -29,6 +30,16 @@ export const GET = async () => {
 			(post) =>
 				`- [${post.title}](${post.markdownUrl}): ${oneLine(post.excerpt)}${post.date ? ` (${post.date})` : ''}`
 		),
+		'',
+		'## Course: Master Flutter (Dart and Flutter for beginners)',
+		'',
+		`- [Course overview and full table of contents](${siteLink}/courses/master-flutter.md): ${oneLine(masterFlutter.description)}`,
+		...getChapters().flatMap((chapter) => [
+			`- [Chapter ${chapter.number}: ${chapter.title}](${siteLink}${chapter.url}.md): ${oneLine(chapter.description)}`,
+			...chapter.lessons.map(
+				(lesson) => `  - [${lesson.number} ${lesson.title}](${siteLink}${lesson.url}.md)`
+			)
+		]),
 		'',
 		'## Course: Flutter & Appwrite',
 		'',

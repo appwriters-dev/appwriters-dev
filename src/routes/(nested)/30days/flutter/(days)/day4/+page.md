@@ -46,7 +46,7 @@ void main() {
 }
 ```
 
-> [more projects](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls09-functions)
+> [more projects](/courses/master-flutter/ch01-the-dart-basics/ls09-functions)
 
 ## Resources
 

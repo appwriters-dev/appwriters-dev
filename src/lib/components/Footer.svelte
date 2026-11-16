@@ -18,6 +18,7 @@
 			<nav aria-labelledby="footer-learn">
 				<h2 id="footer-learn">Learn</h2>
 				<ul>
+					<li><a href="/courses/master-flutter">Master Flutter course</a></li>
 					<li><a href="/courses/flutter-appwrite">Flutter &amp; Appwrite course</a></li>
 					<li><a href="/30days/flutter">#30DaysMasterFlutter</a></li>
 					<li><a href="/projects/dart">Dart projects</a></li>

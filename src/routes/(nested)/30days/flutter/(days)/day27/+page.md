@@ -17,7 +17,7 @@ By the end of this day, you should have an understanding of what Flutter plugins
 - Explore different plugins available in the Flutter ecosystem, such as camera, geolocation, and sensor plugins.
 - Always read the documentation of the plugin you are using to understand how to use it.
 
-> [more projects](https://masterflutter.appwriters.dev/ch10-plugins)
+> [more projects](/courses/master-flutter/ch10-plugins)
 
 ### Resources
 

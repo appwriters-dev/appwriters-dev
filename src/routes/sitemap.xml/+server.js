@@ -1,6 +1,7 @@
 // /sitemap.xml: every public page, for search engines and agents.
 import { siteLink } from '#lib/config.js';
 import { getDays, getPosts, getProjects } from '#lib/server/content.js';
+import { getChapters } from '#lib/server/masterFlutter.js';
 import { load as loadCourse } from '../courses/flutter-appwrite/+layout.server.js';
 
 export const prerender = true;
@@ -21,6 +22,13 @@ export const GET = async () => {
 		{ loc: '/blog/category' },
 		...categories.map((category) => ({ loc: `/blog/category/${encodeURIComponent(category)}` })),
 		...posts.map((post) => ({ loc: `/blog/${post.slug}`, lastmod: post.updated || post.date })),
+		{ loc: '/courses' },
+		{ loc: '/courses/master-flutter' },
+		{ loc: '/courses/master-flutter/about' },
+		...getChapters().flatMap((chapter) => [
+			{ loc: chapter.url },
+			...chapter.lessons.map((lesson) => ({ loc: lesson.url }))
+		]),
 		{ loc: '/courses/flutter-appwrite' },
 		...curriculum
 			.filter((item) => item.published)

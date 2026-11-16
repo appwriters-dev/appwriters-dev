@@ -84,9 +84,9 @@ This will print the message `You are an adult.` to the console, since the age va
 
 > **More projects**
 > 
-> - [MsterFlutter: Operators](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls05-operators)
-> - [MsterFlutter: Dart IO](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls03-standard-io)
-> - [MsterFlutter: Control Flow](https://masterflutter.appwriters.dev/ch01-the-dart-basics/ls06-control-flow)
+> - [Master Flutter: Operators](/courses/master-flutter/ch01-the-dart-basics/ls05-operators)
+> - [Master Flutter: Dart IO](/courses/master-flutter/ch01-the-dart-basics/ls03-standard-io)
+> - [Master Flutter: Control Flow](/courses/master-flutter/ch01-the-dart-basics/ls06-control-flow)
 
 ## Resources
 

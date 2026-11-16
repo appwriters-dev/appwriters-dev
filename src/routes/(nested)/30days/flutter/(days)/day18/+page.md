@@ -83,7 +83,7 @@ class DetailScreen extends StatelessWidget {
 
 <br />
 
-> [more projects](https://masterflutter.appwriters.dev/ch09-multipage-applications/ls01-navigation)
+> [more projects](/courses/master-flutter/ch09-multipage-applications/ls01-navigation)
 
 ## Resources
 
