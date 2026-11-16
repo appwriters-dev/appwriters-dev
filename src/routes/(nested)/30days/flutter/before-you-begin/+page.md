@@ -30,7 +30,7 @@ If you have ample time and a strong will to learn, this method allows you to imm
 - Commit to completing the entire 30-day program, one day at a time.
 - After the initial completion, revisit any days that proved challenging or incomplete, and practice those concepts further.
 
-### Balanced Learning for the Busy Bees:
+### Balanced Learning for the Busy Bees
    
 If you have other responsibilities or a more flexible learning pace, this approach offers a suitable alternative. Follow these steps:
 

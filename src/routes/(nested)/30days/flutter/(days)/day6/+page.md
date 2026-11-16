@@ -4,7 +4,7 @@ Error and exception handling is crucial for any developer. By effectively handli
 
 > **Project** - Handle Errors and Exceptions
 >
-> Improve the code of my [open trivia's](https://github.com/lohanidamodar/flutter_opentrivia/blob/master/lib/resources/api_provider.dart) `getQuestions` function by handling error and exceptions.
+> Improve the code of my [open trivia's](https://github.com/lohanidamodar/flutter_opentrivia/blob/master/lib/resources/api_provider.dart) `getQuestions` function by handling errors and exceptions.
 
 By the end of today, you will have a clear understanding of what errors and exceptions are, how they can occur in an application, and how to handle them correctly.
 
@@ -17,6 +17,20 @@ try {
   // code that may throw an exception
 } catch (e) {
   // code to handle the exception
+}
+```
+
+- Use `on` to catch only a specific type of exception, and `catch (e, stackTrace)` to also get the stack trace:
+
+```dart
+try {
+  final number = int.parse('abc');
+  print(number);
+} on FormatException catch (e) {
+  print('Not a valid number: $e');
+} catch (e, stackTrace) {
+  print('Something else went wrong: $e');
+  print(stackTrace);
 }
 ```
 
@@ -46,7 +60,7 @@ try {
 
 ## Resources
 
-- [Exceptions - Dart Language Tour](https://dart.dev/guides/language/language-tour#exceptions)
+- [Exceptions - Dart Language Tour](https://dart.dev/language/error-handling)
 - [Error handling in Flutter](https://docs.flutter.dev/testing/errors)
 - [Dart Error and Exception Handling Techniques](https://www.tutorialspoint.com/dart_programming/dart_programming_exceptions.htm)
-- [Code review](https://github.com/lohanidamodar/appwrite_auth_kit/blob/master/lib/src/accounts_provider.dart) - review the code and see how `try-catch-finally` is used. Also see how only specific exceptions are caught and handled.
+- [Code review](https://github.com/flappwrite/auth_kit/blob/master/lib/src/accounts_provider.dart) - review the code and see how `try-catch-finally` is used. Also see how only specific exceptions are caught and handled.

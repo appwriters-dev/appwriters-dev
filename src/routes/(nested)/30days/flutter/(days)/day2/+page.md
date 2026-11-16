@@ -12,29 +12,33 @@ By the end of this day, you should have a basic understanding of the Dart syntax
 
 ## Tips
 
-- To create new dart console application, you can use the `dart create` command. The default is always a console application.
+- To create a new Dart console application, you can use the `dart create` command. The default template is a console application.
 
 ```bash
 dart create greet_user
+cd greet_user
+dart run
 ```
 
 
-- To Get user input in Dart, you can use the `stdin.readLineSync()` function. For example:
+- To get user input in Dart, you can use the `stdin.readLineSync()` function. For example:
 
 ```dart
 import 'dart:io';
 
 void main() {
   print("Enter anything:");
-  String? input  = stdin.readLineSync();
-  print("You entered: ${input}");
+  String? input = stdin.readLineSync();
+  print("You entered: $input");
 }
 ```
+
+- `readLineSync()` returns a nullable `String?`, because there may be no input. Handle the `null` case, for example with `input ?? 'stranger'`.
 
 
 ## Resources
 
 - [Dart Tutorial User Input](https://dart-tutorial.com/introduction-and-basics/user-input-in-dart/)
-- [The official Dart documentation](https://dart.dev/guides)
+- [The official Dart documentation](https://dart.dev/docs)
 - [DartPad](https://dartpad.dev/)
 

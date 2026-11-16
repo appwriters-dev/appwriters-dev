@@ -4,7 +4,7 @@ Dev tools are built to help developers debug and optimize their apps. Flutter pr
 
 > **Project** - Debug Quotes App
 >
-> Run the quotes app in debug mode and use explore various options provided in the dev tools
+> Run the quotes app in debug mode and explore the various options provided in the dev tools
 >
 > - You can add breakpoints in your code and run the app in debug mode
 > - You can use the dev tools to inspect the widget tree and view the properties of each widget
@@ -23,7 +23,7 @@ By the end of this day, you will learn how to use dev tools to debug your app an
 ## Resources
 
 - [Flutter Debugging Guide](https://docs.flutter.dev/testing/debugging)
-- [Debugging Flutter Apps on VS Code](https://flutter.dev/docs/development/tools/vs-code/debugging)
-- [Devtools guide](https://docs.flutter.dev/tools/devtools/overview)
-- [Setup devtools on VS Code](https://docs.flutter.dev/tools/devtools/**vscode**)
+- [Debugging Flutter Apps on VS Code](https://docs.flutter.dev/tools/vs-code#running-and-debugging)
+- [Devtools guide](https://docs.flutter.dev/tools/devtools)
+- [Setup devtools on VS Code](https://docs.flutter.dev/tools/devtools/vscode)
 

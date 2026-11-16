@@ -14,6 +14,8 @@ By the end of this day, you should have a basic understanding of how to make net
 
 - Review the basics of Dart programming from Day 1-9.
 - Learn how to make network requests in Flutter using the [http](https://pub.dev/packages/http) package. This package allows you to easily make HTTP requests to an API and receive data in JSON format.
+- Add the package with `flutter pub add http`. On Android, the `INTERNET` permission is needed in release builds, and on macOS the network client entitlement; see the "Fetch data from the internet" cookbook below.
+- Use a `FutureBuilder` to show a loading indicator, an error message, or the quotes depending on the state of the request.
 - Experiment with different types of requests, such as GET and POST requests, and learn how to handle errors and exceptions.
 - You can use [JSON Placeholder API](https://jsonplaceholder.typicode.com/) to practice making different requests
 - You should practice by building more projects
@@ -22,7 +24,8 @@ By the end of this day, you should have a basic understanding of how to make net
 ## Resources
 
 - [Flutter http package documentation](https://pub.dev/packages/http)
-- [Beginners guide to http package](https://www.appwriters.dev/blog/a-beginners-guide-to-the-http-package-in-flutter)
-- [Fetch Data fron Internet](https://docs.flutter.dev/cookbook/networking/fetch-data)
-- [Working with Rest API in Flutter](https://www.appwriters.dev/blog/integrating-with-rest-api-in-flutter)
+- [Beginners guide to http package](/blog/a-beginners-guide-to-the-http-package-in-flutter)
+- [Fetch Data from Internet](https://docs.flutter.dev/cookbook/networking/fetch-data)
+- [Working with Rest API in Flutter](/blog/integrating-with-rest-api-in-flutter)
+- [FutureBuilder class](https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html)
 

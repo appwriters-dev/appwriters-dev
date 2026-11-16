@@ -12,7 +12,7 @@ In Flutter, UI design involves creating visual and interactive elements for your
 > **Tips**
 > 
 > - Use `Image.network` to display your image.
-> - Widgets `Container`, `Text`, `ElevatedButton`, `IconButton`, `Container`, `Stack`, `Row` and `Column`
+> - Widgets `Container`, `Text`, `ElevatedButton`, `IconButton`, `Padding`, `Stack`, `Row` and `Column`
 > - Don’t forget to post screenshot after you are done to your social networks with hashtag #30DaysMasterFlutter
 > 
 
@@ -29,39 +29,44 @@ By the end of this day, you should have a basic understanding of how to use widg
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My App',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My App'),
+          title: const Text('My App'),
         ),
         body: Container(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             children: <Widget>[
-              Image.network(FlutterLogo()),
-              SizedBox(height: 16.0),
-              Text(
+              Image.network('https://picsum.photos/400/200'),
+              const SizedBox(height: 16.0),
+              const Text(
                 'Welcome to my app!',
                 style: TextStyle(fontSize: 24.0),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  RaisedButton(
-                    child: Text('Button 1'),
+                  ElevatedButton(
                     onPressed: () {},
+                    child: const Text('Button 1'),
                   ),
-                  RaisedButton(
-                    child: Text('Button 2'),
+                  FilledButton(
                     onPressed: () {},
+                    child: const Text('Button 2'),
                   ),
                 ],
               ),
@@ -80,7 +85,7 @@ class MyApp extends StatelessWidget {
 
 ### Resources
 
-- [Flutter documentation on widgets](https://docs.flutter.dev/ui/widgets-intro)
+- [Flutter documentation on widgets](https://docs.flutter.dev/ui)
 - [Official UI Layout Tutorial](https://docs.flutter.dev/ui/layout/tutorial) - recommended to follow and build
-- [Flutter widget catalog](https://flutter.dev/docs/development/ui/widgets/catalog)
+- [Flutter widget catalog](https://docs.flutter.dev/ui/widgets)
 - [Flutter UI challenges GitHub repository](https://github.com/lohanidamodar/flutter_ui_challenges)

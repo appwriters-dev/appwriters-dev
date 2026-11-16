@@ -9,13 +9,23 @@ Plugins are essentially packages that contain platform-specific code and a Dart 
 > Remember the quotes app we built, now use [share_plus](https://pub.dev/packages/share_plus) plugin to allow users to share quotes to social media
 >
 
-By the end of this day, you should have an understanding of what Flutter plugins are and Why they are important. You should also be able to use Flutter plugins to access native functionalities of the platform.
+By the end of this day, you should have an understanding of what Flutter plugins are and why they are important. You should also be able to use Flutter plugins to access native functionalities of the platform.
 
 ## Tips
 
 - Learn about Flutter plugins and how they enable you to access native functionalities.
 - Explore different plugins available in the Flutter ecosystem, such as camera, geolocation, and sensor plugins.
-- Always read the documentation of the plugin you are using to understand how to use it.
+- Always read the documentation of the plugin you are using to understand how to use it. Plugin APIs change between major versions; for example, recent versions of share_plus use:
+
+```dart
+import 'package:share_plus/share_plus.dart';
+
+await SharePlus.instance.share(
+  ShareParams(text: '"Stay hungry, stay foolish." - Steve Jobs'),
+);
+```
+
+- After adding a plugin, stop the app and run it again (a full restart, not hot reload), because the native code needs to be compiled into the app.
 
 > [more projects](/courses/master-flutter/ch10-plugins)
 

@@ -4,7 +4,7 @@ Image and font assets play a crucial role in the design and functionality of Flu
 
 > **Project** - Quotes UI
 >
-> Build the following UI, use two custom fonts (choose any from [Google Fonts](https://fonts.google.com) or use your own), use seperate font for the quote and the author name.
+> Build the following UI, use two custom fonts (choose any from [Google Fonts](https://fonts.google.com) or use your own), use a separate font for the quote and the author name.
 > 
 > <img src="https://github.com/lohanidamodar/flutter_ui_challenges/raw/master/screenshots/quotes1.png" alt="quotes ui" />
 > 
@@ -26,18 +26,18 @@ flutter:
     - assets/images/
 ```
 
-     - To display an image in your app, use the `Image` widget and specify the location of the image file, like so:
+  - To display an image in your app, use the `Image` widget and specify the location of the image file, like so:
 
 ```dart
 Image.asset('assets/images/my_image.png')
 ```
 
-    Alternatively, you can use the `NetworkImage` widget to display an image from a URL or the `AssetImage` widget to display an image from an asset bundle.
+Alternatively, you can use `Image.network` to display an image from a URL. Where an image provider is needed instead of a widget (for example in a `DecorationImage`), use `NetworkImage` or `AssetImage`.
 
 - Adding Custom Fonts
-    - Create a directory in your project's root directory to store your font files.
-    - Add your font files (e.g. TrueType or OpenType font files) to this directory.
-    - In your app's `pubspec.yaml` file, specify the location of the font files directory and the fonts you want to use, like so:
+  - Create a directory in your project's root directory to store your font files.
+  - Add your font files (e.g. TrueType or OpenType font files) to this directory.
+  - In your app's `pubspec.yaml` file, specify the location of the font files directory and the fonts you want to use, like so:
 
 ```yaml
 flutter:
@@ -48,7 +48,7 @@ flutter:
           weight: 400
 ```
 
-    - To use a custom font in your app, specify the font family and weight when creating a `TextStyle`, like so:
+  - To use a custom font in your app, specify the font family and weight when creating a `TextStyle`, like so:
 
 ```dart
 Text(
@@ -68,10 +68,10 @@ Text(
 
 ## Resources
 
-- [Flutter documentation on adding assets](https://flutter.dev/docs/development/ui/assets-and-images)
+- [Flutter documentation on adding assets](https://docs.flutter.dev/ui/assets/assets-and-images)
 - [Image Widget](https://api.flutter.dev/flutter/widgets/Image-class.html)
 - [Image.asset](https://api.flutter.dev/flutter/widgets/Image/Image.asset.html)
 - [Flutter documentation on using custom font](https://docs.flutter.dev/cookbook/design/fonts)
 - [Google Fonts](https://fonts.google.com/) - free custom fonts
-- [Fonts in Pubspec](https://docs.flutter.dev/cookbook/design/fonts#2-declare-the-font-in-the-pubspec)
+- [Fonts in Pubspec](https://docs.flutter.dev/cookbook/design/fonts#declare-the-font-in-the-pubspec-yaml-file)
 - [Google Fonts package](https://pub.dev/packages/google_fonts)

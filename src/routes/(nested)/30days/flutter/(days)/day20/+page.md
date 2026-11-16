@@ -9,14 +9,14 @@ Packages can be used to add new features and capabilities to a Flutter app, such
 > Given expense data from a user, display a bar chart representing expenses in each category. Use the [font_awesome_flutter](https://pub.dev/packages/font_awesome_flutter) package to display icons for each category. Use [fl_chart](https://pub.dev/packages/fl_chart) package to display the bar chart.
 > 
 
-by the end of this day, you will know how to use packages in Flutter to enhance your app's functionality and in the process save time and resource.
+By the end of this day, you will know how to use packages in Flutter to enhance your app's functionality and in the process save time and resources.
 
 ## Tips
 
 - Use the [pub.dev](https://pub.dev/) website to search for Flutter packages.
-- Use the `flutter pub add <package-name>` command to install packages or you can manually add the package name to the `pubspec.yaml` file and run `flutter pub get` to install it.
+- Use the `flutter pub add <package-name>` command to install packages (for example `flutter pub add fl_chart font_awesome_flutter`), or you can manually add the package name to the `pubspec.yaml` file and run `flutter pub get` to install it.
 - Always check the package's documentation for instructions on how to use it.
-- Use packages that are well maintained and have a large number of users already using it.
+- Use packages that are well maintained and have a large number of users already using them. On pub.dev, check the likes, pub points, downloads and the date of the latest release.
 
 ### Resources
 

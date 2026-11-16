@@ -4,7 +4,7 @@ Alerts and dialogs are important components of mobile apps that provide users wi
 
 > **Project** - Informative App
 >
-> Update your registration form project from previous day
+> Update your registration form project from [day 15](/30days/flutter/day15)
 >
 > - When submit button is pressed, if all input is validated, show an alert dialog that has two actions **Cancel** and **Continue** and message **Are you sure you want to submit?**
 > - If user input is not valid, show a snackbar with message **Please fill all the fields correctly**
@@ -23,16 +23,16 @@ By the end of this day, you will understand the importance of feedback and inter
 - Creating a simple dialog
 
 ```dart
-void _showAlertDialog() {
-  showDialog(
+void _showAlertDialog(BuildContext context) {
+  showDialog<void>(
     context: context,
     builder: (BuildContext context) {
       return AlertDialog(
-        title: Text('Alert'),
-        content: Text('This is an alert.'),
+        title: const Text('Alert'),
+        content: const Text('This is an alert.'),
         actions: <Widget>[
-          FlatButton(
-            child: Text('OK'),
+          TextButton(
+            child: const Text('OK'),
             onPressed: () {
               Navigator.of(context).pop();
             },
@@ -42,6 +42,14 @@ void _showAlertDialog() {
     },
   );
 }
+```
+
+- Showing a snackbar
+
+```dart
+ScaffoldMessenger.of(context).showSnackBar(
+  const SnackBar(content: Text('Please fill all the fields correctly')),
+);
 ```
 
 > [more projects](/courses/master-flutter/ch07-interactivity/ls03-alerts-and-dialogs)

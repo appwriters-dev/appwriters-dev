@@ -23,6 +23,9 @@
 	basePath="flutter"
 	project="#30DaysMasterFlutter"
 	day={data.day}
+	dayTitle={data.dayTitle}
+	nextTitle={data.nextTitle}
+	deeper={data.deeper}
 	nextReleased={data.nextReleased}
 >
 	{@render children?.()}

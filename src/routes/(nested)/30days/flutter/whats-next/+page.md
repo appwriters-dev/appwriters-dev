@@ -5,10 +5,10 @@ Flutter is an awesome technology, so there's always more to learn and explore. R
 
 ## Animations
 
-Animation can make application visually pleasing as well as enhance the user experiance. Learn to add animations to your application.
+Animation can make application visually pleasing as well as enhance the user experience. Learn to add animations to your application.
 
-- Once you know the basics learn about advance topics such as animation curves
-- experiment with creating more complex animations
+- Once you know the basics, learn about advanced topics such as animation curves
+- Experiment with creating more complex animations
 
 
 ### Resources
@@ -16,8 +16,8 @@ Animation can make application visually pleasing as well as enhance the user exp
 - [Flutter Animation Overview](https://docs.flutter.dev/ui/animations/overview)
 - [Flutter Animations Tutorial](https://docs.flutter.dev/ui/animations/tutorial)
 - [Animation Cookbook](https://docs.flutter.dev/cookbook/animation)
-- [Implicit animation codelab](https://flutter.dev/docs/codelabs/implicit-animations)
-- [Animation sample app](https://flutter.github.io/samples/animations.html)
+- [Implicit animations](https://docs.flutter.dev/ui/animations/implicit-animations)
+- [Animation sample app](https://github.com/flutter/samples/tree/main/animations)
 - [Doing animations right](https://www.youtube.com/watch?v=wnARLByOtKA)
 
 ---
@@ -34,7 +34,7 @@ Accessible apps are also easier to use and navigate, not only for those with dis
 
 ### Resources
 
-- [Flutter documentation on Accessibility](https://docs.flutter.dev/accessibility-and-localization/accessibility)
+- [Flutter documentation on Accessibility](https://docs.flutter.dev/ui/accessibility)
 - [Deep dive on Flutter's accessibility](https://medium.com/flutter-community/a-deep-dive-into-flutters-accessibility-widgets-eb0ef9455bc)
 - [Semantics in Flutter](https://www.didierboelens.com/blog/en/semantics)
 
@@ -42,18 +42,16 @@ Accessible apps are also easier to use and navigate, not only for those with dis
 
 ## Internationalization
 
-Internationalization is the process of making your app available in multiple languages for users around the world. Localization is the process of adapting the app to a specific language or region. In Flutter, internationalization is achieved using the Intl package.
+Internationalization is the process of making your app available in multiple languages for users around the world. Localization is the process of adapting the app to a specific language or region. In Flutter, internationalization is achieved using the `flutter_localizations` and `intl` packages.
 
-- Explore how to make your app available in multiple languages. You can use the Intl package to format dates, times, and numbers in a user's local format. You can also translate text strings into different languages using the Flutter intl_translation tool.
+- Explore how to make your app available in multiple languages. You can use the Intl package to format dates, times, and numbers in a user's local format. You can also translate text strings into different languages using ARB files and the `flutter gen-l10n` tool, which generates the Dart code for your translations.
 
-- Implement support for multiple languages in your Flutter app. You can create separate JSON files for each language, and load the appropriate file based on the user's preferred language. You can also use the flutter_localizations package to provide translations for built-in widgets and strings.
+- Implement support for multiple languages in your Flutter app. You create a separate ARB file for each language, and Flutter loads the appropriate one based on the user's preferred language. The `flutter_localizations` package provides translations for built-in widgets and strings.
 
 ### Resources
 
-- [Internationalizing Flutter apps](https://docs.flutter.dev/accessibility-and-localization/internationalization)
+- [Internationalizing Flutter apps](https://docs.flutter.dev/ui/internationalization)
 - [Intl package](https://pub.dev/packages/intl)
-- [Flutter internationalization code lab](https://codelabs.developers.google.com/codelabs/flutter-i18n/index.html)
-- [Flutter internationalization example app](https://github.com/alexvolov/flutter_internationalization_example)
 
 ---
 
@@ -90,16 +88,16 @@ There are a number of CI/CD tools available for Flutter, including Codemagic, Gi
 
 There are more topics you should keep learning and building as you need for the application that you are building
 
-- [Responsive design in Flutter](https://flutter.dev/docs/development/ui/layout/responsive)
-- [Learn internal working of Flutter](https://flutter.dev/docs/resources/inside-flutter)
-- [Integration Firebase](https://www.youtube.com/watch?v=EXp0gq9kGxI)
-- [Integrating Appwrite](https://appwrite.io/docs/getting-started-for-flutter)
+- [Responsive design in Flutter](https://docs.flutter.dev/ui/adaptive-responsive)
+- [Learn internal working of Flutter](https://docs.flutter.dev/resources/inside-flutter)
+- [Integrating Firebase](https://www.youtube.com/watch?v=EXp0gq9kGxI)
+- [Integrating Appwrite](https://appwrite.io/docs/quick-starts/flutter)
 - Learn about advanced networking concepts like caching, pagination, error handling, and authentication.
 - [Blog posts on custom painter](https://medium.com/flutter-community/search?q=custompainter)
-- [Desktop development codelab](https://codelabs.developers.google.com/codelabs/flutter-github-client)
-- [Adding Flutter to existing apps](https://flutter.dev/docs/development/add-to-app)
+- [Desktop development with Flutter](https://docs.flutter.dev/platform-integration/desktop)
+- [Adding Flutter to existing apps](https://docs.flutter.dev/add-to-app)
 - Learn how to create responsive web applications using Flutter.
-- Learn how to integrate machine learning and AI capabilities into your Flutter app using TensorFlow Lite.
+- Learn how to integrate machine learning and AI capabilities into your Flutter app, for example with on-device models or cloud AI APIs.
 - [Explore game development with Flutter](https://flutter.dev/games)
 - [Explore Flutter Flow](https://flutterflow.io) to visually build Flutter apps
-- Learn about app architectures. [Articles on Flutter app architecture](https://codewithandrea.com/tags/apparchitecture/)
+- Learn about app architectures. [Official guide to app architecture](https://docs.flutter.dev/app-architecture) and [articles on Flutter app architecture](https://codewithandrea.com/tags/apparchitecture/)

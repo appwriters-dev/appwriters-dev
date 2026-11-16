@@ -18,12 +18,16 @@ By the end of this day, you will be able to create effective mechanisms for gath
 - Use form validators to ensure that users enter valid data. This will help prevent errors and improve the accuracy of your data.
 - Test your forms and user input mechanisms thoroughly to ensure that they are easy to use and provide a good user experience.
 
+- Use `CheckboxListTile` for the terms checkbox, and `RadioListTile` widgets inside a `RadioGroup` for the gender options.
+
 - Creating a simple form with text fields and buttons:
 
 ```dart
 class MyForm extends StatefulWidget {
+  const MyForm({super.key});
+
   @override
-  _MyFormState createState() => _MyFormState();
+  State<MyForm> createState() => _MyFormState();
 }
 
 class _MyFormState extends State<MyForm> {
@@ -36,31 +40,32 @@ class _MyFormState extends State<MyForm> {
       child: Column(
         children: [
           TextFormField(
-            decoration: InputDecoration(labelText: 'Name'),
+            decoration: const InputDecoration(labelText: 'Name'),
             validator: (value) {
-              if (value.isEmpty) {
+              if (value == null || value.isEmpty) {
                 return 'Please enter your name';
               }
               return null;
             },
           ),
           TextFormField(
-            decoration: InputDecoration(labelText: 'Email'),
+            decoration: const InputDecoration(labelText: 'Email'),
             validator: (value) {
-              if (value.isEmpty) {
+              if (value == null || value.isEmpty) {
                 return 'Please enter your email';
               }
               return null;
             },
           ),
           ElevatedButton(
-            child: Text('Submit'),
             onPressed: () {
-              if (_formKey.currentState.validate()) {
-                Scaffold.of(context).showSnackBar(
-                    SnackBar(content: Text('Processing Data')));
+              if (_formKey.currentState!.validate()) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Processing Data')),
+                );
               }
             },
+            child: const Text('Submit'),
           ),
         ],
       ),
@@ -76,3 +81,5 @@ class _MyFormState extends State<MyForm> {
 - [Styling text fields](https://docs.flutter.dev/cookbook/forms/text-input)
 - [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html)
 - [TextField Widget](https://api.flutter.dev/flutter/material/TextField-class.html)
+- [CheckboxListTile](https://api.flutter.dev/flutter/material/CheckboxListTile-class.html)
+- [RadioGroup](https://api.flutter.dev/flutter/widgets/RadioGroup-class.html)

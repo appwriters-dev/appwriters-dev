@@ -32,7 +32,7 @@ void main() {
 }
 ```
 
-This calls the add function with the arguments 3 and 4, stores the result in the "result" variable, and prints the result to the console.
+This calls the `add` function with the arguments 3 and 4, stores the result in the `result` variable, and prints the result to the console.
 
 - Experiment with different types of functions, such as functions that don't return a value (void), or functions that take no parameters.
 
@@ -46,12 +46,21 @@ void main() {
 }
 ```
 
+- Try named parameters and the arrow syntax for one-line functions.
+
+```dart
+String greetUser({required String name, String greeting = 'Hello'}) =>
+    '$greeting, $name!';
+
+void main() {
+  print(greetUser(name: 'Alice')); // Hello, Alice!
+}
+```
+
 > [more projects](/courses/master-flutter/ch01-the-dart-basics/ls09-functions)
 
 ## Resources
 
-Here are some resources for Day 5: Dart Functions:
-
-1. [Dart.dev - Functions](https://dart.dev/guides/language/language-tour#functions)
-2. [Dart Tutorial - Functions](https://dart-tutorial.com/functions/)
+1. [Dart.dev - Functions](https://dart.dev/language/functions)
+2. [Dart Tutorial - Functions](https://dart-tutorial.com/dart-functions/)
 

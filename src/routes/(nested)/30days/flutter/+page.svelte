@@ -23,6 +23,9 @@
 		<h1>#30DaysMasterFlutter</h1>
 		<p><b>30</b> Days <b>Dart</b> and <b>Flutter</b> Challenge</p>
 		<p>FREE | Easy to Follow | Project Based</p>
+		<a class="button hero-cta" href="/30days/flutter/day1"
+			>Start day 1 <i class="icon-arrow-right" aria-hidden="true"></i></a
+		>
 	</div>
 	<div class="intro">
 		<div class="container">
@@ -39,10 +42,18 @@
 				</p>
 
 				<p>
-					<a href="/30days/flutter/before-you-begin" class="button inverse"
-						>Before you begin <i class="icon-arrow-right"></i></a
-					>
+					Two to three hours a day is enough. Each day links to lessons in our free
+					<a href="/courses/master-flutter">Master Flutter</a> course if you want to go deeper.
 				</p>
+
+				<div class="button-row">
+					<a href="/30days/flutter/day1" class="button"
+						>Start day 1 <i class="icon-arrow-right" aria-hidden="true"></i></a
+					>
+					<a href="/30days/flutter/before-you-begin" class="button button--ghost"
+						>Before you begin</a
+					>
+				</div>
 			</div>
 			<div class="image">
 				<img alt="Master Flutter" src="/images/30days/flutter_header_bg.svg" />
@@ -123,6 +134,11 @@
 			b {
 				color: var(--primary);
 			}
+		}
+		.hero-cta {
+			position: relative;
+			z-index: 200;
+			margin: 0.5rem 0 3rem;
 		}
 	}
 	.active-day {

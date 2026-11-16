@@ -9,7 +9,7 @@ Asynchronous programming in Dart allows you to execute code without blocking the
 > - When the file has been read, print a message to the console to indicate that the file has been read.
 >
 
-By the end of thisday, you should have a good understanding of how to write asynchronous code in Dart using Futures and async/await.
+By the end of this day, you should have a good understanding of how to write asynchronous code in Dart using Futures and async/await.
 
 ## Tips
 
@@ -30,12 +30,12 @@ void main() async {
 }
 ```
 
-- Experiment with Timers: Use the Future.delayed() function to simulate timers that wait for a certain amount of time before executing a function.
+- Experiment with Timers: Use the `Future.delayed()` function to simulate timers that wait for a certain amount of time before executing a function.
 
 ```dart
 void main() async {
   print('Start');
-  await Future.delayed(Duration(seconds: 2));
+  await Future.delayed(const Duration(seconds: 2));
   print('End');
 }
 ```
@@ -47,5 +47,5 @@ void main() async {
 
 - [Making Friends with Asynchronous Programming](/blog/making-friends-with-asynchronous-programming-and-futures-in-flutter)
 - [Deep Dive into Asynchronous Programming](/blog/diving-deeper-int-asynchronous-programming-with-futures-in-flutter)
-- [Asynchronous Programming Codelab](https://dart.dev/codelabs/async-await)
+- [Asynchronous Programming Codelab](https://dart.dev/libraries/async/async-await)
 - [Dart Tutorial: Asynchronous Programming](https://dart-tutorial.com/asynchronous-programming/)

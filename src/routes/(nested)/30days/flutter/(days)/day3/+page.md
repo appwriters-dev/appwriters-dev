@@ -12,9 +12,9 @@ By the end of this day, you should have a good understanding of how to declare a
 
 ## Tips
 
-- Review the basics of variables and data types in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/guides/language/language-tour#variables).
+- Review the basics of variables and data types in Dart. You can use the Dart documentation to learn more about these concepts (https://dart.dev/language/variables).
 
-- You can declare and initialize variables of different data types, such as int, double, String, and boolean. For example:
+- You can declare and initialize variables of different data types, such as `int`, `double`, `String`, and `bool`. For example:
 
 ```dart
 void main() {
@@ -25,7 +25,7 @@ void main() {
 }
 ```
 
-- You can use the "print" function to print the values of these variables to the console. For example:
+- You can use the `print` function to print the values of these variables to the console. For example:
 
 ```dart
 void main() {
@@ -80,7 +80,9 @@ void main() {
 
 This will print the message `You are an adult.` to the console, since the age variable is greater than or equal to 18.
 
-1. Experiment with different operators and expressions, and write more complex conditional statements using logical operators `(&&, ||, !)`.
+- Experiment with different operators and expressions, and write more complex conditional statements using logical operators `(&&, ||, !)`.
+
+- For the project, read the weight and height with `stdin.readLineSync()` (from Day 2) and convert the text to a number with `double.parse()`.
 
 > **More projects**
 > 
@@ -91,6 +93,6 @@ This will print the message `You are an adult.` to the console, since the age va
 ## Resources
 
 1. [Dart Tutorial Basics](https://dart-tutorial.com/introduction-and-basics/)
-2. [Dart language tour](https://dart.dev/guides/language/language-tour)
-3. [Effective Dart Style](https://dart.dev/guides/language/effective-dart/style)
-4. [Dart Cheat Sheet](https://dart.dev/codelabs/dart-cheatsheet)
+2. [Dart language tour](https://dart.dev/language)
+3. [Effective Dart Style](https://dart.dev/effective-dart/style)
+4. [Dart Cheat Sheet](https://dart.dev/resources/dart-cheatsheet)

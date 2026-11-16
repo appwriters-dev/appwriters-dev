@@ -9,6 +9,8 @@ A **StatefulWidget** in Flutter is a widget that can change over time based on c
 > - initially it should display a **Roll Dice** button
 > - every time user taps on the button, it should update a **dice** variable with a random number between 1 and 6
 > - use the value of **dice** variable to display the corresponding dice image
+>
+> **Tip**: `Random().nextInt(6) + 1` from `dart:math` gives you a number between 1 and 6.
 
 ## Tips
 
@@ -19,8 +21,10 @@ A **StatefulWidget** in Flutter is a widget that can change over time based on c
 
 ```dart
 class CounterWidget extends StatefulWidget {
+  const CounterWidget({super.key});
+
   @override
-  _CounterWidgetState createState() => _CounterWidgetState();
+  State<CounterWidget> createState() => _CounterWidgetState();
 }
 
 class _CounterWidgetState extends State<CounterWidget> {
@@ -45,7 +49,7 @@ class _CounterWidgetState extends State<CounterWidget> {
 
 ## Resources
 
-- [Flutter documentation on Stateful Widgets](https://flutter.dev/docs/development/ui/widgets/stateful-widget)
+- [Flutter documentation on Stateful Widgets](https://docs.flutter.dev/ui/interactivity)
 - [Stateful vs Stateless Widget](https://medium.com/flutter-community/flutter-stateful-vs-stateless-widgets-7f8a5e3d7b5b)
 - [setState() documentation](https://api.flutter.dev/flutter/widgets/State/setState.html)
 - [initState() documentation](https://api.flutter.dev/flutter/widgets/State/initState.html)
